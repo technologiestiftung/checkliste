@@ -13,11 +13,7 @@ export function RadioInput({
 }: RadioInputProps) {
 	return (
 		<div
-			className={`${
-				isChecked
-					? "border-berlin-medium-blue bg-berlin-medium-blue bg-opacity-10"
-					: "bg-opacity-5"
-			} group flex cursor-pointer items-center gap-3 border-2 bg-berlin-black-40 px-3 py-2 hover:border-berlin-medium-blue`}
+			className={`group flex cursor-pointer items-center gap-3 border-2 px-3 py-2 hover:border-berlin-medium-blue`}
 			onClick={onChange}
 		>
 			<input
