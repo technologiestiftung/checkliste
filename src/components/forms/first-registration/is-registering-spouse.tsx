@@ -8,12 +8,8 @@ import { useTimeout } from "../../../hooks/useTimeout";
 import { useI18n } from "../../../i18n/hook/useI18n";
 
 export function IsRegisteringSpouse() {
-	const isRegisteringSpouse = useFirstRegistrationStore(
-		(state) => state.isRegisteringSpouse,
-	);
-	const setIsRegisteringSpouse = useFirstRegistrationStore(
-		(state) => state.setIsRegisteringSpouse,
-	);
+	const { isRegisteringSpouse, setIsRegisteringSpouse } =
+		useFirstRegistrationStore();
 
 	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
 	const goToNextStep = useProgressStore((state) => state.goToNextStep);

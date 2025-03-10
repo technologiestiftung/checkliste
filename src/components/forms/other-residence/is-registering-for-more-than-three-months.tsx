@@ -1,4 +1,4 @@
-import { useOtherResidenceStore } from "./store";
+import { useOtherResidenceStore } from "./store/index.ts";
 import { useProgressStore } from "../../steps/store";
 import { RadioInput } from "../../radio-input";
 import { InfoButton } from "../../buttons/info-button";
@@ -8,12 +8,10 @@ import { useTimeout } from "../../../hooks/useTimeout.tsx";
 import { useI18n } from "../../../i18n/hook/useI18n.tsx";
 
 export function IsRegisteringForMoreThanThreeMonths() {
-	const isRegisteringForMoreThanThreeMonths = useOtherResidenceStore(
-		(state) => state.isRegisteringForMoreThanThreeMonths,
-	);
-	const setIsRegisteringForMoreThanThreeMonths = useOtherResidenceStore(
-		(state) => state.setIsRegisteringForMoreThanThreeMonths,
-	);
+	const {
+		isRegisteringForMoreThanThreeMonths,
+		setIsRegisteringForMoreThanThreeMonths,
+	} = useOtherResidenceStore();
 
 	const isValid = isRegisteringForMoreThanThreeMonths !== null;
 	const needsRegistration = isRegisteringForMoreThanThreeMonths === true;

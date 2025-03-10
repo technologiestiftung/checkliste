@@ -8,10 +8,9 @@ import { useTimeout } from "../../../hooks/useTimeout";
 import { useI18n } from "../../../i18n/hook/useI18n";
 
 export function HasChild() {
-	const hasKids = useFirstRegistrationStore((state) => state.hasChild);
-	const setHasKids = useFirstRegistrationStore((state) => state.setHasChild);
+	const { hasChild, setHasChild } = useFirstRegistrationStore();
 
-	const isValid = hasKids !== null;
+	const isValid = hasChild !== null;
 
 	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
 	const goToNextStep = useProgressStore((state) => state.goToNextStep);
@@ -48,9 +47,9 @@ export function HasChild() {
 						const name = "first-registration.q4.radio";
 						const label = t(option);
 						const isChecked =
-							(option === "yes" && hasKids === true) ||
-							(option === "no" && hasKids === false);
-						const onChange = () => setHasKids(option === "yes");
+							(option === "yes" && hasChild === true) ||
+							(option === "no" && hasChild === false);
+						const onChange = () => setHasChild(option === "yes");
 
 						return (
 							<RadioInput

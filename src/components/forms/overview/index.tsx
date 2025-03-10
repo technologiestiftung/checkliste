@@ -11,6 +11,7 @@ export function Overview() {
 	const requiredDocs = useOverviewStore((state) => state.docs);
 	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
 
+	console.log(requiredDocs);
 	const t = useI18n();
 
 	const documents = [

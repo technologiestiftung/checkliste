@@ -8,12 +8,8 @@ import { useTimeout } from "../../../hooks/useTimeout";
 import { useI18n } from "../../../i18n/hook/useI18n";
 
 export function IsRegisteringMoreThanTwo() {
-	const isRegisteringMoreThanTwo = useFirstRegistrationStore(
-		(state) => state.isRegisteringMoreThanTwo,
-	);
-	const setIsRegisteringMoreThanTwo = useFirstRegistrationStore(
-		(state) => state.setIsRegisteringMoreThanTwo,
-	);
+	const { isRegisteringMoreThanTwo, setIsRegisteringMoreThanTwo } =
+		useFirstRegistrationStore();
 
 	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
 	const goToNextStep = useProgressStore((state) => state.goToNextStep);

@@ -44,8 +44,6 @@ export function DocumentCheckbox({
 		if (docs.some(([, entry]) => entry === false)) {
 			return;
 		}
-
-		useOverviewStore.getState().requestConfetti();
 	};
 
 	return (

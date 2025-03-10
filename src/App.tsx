@@ -6,17 +6,12 @@ import { HeaderTitle } from "./components/header-title";
 import { useProgressStore } from "./components/steps/store";
 import { Feedback } from "./components/feedback";
 import { Footer } from "./components/footer";
-import { VerticalSidebarImage } from "./components/vertical-sidebar-image";
 
 function App() {
 	const currentStep = useProgressStore((state) => state.currentStep);
 
 	return (
 		<div className="flex w-full">
-			<div className="sticky left-0 top-0 hidden h-screen w-2/5 bg-blue-950 md:flex xl:max-w-[550px] print:hidden">
-				<VerticalSidebarImage />
-			</div>
-
 			<div className="font-berlin flex w-full flex-col items-center justify-between">
 				<div className="flex h-full w-full flex-col">
 					<div className="flex w-full md:hidden print:hidden">

@@ -1,4 +1,4 @@
-import { useOtherResidenceStore } from "./store";
+import { useOtherResidenceStore } from "./store/index.ts";
 import { useProgressStore } from "../../steps/store";
 import { RadioInput } from "../../radio-input";
 import { InfoButton } from "../../buttons/info-button";
@@ -8,12 +8,8 @@ import { useTimeout } from "../../../hooks/useTimeout";
 import { useI18n } from "../../../i18n/hook/useI18n";
 
 export function IsOtherResidenceAbroad() {
-	const isOtherResidenceAbroad = useOtherResidenceStore(
-		(state) => state.isOtherResidenceAbroad,
-	);
-	const setIsOtherResidenceAbroad = useOtherResidenceStore(
-		(state) => state.setIsOtherResidenceAbroad,
-	);
+	const { isOtherResidenceAbroad, setIsOtherResidenceAbroad } =
+		useOtherResidenceStore();
 
 	const isValid = isOtherResidenceAbroad !== null;
 

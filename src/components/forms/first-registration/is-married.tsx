@@ -8,9 +8,7 @@ import { useTimeout } from "../../../hooks/useTimeout";
 import { useI18n } from "../../../i18n/hook/useI18n";
 
 export function IsMarried() {
-	const isMarried = useFirstRegistrationStore((state) => state.isMarried);
-	const setIsMarried = useFirstRegistrationStore((state) => state.setIsMarried);
-
+	const { isMarried, setIsMarried } = useFirstRegistrationStore();
 	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
 	const goToNextStep = useProgressStore((state) => state.goToNextStep);
 
