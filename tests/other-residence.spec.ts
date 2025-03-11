@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 test("should have 4 documents in their checklist: registrationForm, movingInConfirmation, germanIdOrPassport, supplement (abroad)", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
 
@@ -73,7 +73,7 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 test("should have 4 documents in their checklist: registrationForm, movingInConfirmation, germanIdOrPassport, supplement (inland)", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
 

@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("should have 4 documents in their checklist: registrationForm, movingInConfirmation, germanIdOrPassportOrChildPassport, confirmationOfCustodian", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
 
@@ -68,7 +68,7 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 test("should have 3 documents in their checklist: registrationForm, movingInConfirmation, euIdOrPassportOrReplacement", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
 
@@ -103,7 +103,7 @@ test("should have 3 documents in their checklist: registrationForm, movingInConf
 	await noRadio.click(); // do you have the german nationality?
 	await nextButton.click();
 
-	let yesRadio = page.getByLabel("Ja");
+	const yesRadio = page.getByLabel("Ja");
 	await yesRadio.click(); // do you have an EU nationality?
 	await nextButton.click();
 
@@ -143,7 +143,7 @@ test("should have 3 documents in their checklist: registrationForm, movingInConf
 test("should have 4 documents in their checklist: registrationForm, movingInConfirmation, euIdOrPassportOrReplacement, confirmationOfCustodian", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
 
@@ -222,7 +222,7 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 test("should have 4 documents in their checklist: registrationForm, movingInConfirmation, nonEuIdOrPassportOrReplacement, confirmationOfCustodian", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
 
@@ -264,7 +264,7 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 	await noRadio.click(); // do you have an EU nationality?
 	await nextButton.click();
 
-	let yesRadio = page.getByLabel("Nein");
+	const yesRadio = page.getByLabel("Nein");
 	await yesRadio.click(); // Are you over 16?
 	await nextButton.click();
 

@@ -51,6 +51,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				{/* <!-- End Matomo Code --> */}
 			</head>
 			<body>
+				<div>berlin header</div>
 				{children}
 				<ScrollRestoration />
 				<Scripts />

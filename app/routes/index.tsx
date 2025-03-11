@@ -1,11 +1,4 @@
-import { Steps } from "../components/steps";
-import { LanguageSelect } from "../components/language-select";
-import { Progress } from "../components/progress";
-import { HomeButton } from "../components/buttons/home-button";
-import { HeaderTitle } from "../components/header-title";
-import { useProgressStore } from "../components/steps/store";
-import { Feedback } from "../components/feedback";
-import { Footer } from "../components/footer";
+import { Link } from "react-router-dom";
 
 export const meta = () => {
 	return [
@@ -19,45 +12,22 @@ export const meta = () => {
 };
 
 export default function Index() {
-	const { currentStep } = useProgressStore();
-
 	return (
-		<div className="flex w-full">
-			<div className="font-berlin flex w-full flex-col items-center justify-between">
-				<div className="flex h-full w-full flex-col">
-					<div className="flex w-full md:hidden print:hidden">
-						<Progress id={"mobile-progress-bar"} />
-					</div>
-
-					<header className="flex w-full items-center justify-between p-6 print:hidden">
-						<HomeButton />
-						<LanguageSelect />
-					</header>
-
-					<main className="flex h-full justify-center px-6 pb-10 pt-2 print:items-start">
-						<div className="flex flex-col items-start">
-							<HeaderTitle />
-							<Steps />
-						</div>
-					</main>
-
-					<Feedback />
-
-					<div className="hidden w-full md:flex print:hidden">
-						<Progress id={"desktop-progress-bar"} />
-					</div>
-
-					<div
-						className={`w-full border-b border-b-berlin-black-40 ${
-							currentStep === 0 || currentStep === 16
-								? "flex"
-								: "hidden md:flex"
-						} `}
-					/>
-
-					<Footer />
-				</div>
+		<>
+			<div className="w-full bg-blue-950 text-white">language selector</div>
+			<div className="flex flex-col gap-2">
+				<h1 className="text-xl font-bold">Willkommen bei der Checkliste</h1>
+				<Link to="/id-card/">Personalausweis beantragen</Link>
+				<Link to="/certificate-of-conduct/">Führungszeugnis beantragen</Link>
+				<Link to="/residence-registration/">
+					Wohnsitz – Alleinige Wohnung oder Hauptwohnung anmelden
+				</Link>
 			</div>
-		</div>
+
+			<div className="flex flex-col bg-[#F5F5F5]">
+				<Link to="/about/">About</Link>
+			</div>
+			<div className="bg-gray-950 text-white">Footer dunkel</div>
+		</>
 	);
 }

@@ -24,7 +24,7 @@ async function getPageWithUserPrefs(page: Page, browserName: string) {
 test("App should be usable with keyboard", async ({ page, browserName }) => {
 	const customPage = await getPageWithUserPrefs(page, browserName);
 
-	await customPage.goto("http://localhost:5173/");
+	await customPage.goto("http://localhost:5173/residence-registration/");
 
 	const tab = getTab(browserName);
 

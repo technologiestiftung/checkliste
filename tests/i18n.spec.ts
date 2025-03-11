@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("should translate page to english", async ({ page }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	await page.getByRole("combobox").selectOption("English - EN");
 
@@ -13,7 +13,7 @@ test("should translate page to english", async ({ page }) => {
 });
 
 test("should translate page to german", async ({ page }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	await page.getByRole("combobox").selectOption("English - EN");
 	await page.getByRole("combobox").selectOption("Deutsch - DE");
@@ -26,7 +26,7 @@ test("should translate page to german", async ({ page }) => {
 });
 
 test("should translate page to arabic", async ({ page }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	await page.getByRole("combobox").selectOption("العربية - AR");
 
@@ -38,7 +38,7 @@ test("should translate page to arabic", async ({ page }) => {
 });
 
 test("should translate page to spanish", async ({ page }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	await page.getByRole("combobox").selectOption("Español - ES");
 
@@ -50,7 +50,7 @@ test("should translate page to spanish", async ({ page }) => {
 });
 
 test("should translate page to french", async ({ page }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	await page.getByRole("combobox").selectOption("Français - FR");
 
@@ -62,7 +62,7 @@ test("should translate page to french", async ({ page }) => {
 });
 
 test("should translate page to turkish", async ({ page }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	await page.getByRole("combobox").selectOption("Türkçe - TR");
 
@@ -74,7 +74,7 @@ test("should translate page to turkish", async ({ page }) => {
 });
 
 test("should translate page to russian", async ({ page }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	await page.getByRole("combobox").selectOption("Русский - RU");
 
@@ -86,7 +86,7 @@ test("should translate page to russian", async ({ page }) => {
 });
 
 test("should keep the same language after refresh", async ({ page }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	await page.getByRole("combobox").selectOption("English - EN");
 
@@ -108,7 +108,7 @@ test("should keep the same language after refresh", async ({ page }) => {
 test("should correctly change document lang and dir when switching language from german to arabic and back", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const initialLang = await page.evaluate(() => document.documentElement.lang);
 	const initialDir = await page.evaluate(() => document.documentElement.dir);
