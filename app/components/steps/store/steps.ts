@@ -1,4 +1,24 @@
-import { Steps, StepsKeys } from "./types.ts";
+interface Steps {
+	intro: number;
+	isFirstRegistration: number;
+	isMarried: number;
+	isRegisteringSpouse: number;
+	hasChild: number;
+	isRegisteringChild: number;
+	isRegisteringMoreThanTwo: number;
+	isGerman: number;
+	isGermanUnder16: number;
+	isEuropean: number;
+	isEuropeanUnder16: number;
+	isRefugee: number;
+	hasOtherResidence: number;
+	isOtherResidenceAbroad: number;
+	isRegisteringForMoreThanThreeMonths: number;
+	isRegisteringForMoreThanSixMonths: number;
+	overview: number;
+}
+
+type StepsKeys = keyof Steps;
 
 export const steps: Steps = {
 	intro: 0,

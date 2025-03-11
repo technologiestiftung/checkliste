@@ -29,7 +29,6 @@ test("App should be usable with keyboard", async ({ page, browserName }) => {
 	const tab = getTab(browserName);
 
 	await customPage.keyboard.press(tab); // move focus to language select
-	await customPage.keyboard.press(tab); // move focus to book appointment
 	await customPage.keyboard.press(tab); // move focus to next button
 
 	await customPage.keyboard.press("Enter"); // click next button

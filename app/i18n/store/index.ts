@@ -1,12 +1,9 @@
 import { create } from "zustand";
-import {
-	AvailableLanguages,
-	i18nStore,
-	availableLanguagesEnum,
-} from "./types.ts";
+import type { AvailableLanguages, i18nStore } from "./types.ts";
 import de from "../translations/de.json" assert { type: "json" };
 import { trackInteraction } from "../../components/feedback/matomo.ts";
 import { persist } from "zustand/middleware";
+import { availableLanguagesEnum } from "./types.ts";
 
 export const useI18nStore = create<i18nStore>()(
 	persist(

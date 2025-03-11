@@ -1,7 +1,6 @@
 import { useOverviewStore } from "./store";
 import { useProgressStore } from "../../steps/store";
 import { DocumentCheckbox } from "./document-checkbox.tsx";
-import { Appointment } from "../../appointment";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { useI18n } from "../../../i18n/hook/useI18n.tsx";
 import { trackInteraction } from "../../feedback/matomo.ts";
@@ -28,8 +27,6 @@ export function Overview() {
 
 	return (
 		<div className="flex h-full flex-col gap-4">
-			<Appointment />
-
 			<h2 className="flex w-full items-center justify-between gap-3 font-bold">
 				{t("overview.title")}
 			</h2>

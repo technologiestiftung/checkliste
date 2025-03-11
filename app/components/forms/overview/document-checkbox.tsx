@@ -4,7 +4,7 @@ import { InfoButton } from "../../buttons/info-button";
 import { useI18n } from "../../../i18n/hook/useI18n";
 import { trackInteraction } from "../../feedback/matomo.ts";
 import { useI18nStore } from "../../../i18n/store";
-import { ChangeEvent } from "react";
+import type { ChangeEvent } from "react";
 
 export function DocumentCheckbox({
 	id,

@@ -1,13 +1,24 @@
-import { Steps } from "./components/steps";
-import { LanguageSelect } from "./components/language-select";
-import { Progress } from "./components/progress";
-import { HomeButton } from "./components/buttons/home-button";
-import { HeaderTitle } from "./components/header-title";
-import { useProgressStore } from "./components/steps/store";
-import { Feedback } from "./components/feedback";
-import { Footer } from "./components/footer";
+import { Steps } from "../components/steps";
+import { LanguageSelect } from "../components/language-select";
+import { Progress } from "../components/progress";
+import { HomeButton } from "../components/buttons/home-button";
+import { HeaderTitle } from "../components/header-title";
+import { useProgressStore } from "../components/steps/store";
+import { Feedback } from "../components/feedback";
+import { Footer } from "../components/footer";
 
-function App() {
+export const meta = () => {
+	return [
+		{ title: "Checkliste" },
+		{
+			name: "description",
+			content:
+				"Diese Webseite ist ein Assistent für die Anmeldung oder Ummeldung in Berlin",
+		},
+	];
+};
+
+export default function Index() {
 	const { currentStep } = useProgressStore();
 
 	return (
@@ -50,5 +61,3 @@ function App() {
 		</div>
 	);
 }
-
-export default App;
