@@ -2,7 +2,6 @@ import { useFirstRegistrationStore } from "../../forms/first-registration/store"
 import { useNationalityStore } from "../../forms/nationality/store";
 import { useOtherResidenceStore } from "../../forms/other-residence/store/index.ts";
 import { useProgressStore } from "./index.ts";
-import { useOverviewStore } from "../../forms/overview/store";
 
 export function handleIsMarriedNextStep() {
 	if (useFirstRegistrationStore.getState().isMarried === false) {
@@ -51,7 +50,6 @@ export function handleIsGermanUnder16NextStep() {
 export function handleHasOtherResidenceNextStep() {
 	if (useOtherResidenceStore.getState().hasOtherResidence === false) {
 		useProgressStore.getState().goTo("overview");
-		useOverviewStore.getState().setRequiredDocs();
 		return;
 	}
 
@@ -69,5 +67,4 @@ export function handleIsOtherResidenceAbroadNextStep() {
 
 export function handleIsRegisteringForMoreThanThreeMonthsNextStep() {
 	useProgressStore.getState().goTo("overview");
-	useOverviewStore.getState().setRequiredDocs();
 }

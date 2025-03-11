@@ -15,11 +15,14 @@ interface OtherResidenceStore {
 	setIsRegisteringForMoreThanSixMonths: (
 		isRegisteringForMoreThanSixMonths: boolean,
 	) => void;
+
+	isSupplementNeeded: boolean | null;
+	setIsSupplementNeeded: (isSupplementNeeded: boolean) => void;
 }
 
 export const useOtherResidenceStore = create<OtherResidenceStore>()(
 	persist(
-		(set) => ({
+		(set, get) => ({
 			hasOtherResidence: null,
 			setHasOtherResidence(hasOtherResidence) {
 				set({
@@ -39,6 +42,13 @@ export const useOtherResidenceStore = create<OtherResidenceStore>()(
 				});
 			},
 
+			isSupplementNeeded: null,
+			setIsSupplementNeeded(isSupplementNeeded) {
+				set({
+					isSupplementNeeded,
+				});
+			},
+
 			isRegisteringForMoreThanThreeMonths: null,
 
 			setIsRegisteringForMoreThanThreeMonths(
@@ -47,6 +57,11 @@ export const useOtherResidenceStore = create<OtherResidenceStore>()(
 				set({
 					isRegisteringForMoreThanThreeMonths,
 				});
+				const isSupplementNeededThreeMonths =
+					get().isOtherResidenceAbroad === true &&
+					isRegisteringForMoreThanThreeMonths === true;
+
+				get().setIsSupplementNeeded(isSupplementNeededThreeMonths);
 			},
 
 			isRegisteringForMoreThanSixMonths: null,
@@ -57,6 +72,11 @@ export const useOtherResidenceStore = create<OtherResidenceStore>()(
 				set({
 					isRegisteringForMoreThanSixMonths,
 				});
+				const isSupplementNeededSixMonths =
+					get().isOtherResidenceAbroad === false &&
+					isRegisteringForMoreThanSixMonths === true;
+
+				get().setIsSupplementNeeded(isSupplementNeededSixMonths);
 			},
 		}),
 		{

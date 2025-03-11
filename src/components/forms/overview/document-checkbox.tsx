@@ -14,6 +14,7 @@ export function DocumentCheckbox({
 	value: boolean | null;
 }) {
 	const setDocs = useOverviewStore((state) => state.setDocs);
+
 	const t = useI18n();
 
 	const onChange = (event: ChangeEvent<HTMLInputElement>) => {

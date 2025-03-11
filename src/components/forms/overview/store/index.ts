@@ -2,6 +2,7 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { useFirstRegistrationStore } from "../../first-registration/store";
 import { useNationalityStore } from "../../nationality/store";
+import { useOtherResidenceStore } from "../../other-residence/store";
 
 interface OverviewDocs {
 	registrationForm: boolean | null;
@@ -25,7 +26,6 @@ interface OverviewDocs {
 interface OverviewStore {
 	docs: OverviewDocs;
 	setDocs: (docs: Partial<OverviewDocs>) => void;
-	requiredDocs: OverviewDocs;
 	setRequiredDocs: () => void;
 }
 
@@ -51,65 +51,50 @@ export const useOverviewStore = create<OverviewStore>()(
 				supplement: null,
 			},
 
-			requiredDocs: {
-				registrationForm: false,
-				movingInConfirmation: false,
-
-				// First Registration
-				birthCertificate:
-					useFirstRegistrationStore.getState().isFirstRegistration,
-				marriageCertificate: useFirstRegistrationStore.getState().isMarried,
-				idDocumentForSpouse:
-					!useFirstRegistrationStore.getState().isRegisteringSpouse,
-				childBirthCertificate: useFirstRegistrationStore.getState().hasChild,
-				custodyDeclaration: useFirstRegistrationStore.getState().hasChild,
-				idDocumentForChild:
-					useFirstRegistrationStore.getState().isRegisteringChild,
-				guardianConsent:
-					useFirstRegistrationStore.getState().isRegisteringChild,
-				additionalRegistrationForm:
-					useFirstRegistrationStore.getState().isRegisteringMoreThanTwo,
-
-				// Nationality
-				germanIdOrPassportOrChildPassport:
-					!useNationalityStore.getState().isGermanOver16 &&
-					useNationalityStore.getState().isGermanOver16,
-				germanIdOrPassport: useNationalityStore.getState().isGermanOver16,
-				confirmationOfCustodian:
-					!useNationalityStore.getState().isGermanOver16 &&
-					!useNationalityStore.getState().isNonGermanOver16,
-				euIdOrPassportOrReplacement: useNationalityStore.getState().isEuropean,
-				nonEuIdOrPassportOrReplacement:
-					!useNationalityStore.getState().isEuropean,
-				supplement: false,
+			setDocs(docs: Partial<OverviewDocs>) {
+				set({ docs: { ...get().docs, ...docs } });
 			},
 
 			setRequiredDocs() {
-				// if requiredDocs entry is null don't change docs
-				// if requiredDocs entry is true don't change docs
-				// if requiredDocs entry is false set docs to false
-				const newDocs = { ...get().docs };
-				const requiredDocs = get().requiredDocs;
+				const requiredDocs = {
+					registrationForm: true,
+					movingInConfirmation: true,
+					birthCertificate:
+						useFirstRegistrationStore.getState().isFirstRegistration,
+					marriageCertificate: useFirstRegistrationStore.getState().isMarried,
+					idDocumentForSpouse:
+						useFirstRegistrationStore.getState().isRegisteringSpouse,
+					childBirthCertificate: useFirstRegistrationStore.getState().hasChild,
+					custodyDeclaration: useFirstRegistrationStore.getState().hasChild,
+					idDocumentForChild:
+						useFirstRegistrationStore.getState().isRegisteringChild,
+					guardianConsent:
+						useFirstRegistrationStore.getState().isRegisteringChild,
+					additionalRegistrationForm:
+						useFirstRegistrationStore.getState().isRegisteringMoreThanTwo,
+					germanIdOrPassportOrChildPassport:
+						!useNationalityStore.getState().isGermanOver16 &&
+						useNationalityStore.getState().isGerman,
+					germanIdOrPassport:
+						useNationalityStore.getState().isGermanOver16 &&
+						useNationalityStore.getState().isGerman,
+					confirmationOfCustodian:
+						!useNationalityStore.getState().isGermanOver16 &&
+						!useNationalityStore.getState().isNonGermanOver16,
+					euIdOrPassportOrReplacement:
+						useNationalityStore.getState().isEuropean,
+					nonEuIdOrPassportOrReplacement:
+						!useNationalityStore.getState().isEuropean &&
+						!useNationalityStore.getState().isGerman,
+					supplement: useOtherResidenceStore.getState().isSupplementNeeded,
+				};
 
+				const newDocs = { ...get().docs };
 				for (const key in requiredDocs) {
 					const typedKey = key as keyof OverviewDocs;
-					if (requiredDocs[typedKey] === null) {
-						continue;
-					}
-
-					if (requiredDocs[typedKey] === true) {
-						newDocs[typedKey] = null;
-						continue;
-					}
-
-					newDocs[typedKey] = false;
+					newDocs[typedKey] = requiredDocs[typedKey] === true ? false : null;
 				}
-
-				get().setDocs(newDocs);
-			},
-
-			setDocs(docs: Partial<OverviewDocs>) {
-				set({ docs: { ...get().docs, ...docs } });
+				set({ docs: newDocs });
 			},
 		}),
 
