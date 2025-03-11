@@ -3,7 +3,7 @@ import { useI18nStore } from "../../i18n/store";
 import { useI18n } from "../../i18n/hook/useI18n";
 
 export function Appointment() {
-	const language = useI18nStore((state) => state.language);
+	const { language } = useI18nStore();
 	const t = useI18n();
 
 	const options: Intl.DateTimeFormatOptions = {

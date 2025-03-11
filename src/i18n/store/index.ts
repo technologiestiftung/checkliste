@@ -21,6 +21,8 @@ export const useI18nStore = create<i18nStore>()(
 
 				set({ language });
 				document.documentElement.lang = language;
+				document.documentElement.dir =
+					get().translations[language]?.dir ?? "ltr";
 
 				if (!get().translations[language]) {
 					const module = await import(`../translations/${language}.json`);

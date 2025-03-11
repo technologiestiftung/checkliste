@@ -12,8 +12,7 @@ export function IsNonGermanOver16() {
 
 	const isValid = isNonGermanOver16 !== null;
 
-	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
-	const goToNextStep = useProgressStore((state) => state.goToNextStep);
+	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const t = useI18n();
 

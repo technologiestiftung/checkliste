@@ -9,8 +9,8 @@ import { useTrackGoalChecklistConversion } from "./hooks/use-track-goal-checklis
 import { useEffect } from "react";
 
 export function Overview() {
-	const requiredDocs = useOverviewStore((state) => state.docs);
-	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
+	const { docs: requiredDocs } = useOverviewStore();
+	const { goToPreviousStep } = useProgressStore();
 
 	useEffect(() => {
 		useOverviewStore.getState().setRequiredDocs();

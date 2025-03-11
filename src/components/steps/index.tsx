@@ -24,7 +24,7 @@ import {
 } from "../forms/other-residence";
 
 export function Steps() {
-	const currentStep = useProgressStore((state) => state.currentStep);
+	const { currentStep } = useProgressStore();
 
 	const steps = [
 		<Intro />,

@@ -11,8 +11,7 @@ export function IsRefugee() {
 	const { isRefugee, setIsRefugee } = useNationalityStore();
 	const isValid = isRefugee !== null;
 
-	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
-	const goToNextStep = useProgressStore((state) => state.goToNextStep);
+	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const t = useI18n();
 

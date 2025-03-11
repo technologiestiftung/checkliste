@@ -6,8 +6,7 @@ import {
 import { useI18n } from "../../i18n/hook/useI18n";
 
 export function LanguageSelect() {
-	const language = useI18nStore((state) => state.language);
-	const setLanguage = useI18nStore((state) => state.setLanguage);
+	const { language, setLanguage } = useI18nStore();
 	const t = useI18n();
 
 	const availableLanguages = Object.values(availableLanguagesEnum);

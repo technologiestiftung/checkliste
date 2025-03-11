@@ -2,9 +2,7 @@ import { useProgressStore } from "../../steps/store";
 import { useI18n } from "../../../i18n/hook/useI18n";
 
 export function HomeButton() {
-	const goToStart = useProgressStore((state) => state.goToStart);
-	const currentStep = useProgressStore((state) => state.currentStep);
-
+	const { goToStart, currentStep } = useProgressStore();
 	const t = useI18n();
 
 	const isHomeButtonHidden = currentStep === 0;

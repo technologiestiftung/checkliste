@@ -17,8 +17,7 @@ export function IsRegisteringForMoreThanThreeMonths() {
 	const needsRegistration = isRegisteringForMoreThanThreeMonths === true;
 	const showHint = isValid && !needsRegistration;
 
-	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
-	const goToNextStep = useProgressStore((state) => state.goToNextStep);
+	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const t = useI18n();
 

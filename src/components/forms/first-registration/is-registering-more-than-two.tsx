@@ -11,8 +11,7 @@ export function IsRegisteringMoreThanTwo() {
 	const { isRegisteringMoreThanTwo, setIsRegisteringMoreThanTwo } =
 		useFirstRegistrationStore();
 
-	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
-	const goToNextStep = useProgressStore((state) => state.goToNextStep);
+	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const t = useI18n();
 

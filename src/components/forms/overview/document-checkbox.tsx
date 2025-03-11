@@ -13,7 +13,7 @@ export function DocumentCheckbox({
 	id: string;
 	value: boolean | null;
 }) {
-	const setDocs = useOverviewStore((state) => state.setDocs);
+	const { setDocs } = useOverviewStore();
 
 	const t = useI18n();
 

@@ -8,7 +8,7 @@ import { Feedback } from "./components/feedback";
 import { Footer } from "./components/footer";
 
 function App() {
-	const currentStep = useProgressStore((state) => state.currentStep);
+	const { currentStep } = useProgressStore();
 
 	return (
 		<div className="flex w-full">
