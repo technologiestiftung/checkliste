@@ -12,7 +12,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
 		<html lang={language} dir={language === "ar" ? "rtl" : "ltr"}>
 			<head>
 				<meta charSet="UTF-8" />
-				<link rel="icon" type="image/svg+xml" href="" />
 
 				<link
 					rel="preload"
