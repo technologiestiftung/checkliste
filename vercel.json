@@ -1,3 +1,10 @@
 {
+	"framework": "react",
+	"rewrites": [
+		{
+			"source": "/(.*)",
+			"destination": "/"
+		}
+	],
 	"trailingSlash": true
 }
