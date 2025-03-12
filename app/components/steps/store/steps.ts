@@ -1,5 +1,4 @@
 interface Steps {
-	intro: number;
 	isFirstRegistration: number;
 	isMarried: number;
 	isRegisteringSpouse: number;
@@ -21,27 +20,25 @@ interface Steps {
 type StepsKeys = keyof Steps;
 
 export const steps: Steps = {
-	intro: 0,
-	isFirstRegistration: 1,
-	isMarried: 2,
-	isRegisteringSpouse: 3,
-	hasChild: 4,
-	isRegisteringChild: 5,
-	isRegisteringMoreThanTwo: 6,
-	isGerman: 7,
-	isGermanUnder16: 8,
-	isEuropean: 9,
-	isEuropeanUnder16: 10,
-	isRefugee: 11,
-	hasOtherResidence: 12,
-	isOtherResidenceAbroad: 13,
-	isRegisteringForMoreThanThreeMonths: 14,
-	isRegisteringForMoreThanSixMonths: 15,
-	overview: 16,
+	isFirstRegistration: 0,
+	isMarried: 1,
+	isRegisteringSpouse: 2,
+	hasChild: 3,
+	isRegisteringChild: 4,
+	isRegisteringMoreThanTwo: 5,
+	isGerman: 6,
+	isGermanUnder16: 7,
+	isEuropean: 8,
+	isEuropeanUnder16: 9,
+	isRefugee: 10,
+	hasOtherResidence: 11,
+	isOtherResidenceAbroad: 12,
+	isRegisteringForMoreThanThreeMonths: 13,
+	isRegisteringForMoreThanSixMonths: 14,
+	overview: 15,
 };
 
 export const reverseSteps: StepsKeys[] = [
-	"intro",
 	"isFirstRegistration",
 	"isMarried",
 	"isRegisteringSpouse",

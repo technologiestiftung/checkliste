@@ -7,8 +7,6 @@ test("should have 3 documents in their checklist: registrationForm, movingInConf
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
 
-	await nextButton.click();
-
 	let noRadio = page
 		.locator("div")
 		.filter({ hasText: /^Nein$/ })
@@ -67,8 +65,6 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio;
 	let yesRadio = page.getByLabel("Ja");
@@ -130,8 +126,6 @@ test("should have 5 documents in their checklist: registrationForm, movingInConf
 	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio;
 	let yesRadio = page.getByLabel("Ja");
@@ -201,8 +195,6 @@ test("should have 6 documents in their checklist: registrationForm, movingInConf
 	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio;
 	let yesRadio = page.getByLabel("Ja");
@@ -274,8 +266,6 @@ test("should have 8 documents in their checklist: registrationForm, movingInConf
 	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio;
 	let yesRadio = page.getByLabel("Ja");
@@ -359,8 +349,6 @@ test("should have 11 documents in their checklist: registrationForm, movingInCon
 	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio;
 	let yesRadio = page.getByLabel("Ja");

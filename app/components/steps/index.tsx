@@ -1,4 +1,3 @@
-import { Intro } from "../forms/intro";
 import { Overview } from "../forms/overview";
 import { useProgressStore } from "./store";
 import {
@@ -27,7 +26,6 @@ export function Steps() {
 	const { currentStep } = useProgressStore();
 
 	const steps = [
-		<Intro />,
 		<IsFirstRegistration />,
 		<IsMarried />,
 		<IsRegisteringSpouse />,

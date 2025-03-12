@@ -2,17 +2,16 @@ import { useFirstRegistrationStore } from "./store";
 import { RadioInput } from "../../radio-input";
 import { useProgressStore } from "../../steps/store";
 import { PrimaryButton } from "../../buttons/primary-button";
-import { SecondaryButton } from "../../buttons/secondary-button";
 import { InfoButton } from "../../buttons/info-button";
 import { useTimeout } from "../../../hooks/useTimeout";
 import { useI18n } from "../../../i18n/hook/useI18n";
-
+import { useSaveIntroPageViewInSessionStorage } from "./hooks/use-save-intro-page-view-in-session-storage";
 export function IsFirstRegistration() {
 	const { isFirstRegistration, setIsFirstRegistration } =
 		useFirstRegistrationStore();
 	const isValid = isFirstRegistration !== null;
 
-	const { goToPreviousStep, goToNextStep } = useProgressStore();
+	const { goToNextStep } = useProgressStore();
 
 	const t = useI18n();
 
@@ -21,6 +20,8 @@ export function IsFirstRegistration() {
 	const { isOver } = useTimeout();
 
 	const arePointerEventsDisabled = !isOver;
+
+	useSaveIntroPageViewInSessionStorage();
 
 	return (
 		<form
@@ -77,8 +78,6 @@ export function IsFirstRegistration() {
 						disabled={!isValid}
 					/>
 				</div>
-
-				<SecondaryButton label={t("button.back")} onClick={goToPreviousStep} />
 			</div>
 		</form>
 	);

@@ -34,7 +34,6 @@ function trackStepChange(previousStep: number, currentStep: number) {
 }
 
 interface Steps {
-	intro: number;
 	isFirstRegistration: number;
 	isMarried: number;
 	isRegisteringSpouse: number;
@@ -69,7 +68,7 @@ export const useProgressStore = create<ProgressStore>()(
 	persist(
 		(set, get) => ({
 			currentStep: 0,
-			maxSteps: 16,
+			maxSteps: 15,
 
 			setCurrentStep(currentStep: number) {
 				trackStepChange(get().currentStep, currentStep);
@@ -88,28 +87,28 @@ export const useProgressStore = create<ProgressStore>()(
 				}
 
 				switch (get().currentStep) {
-					case 2:
+					case 1:
 						handleIsMarriedNextStep();
 						return;
-					case 4:
+					case 3:
 						handleHasChildNextStep();
 						return;
-					case 5:
+					case 4:
 						handleIsRegisteringChildNextStep();
 						return;
-					case 7:
+					case 6:
 						handleIsGermanNextStep();
 						return;
-					case 8:
+					case 7:
 						handleIsGermanUnder16NextStep();
 						return;
-					case 12:
+					case 11:
 						handleHasOtherResidenceNextStep();
 						return;
-					case 13:
+					case 12:
 						handleIsOtherResidenceAbroadNextStep();
 						return;
-					case 14:
+					case 13:
 						handleIsRegisteringForMoreThanThreeMonthsNextStep();
 						return;
 					default:

@@ -56,7 +56,7 @@ export default function Index() {
 			</div>
 
 			<div className="flex flex-col bg-[#F5F5F5]">
-				Fotter Hell <Link to="/about/">About</Link>
+				Footer Hell <Link to="/about/">About</Link>
 			</div>
 			<div className="bg-gray-950 text-white">Footer dunkel</div>
 		</>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { trackInteraction } from "../../../feedback/matomo.ts";
-import { useI18nStore } from "../../../../i18n/store";
+import { useI18nStore } from "../../../../i18n/store/index.ts";
 
 export function useSaveIntroPageViewInSessionStorage() {
 	const { language } = useI18nStore();
