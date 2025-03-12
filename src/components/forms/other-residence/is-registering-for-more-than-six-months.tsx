@@ -1,4 +1,4 @@
-import { useOtherResidenceStore } from "./store";
+import { useOtherResidenceStore } from "./store/index.ts";
 import { useProgressStore } from "../../steps/store";
 import { RadioInput } from "../../radio-input";
 import { InfoButton } from "../../buttons/info-button";
@@ -8,19 +8,16 @@ import { useTimeout } from "../../../hooks/useTimeout";
 import { useI18n } from "../../../i18n/hook/useI18n";
 
 export function IsRegisteringForMoreThanSixMonths() {
-	const isRegisteringForMoreThanSixMonths = useOtherResidenceStore(
-		(state) => state.isRegisteringForMoreThanSixMonths,
-	);
-	const setIsRegisteringForMoreThanSixMonths = useOtherResidenceStore(
-		(state) => state.setIsRegisteringForMoreThanSixMonths,
-	);
+	const {
+		isRegisteringForMoreThanSixMonths,
+		setIsRegisteringForMoreThanSixMonths,
+	} = useOtherResidenceStore();
 
 	const isValid = isRegisteringForMoreThanSixMonths !== null;
 	const needsRegistration = isRegisteringForMoreThanSixMonths === true;
 	const showHint = isValid && !needsRegistration;
 
-	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
-	const goToNextStep = useProgressStore((state) => state.goToNextStep);
+	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const t = useI18n();
 

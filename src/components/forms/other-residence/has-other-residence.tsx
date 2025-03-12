@@ -1,4 +1,4 @@
-import { useOtherResidenceStore } from "./store";
+import { useOtherResidenceStore } from "./store/index.ts";
 import { useProgressStore } from "../../steps/store";
 import { RadioInput } from "../../radio-input";
 import { InfoButton } from "../../buttons/info-button";
@@ -8,17 +8,11 @@ import { useTimeout } from "../../../hooks/useTimeout";
 import { useI18n } from "../../../i18n/hook/useI18n";
 
 export function HasOtherResidence() {
-	const hasOtherResidence = useOtherResidenceStore(
-		(state) => state.hasOtherResidence,
-	);
-	const setHasOtherResidence = useOtherResidenceStore(
-		(state) => state.setHasOtherResidence,
-	);
+	const { hasOtherResidence, setHasOtherResidence } = useOtherResidenceStore();
 
 	const isValid = hasOtherResidence !== null;
 
-	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
-	const goToNextStep = useProgressStore((state) => state.goToNextStep);
+	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const t = useI18n();
 

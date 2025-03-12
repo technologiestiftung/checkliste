@@ -1,63 +1,105 @@
 import { create } from "zustand";
-import { OverviewDocs, OverviewStore } from "./types.ts";
-import { getLocalStorage, setLocalStorage } from "./local-storage.ts";
-import { fireConfetti } from "../confetti.ts";
+import { persist } from "zustand/middleware";
+import { useFirstRegistrationStore } from "../../first-registration/store";
+import { useNationalityStore } from "../../nationality/store";
+import { useOtherResidenceStore } from "../../other-residence/store";
 
-export const useOverviewStore = create<OverviewStore>((set, get) => ({
-	docs: getLocalStorage(),
+interface OverviewDocs {
+	registrationForm: boolean | null;
+	movingInConfirmation: boolean | null;
+	birthCertificate: boolean | null;
+	marriageCertificate: boolean | null;
+	idDocumentForSpouse: boolean | null;
+	childBirthCertificate: boolean | null;
+	custodyDeclaration: boolean | null;
+	idDocumentForChild: boolean | null;
+	guardianConsent: boolean | null;
+	additionalRegistrationForm: boolean | null;
+	germanIdOrPassportOrChildPassport: boolean | null;
+	germanIdOrPassport: boolean | null;
+	confirmationOfCustodian: boolean | null;
+	euIdOrPassportOrReplacement: boolean | null;
+	nonEuIdOrPassportOrReplacement: boolean | null;
+	supplement: boolean | null;
+}
 
-	isParticlesReady: false,
-	isParticlesRequested: false,
-	loadParticles() {
-		if (get().isParticlesRequested) {
-			return;
-		}
+interface OverviewStore {
+	docs: OverviewDocs;
+	setDocs: (docs: Partial<OverviewDocs>) => void;
+	setRequiredDocs: () => void;
+}
 
-		set({ isParticlesRequested: true });
+export const useOverviewStore = create<OverviewStore>()(
+	persist(
+		(set, get) => ({
+			docs: {
+				registrationForm: false,
+				movingInConfirmation: false,
+				birthCertificate: null,
+				marriageCertificate: null,
+				idDocumentForSpouse: null,
+				childBirthCertificate: null,
+				custodyDeclaration: null,
+				idDocumentForChild: null,
+				guardianConsent: null,
+				additionalRegistrationForm: null,
+				germanIdOrPassportOrChildPassport: null,
+				germanIdOrPassport: null,
+				confirmationOfCustodian: null,
+				euIdOrPassportOrReplacement: null,
+				nonEuIdOrPassportOrReplacement: null,
+				supplement: null,
+			},
 
-		const confettiScript = document.createElement("script");
-		confettiScript.setAttribute(
-			"src",
-			"/js/ts.particles.confetti.bundle.min.js",
-		);
-		document.body.appendChild(confettiScript);
+			setDocs(docs: Partial<OverviewDocs>) {
+				set({ docs: { ...get().docs, ...docs } });
+			},
 
-		confettiScript.onload = () => {
-			set({ isParticlesReady: true });
-		};
-	},
-	requestConfetti() {
-		if (!get().isParticlesRequested) {
-			get().loadParticles();
-		}
+			setRequiredDocs() {
+				const requiredDocs = {
+					registrationForm: true,
+					movingInConfirmation: true,
+					birthCertificate:
+						useFirstRegistrationStore.getState().isFirstRegistration,
+					marriageCertificate: useFirstRegistrationStore.getState().isMarried,
+					idDocumentForSpouse:
+						useFirstRegistrationStore.getState().isRegisteringSpouse,
+					childBirthCertificate: useFirstRegistrationStore.getState().hasChild,
+					custodyDeclaration: useFirstRegistrationStore.getState().hasChild,
+					idDocumentForChild:
+						useFirstRegistrationStore.getState().isRegisteringChild,
+					guardianConsent:
+						useFirstRegistrationStore.getState().isRegisteringChild,
+					additionalRegistrationForm:
+						useFirstRegistrationStore.getState().isRegisteringMoreThanTwo,
+					germanIdOrPassportOrChildPassport:
+						!useNationalityStore.getState().isGermanOver16 &&
+						useNationalityStore.getState().isGerman,
+					germanIdOrPassport:
+						useNationalityStore.getState().isGermanOver16 &&
+						useNationalityStore.getState().isGerman,
+					confirmationOfCustodian:
+						!useNationalityStore.getState().isGermanOver16 &&
+						!useNationalityStore.getState().isNonGermanOver16,
+					euIdOrPassportOrReplacement:
+						useNationalityStore.getState().isEuropean,
+					nonEuIdOrPassportOrReplacement:
+						!useNationalityStore.getState().isEuropean &&
+						!useNationalityStore.getState().isGerman,
+					supplement: useOtherResidenceStore.getState().isSupplementNeeded,
+				};
 
-		const intervalId = setInterval(() => {
-			if (!get().isParticlesReady) {
-				return;
-			}
+				const newDocs = { ...get().docs };
+				for (const key in requiredDocs) {
+					const typedKey = key as keyof OverviewDocs;
+					newDocs[typedKey] = requiredDocs[typedKey] === true ? false : null;
+				}
+				set({ docs: newDocs });
+			},
+		}),
 
-			clearInterval(intervalId);
-			fireConfetti();
-		}, 100);
-	},
-
-	setRequiredDocs(requiredDocs: Partial<OverviewDocs>) {
-		const docs = { ...get().docs };
-
-		for (const key in requiredDocs) {
-			const typedKey = key as keyof OverviewDocs;
-			if (!requiredDocs[typedKey]) {
-				docs[typedKey] = null;
-				continue;
-			}
-			docs[typedKey] = false;
-		}
-
-		get().setDocs(docs);
-	},
-
-	setDocs(docs: Partial<OverviewDocs>) {
-		set({ docs: { ...get().docs, ...docs } });
-		setLocalStorage(get().docs);
-	},
-}));
+		{
+			name: "overview",
+		},
+	),
+);

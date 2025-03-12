@@ -8,8 +8,8 @@ import { trackInteraction } from "../../feedback/matomo.ts";
 import { useTrackGoalChecklistConversion } from "./hooks/use-track-goal-checklist-conversion.tsx";
 
 export function Overview() {
-	const requiredDocs = useOverviewStore((state) => state.docs);
-	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
+	const { docs: requiredDocs } = useOverviewStore();
+	const { goToPreviousStep } = useProgressStore();
 
 	const t = useI18n();
 

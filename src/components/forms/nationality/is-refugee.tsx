@@ -8,13 +8,10 @@ import { useTimeout } from "../../../hooks/useTimeout";
 import { useI18n } from "../../../i18n/hook/useI18n";
 
 export function IsRefugee() {
-	const isRefugee = useNationalityStore((state) => state.isRefugee);
-	const setIsRefugee = useNationalityStore((state) => state.setIsRefugee);
-
+	const { isRefugee, setIsRefugee } = useNationalityStore();
 	const isValid = isRefugee !== null;
 
-	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
-	const goToNextStep = useProgressStore((state) => state.goToNextStep);
+	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const t = useI18n();
 

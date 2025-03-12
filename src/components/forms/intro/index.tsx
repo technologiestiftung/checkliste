@@ -5,7 +5,7 @@ import { useI18n } from "../../../i18n/hook/useI18n";
 import { useSaveIntroPageViewInSessionStorage } from "./hooks/use-save-intro-page-view-in-session-storage.tsx";
 
 export function Intro() {
-	const goToNextStep = useProgressStore((state) => state.goToNextStep);
+	const { goToNextStep } = useProgressStore();
 	const t = useI18n();
 
 	useSaveIntroPageViewInSessionStorage();

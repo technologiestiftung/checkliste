@@ -2,7 +2,7 @@ import { useProgressStore } from "../steps/store";
 import { useI18n } from "../../i18n/hook/useI18n.tsx";
 
 export function Footer() {
-	const currentStep = useProgressStore((state) => state.currentStep);
+	const { currentStep } = useProgressStore();
 	const t = useI18n();
 
 	return (

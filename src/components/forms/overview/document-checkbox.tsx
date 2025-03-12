@@ -13,7 +13,8 @@ export function DocumentCheckbox({
 	id: string;
 	value: boolean | null;
 }) {
-	const setDocs = useOverviewStore((state) => state.setDocs);
+	const { setDocs } = useOverviewStore();
+
 	const t = useI18n();
 
 	const onChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -44,8 +45,6 @@ export function DocumentCheckbox({
 		if (docs.some(([, entry]) => entry === false)) {
 			return;
 		}
-
-		useOverviewStore.getState().requestConfetti();
 	};
 
 	return (

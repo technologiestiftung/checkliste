@@ -1,90 +1,62 @@
 import { create } from "zustand";
-import { NationalityStore } from "./types.ts";
-import { getLocalStorage, setLocalStorage } from "./local-storage.ts";
-import { useOverviewStore } from "../../overview/store";
+import { persist } from "zustand/middleware";
 
-export const useNationalityStore = create<NationalityStore>((set, get) => ({
-	requiredDocs: getLocalStorage().requiredDocs,
+interface NationalityStore {
+	isGerman: boolean | null;
+	isGermanOver16: boolean | null;
+	isEuropean: boolean | null;
+	isNonGermanOver16: boolean | null;
+	isRefugee: boolean | null;
 
-	isGerman: getLocalStorage().isGerman,
-	setIsGerman(isGerman) {
-		const requiredDocs = {
-			germanIdOrPassportOrChildPassport: false,
-			germanIdOrPassport: false,
-			euIdOrPassportOrReplacement: false,
-			nonEuIdOrPassportOrReplacement: false,
-			confirmationOfCustodian: false,
-		};
+	setIsGerman: (isGerman: boolean) => void;
+	setIsGermanOver16: (isGermanOver16: boolean) => void;
+	setIsEuropean: (isEuropean: boolean) => void;
+	setIsNonGermanOver16: (isNonGermanOver16: boolean) => void;
+	setIsRefugee: (isRefugee: boolean) => void;
+}
 
-		set({
-			isGerman,
+export const useNationalityStore = create<NationalityStore>()(
+	persist(
+		(set) => ({
+			isGerman: null,
+			setIsGerman(isGerman) {
+				set({
+					isGerman,
+					isGermanOver16: null,
+					isEuropean: null,
+					isRefugee: null,
+					isNonGermanOver16: null,
+				});
+			},
+
 			isGermanOver16: null,
+			setIsGermanOver16(isGermanOver16) {
+				set({
+					isGermanOver16,
+				});
+			},
+
 			isEuropean: null,
-			isRefugee: null,
+			setIsEuropean(isEuropean) {
+				set({
+					isEuropean,
+				});
+			},
+
 			isNonGermanOver16: null,
-			requiredDocs,
-		});
+			setIsNonGermanOver16(isNonGermanOver16) {
+				set({
+					isNonGermanOver16,
+				});
+			},
 
-		setLocalStorage(get());
-		useOverviewStore.getState().setRequiredDocs(requiredDocs);
-	},
-
-	isGermanOver16: getLocalStorage().isGermanOver16,
-	setIsGermanOver16(isGermanOver16) {
-		const requiredDocs = {
-			germanIdOrPassportOrChildPassport: !isGermanOver16,
-			germanIdOrPassport: isGermanOver16,
-			euIdOrPassportOrReplacement: false,
-			nonEuIdOrPassportOrReplacement: false,
-			confirmationOfCustodian: !isGermanOver16,
-		};
-
-		set({
-			isGermanOver16,
-			requiredDocs,
-		});
-
-		setLocalStorage(get());
-		useOverviewStore.getState().setRequiredDocs(requiredDocs);
-	},
-
-	isEuropean: getLocalStorage().isEuropean,
-	setIsEuropean(isEuropean) {
-		const requiredDocs = {
-			...get().requiredDocs,
-			euIdOrPassportOrReplacement: isEuropean,
-			nonEuIdOrPassportOrReplacement: !isEuropean,
-		};
-
-		set({
-			isEuropean,
-			requiredDocs,
-		});
-
-		setLocalStorage(get());
-		useOverviewStore.getState().setRequiredDocs(requiredDocs);
-	},
-
-	isNonGermanOver16: getLocalStorage().isNonGermanOver16,
-	setIsNonGermanOver16(isNonGermanOver16: boolean) {
-		const requiredDocs = {
-			...get().requiredDocs,
-			confirmationOfCustodian: !isNonGermanOver16,
-		};
-
-		set({
-			isNonGermanOver16,
-			requiredDocs,
-		});
-
-		setLocalStorage(get());
-		useOverviewStore.getState().setRequiredDocs(requiredDocs);
-	},
-
-	isRefugee: getLocalStorage().isRefugee,
-	setIsRefugee(isRefugee) {
-		set({ isRefugee });
-
-		setLocalStorage(get());
-	},
-}));
+			isRefugee: null,
+			setIsRefugee(isRefugee) {
+				set({ isRefugee });
+			},
+		}),
+		{
+			name: "nationality",
+		},
+	),
+);

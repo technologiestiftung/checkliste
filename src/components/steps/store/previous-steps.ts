@@ -1,6 +1,6 @@
 import { useFirstRegistrationStore } from "../../forms/first-registration/store";
 import { useNationalityStore } from "../../forms/nationality/store";
-import { useOtherResidenceStore } from "../../forms/other-residence/store";
+import { useOtherResidenceStore } from "../../forms/other-residence/store/index.ts";
 import { useProgressStore } from "./index.ts";
 
 export function handleHasChildPreviousStep() {

@@ -8,15 +8,11 @@ import { useTimeout } from "../../../hooks/useTimeout";
 import { useI18n } from "../../../i18n/hook/useI18n";
 
 export function IsGermanOver16() {
-	const isGermanOver16 = useNationalityStore((state) => state.isGermanOver16);
-	const setIsGermanOver16 = useNationalityStore(
-		(state) => state.setIsGermanOver16,
-	);
+	const { isGermanOver16, setIsGermanOver16 } = useNationalityStore();
 
 	const isValid = isGermanOver16 !== null;
 
-	const goToPreviousStep = useProgressStore((state) => state.goToPreviousStep);
-	const goToNextStep = useProgressStore((state) => state.goToNextStep);
+	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const t = useI18n();
 
