@@ -1,5 +1,5 @@
 {
-	"framework": "react",
+	"framework": "react-router",
 	"rewrites": [
 		{
 			"source": "/(.*)",
