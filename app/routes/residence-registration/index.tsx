@@ -1,19 +1,17 @@
 import { Steps } from "../../components/steps";
-import { LanguageSelect } from "../../components/language-select";
 import { Progress } from "../../components/progress";
 import { HomeButton } from "../../components/buttons/home-button";
 import { HeaderTitle } from "../../components/header-title";
 import { useProgressStore } from "../../components/steps/store";
 import { Feedback } from "../../components/feedback";
-import { Footer } from "../../components/footer";
 
 export default function Index() {
 	const { currentStep } = useProgressStore();
 
 	return (
 		<>
-			<div className="flex w-full">
-				<div className="font-berlin flex w-full flex-col items-center justify-between">
+			<div className="flex items-end w-full h-[calc(100dvh-24px)] bg-gray-200">
+				<div className="h-[calc(100dvh-70px)] bg-white flex w-full flex-col items-center justify-between animate-slide-up">
 					<div className="flex h-full w-full flex-col">
 						<div className="flex w-full md:hidden print:hidden">
 							<Progress id={"mobile-progress-bar"} />
@@ -21,7 +19,6 @@ export default function Index() {
 
 						<header className="flex w-full items-center justify-between p-6 print:hidden">
 							<HomeButton />
-							<LanguageSelect />
 						</header>
 
 						<main className="flex h-full justify-center px-6 pb-10 pt-2 print:items-start">
@@ -44,8 +41,6 @@ export default function Index() {
 									: "hidden md:flex"
 							} `}
 						/>
-
-						<Footer />
 					</div>
 				</div>
 			</div>

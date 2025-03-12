@@ -52,7 +52,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			</head>
 			<body>
 				<div>berlin header</div>
-				{children}
+				<main>{children}</main>
+
 				<ScrollRestoration />
 				<Scripts />
 			</body>

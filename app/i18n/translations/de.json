@@ -104,9 +104,8 @@
 	"nonEuIdOrPassportOrReplacement.tooltip": "Dieses Dokument ist notwendig, um Dich auszuweisen.",
 	"supplement": "Beiblatt zur Anmeldung/Hauptwohnungserklärung",
 	"supplement.tooltip": "Dieses Dokument ist notwendig, weil Du weiterhin in einer weiteren Wohnung gemeldet bleiben möchtest.",
-	"logo.t1": "Durchgeführt von",
 	"logo.t2": "Ein Projekt der",
-	"logo.t3": "Mit Unterstützung von",
+	"logo.t3": "Gefördert durch",
 	"dataPrivacy": "Datenschutz",
 	"imprint": "Impressum",
 	"imprint.link": "https://www.technologiestiftung-berlin.de/impressum"
