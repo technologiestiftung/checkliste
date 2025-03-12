@@ -1,6 +1,8 @@
 import type { Config } from "@react-router/dev/config";
+import { vercelPreset } from "@vercel/react-router/vite";
 
 export default {
+	presets: [vercelPreset()],
 	// return a list of URLs to prerender at build time
 	async prerender() {
 		return [
