@@ -21,6 +21,7 @@ import {
 import { trackInteraction } from "../../feedback/matomo.ts";
 import { useI18nStore } from "../../../i18n/store";
 import { persist } from "zustand/middleware";
+import { useOverviewStore } from "~/components/forms/overview/store/index.ts";
 
 function trackStepChange(previousStep: number, currentStep: number) {
 	const previousStepKey = reverseSteps[previousStep];
@@ -80,6 +81,7 @@ export const useProgressStore = create<ProgressStore>()(
 			},
 
 			goToNextStep() {
+				useOverviewStore.getState().setRequiredDocs();
 				const canIncrement = get().currentStep < get().maxSteps;
 				if (!canIncrement) {
 					return;

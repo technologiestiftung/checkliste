@@ -5,15 +5,10 @@ import { SecondaryButton } from "../../buttons/secondary-button";
 import { useI18n } from "../../../i18n/hook/useI18n.tsx";
 import { trackInteraction } from "../../feedback/matomo.ts";
 import { useTrackGoalChecklistConversion } from "./hooks/use-track-goal-checklist-conversion.tsx";
-import { useEffect } from "react";
 
 export function Overview() {
 	const { docs: requiredDocs } = useOverviewStore();
 	const { goToPreviousStep } = useProgressStore();
-
-	useEffect(() => {
-		useOverviewStore.getState().setRequiredDocs();
-	}, []);
 
 	const t = useI18n();
 
