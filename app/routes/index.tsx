@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { LanguageSelect } from "../components/language-select";
+import { LanguageSelect } from "~/components/language-select";
 import { Navigation } from "~/components/navigation";
 import { LogoBanner } from "~/components/logo-banner";
 import { i18n, buildLocalizedLink } from "~/i18n/i18n-utils";
