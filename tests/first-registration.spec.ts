@@ -3,11 +3,9 @@ import { test, expect } from "@playwright/test";
 test("should have 3 documents in their checklist: registrationForm, movingInConfirmation, germanIdOrPassport", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio = page
 		.locator("div")
@@ -49,9 +47,9 @@ test("should have 3 documents in their checklist: registrationForm, movingInConf
 	const registrationForm = page
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = page
-		.locator("div")
-		.filter({ hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/ });
+	const movingInConfirmation = page.locator("div").filter({
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+	});
 	const germanIdOrPassport = page
 		.locator("div")
 		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
@@ -64,11 +62,9 @@ test("should have 3 documents in their checklist: registrationForm, movingInConf
 test("should have 4 documents in their checklist: registrationForm, movingInConfirmation, germanIdOrPassport, birthCertificate", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio;
 	let yesRadio = page.getByLabel("Ja");
@@ -108,9 +104,9 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 	const registrationForm = page
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = page
-		.locator("div")
-		.filter({ hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/ });
+	const movingInConfirmation = page.locator("div").filter({
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+	});
 	const birthCertificate = page
 		.locator("div")
 		.filter({ hasText: /^Geburtsurkunde$/ });
@@ -127,11 +123,9 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 test("should have 5 documents in their checklist: registrationForm, movingInConfirmation, germanIdOrPassport, birthCertificate, marriageCertificate", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio;
 	let yesRadio = page.getByLabel("Ja");
@@ -175,9 +169,9 @@ test("should have 5 documents in their checklist: registrationForm, movingInConf
 	const registrationForm = page
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = page
-		.locator("div")
-		.filter({ hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/ });
+	const movingInConfirmation = page.locator("div").filter({
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+	});
 	const germanIdOrPassport = page
 		.locator("div")
 		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
@@ -198,11 +192,9 @@ test("should have 5 documents in their checklist: registrationForm, movingInConf
 test("should have 6 documents in their checklist: registrationForm, movingInConfirmation, germanIdOrPassport, birthCertificate, marriageCertificate, idDocumentForSpouse", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio;
 	let yesRadio = page.getByLabel("Ja");
@@ -243,9 +235,9 @@ test("should have 6 documents in their checklist: registrationForm, movingInConf
 	const registrationForm = page
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = page
-		.locator("div")
-		.filter({ hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/ });
+	const movingInConfirmation = page.locator("div").filter({
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+	});
 	const germanIdOrPassport = page
 		.locator("div")
 		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
@@ -271,11 +263,9 @@ test("should have 6 documents in their checklist: registrationForm, movingInConf
 test("should have 8 documents in their checklist: registrationForm, movingInConfirmation, germanIdOrPassport, birthCertificate, marriageCertificate, idDocumentForSpouse, childBirthCertificate, custodyDeclaration", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio;
 	let yesRadio = page.getByLabel("Ja");
@@ -320,9 +310,9 @@ test("should have 8 documents in their checklist: registrationForm, movingInConf
 	const registrationForm = page
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = page
-		.locator("div")
-		.filter({ hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/ });
+	const movingInConfirmation = page.locator("div").filter({
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+	});
 	const germanIdOrPassport = page
 		.locator("div")
 		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
@@ -356,11 +346,9 @@ test("should have 8 documents in their checklist: registrationForm, movingInConf
 test("should have 11 documents in their checklist: registrationForm, movingInConfirmation, germanIdOrPassport, birthCertificate, marriageCertificate, idDocumentForSpouse, childBirthCertificate, custodyDeclaration, idDocumentForChild, guardianConsent, additionalRegistrationForm", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio;
 	let yesRadio = page.getByLabel("Ja");
@@ -402,9 +390,9 @@ test("should have 11 documents in their checklist: registrationForm, movingInCon
 	const registrationForm = page
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = page
-		.locator("div")
-		.filter({ hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/ });
+	const movingInConfirmation = page.locator("div").filter({
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+	});
 	const germanIdOrPassport = page
 		.locator("div")
 		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });

@@ -3,11 +3,9 @@ import { expect, test } from "@playwright/test";
 test("should have 4 documents in their checklist: registrationForm, movingInConfirmation, germanIdOrPassport, supplement (abroad)", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio = page
 		.locator("div")
@@ -54,9 +52,9 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 	const registrationForm = page
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = page
-		.locator("div")
-		.filter({ hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/ });
+	const movingInConfirmation = page.locator("div").filter({
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+	});
 	const germanIdOrPassport = page
 		.locator("div")
 		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
@@ -73,11 +71,9 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 test("should have 4 documents in their checklist: registrationForm, movingInConfirmation, germanIdOrPassport, supplement (inland)", async ({
 	page,
 }) => {
-	await page.goto("http://localhost:5173/");
+	await page.goto("http://localhost:5173/residence-registration/");
 
 	const nextButton = page.getByRole("button", { name: "Weiter" });
-
-	await nextButton.click();
 
 	let noRadio = page
 		.locator("div")
@@ -127,9 +123,9 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 	const registrationForm = page
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = page
-		.locator("div")
-		.filter({ hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/ });
+	const movingInConfirmation = page.locator("div").filter({
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+	});
 	const germanIdOrPassport = page
 		.locator("div")
 		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
