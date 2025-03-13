@@ -1,9 +1,13 @@
 import { test, expect } from "@playwright/test";
 
-tesi18n("should translate page to english", async ({ page }) => {
+test("should translate page to english", async ({ page }) => {
 	await page.goto("http://localhost:5173/");
 
-	await page.getByRole("combobox").selectOption("English - EN");
+	const languageButton = page.locator("#language-button");
+	await languageButton.click();
+
+	const languageAnchorEN = page.getByText("English");
+	await languageAnchorEN.click();
 
 	const englishHeading = page.getByRole("heading", {
 		name: "Welcome to the checklist",
@@ -12,11 +16,14 @@ tesi18n("should translate page to english", async ({ page }) => {
 	await expect(englishHeading).toBeVisible();
 });
 
-tesi18n("should translate page to german", async ({ page }) => {
+test("should translate page to german", async ({ page }) => {
 	await page.goto("http://localhost:5173/");
 
-	await page.getByRole("combobox").selectOption("English - EN");
-	await page.getByRole("combobox").selectOption("Deutsch - DE");
+	const languageButton = page.locator("#language-button");
+	await languageButton.click();
+
+	const languageAnchorDE = page.getByRole("link", { name: "Deutsch" });
+	await languageAnchorDE.click();
 
 	const germanHeading = page.getByRole("heading", {
 		name: "Willkommen bei der Checkliste",
@@ -25,10 +32,14 @@ tesi18n("should translate page to german", async ({ page }) => {
 	await expect(germanHeading).toBeVisible();
 });
 
-tesi18n("should translate page to arabic", async ({ page }) => {
+test("should translate page to arabic", async ({ page }) => {
 	await page.goto("http://localhost:5173/");
 
-	await page.getByRole("combobox").selectOption("العربية - AR");
+	const languageButton = page.locator("#language-button");
+	await languageButton.click();
+
+	const languageAnchorAR = page.getByText("العربية");
+	await languageAnchorAR.click();
 
 	const arabicHeading = page.getByRole("heading", {
 		name: "مرحباً بك في قائمة المراجعة",
@@ -37,10 +48,14 @@ tesi18n("should translate page to arabic", async ({ page }) => {
 	await expect(arabicHeading).toBeVisible();
 });
 
-tesi18n("should translate page to spanish", async ({ page }) => {
+test("should translate page to spanish", async ({ page }) => {
 	await page.goto("http://localhost:5173/");
 
-	await page.getByRole("combobox").selectOption("Español - ES");
+	const languageButton = page.locator("#language-button");
+	await languageButton.click();
+
+	const languageAnchorES = page.getByText("Español");
+	await languageAnchorES.click();
 
 	const spanishHeading = page.getByRole("heading", {
 		name: "Bienvenido a la lista de control",
@@ -49,10 +64,14 @@ tesi18n("should translate page to spanish", async ({ page }) => {
 	await expect(spanishHeading).toBeVisible();
 });
 
-tesi18n("should translate page to french", async ({ page }) => {
+test("should translate page to french", async ({ page }) => {
 	await page.goto("http://localhost:5173/");
 
-	await page.getByRole("combobox").selectOption("Français - FR");
+	const languageButton = page.locator("#language-button");
+	await languageButton.click();
+
+	const languageAnchorFR = page.getByText("Français");
+	await languageAnchorFR.click();
 
 	const frenchHeading = page.getByRole("heading", {
 		name: "Bienvenue sur la liste de contrôle",
@@ -61,10 +80,14 @@ tesi18n("should translate page to french", async ({ page }) => {
 	await expect(frenchHeading).toBeVisible();
 });
 
-tesi18n("should translate page to turkish", async ({ page }) => {
+test("should translate page to turkish", async ({ page }) => {
 	await page.goto("http://localhost:5173/");
 
-	await page.getByRole("combobox").selectOption("Türkçe - TR");
+	const languageButton = page.locator("#language-button");
+	await languageButton.click();
+
+	const languageAnchorTR = page.getByText("Türkçe");
+	await languageAnchorTR.click();
 
 	const turkishHeading = page.getByRole("heading", {
 		name: "Kontrol listesine hoş geldiniz",
@@ -73,10 +96,14 @@ tesi18n("should translate page to turkish", async ({ page }) => {
 	await expect(turkishHeading).toBeVisible();
 });
 
-tesi18n("should translate page to russian", async ({ page }) => {
+test("should translate page to russian", async ({ page }) => {
 	await page.goto("http://localhost:5173/");
 
-	await page.getByRole("combobox").selectOption("Русский - RU");
+	const languageButton = page.locator("#language-button");
+	await languageButton.click();
+
+	const languageAnchorRU = page.getByText("Русский");
+	await languageAnchorRU.click();
 
 	const russianHeading = page.getByRole("heading", {
 		name: "Добро пожаловать в контрольный список",
@@ -85,10 +112,14 @@ tesi18n("should translate page to russian", async ({ page }) => {
 	await expect(russianHeading).toBeVisible();
 });
 
-tesi18n("should keep the same language after refresh", async ({ page }) => {
+test("should keep the same language after refresh", async ({ page }) => {
 	await page.goto("http://localhost:5173/");
 
-	await page.getByRole("combobox").selectOption("English - EN");
+	const languageButton = page.locator("#language-button");
+	await languageButton.click();
+
+	const languageAnchorEN = page.getByText("English");
+	await languageAnchorEN.click();
 
 	const englishHeadingBeforeRefresh = page.getByRole("heading", {
 		name: "Welcome to the checklist",
@@ -105,33 +136,37 @@ tesi18n("should keep the same language after refresh", async ({ page }) => {
 	await expect(englishHeadingAfterRefresh).toBeVisible();
 });
 
-tesi18n(
-	"should correctly change document lang and dir when switching language from german to arabic and back",
-	async ({ page }) => {
-		await page.goto("http://localhost:5173/");
+test("should correctly change document lang and dir when switching language from german to arabic and back", async ({
+	page,
+}) => {
+	await page.goto("http://localhost:5173/");
 
-		const initialLang = await page.evaluate(
-			() => document.documentElement.lang,
-		);
-		const initialDir = await page.evaluate(() => document.documentElement.dir);
+	const initialLang = await page.evaluate(() => document.documentElement.lang);
+	const initialDir = await page.evaluate(() => document.documentElement.dir);
 
-		expect(initialLang).toBe("de");
-		expect(initialDir).toBe("ltr");
+	expect(initialLang).toBe("de");
+	expect(initialDir).toBe("ltr");
 
-		await page.getByRole("combobox").selectOption("العربية - AR");
+	const languageButton = page.locator("#language-button");
+	await languageButton.click();
 
-		const arabicLang = await page.evaluate(() => document.documentElement.lang);
-		const arabicDir = await page.evaluate(() => document.documentElement.dir);
+	const languageAnchorAR = page.getByRole("link", { name: "العربية" });
+	await languageAnchorAR.click();
 
-		expect(arabicLang).toBe("ar");
-		expect(arabicDir).toBe("rtl");
+	const arabicLang = await page.evaluate(() => document.documentElement.lang);
+	const arabicDir = await page.evaluate(() => document.documentElement.dir);
 
-		await page.getByRole("combobox").selectOption("Deutsch - DE");
+	expect(arabicLang).toBe("ar");
+	expect(arabicDir).toBe("rtl");
 
-		const germanLang = await page.evaluate(() => document.documentElement.lang);
-		const germanDir = await page.evaluate(() => document.documentElement.dir);
+	await languageButton.click();
 
-		expect(germanLang).toBe("de");
-		expect(germanDir).toBe("ltr");
-	},
-);
+	const languageAnchorDE = page.getByRole("link", { name: "Deutsch" });
+	await languageAnchorDE.click();
+
+	const germanLang = await page.evaluate(() => document.documentElement.lang);
+	const germanDir = await page.evaluate(() => document.documentElement.dir);
+
+	expect(germanLang).toBe("de");
+	expect(germanDir).toBe("ltr");
+});

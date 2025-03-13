@@ -9,7 +9,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 	const language = getLanguage();
 
 	return (
-		<html lang={language}>
+		<html lang={language} dir={language === "ar" ? "rtl" : "ltr"}>
 			<head>
 				<meta charSet="UTF-8" />
 

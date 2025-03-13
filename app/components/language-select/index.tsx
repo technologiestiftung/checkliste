@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { LanguageAnchor } from "./language-anchor";
 import { type Language } from "./types";
 import { i18n, getLanguage } from "../../i18n/i18n-utils";
+import { useCloseOnClickOutside } from "./hooks/use-close-on-click-outside";
 
 export function LanguageSelect() {
 	const currentLanguage = getLanguage();
@@ -18,6 +19,8 @@ export function LanguageSelect() {
 		{ code: "ar", label: "العربية" },
 	];
 
+	useCloseOnClickOutside(languageSelectRef, setIsOpen);
+
 	return (
 		<>
 			<div
@@ -30,6 +33,7 @@ export function LanguageSelect() {
 					aria-label={i18n("language-select")}
 					aria-expanded={isOpen}
 					dir="ltr"
+					id="language-button"
 				>
 					<span className="flex justify-center p-2.5 items-center">
 						{i18n(`${currentLanguage}`)}
@@ -44,7 +48,7 @@ export function LanguageSelect() {
 				>
 					<ul>
 						{languages.map((language) => (
-							<li key={language.code}>
+							<li key={language.code} onClick={() => setIsOpen(false)}>
 								<LanguageAnchor language={language} />
 							</li>
 						))}
