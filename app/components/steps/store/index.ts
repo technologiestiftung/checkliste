@@ -19,17 +19,18 @@ import {
 	handleOverviewPreviousStep,
 } from "./previous-steps.ts";
 import { trackInteraction } from "../../feedback/matomo.ts";
-import { useI18nStore } from "../../../i18n/store";
 import { persist } from "zustand/middleware";
 import { useOverviewStore } from "~/components/forms/overview/store/index.ts";
+import { getLanguage } from "~/i18n/i18n-utils.ts";
 
 function trackStepChange(previousStep: number, currentStep: number) {
+	const language = getLanguage;
 	const previousStepKey = reverseSteps[previousStep];
 	const currentStepKey = reverseSteps[currentStep];
 
 	trackInteraction({
 		eventAction: "step-change",
-		eventName: `step change: ${previousStep} (${previousStepKey}) -> ${currentStep} (${currentStepKey}), language: ${useI18nStore.getState().language} `,
+		eventName: `step change: ${previousStep} (${previousStepKey}) -> ${currentStep} (${currentStepKey}), language: ${language} `,
 	});
 }
 

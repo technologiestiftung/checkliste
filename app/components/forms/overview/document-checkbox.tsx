@@ -1,10 +1,11 @@
 import { DocumentLink } from "./document-link.tsx";
 import { useOverviewStore } from "./store";
 import { InfoButton } from "../../buttons/info-button";
-import { useI18n } from "../../../i18n/hook/useI18n";
+import { i18n } from "~/i18n/i18n-utils";
 import { trackInteraction } from "../../feedback/matomo.ts";
-import { useI18nStore } from "../../../i18n/store";
 import type { ChangeEvent } from "react";
+import { getLanguage } from "~/i18n/i18n-utils.ts";
+import { translations } from "~/i18n/translations.ts";
 
 export function DocumentCheckbox({
 	id,
@@ -15,13 +16,13 @@ export function DocumentCheckbox({
 }) {
 	const { setDocs } = useOverviewStore();
 
-	const t = useI18n();
-
 	const onChange = (event: ChangeEvent<HTMLInputElement>) => {
 		const currentValue = event.currentTarget.checked;
-
-		const translation = useI18nStore.getState().translations["de"]?.[id];
-		const documentCheckboxState = `${currentValue ? "checked" : "unchecked"} ${translation} (lang: ${useI18nStore.getState().language})`;
+		const language = getLanguage();
+		const translation =
+			translations["de"][id as keyof (typeof translations)["de"]];
+		console.log(translation);
+		const documentCheckboxState = `${currentValue ? "checked" : "unchecked"} ${translation} (lang: ${language})`;
 
 		trackInteraction({
 			eventAction: "toggle document checkbox",
@@ -68,13 +69,13 @@ export function DocumentCheckbox({
 							value === true ? "text-gray-400 line-through" : undefined
 						}
 					>
-						{t(id)}
+						{i18n(id as keyof typeof translations)}
 					</span>
 				</div>
 
 				<div
 					className="tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right print:hidden"
-					data-tip={t(`${id}.tooltip`)}
+					data-tip={i18n(`${id}.tooltip` as keyof typeof translations)}
 				>
 					<InfoButton />
 				</div>

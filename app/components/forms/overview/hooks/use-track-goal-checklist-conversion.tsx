@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { trackInteraction } from "../../../feedback/matomo.ts";
-import { useI18nStore } from "../../../../i18n/store";
+import { getLanguage } from "~/i18n/i18n-utils.ts";
 
 export function useTrackGoalChecklistConversion() {
-	const { language } = useI18nStore();
+	const language = getLanguage();
 
 	useEffect(() => {
 		if (sessionStorage.getItem("has-seen-intro-page-view") !== "true") {

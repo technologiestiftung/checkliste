@@ -1,9 +1,8 @@
 import { useProgressStore } from "../../steps/store";
-import { useI18n } from "../../../i18n/hook/useI18n";
+import { i18n } from "~/i18n/i18n-utils";
 
 export function HomeButton() {
 	const { goToStart, currentStep } = useProgressStore();
-	const t = useI18n();
 
 	const isHomeButtonHidden = currentStep === 0;
 
@@ -31,8 +30,8 @@ export function HomeButton() {
 					/>
 				</svg>
 
-				<span className="block lg:hidden">{t("start.mobile")}</span>
-				<span className="hidden text-lg lg:block">{t("start.desktop")}</span>
+				<span className="block lg:hidden">{i18n("start.mobile")}</span>
+				<span className="hidden text-lg lg:block">{i18n("start.desktop")}</span>
 			</button>
 		</>
 	);

@@ -5,7 +5,7 @@ import { InfoButton } from "../../buttons/info-button";
 import { PrimaryButton } from "../../buttons/primary-button";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { useTimeout } from "../../../hooks/useTimeout";
-import { useI18n } from "../../../i18n/hook/useI18n";
+import { i18n } from "~/i18n/i18n-utils";
 
 export function IsOtherResidenceAbroad() {
 	const { isOtherResidenceAbroad, setIsOtherResidenceAbroad } =
@@ -15,9 +15,7 @@ export function IsOtherResidenceAbroad() {
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
-	const t = useI18n();
-
-	const options = ["yes", "no"];
+	const options = ["yes", "no"] as const;
 
 	const { isOver } = useTimeout();
 
@@ -33,10 +31,10 @@ export function IsOtherResidenceAbroad() {
 		>
 			<div className="flex flex-col gap-4">
 				<div className="flex w-full items-baseline justify-between gap-3">
-					<p>{t("other-residence.q2")}</p>
+					<p>{i18n("other-residence.q2")}</p>
 					<div
 						className="tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right"
-						data-tip={t("other-residence.q2.tooltip")}
+						data-tip={i18n("other-residence.q2.tooltip")}
 					>
 						<InfoButton />
 					</div>
@@ -48,7 +46,7 @@ export function IsOtherResidenceAbroad() {
 							(option === "yes" && isOtherResidenceAbroad === true) ||
 							(option === "no" && isOtherResidenceAbroad === false);
 						const onChange = () => setIsOtherResidenceAbroad(option === "yes");
-						const label = t(option);
+						const label = i18n(option);
 
 						return (
 							<RadioInput
@@ -70,16 +68,19 @@ export function IsOtherResidenceAbroad() {
 							? `tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right before:w-[9rem] ${arePointerEventsDisabled ? "pointer-events-none" : ""}`
 							: undefined
 					}`}
-					data-tip={!isValid ? t("button.next.tooltip") : undefined}
+					data-tip={!isValid ? i18n("button.next.tooltip") : undefined}
 				>
 					<PrimaryButton
-						label={t("button.next")}
+						label={i18n("button.next")}
 						type="submit"
 						disabled={!isValid}
 					/>
 				</div>
 
-				<SecondaryButton label={t("button.back")} onClick={goToPreviousStep} />
+				<SecondaryButton
+					label={i18n("button.back")}
+					onClick={goToPreviousStep}
+				/>
 			</div>
 		</form>
 	);

@@ -1,15 +1,15 @@
 import React from "react";
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import stylesheet from "./index.css?url";
-import { useI18nStore } from "./i18n/store";
+import { getLanguage } from "./i18n/i18n-utils";
 
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
 export function Layout({ children }: { children: React.ReactNode }) {
-	const { language } = useI18nStore();
+	const language = getLanguage();
 
 	return (
-		<html lang={language} dir={language === "ar" ? "rtl" : "ltr"}>
+		<html lang={language}>
 			<head>
 				<meta charSet="UTF-8" />
 

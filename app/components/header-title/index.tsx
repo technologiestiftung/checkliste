@@ -1,11 +1,9 @@
-import { useI18n } from "../../i18n/hook/useI18n";
+import { i18n } from "~/i18n/i18n-utils";
 
 export function HeaderTitle() {
-	const t = useI18n();
-
 	return (
 		<h1 className="text-xl font-bold md:text-2xl">
-			{t("title")}{" "}
+			{i18n("title")}{" "}
 			<img
 				src="/images/icon-checked-document.svg"
 				alt=""

@@ -21,14 +21,14 @@ async function getPageWithUserPrefs(page: Page, browserName: string) {
 
 	return page;
 }
-test("App should be usable with keyboard", async ({ page, browserName }) => {
+tesi18n("App should be usable with keyboard", async ({ page, browserName }) => {
 	const customPage = await getPageWithUserPrefs(page, browserName);
 
 	await customPage.goto("http://localhost:5173/residence-registration/");
 
 	const tab = getTab(browserName);
 
-	const q1 = customPage.getByText("Meldest Du Dich zum ersten");
+	const q1 = customPage.getByTexi18n("Meldest Du Dich zum ersten");
 
 	await expect(q1).toBeVisible();
 
@@ -38,7 +38,7 @@ test("App should be usable with keyboard", async ({ page, browserName }) => {
 
 	await customPage.keyboard.press("Enter"); // click next button
 
-	const q2 = customPage.getByText("Bist Du verheiratet?");
+	const q2 = customPage.getByTexi18n("Bist Du verheiratet?");
 	await expect(q2).toBeVisible();
 
 	await customPage.keyboard.press(tab); // move focus to info button
@@ -47,7 +47,7 @@ test("App should be usable with keyboard", async ({ page, browserName }) => {
 
 	await customPage.keyboard.press("Enter"); // click next button
 
-	const q3 = customPage.getByText("Hast Du Kinder unter 18 Jahren?");
+	const q3 = customPage.getByTexi18n("Hast Du Kinder unter 18 Jahren?");
 	await expect(q3).toBeVisible();
 
 	await customPage.keyboard.press(tab); // move focus to info button
@@ -56,7 +56,9 @@ test("App should be usable with keyboard", async ({ page, browserName }) => {
 
 	await customPage.keyboard.press("Enter"); // click next button
 
-	const q4 = customPage.getByText("Hast Du die deutsche Staatsangehörigkeit?");
+	const q4 = customPage.getByTexi18n(
+		"Hast Du die deutsche Staatsangehörigkeit?",
+	);
 	await expect(q4).toBeVisible();
 
 	await customPage.keyboard.press(tab); // move focus to info button
@@ -65,7 +67,7 @@ test("App should be usable with keyboard", async ({ page, browserName }) => {
 
 	await customPage.keyboard.press("Enter"); // click next button
 
-	const q5 = customPage.getByText("Kommst Du aus einem EU-Land?");
+	const q5 = customPage.getByTexi18n("Kommst Du aus einem EU-Land?");
 	await expect(q5).toBeVisible();
 
 	await customPage.keyboard.press(tab); // move focus to info button
@@ -74,7 +76,7 @@ test("App should be usable with keyboard", async ({ page, browserName }) => {
 
 	await customPage.keyboard.press("Enter"); // click next button
 
-	const q6 = customPage.getByText("Bist Du über 16 Jahre alt?");
+	const q6 = customPage.getByTexi18n("Bist Du über 16 Jahre alt?");
 	await expect(q6).toBeVisible();
 
 	await customPage.keyboard.press(tab); // move focus to info button
@@ -83,7 +85,7 @@ test("App should be usable with keyboard", async ({ page, browserName }) => {
 
 	await customPage.keyboard.press("Enter"); // click next button
 
-	const q7 = customPage.getByText("Bist Du Geflüchtete:r?");
+	const q7 = customPage.getByTexi18n("Bist Du Geflüchtete:r?");
 	await expect(q7).toBeVisible();
 
 	await customPage.keyboard.press(tab); // move focus to info button

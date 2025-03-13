@@ -5,7 +5,7 @@ import { InfoButton } from "../../buttons/info-button";
 import { PrimaryButton } from "../../buttons/primary-button";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { useTimeout } from "../../../hooks/useTimeout.tsx";
-import { useI18n } from "../../../i18n/hook/useI18n.tsx";
+import { i18n } from "~/i18n/i18n-utils";
 
 export function IsRegisteringForMoreThanThreeMonths() {
 	const {
@@ -19,9 +19,7 @@ export function IsRegisteringForMoreThanThreeMonths() {
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
-	const t = useI18n();
-
-	const options = ["yes", "no"];
+	const options = ["yes", "no"] as const;
 
 	const { isOver } = useTimeout();
 
@@ -37,10 +35,10 @@ export function IsRegisteringForMoreThanThreeMonths() {
 		>
 			<div className="flex flex-col gap-4">
 				<div className="flex w-full items-baseline justify-between gap-3">
-					<p>{t("other-residence.q3")}</p>
+					<p>{i18n("other-residence.q3")}</p>
 					<div
 						className="tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right"
-						data-tip={t("other-residence.q3.tooltip")}
+						data-tip={i18n("other-residence.q3.tooltip")}
 					>
 						<InfoButton />
 					</div>
@@ -55,7 +53,7 @@ export function IsRegisteringForMoreThanThreeMonths() {
 								isRegisteringForMoreThanThreeMonths === false);
 						const onChange = () =>
 							setIsRegisteringForMoreThanThreeMonths(option === "yes");
-						const label = t(option);
+						const label = i18n(option);
 
 						return (
 							<RadioInput
@@ -71,13 +69,13 @@ export function IsRegisteringForMoreThanThreeMonths() {
 			</div>
 
 			<p className={`${showHint ? "block" : "hidden"}`}>
-				{t("other-residence.q3.hint")}{" "}
+				{i18n("other-residence.q3.hint")}{" "}
 				<a
 					href="https://service.berlin.de/terminvereinbarung/termin/manage/"
 					target="_blank"
 					className="text-blue-700 underline visited:text-purple-500"
 				>
-					{t("other-residence.q3.hint.link.label")}{" "}
+					{i18n("other-residence.q3.hint.link.label")}{" "}
 				</a>
 			</p>
 
@@ -90,18 +88,23 @@ export function IsRegisteringForMoreThanThreeMonths() {
 					}`}
 					data-tip={
 						!isValid || !needsRegistration
-							? t(showHint ? "other-residence.q3.hint" : "button.next.tooltip")
+							? i18n(
+									showHint ? "other-residence.q3.hint" : "button.next.tooltip",
+								)
 							: undefined
 					}
 				>
 					<PrimaryButton
-						label={t("button.next")}
+						label={i18n("button.next")}
 						type="submit"
 						disabled={!isValid || !needsRegistration}
 					/>
 				</div>
 
-				<SecondaryButton label={t("button.back")} onClick={goToPreviousStep} />
+				<SecondaryButton
+					label={i18n("button.back")}
+					onClick={goToPreviousStep}
+				/>
 			</div>
 		</form>
 	);

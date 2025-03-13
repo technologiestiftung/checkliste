@@ -2,15 +2,13 @@ import { useOverviewStore } from "./store";
 import { useProgressStore } from "../../steps/store";
 import { DocumentCheckbox } from "./document-checkbox.tsx";
 import { SecondaryButton } from "../../buttons/secondary-button";
-import { useI18n } from "../../../i18n/hook/useI18n.tsx";
+import { i18n } from "~/i18n/i18n-utils.ts";
 import { trackInteraction } from "../../feedback/matomo.ts";
 import { useTrackGoalChecklistConversion } from "./hooks/use-track-goal-checklist-conversion.tsx";
 
 export function Overview() {
 	const { docs: requiredDocs } = useOverviewStore();
 	const { goToPreviousStep } = useProgressStore();
-
-	const t = useI18n();
 
 	const documents = [
 		...Array.from(
@@ -23,10 +21,10 @@ export function Overview() {
 	return (
 		<div className="flex h-full flex-col gap-4">
 			<h2 className="flex w-full items-center justify-between gap-3 font-bold">
-				{t("overview.title")}
+				{i18n("overview.title")}
 			</h2>
 
-			<p dangerouslySetInnerHTML={{ __html: t("overview.text") }} />
+			<p dangerouslySetInnerHTML={{ __html: i18n("overview.text") }} />
 
 			<ul className="flex flex-col gap-2">
 				{documents.map(([key, value]) => (
@@ -48,7 +46,7 @@ export function Overview() {
 					}}
 					className="flex items-center gap-1 border-2 border-blue-950 bg-blue-950 text-white hover:border-blue-900 hover:bg-blue-900 print:hidden"
 				>
-					<span className="py-2 ltr:pl-4 rtl:pr-4">{t("print")}</span>
+					<span className="py-2 ltr:pl-4 rtl:pr-4">{i18n("print")}</span>
 					<div className="py-2 ltr:pl-3 ltr:pr-4 rtl:pl-4 rtl:pr-3">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +65,10 @@ export function Overview() {
 					</div>
 				</button>
 
-				<SecondaryButton label={t("button.back")} onClick={goToPreviousStep} />
+				<SecondaryButton
+					label={i18n("button.back")}
+					onClick={goToPreviousStep}
+				/>
 			</div>
 		</div>
 	);

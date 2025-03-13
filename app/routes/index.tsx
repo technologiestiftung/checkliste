@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { LanguageSelect } from "../components/language-select";
 import { Navigation } from "~/components/navigation";
 import { LogoBanner } from "~/components/logo-banner";
-import { useI18n } from "~/i18n/hook/useI18n";
+import { i18n, buildLocalizedLink } from "~/i18n/i18n-utils";
 
 export const meta = () => {
 	return [
@@ -16,7 +16,6 @@ export const meta = () => {
 };
 
 export default function Index() {
-	const t = useI18n();
 	return (
 		<>
 			<div className="w-full bg-blue-950">
@@ -29,7 +28,9 @@ export default function Index() {
 			</div>
 			<div className="flex flex-col">
 				<div className="w-full flex flex-col gap-4 pt-6 pb-9 px-7.5">
-					<h1 className="font-bold text-[28px] leading-snug">{t("title")}</h1>
+					<h1 className="font-bold text-[28px] leading-snug">
+						{i18n("title")}
+					</h1>
 					<p>
 						Diese Anwendung hilft, Ihren Termin beim Bürgeramt optimal
 						vorzubereiten. Beantworten Sie ein paar Fragen und wir erstellen
@@ -56,7 +57,7 @@ export default function Index() {
 			</div>
 
 			<div className="flex flex-col bg-[#F5F5F5]">
-				Footer Hell <Link to="/about/">About</Link>
+				Footer Hell <Link to={buildLocalizedLink("/about/")}>About</Link>
 			</div>
 			<div className="bg-gray-950 text-white">Footer dunkel</div>
 		</>
