@@ -47,7 +47,7 @@ export function Steps() {
 	return (
 		<div
 			className={`flex h-full flex-col gap-4 sm:w-[560px] lg:text-lg 2xl:w-[750px] print:w-full ${
-				currentStep < 16 && "pt-4 lg:pt-12"
+				currentStep < 15 && "pt-4 lg:pt-12"
 			}`}
 		>
 			{steps[currentStep]}

@@ -21,7 +21,7 @@ export function DocumentCheckbox({
 		const language = getLanguage();
 		const translation =
 			translations["de"][id as keyof (typeof translations)["de"]];
-		console.log(translation);
+
 		const documentCheckboxState = `${currentValue ? "checked" : "unchecked"} ${translation} (lang: ${language})`;
 
 		trackInteraction({
@@ -71,13 +71,6 @@ export function DocumentCheckbox({
 					>
 						{i18n(id as keyof typeof translations)}
 					</span>
-				</div>
-
-				<div
-					className="tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right print:hidden"
-					data-tip={i18n(`${id}.tooltip` as keyof typeof translations)}
-				>
-					<InfoButton />
 				</div>
 			</label>
 			<DocumentLink id={id} />

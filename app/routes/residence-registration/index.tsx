@@ -36,7 +36,7 @@ export default function Index() {
 
 						<div
 							className={`w-full border-b border-b-berlin-black-40 ${
-								currentStep === 0 || currentStep === 16
+								currentStep === 0 || currentStep === 15
 									? "flex"
 									: "hidden md:flex"
 							} `}

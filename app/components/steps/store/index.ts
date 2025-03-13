@@ -125,22 +125,22 @@ export const useProgressStore = create<ProgressStore>()(
 				}
 
 				switch (get().currentStep) {
-					case 4:
+					case 3:
 						handleHasChildPreviousStep();
 						return;
-					case 7:
+					case 6:
 						handleIsGermanPreviousStep();
 						return;
-					case 9:
+					case 8:
 						handleIsEuropeanPreviousStep();
 						return;
-					case 12:
+					case 11:
 						handleHasOtherResidencePreviousStep();
 						return;
-					case 15:
+					case 14:
 						handleIsRegisteringForMoreThanSixMonthsPreviousStep();
 						return;
-					case 16:
+					case 15:
 						handleOverviewPreviousStep();
 						return;
 					default:
