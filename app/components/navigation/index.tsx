@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { buildLocalizedLink } from "~/i18n/i18n-utils";
 
 const navigationLinks = [

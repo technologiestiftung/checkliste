@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { LanguageSelect } from "~/components/language-select";
 import { Navigation } from "~/components/navigation";
 import { LogoBanner } from "~/components/logo-banner";

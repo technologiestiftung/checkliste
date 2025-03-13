@@ -15,21 +15,19 @@
 		"test:e2e": "playwright test"
 	},
 	"dependencies": {
-		"@react-router/node": "7.3.0",
-		"@react-router/serve": "7.3.0",
+		"@react-router/node": "7.1.1",
+		"@react-router/serve": "7.1.1",
 		"@tailwindcss/vite": "4.0.12",
-		"@vercel/react-router": "^1.1.0",
 		"isbot": "5",
 		"react": "19.0.0",
 		"react-dom": "19.0.0",
-		"react-router": "7.3.0",
-		"react-router-dom": "7.3.0",
+		"react-router": "7.1.1",
 		"zustand": "5.0.3"
 	},
 	"devDependencies": {
 		"@eslint/js": "9.11.1",
 		"@playwright/test": "1.50.1",
-		"@react-router/dev": "7.3.0",
+		"@react-router/dev": "7.1.1",
 		"@tailwindcss/postcss": "4.0.12",
 		"@technologiestiftung/eslint-config": "0.3.0",
 		"@technologiestiftung/prettier-config": "1.0.0",
