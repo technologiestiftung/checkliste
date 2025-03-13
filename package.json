@@ -1,16 +1,17 @@
 {
-	"name": "anmelde-check",
+	"name": "checkliste",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
 		"dev": "react-router dev",
+		"start": "react-router-serve ./build/server/index.js",
 		"build": "react-router build",
 		"typecheck": "react-router typegen && tsc",
-		"lint": "ESLINT_USE_FLAT_CONFIG=true eslint \"src/**/*\"",
+		"lint": "ESLINT_USE_FLAT_CONFIG=true eslint \"app/**/*\"",
 		"prettier": "prettier --write .",
 		"prettier:ci": "prettier --check .",
-		"preview": "vite preview",
+		"preview": "serve build/client",
 		"test:e2e": "playwright test"
 	},
 	"dependencies": {
@@ -23,7 +24,6 @@
 		"react-dom": "19.0.0",
 		"react-router": "7.3.0",
 		"react-router-dom": "7.3.0",
-		"zod": "3.24.2",
 		"zustand": "5.0.3"
 	},
 	"devDependencies": {
@@ -45,6 +45,7 @@
 		"prettier-plugin-tailwindcss": "0.6.11",
 		"react": "19.0.0",
 		"react-dom": "19.0.0",
+		"serve": "14.2.4",
 		"tailwindcss": "4.0.12",
 		"typescript": "5.8.2",
 		"typescript-eslint": "8.8.0",
