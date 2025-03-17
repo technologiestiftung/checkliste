@@ -154,7 +154,8 @@ const de = {
 	"supplement.tooltip":
 		"Dieses Dokument ist notwendig, weil Du weiterhin in einer weiteren Wohnung gemeldet bleiben möchtest.",
 	"logo.t2": "Ein Projekt der",
-	"logo.t3": "Gefördert durch",
+	"logo.t3": "In Kooperation mit Bürgeramt der Zukunft",
+	"logo.t4": "In Kooperation mit",
 	dataPrivacy: "Datenschutz",
 	imprint: "Impressum",
 	"imprint.link": "https://www.technologiestiftung-berlin.de/impressum",
