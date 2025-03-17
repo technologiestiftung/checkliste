@@ -9,7 +9,7 @@ import {
 } from "react-router";
 import stylesheet from "./index.css?url";
 import { getLanguage } from "./i18n/i18n-utils";
-
+import { BerlinHeader } from "./components/berlin-header";
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -58,7 +58,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				{/* <!-- End Matomo Code --> */}
 			</head>
 			<body>
-				<div>berlin header</div>
+				<BerlinHeader />
 				<main>{children}</main>
 
 				<ScrollRestoration />

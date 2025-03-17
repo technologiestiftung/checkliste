@@ -18,11 +18,11 @@ export const meta = () => {
 export default function Index() {
 	return (
 		<>
-			<div className="w-full bg-blue-950">
-				<header className="flex w-full items-center justify-between px-7.5 py-2.5">
+			<div className="w-full bg-berlin-blue-900 mt-2.5">
+				<div className="flex w-full items-center justify-between px-7.5 py-2.5">
 					<div className="text-white font-bold">{i18n("selectLanguage")}</div>
 					<LanguageSelect />
-				</header>
+				</div>
 			</div>
 			<div className="flex flex-col">
 				<div className="w-full flex flex-col gap-4 pt-6 pb-9 px-7.5">
