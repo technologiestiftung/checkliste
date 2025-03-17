@@ -7,6 +7,7 @@ import {
 	ScrollRestoration,
 	isRouteErrorResponse,
 	useRouteLoaderData,
+	useLocation,
 } from "react-router";
 import stylesheet from "./index.css?url";
 import { getLanguage } from "./i18n/i18n-utils";
@@ -23,6 +24,7 @@ export async function loader() {
 export function Layout({ children }: { children: React.ReactNode }) {
 	const language = getLanguage();
 	const berlinFooter = useRouteLoaderData("root");
+	const pathname = useLocation().pathname;
 
 	return (
 		<html lang={language} dir={language === "ar" ? "rtl" : "ltr"}>
@@ -69,7 +71,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			<body>
 				<BerlinHeader />
 				<main>{children}</main>
-				<Footer berlinFooter={berlinFooter} />
+				{(pathname === "/" || pathname === "/about/") && (
+					<Footer berlinFooter={berlinFooter} />
+				)}
 				<ScrollRestoration />
 				<Scripts />
 			</body>

@@ -10,7 +10,7 @@ export default function Index() {
 
 	return (
 		<>
-			<div className="flex items-end w-full h-[calc(100dvh-24px)] bg-gray-200">
+			<div className="flex items-end w-full h-[calc(100dvh-44px)] bg-gray-200">
 				<div className="h-[calc(100dvh-70px)] bg-white flex w-full flex-col items-center justify-between animate-slide-up">
 					<div className="flex h-full w-full flex-col">
 						<div className="flex w-full md:hidden print:hidden">

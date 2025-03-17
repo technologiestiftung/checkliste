@@ -32,6 +32,7 @@ test("App should be usable with keyboard", async ({ page, browserName }) => {
 
 	await expect(q1).toBeVisible();
 
+	await customPage.keyboard.press(tab); // move focus berlin header
 	await customPage.keyboard.press(tab); // move focus to info button
 	await customPage.keyboard.press(tab); // move focus to radio buttons
 	await customPage.keyboard.press("ArrowDown"); // chose no
