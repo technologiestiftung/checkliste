@@ -18,8 +18,8 @@ export function Navigation() {
 	];
 	return (
 		<>
-			<div className="w-full flex flex-col gap-6 py-6 px-7.5">
-				<h2 className="font-bold text-xl leading-relaxed">
+			<div className="w-full flex flex-col gap-6 py-6 lg:py-12 px-7.5 lg:px-0">
+				<h2 className="font-bold text-xl leading-relaxed lg:text-4xl lg:pb-2">
 					{i18n("navigation.title")}
 				</h2>
 
@@ -29,8 +29,10 @@ export function Navigation() {
 						className="flex flex-row pb-3 border-b-1 border-b-black gap-x-7.5 items-end justify-between"
 					>
 						<div className="flex flex-col gap-2 ">
-							<h3 className="font-bold">{link.label}</h3>
-							<div className="grow leading-tight">
+							<h3 className="font-bold text-base lg:text-[28px]">
+								{link.label}
+							</h3>
+							<div className="grow leading-tight text-base lg:text-2xl">
 								{i18n("navigation.description")}
 							</div>
 						</div>
