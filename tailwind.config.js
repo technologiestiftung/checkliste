@@ -18,6 +18,8 @@ export default {
 				"berlin-blue-900": "#132458",
 				"berlin-blue-500": "#2A0E8C",
 				"berlin-gray-200": "#CCC",
+
+				"berlin-green": "#67B18D",
 			},
 			keyframes: {
 				slideUp: {
@@ -27,6 +29,9 @@ export default {
 			},
 			animation: {
 				"slide-up": "slideUp 0.5s ease-out",
+			},
+			screens: {
+				desktop: "1181px",
 			},
 		},
 	},

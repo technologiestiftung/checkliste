@@ -6,14 +6,23 @@ import {
 	Scripts,
 	ScrollRestoration,
 	isRouteErrorResponse,
+	useRouteLoaderData,
 } from "react-router";
 import stylesheet from "./index.css?url";
 import { getLanguage } from "./i18n/i18n-utils";
 import { BerlinHeader } from "./components/berlin-header";
+import { Footer } from "~/components/footer/footer";
+import { getBerlinFooter } from "~/external-templates/berlin-footer";
+
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
+
+export async function loader() {
+	return await getBerlinFooter();
+}
 
 export function Layout({ children }: { children: React.ReactNode }) {
 	const language = getLanguage();
+	const berlinFooter = useRouteLoaderData("root");
 
 	return (
 		<html lang={language} dir={language === "ar" ? "rtl" : "ltr"}>
@@ -60,7 +69,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			<body>
 				<BerlinHeader />
 				<main>{children}</main>
-
+				<Footer berlinFooter={berlinFooter} />
 				<ScrollRestoration />
 				<Scripts />
 			</body>

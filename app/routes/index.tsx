@@ -1,8 +1,7 @@
-import { Link } from "react-router";
 import { LanguageSelect } from "~/components/language-select";
 import { Navigation } from "~/components/navigation";
 import { LogoBanner } from "~/components/logo-banner";
-import { i18n, buildLocalizedLink } from "~/i18n/i18n-utils";
+import { i18n } from "~/i18n/i18n-utils";
 
 export const meta = () => {
 	return [
@@ -49,11 +48,6 @@ export default function Index() {
 					<LogoBanner />
 				</div>
 			</div>
-
-			<div className="flex flex-col bg-[#F5F5F5]">
-				Footer Hell <Link to={buildLocalizedLink("/about/")}>About</Link>
-			</div>
-			<div className="bg-gray-950 text-white">Footer dunkel</div>
 		</>
 	);
 }

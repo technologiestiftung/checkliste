@@ -37,7 +37,7 @@ export function Navigation() {
 						<Link
 							to={buildLocalizedLink(link.link)}
 							viewTransition
-							className="py-2 px-4 text-white bg-berlin-blue-900 size-fit"
+							className="py-2 px-4 text-white bg-berlin-blue-900 size-fit rounded-xs"
 						>
 							{i18n("navigation.button")}
 						</Link>
