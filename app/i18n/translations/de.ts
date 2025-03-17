@@ -9,6 +9,18 @@ const de = {
 	ru: "Русский",
 	"start.desktop": "Startseite",
 	title: "Willkommen bei der Checkliste",
+	selectLanguage: "Suchen Sie Ihre Sprache aus:",
+	intro:
+		"Diese Anwendung hilft, Ihren Termin beim Bürgeramt optimal vorzubereiten. Beantworten Sie ein paar Fragen und wir erstellen eine Übersicht der benötigten Dokumente.",
+	"context.p1": "Diese Anwendung ist ein Prototyp vom",
+	"context.p2": "Berlin und wird aktuell für einen Test verwendet.",
+	"navigation.title": "Wählen Sie eine Dienstleistung",
+	"navigation.description": "Finden Sie heraus, welche Dokumente Sie benötigen",
+	"navigation.button": "Starten",
+	"navigation.id-card": "Personalausweis beantragen",
+	"navigation.certificate-of-conduct": "Führungszeugnis beantragen",
+	"navigation.residence-registration":
+		"Wohnsitz – Alleinige Wohnung oder Hauptwohnung anmelden",
 	yes: "Ja",
 	no: "Nein",
 	download: "Herunterladen",
@@ -20,8 +32,6 @@ const de = {
 	"button.back": "Zurück",
 	"button.next": "Weiter",
 	"button.next.tooltip": "Bitte beantworte die Frage zuerst.",
-	"intro.p2": "Du hast noch keinen Termin?",
-	"intro.p2.link": "Termin buchen.",
 	"feedback.intro":
 		"Diese Anwendung ist ein Prototyp vom CityLAB Berlin und wird aktuell für einen Test verwendet.",
 	"feedback.question": "Wie gefällt Dir die Anwendung?",

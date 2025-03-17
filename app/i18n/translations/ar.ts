@@ -10,6 +10,18 @@ const ar = {
 	"start.mobile": "ابدأ",
 	"start.desktop": "الصفحة الرئيسية",
 	title: "مرحباً بك في قائمة المراجعة",
+	selectLanguage: "اختر اللغة",
+	intro:
+		"يساعدك هذا التطبيق على التحضير لموعدك في مكتب المواطنين في برلين. أجب على بعض الأسئلة وسننشر قائمة بالوثائق التي ستحتاج إليها.",
+	"context.p1": "هذا التطبيق هو نموذج أولي من",
+	"context.p2": "ويُستخدم حالياً لاختبار.",
+	"navigation.title": "اختر خدمة",
+	"navigation.description": "تعرف على الوثائق التي تحتاج إليها",
+	"navigation.button": "ابدأ",
+	"navigation.id-card": "طلب بطاقة هوية",
+	"navigation.certificate-of-conduct": "طلب شهادة السلوك",
+	"navigation.residence-registration":
+		"تسجيل الإقامة – شقة واحدة أو منزل رئيسي",
 	yes: "نعم",
 	no: "لا",
 	download: "تحميل",
@@ -21,8 +33,6 @@ const ar = {
 	"button.back": "العودة",
 	"button.next": "التالي",
 	"button.next.tooltip": "الرجاء الإجابة على السؤال أولاً.",
-	"intro.p2": "ليس لديك موعد بعد؟",
-	"intro.p2.link": "حجز موعد.",
 	"feedback.intro":
 		"هذا التطبيق هو نموذج أولي من سيتي لاب برلين ويُستخدم حالياً لاختبار.",
 	"feedback.question": "ما رأيك في التطبيق؟",

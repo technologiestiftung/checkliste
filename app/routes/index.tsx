@@ -20,9 +20,7 @@ export default function Index() {
 		<>
 			<div className="w-full bg-blue-950">
 				<header className="flex w-full items-center justify-between px-7.5 py-2.5">
-					<div className="text-white font-bold">
-						Suchen Sie Ihre Sprache aus:
-					</div>
+					<div className="text-white font-bold">{i18n("selectLanguage")}</div>
 					<LanguageSelect />
 				</header>
 			</div>
@@ -31,17 +29,13 @@ export default function Index() {
 					<h1 className="font-bold text-[28px] leading-snug">
 						{i18n("title")}
 					</h1>
-					<p>
-						Diese Anwendung hilft, Ihren Termin beim Bürgeramt optimal
-						vorzubereiten. Beantworten Sie ein paar Fragen und wir erstellen
-						eine Übersicht der benötigten Dokumente.
-					</p>
+					<p>{i18n("intro")}</p>
 				</div>
 				<span className="w-full border-b-1 border-b-berlin-gray-200" />
 				<Navigation />
 				<div className="w-full flex flex-col gap-10 pt-6 pb-9 px-7.5">
 					<div>
-						Diese Anwendung ist ein Prototyp vom {""}
+						{i18n("context.p1")}{" "}
 						<a
 							className="font-bold underline text-berlin-blue-500"
 							href="https://citylab-berlin.org/de/start/"
@@ -50,7 +44,7 @@ export default function Index() {
 						>
 							CityLAB
 						</a>{" "}
-						Berlin und wird aktuell für einen Test verwendet.
+						{i18n("context.p2")}
 					</div>
 					<LogoBanner />
 				</div>

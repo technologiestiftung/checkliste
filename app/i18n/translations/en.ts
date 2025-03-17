@@ -10,6 +10,18 @@ const en = {
 	"start.mobile": "Home",
 	"start.desktop": "Home",
 	title: "Welcome to the checklist",
+	selectLanguage: "Select language",
+	intro:
+		"This application helps you prepare for your appointment at the Berlin Citizen Office. Answer a few questions and we will create a list of documents you need to bring.",
+	"context.p1": "This application is a prototype of",
+	"context.p2": "Berlin and is currently being used for a test.",
+	"navigation.title": "Select a service",
+	"navigation.description": "Find out which documents you need",
+	"navigation.button": "Start",
+	"navigation.id-card": "Apply for an ID card",
+	"navigation.certificate-of-conduct": "Apply for a certificate of conduct",
+	"navigation.residence-registration":
+		"Residence registration – Single apartment or main residence",
 	yes: "Yes",
 	no: "No",
 	download: "Download",
@@ -21,8 +33,6 @@ const en = {
 	"button.back": "Back",
 	"button.next": "Next",
 	"button.next.tooltip": "Please answer the question first.",
-	"intro.p2": "Don't have an appointment yet?",
-	"intro.p2.link": " Book an appointment",
 	"feedback.question": "Do you like this application?",
 	"feedback.intro":
 		"This application is a prototype of CityLAB Berlin and is currently being used for a test.",

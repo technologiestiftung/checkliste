@@ -10,6 +10,18 @@ const fr = {
 	"start.mobile": "Accueil",
 	"start.desktop": "Accueil",
 	title: "Bienvenue sur la liste de contrôle",
+	selectLanguage: "Sélectionner la langue",
+	intro:
+		"Cette application vous aide à préparer votre rendez-vous à l'Office des Citoyens de Berlin. Répondez à quelques questions et nous créerons une liste de documents que vous devez apporter.",
+	"context.p1": "Cette application est un prototype de",
+	"context.p2": "Berlin et est actuellement utilisée pour un test.",
+	"navigation.title": "Sélectionnez un service",
+	"navigation.description": "Découvrez quels documents vous avez besoin",
+	"navigation.button": "Commencer",
+	"navigation.id-card": "Demander un passeport",
+	"navigation.certificate-of-conduct": "Demander un certificat de conduite",
+	"navigation.residence-registration":
+		"Inscription – Appartement unique ou résidence principale",
 	yes: "Oui",
 	no: "Non",
 	download: "Télécharger",
@@ -21,8 +33,6 @@ const fr = {
 	"button.back": "Précédent",
 	"button.next": "Suivant",
 	"button.next.tooltip": "Veuillez répondre à la question d'abord.",
-	"intro.p2": "Vous n'avez pas encore de rendez-vous ?",
-	"intro.p2.link": "Prendre un rendez-vous",
 	"feedback.intro":
 		"Cette application est un prototype du CityLAB Berlin et est actuellement utilisée pour un test.",
 	"feedback.question": "Comment trouvez-vous l'application ?",
