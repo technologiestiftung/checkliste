@@ -11,7 +11,7 @@ import {
 import stylesheet from "./index.css?url";
 import { getLanguage } from "./i18n/i18n-utils";
 import { BerlinHeader } from "./components/berlin-header";
-import { Footer } from "~/components/footer/footer";
+import { Footer } from "~/components/footer";
 import { getBerlinFooter } from "~/external-templates/berlin-footer";
 
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
@@ -43,7 +43,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				/>
 
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<title>Anmelde-Check</title>
+				<title>Checkliste</title>
 				<Meta />
 				<Links />
 				{/* <!-- Matomo --> */}

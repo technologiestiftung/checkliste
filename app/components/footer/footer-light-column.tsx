@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Collapsible } from "~/components/collapsible/collapsible.tsx";
+import { Collapsible } from "~/components/collapsible";
 import { i18n, buildLocalizedLink } from "~/i18n/i18n-utils.ts";
 
 type FooterColumnProps = {
