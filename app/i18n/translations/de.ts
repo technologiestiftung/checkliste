@@ -38,7 +38,8 @@ const de = {
 
 	"language-select": "Sprache auswählen",
 	"logo.t2": "Ein Projekt der",
-	"logo.t3": "Gefördert durch",
+	"logo.t3": "In Kooperation mit",
+	"logo.t4": "Gefördert durch",
 	dataPrivacy: "Datenschutz",
 	imprint: "Impressum",
 
