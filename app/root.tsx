@@ -6,14 +6,25 @@ import {
 	Scripts,
 	ScrollRestoration,
 	isRouteErrorResponse,
+	useRouteLoaderData,
+	useLocation,
 } from "react-router";
 import stylesheet from "./index.css?url";
 import { getLanguage } from "./i18n/i18n-utils";
+import { BerlinHeader } from "./components/berlin-header";
+import { Footer } from "~/components/footer";
+import { getBerlinFooter } from "~/external-templates/berlin-footer";
 
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
+export async function loader() {
+	return await getBerlinFooter();
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
 	const language = getLanguage();
+	const berlinFooter = useRouteLoaderData("root");
+	const pathname = useLocation().pathname;
 
 	return (
 		<html lang={language} dir={language === "ar" ? "rtl" : "ltr"}>
@@ -34,7 +45,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				/>
 
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<title>Anmelde-Check</title>
+				<title>Checkliste</title>
 				<Meta />
 				<Links />
 				{/* <!-- Matomo --> */}
@@ -58,9 +69,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				{/* <!-- End Matomo Code --> */}
 			</head>
 			<body>
-				<div>berlin header</div>
+				<BerlinHeader />
 				<main>{children}</main>
-
+				{(pathname === "/" || pathname === "/about/") && (
+					<Footer berlinFooter={berlinFooter} />
+				)}
 				<ScrollRestoration />
 				<Scripts />
 			</body>

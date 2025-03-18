@@ -1,8 +1,7 @@
-import { Link } from "react-router";
 import { LanguageSelect } from "~/components/language-select";
 import { Navigation } from "~/components/navigation";
 import { LogoBanner } from "~/components/logo-banner";
-import { i18n, buildLocalizedLink } from "~/i18n/i18n-utils";
+import { i18n } from "~/i18n/i18n-utils";
 
 export const meta = () => {
 	return [
@@ -18,30 +17,26 @@ export const meta = () => {
 export default function Index() {
 	return (
 		<>
-			<div className="w-full bg-blue-950">
-				<header className="flex w-full items-center justify-between px-7.5 py-2.5">
-					<div className="text-white font-bold">
-						Suchen Sie Ihre Sprache aus:
+			<div className="w-full bg-berlin-blue-900">
+				<div className="flex w-full items-center justify-between lg:justify-end gap-2 lg:gap-7 px-7.5 py-2.5 lg:max-w-[974px] mx-auto lg:px-0">
+					<div className="text-white font-bold text-base lg:text-2xl">
+						{i18n("selectLanguage")}
 					</div>
 					<LanguageSelect />
-				</header>
+				</div>
 			</div>
-			<div className="flex flex-col">
-				<div className="w-full flex flex-col gap-4 pt-6 pb-9 px-7.5">
-					<h1 className="font-bold text-[28px] leading-snug">
+			<div className="flex flex-col lg:max-w-[974px] mx-auto">
+				<div className="w-full flex flex-col gap-4 pt-6 pb-9 lg:py-12 px-7.5 lg:px-0">
+					<h1 className="font-bold text-[28px] lg:text-7xl leading-snug">
 						{i18n("title")}
 					</h1>
-					<p>
-						Diese Anwendung hilft, Ihren Termin beim Bürgeramt optimal
-						vorzubereiten. Beantworten Sie ein paar Fragen und wir erstellen
-						eine Übersicht der benötigten Dokumente.
-					</p>
+					<p className="text-base lg:text-2xl">{i18n("intro")}</p>
 				</div>
 				<span className="w-full border-b-1 border-b-berlin-gray-200" />
 				<Navigation />
-				<div className="w-full flex flex-col gap-10 pt-6 pb-9 px-7.5">
+				<div className="w-full flex flex-col gap-10 pt-6 pb-9 lg:py-12 px-7.5 lg:px-0 text-base lg:text-2xl">
 					<div>
-						Diese Anwendung ist ein Prototyp vom {""}
+						{i18n("context.p1")}{" "}
 						<a
 							className="font-bold underline text-berlin-blue-500"
 							href="https://citylab-berlin.org/de/start/"
@@ -50,16 +45,11 @@ export default function Index() {
 						>
 							CityLAB
 						</a>{" "}
-						Berlin und wird aktuell für einen Test verwendet.
+						{i18n("context.p2")}
 					</div>
 					<LogoBanner />
 				</div>
 			</div>
-
-			<div className="flex flex-col bg-[#F5F5F5]">
-				Footer Hell <Link to={buildLocalizedLink("/about/")}>About</Link>
-			</div>
-			<div className="bg-gray-950 text-white">Footer dunkel</div>
 		</>
 	);
 }
