@@ -28,7 +28,7 @@ const upperFooterColumns = [
 export function Footer({ berlinFooter }: { berlinFooter: string }) {
 	return (
 		<div>
-			<div className="flex items-start justify-between w-full bg-berlin-lighter-gray desktop:p-6">
+			<div className="flex items-start justify-between w-full bg-berlin-gray-100 desktop:p-6">
 				<div className="desktop:pl-[5%] flex desktop:items-start justify-between w-full">
 					<div className="flex flex-col desktop:flex-row desktop:max-w-[210px] w-full">
 						<div className="desktop:hidden self-end">

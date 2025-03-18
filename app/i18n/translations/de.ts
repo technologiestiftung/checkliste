@@ -55,6 +55,7 @@ const de = {
 	"title.residence-registration": "Anmeldung einer Wohnung",
 	"title.id-card": "Beantragung eines Personalausweises",
 	"title.certificate-of-conduct": "Beantragung eines Führungszeugnisses",
+	"title.hint": "Hinweis:",
 
 	/*
 	Feedback

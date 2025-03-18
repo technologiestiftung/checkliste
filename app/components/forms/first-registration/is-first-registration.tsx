@@ -2,7 +2,6 @@ import { useFirstRegistrationStore } from "./store";
 import { RadioInput } from "../../radio-input";
 import { useProgressStore } from "../../steps/store";
 import { PrimaryButton } from "../../buttons/primary-button";
-import { InfoButton } from "../../buttons/info-button";
 import { useTimeout } from "../../../hooks/useTimeout";
 import { i18n } from "~/i18n/i18n-utils";
 import { useSaveIntroPageViewInSessionStorage } from "./hooks/use-save-intro-page-view-in-session-storage";
@@ -30,15 +29,9 @@ export function IsFirstRegistration() {
 			}}
 		>
 			<div className="flex flex-col gap-4">
-				<div className="flex w-full justify-between gap-3">
-					<p>{i18n("first-registration.q1")}</p>
-					<div
-						className="tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right"
-						data-tip={i18n("first-registration.q1.tooltip")}
-					>
-						<InfoButton />
-					</div>
-				</div>
+				<h2 className="text-xl font-bold lg:text-4xl">
+					{i18n("first-registration.q1")}
+				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
 						const name = "first-registration.q1.radio";

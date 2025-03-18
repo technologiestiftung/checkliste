@@ -1,6 +1,5 @@
 import { DocumentLink } from "./document-link.tsx";
 import { useOverviewStore } from "./store";
-import { InfoButton } from "../../buttons/info-button";
 import { i18n } from "~/i18n/i18n-utils";
 import { trackInteraction } from "../../feedback/matomo.ts";
 import type { ChangeEvent } from "react";
@@ -49,7 +48,7 @@ export function DocumentCheckbox({
 	};
 
 	return (
-		<li className="flex w-full flex-col items-center gap-2 border border-berlin-gray bg-berlin-lighter-gray">
+		<li className="flex w-full flex-col items-center gap-2 border border-berlin-gray-200 bg-berlin-gray-100">
 			<label
 				htmlFor={id}
 				className="flex w-full cursor-pointer items-center justify-between gap-2 px-4 py-2"

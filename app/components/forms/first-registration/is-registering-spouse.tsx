@@ -3,7 +3,6 @@ import { useProgressStore } from "../../steps/store";
 import { RadioInput } from "../../radio-input";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { PrimaryButton } from "../../buttons/primary-button";
-import { InfoButton } from "../../buttons/info-button";
 import { useTimeout } from "../../../hooks/useTimeout";
 import { i18n } from "~/i18n/i18n-utils";
 
@@ -30,15 +29,9 @@ export function IsRegisteringSpouse() {
 			}}
 		>
 			<div className="flex flex-col gap-4">
-				<div className="flex w-full items-baseline justify-between gap-3">
-					<p>{i18n("first-registration.q3")}</p>
-					<div
-						className="tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right"
-						data-tip={i18n("first-registration.q3.tooltip")}
-					>
-						<InfoButton />
-					</div>
-				</div>
+				<h2 className="text-xl font-bold lg:text-4xl">
+					{i18n("first-registration.q3")}
+				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
 						const name = "first-registration.q3.radio";
@@ -80,6 +73,7 @@ export function IsRegisteringSpouse() {
 				<SecondaryButton
 					label={i18n("button.back")}
 					onClick={goToPreviousStep}
+					className="hidden lg:flex"
 				/>
 			</div>
 		</form>

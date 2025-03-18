@@ -1,7 +1,6 @@
 import { useFirstRegistrationStore } from "./store";
 import { useProgressStore } from "../../steps/store";
 import { RadioInput } from "../../radio-input";
-import { InfoButton } from "../../buttons/info-button";
 import { PrimaryButton } from "../../buttons/primary-button";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { useTimeout } from "../../../hooks/useTimeout";
@@ -30,15 +29,9 @@ export function IsRegisteringChild() {
 			}}
 		>
 			<div className="flex flex-col gap-4">
-				<div className="flex w-full items-baseline justify-between gap-3">
-					<p>{i18n("first-registration.q5")}</p>
-					<div
-						className="tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right"
-						data-tip={i18n("first-registration.q5.tooltip")}
-					>
-						<InfoButton />
-					</div>
-				</div>
+				<h2 className="text-xl font-bold lg:text-4xl">
+					{i18n("first-registration.q5")}
+				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
 						const name = "first-registration.q5.radio";
@@ -80,6 +73,7 @@ export function IsRegisteringChild() {
 				<SecondaryButton
 					label={i18n("button.back")}
 					onClick={goToPreviousStep}
+					className="hidden lg:flex"
 				/>
 			</div>
 		</form>

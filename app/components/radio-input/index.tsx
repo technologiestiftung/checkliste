@@ -13,7 +13,7 @@ export function RadioInput({
 }: RadioInputProps) {
 	return (
 		<div
-			className={`group flex cursor-pointer items-center gap-3 border-2 px-3 py-2 hover:border-berlin-medium-blue`}
+			className={`group flex cursor-pointer items-center gap-3 border-1 border-berlin-blue-900 rounded-xs px-4 py-3`}
 			onClick={onChange}
 		>
 			<input
@@ -23,9 +23,13 @@ export function RadioInput({
 				onChange={onChange}
 				checked={isChecked}
 				value={label}
-				className="h-3 w-3 appearance-none rounded-full bg-white outline outline-2 outline-offset-4 outline-black checked:bg-berlin-medium-blue checked:outline-berlin-medium-blue focus:ring-3 focus:ring-berlin-medium-blue focus:ring-offset-8"
+				className="h-4 w-4 appearance-none rounded-full bg-white outline-offset-3 outline-2 outline-berlin-blue-900 checked:bg-berlin-blue-900 checked:outline-berlin-blue-900 focus:ring-2 focus:ring-berlin-blue-900 focus:ring-offset-8"
 			/>
-			<label className="cursor-pointer" htmlFor={label} onClick={onChange}>
+			<label
+				className="cursor-pointer text-base lg:text-2xl"
+				htmlFor={label}
+				onClick={onChange}
+			>
 				{label}
 			</label>
 		</div>

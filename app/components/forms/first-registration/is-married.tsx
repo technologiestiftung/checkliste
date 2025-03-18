@@ -1,7 +1,6 @@
 import { useFirstRegistrationStore } from "./store";
 import { useProgressStore } from "../../steps/store";
 import { RadioInput } from "../../radio-input";
-import { InfoButton } from "../../buttons/info-button";
 import { PrimaryButton } from "../../buttons/primary-button";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { useTimeout } from "../../../hooks/useTimeout";
@@ -21,22 +20,16 @@ export function IsMarried() {
 
 	return (
 		<form
-			className="flex h-80 w-full flex-col gap-12 lg:h-96"
+			className="flex w-full flex-col gap-12"
 			onSubmit={(e) => {
 				e.preventDefault();
 				goToNextStep();
 			}}
 		>
 			<div className="flex flex-col gap-4">
-				<div className="flex w-full items-baseline justify-between gap-3">
-					<p>{i18n("first-registration.q2")}</p>
-					<div
-						className="tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right"
-						data-tip={i18n("first-registration.q2.tooltip")}
-					>
-						<InfoButton />
-					</div>
-				</div>
+				<h2 className="text-xl font-bold lg:text-4xl">
+					{i18n("first-registration.q2")}
+				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
 						const name = "first-registration.q2.radio";
@@ -78,6 +71,7 @@ export function IsMarried() {
 				<SecondaryButton
 					label={i18n("button.back")}
 					onClick={goToPreviousStep}
+					className="hidden lg:flex"
 				/>
 			</div>
 		</form>
