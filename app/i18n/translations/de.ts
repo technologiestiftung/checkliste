@@ -50,6 +50,9 @@ const de = {
 	"button.next": "Weiter",
 	"button.next.tooltip": "Bitte beantworte die Frage zuerst.",
 	print: "Seite Drucken",
+	"title.residence-registration": "Anmeldung einer Wohnung",
+	"title.id-card": "Beantragung eines Personalausweises",
+	"title.certificate-of-conduct": "Beantragung eines Führungszeugnisses",
 
 	/*
 	Feedback
@@ -59,13 +62,6 @@ const de = {
 		"https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist",
 	"feedback.button.fillout": "Umfrage ausfüllen",
 	"feedback.button.no": "Nein, danke",
-
-	/*
-	Cancel Flow
-	*/
-	"cancle-flow.question": "Fragenprozess wirklich beenden?",
-	"cancle-flow.button.continue": "Weiter bearbeiten",
-	"cancle-flow.button.cancel": "Beenden",
 
 	/*
 	Flow Wohnistz
