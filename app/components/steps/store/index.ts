@@ -58,6 +58,8 @@ type StepsKeys = keyof Steps;
 interface ProgressStore {
 	currentStep: number;
 	maxSteps: number;
+	maxSections: number;
+	currentSection: number;
 	setCurrentStep: (currentStep: number) => void;
 	goTo: (step: StepsKeys) => void;
 	goToNextStep: () => void;
@@ -70,10 +72,19 @@ export const useProgressStore = create<ProgressStore>()(
 		(set, get) => ({
 			currentStep: 0,
 			maxSteps: 15,
+			maxSections: 3,
+			currentSection: 1,
 
 			setCurrentStep(currentStep: number) {
 				trackStepChange(get().currentStep, currentStep);
-				set({ currentStep });
+
+				let currentSection = 1;
+				if (currentStep <= 5) currentSection = 1;
+				else if (currentStep <= 10) currentSection = 2;
+				else if (currentStep <= 14) currentSection = 3;
+				else currentSection = 0;
+
+				set({ currentStep, currentSection });
 			},
 
 			goTo(step: StepsKeys) {
@@ -155,7 +166,7 @@ export const useProgressStore = create<ProgressStore>()(
 		}),
 
 		{
-			name: "progress",
+			name: "progress-residence-registration",
 		},
 	),
 );
