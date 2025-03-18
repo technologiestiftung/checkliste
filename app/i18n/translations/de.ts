@@ -27,6 +27,7 @@ const de = {
 	"navigation.certificate-of-conduct": "Führungszeugnis beantragen",
 	"navigation.residence-registration":
 		"Wohnsitz – Alleinige Wohnung oder Hauptwohnung anmelden",
+	"navigation.startpage": "Startseite",
 	"footer.toTheTop": "Zum Seitenanfang",
 	"footer.button.name.expand": "Mehr anzeigen",
 	"footer.button.name.collapse": "Weniger anzeigen",
@@ -48,6 +49,7 @@ const de = {
 	download: "Herunterladen",
 	"button.back": "Zurück",
 	"button.next": "Weiter",
+	"button.cancel": "Abbrechen",
 	"button.next.tooltip": "Bitte beantworte die Frage zuerst.",
 	print: "Seite Drucken",
 	"title.residence-registration": "Anmeldung einer Wohnung",

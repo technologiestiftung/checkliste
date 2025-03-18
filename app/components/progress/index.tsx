@@ -5,13 +5,19 @@ export function Progress() {
 
 	if (currentSection === 0) return null;
 	return (
-		<div className="w-full flex flex-col lg:flex-row gap-2 lg:items-center">
-			<label htmlFor={"progress-bar"} className="shrink-0">
+		<div className="w-full flex flex-col lg:flex-row gap-2.5 lg:items-center">
+			<label
+				htmlFor={"progress-bar"}
+				className="shrink-0 text-base lg:text-2xl"
+			>
 				Abschnitt {currentSection}/{maxSections}
 			</label>
 
 			{/* custom progress bar for each maxSection add a div with the same width depending on the currentSection color the div in blue if currentSection is reached */}
-			<div className="w-full flex flex-row gap-3 h-2" id={"progress-bar"}>
+			<div
+				className="w-full flex flex-row gap-3 h-2 lg:h-3.5"
+				id={"progress-bar"}
+			>
 				{Array.from({ length: maxSections }).map((_, index) => (
 					<div
 						key={index}

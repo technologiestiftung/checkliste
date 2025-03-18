@@ -1,0 +1,39 @@
+import { Link } from "react-router";
+import { i18n } from "~/i18n/i18n-utils";
+import { useProgressStore } from "../steps/store";
+export function FormLayout({ children }: { children: React.ReactNode }) {
+	const { currentStep, goToPreviousStep } = useProgressStore();
+
+	return (
+		<>
+			<div className="hidden lg:flex w-full">
+				<Link
+					className="text-2xl text-berlin-blue-900 font-bold px-4 py-5"
+					to="/"
+				>
+					{i18n("navigation.startpage")}
+				</Link>
+			</div>
+			<div className="flex lg:hidden items-center justify-between px-4.5">
+				<button
+					className={`text-base lg:text-2xl font-bold p-2.5 pt-5 ${
+						currentStep === 0 ? "opacity-0" : "text-berlin-blue-900"
+					}`}
+					onClick={goToPreviousStep}
+					type="button"
+					aria-label={i18n("button.back")}
+					disabled={currentStep === 0}
+				>
+					{i18n("button.back")}
+				</button>
+				<Link
+					className="text-base lg:text-2xl text-berlin-blue-900 font-bold p-2.5 pt-5"
+					to="/"
+				>
+					{i18n("button.cancel")}
+				</Link>
+			</div>
+			{children}
+		</>
+	);
+}
