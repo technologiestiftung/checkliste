@@ -5,28 +5,20 @@ import { FormLayout } from "~/components/form-layout";
 
 export default function Index() {
 	return (
-		<>
-			<div className="flex items-end w-full h-[calc(100dvh-30px)] lg:h-full bg-gray-200">
-				<div className="h-[calc(100dvh-70px)] bg-white flex w-full flex-col items-center justify-between animate-slide-up rounded-t-[20px] lg:rounded-t-none">
-					<main className="flex h-full w-full flex-col">
-						<FormLayout>
-							<div className="w-full bg-berlin-blue-400">
-								<h2 className="text-xl lg:text-4xl font-bold px-7.5 py-2.5 lg:max-w-[974px] mx-auto lg:px-0">
-									{i18n("title.residence-registration")}
-								</h2>
-							</div>
-							<div className="flex flex-col h-full justify-start px-7.5 py-10 lg:max-w-[974px] mx-auto lg:px-0 w-full">
-								<div className="flex w-full print:hidden">
-									<Progress />
-								</div>
-								<div className="flex flex-col items-start">
-									<Steps />
-								</div>
-							</div>
-						</FormLayout>
-					</main>
+		<FormLayout>
+			<div className="w-full bg-berlin-blue-400">
+				<h2 className="text-xl lg:text-4xl font-bold px-7.5 py-2.5 lg:max-w-[974px] mx-auto lg:px-0">
+					{i18n("title.residence-registration")}
+				</h2>
+			</div>
+			<div className="flex flex-col h-full justify-start px-7.5 py-10 lg:max-w-[974px] mx-auto lg:px-0 w-full">
+				<div className="flex w-full print:hidden">
+					<Progress />
+				</div>
+				<div className="flex flex-col items-start">
+					<Steps />
 				</div>
 			</div>
-		</>
+		</FormLayout>
 	);
 }
