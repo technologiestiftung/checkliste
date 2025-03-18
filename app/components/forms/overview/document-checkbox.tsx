@@ -48,31 +48,25 @@ export function DocumentCheckbox({
 	};
 
 	return (
-		<li className="flex w-full flex-col items-center gap-2 border border-berlin-gray-200 bg-berlin-gray-100">
+		<li className="flex w-full flex-col items-center gap-2 font-bold rounded-xs">
 			<label
 				htmlFor={id}
-				className="flex w-full cursor-pointer items-center justify-between gap-2 px-4 py-2"
+				className="flex w-full cursor-pointer items-center justify-between gap-8 px-4 py-2"
 			>
-				<div className="flex items-center gap-2">
-					<div className="flex h-5 w-5">
-						<input
-							type="checkbox"
-							className="h-5 w-5"
-							id={id}
-							checked={value === true}
-							onChange={onChange}
-						/>
-					</div>
-					<span
-						className={
-							value === true ? "text-gray-400 line-through" : undefined
-						}
-					>
-						{i18n(id as keyof typeof translations)}
-					</span>
+				<div className="flex h-5 w-5">
+					<input
+						type="checkbox"
+						className="h-5 w-5"
+						id={id}
+						checked={value === true}
+						onChange={onChange}
+					/>
+				</div>
+				<div className="bg-berlin-blue-400 rounded-xs px-7 py-2 w-full">
+					{i18n(id as keyof typeof translations)}
+					<DocumentLink id={id} />
 				</div>
 			</label>
-			<DocumentLink id={id} />
 		</li>
 	);
 }

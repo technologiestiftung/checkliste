@@ -5,10 +5,11 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 	const { currentStep, goToPreviousStep } = useProgressStore();
 
 	return (
-		<div className="flex items-end w-full h-[calc(100dvh-30px)] lg:h-full bg-gray-200 relative">
+		<div className="flex items-end w-full h-[calc(100dvh-44px)] lg:h-full bg-gray-200 relative">
 			<Link
-				className="absolute lg:hidden top-0 w-full h-10 cursor-default"
+				className="absolute lg:hidden top-0 w-full h-7 cursor-default"
 				to="/"
+				tabIndex={-1}
 			/>
 
 			<div className="h-[calc(100dvh-70px)] bg-white flex w-full flex-col items-center justify-between animate-slide-up lg:animate-none rounded-t-[20px] lg:rounded-t-none">
@@ -40,6 +41,7 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 							{i18n("button.cancel")}
 						</Link>
 					</div>
+					<span className="w-full border-1 border-berlin-gray-200" />
 					{children}
 				</main>
 			</div>

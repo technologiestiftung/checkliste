@@ -51,7 +51,7 @@ const de = {
 	"button.next": "Weiter",
 	"button.cancel": "Abbrechen",
 	"button.next.tooltip": "Bitte beantworte die Frage zuerst.",
-	print: "Seite Drucken",
+	print: "Liste herunterladen",
 	"title.residence-registration": "Anmeldung einer Wohnung",
 	"title.id-card": "Beantragung eines Personalausweises",
 	"title.certificate-of-conduct": "Beantragung eines Führungszeugnisses",

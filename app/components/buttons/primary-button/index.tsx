@@ -2,10 +2,12 @@ export function PrimaryButton({
 	label,
 	type,
 	disabled,
+	onClick,
 }: {
 	label: string;
 	type?: "button" | "submit" | "reset" | undefined;
 	disabled?: boolean;
+	onClick?: () => void;
 }) {
 	return (
 		<button
@@ -16,6 +18,7 @@ export function PrimaryButton({
 			}`}
 			type={type}
 			disabled={disabled}
+			onClick={onClick}
 		>
 			<span className="py-2.5 px-5 text-base lg:text-2xl">{label}</span>
 		</button>
