@@ -1,5 +1,5 @@
 import { i18n } from "~/i18n/i18n-utils";
-
+import { DownloadIcon } from "~/components/icons/download-icon";
 export function DocumentLink({ id }: { id: string }) {
 	let url = "";
 
@@ -42,27 +42,11 @@ export function DocumentLink({ id }: { id: string }) {
 	}
 
 	return (
-		<div className="h-full w-full bg-berlin-gray-200 px-4 py-2 print:hidden">
-			<a
-				href={url}
-				className="flex w-fit gap-1 text-blue-700 underline visited:text-purple-500"
-			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					strokeWidth={1.5}
-					stroke="currentColor"
-					className="h-6 w-6"
-				>
-					<path
-						strokeLinecap="round"
-						strokeLinejoin="round"
-						d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
-					/>
-				</svg>
-				{i18n("download")}
+		<div className="print:hidden">
+			<a href={url} className="w-fit">
+				<DownloadIcon />
 			</a>
+			{/* <span className="text-sm">{i18n("download")}</span> */}
 		</div>
 	);
 }

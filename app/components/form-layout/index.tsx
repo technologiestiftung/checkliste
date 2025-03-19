@@ -4,6 +4,8 @@ import { useProgressStore } from "../steps/store";
 export function FormLayout({ children }: { children: React.ReactNode }) {
 	const { currentStep, goToPreviousStep } = useProgressStore();
 
+	const isLastStep = currentStep === 15;
+
 	return (
 		<div className="flex items-end w-full h-[calc(100dvh-44px)] lg:h-full bg-gray-200 relative">
 			<Link
@@ -38,10 +40,10 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 							className="text-base lg:text-2xl text-berlin-blue-900 font-bold p-2.5 pt-5"
 							to="/"
 						>
-							{i18n("button.cancel")}
+							{isLastStep ? i18n("button.finish") : i18n("button.cancel")}
 						</Link>
 					</div>
-					<span className="w-full border-1 border-berlin-gray-200" />
+					<span className="w-full border-t-1 border-berlin-gray-200" />
 					{children}
 				</main>
 			</div>

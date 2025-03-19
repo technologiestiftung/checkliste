@@ -18,8 +18,11 @@ const de = {
 	selectLanguage: "Suchen Sie Ihre Sprache aus:",
 	intro:
 		"Diese Anwendung hilft, Ihren Termin beim Bürgeramt optimal vorzubereiten. Beantworten Sie ein paar Fragen und wir erstellen eine Übersicht der benötigten Dokumente.",
-	"context.p1": "Diese Anwendung ist ein Prototyp vom",
-	"context.p2": "Berlin und wird aktuell für einen Test verwendet.",
+	context: `Diese Anwendung ist ein Prototyp vom <a class="font-bold underline text-berlin-blue-500"
+							href="https://citylab-berlin.org/de/start/"
+							target="_blank"
+							rel="noopener noreferrer"
+						> CityLAB</a> Berlin und wird aktuell für einen Test verwendet.`,
 	"navigation.title": "Wählen Sie eine Dienstleistung",
 	"navigation.description": "Finden Sie heraus, welche Dokumente Sie benötigen",
 	"navigation.button": "Starten",
@@ -52,6 +55,7 @@ const de = {
 	"button.cancel": "Abbrechen",
 	"button.next.tooltip": "Bitte beantworte die Frage zuerst.",
 	print: "Liste herunterladen",
+	"button.finish": "Fertig",
 	"title.residence-registration": "Anmeldung einer Wohnung",
 	"title.id-card": "Beantragung eines Personalausweises",
 	"title.certificate-of-conduct": "Beantragung eines Führungszeugnisses",
@@ -101,12 +105,17 @@ const de = {
 	"overview.title": "Ihre persönliche Checkliste wurde erstellt",
 	"overview.text.1":
 		"Wir haben eine Checkliste aller erforderlichen Dokumente für Ihren Termin erstellt. Bitte bringen Sie diese ausgefüllt, unterschrieben und ausgedruckt mit.",
-	"overview.text.2": "Sie benötigen diese Dokumente:",
-	"overview.text.3":
+	"overview.title.2": "Sie benötigen diese Dokumente:",
+	"overview.text.2":
 		"Bereiten Sie sich mit dieser Liste auf Ihren Termin vor. Haken Sie die Dokumente ab, die Sie schon haben.",
+	"overview.hint.title": "Hinweis:",
+	"overview.hint.text":
+		"Ab 1. Mai 2025 werden biometrische Passbilder nur in zertifizierten Fotostudios oder Bürgerämtern digital erstellt und übermittelt. Pro Dokument fällt eine Gebühr von 6 € an, zahlbar ausschließlich per Karte.",
+	"overview.feedback": "Beantworten Sie uns gerne ein paar Fragen.",
+
 	registrationForm: "Anmeldeformular",
 	"registrationForm.tooltip": "Dieses Dokument ist immer notwendig.",
-	movingInConfirmation: "Einzugsbestätigung des Wohnungsgebers/Vermieters",
+	movingInConfirmation: "Einzugsbestätigung des Wohnungsgebers/ Vermieters",
 	"movingInConfirmation.tooltip": "Dieses Dokument ist immer notwendig.",
 	birthCertificate: "Geburtsurkunde",
 	"birthCertificate.tooltip":
@@ -152,7 +161,7 @@ const de = {
 	nonEuIdOrPassportOrReplacement: "Reisepass oder Passersatzpapiere",
 	"nonEuIdOrPassportOrReplacement.tooltip":
 		"Dieses Dokument ist notwendig, um Dich auszuweisen.",
-	supplement: "Beiblatt zur Anmeldung/Hauptwohnungserklärung",
+	supplement: "Beiblatt zur Anmeldung/ Hauptwohnungserklärung",
 	"supplement.tooltip":
 		"Dieses Dokument ist notwendig, weil Du weiterhin in einer weiteren Wohnung gemeldet bleiben möchtest.",
 };

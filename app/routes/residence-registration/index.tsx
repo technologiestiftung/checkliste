@@ -16,7 +16,7 @@ export default function Index() {
 					</h2>
 				)}
 			</div>
-			<div className="flex flex-col h-full justify-start px-7.5 py-10 lg:max-w-[974px] mx-auto lg:px-0 w-full gap-3">
+			<div className="flex flex-col justify-start px-7.5 py-10 lg:max-w-[974px] mx-auto lg:px-0 w-full gap-3">
 				<div className="flex w-full print:hidden">
 					<Progress />
 				</div>

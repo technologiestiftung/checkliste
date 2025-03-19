@@ -22,19 +22,26 @@ export function Overview() {
 	return (
 		<div className="flex h-full flex-col gap-4 text-base lg:text-2xl">
 			<div className="flex flex-col gap-7">
-				<h2 className="flex w-full items-center justify-between gap-3 font-bold text-2xl lg:text-4xl">
-					{i18n("overview.title")}
-				</h2>
+				<div className="flex flex-row items-center gap-4">
+					<img
+						src="/images/check.svg"
+						alt="check icon"
+						className="size-[55px]"
+					/>
+					<h2 className="flex w-full items-center justify-between gap-3 font-bold text-2xl lg:text-4xl">
+						{i18n("overview.title")}
+					</h2>
+				</div>
 				<p dangerouslySetInnerHTML={{ __html: i18n("overview.text.1") }} />
 				<div className="flex flex-col gap-1">
 					<h3
 						className="font-bold"
-						dangerouslySetInnerHTML={{ __html: i18n("overview.text.2") }}
+						dangerouslySetInnerHTML={{ __html: i18n("overview.title.2") }}
 					/>
-					<p dangerouslySetInnerHTML={{ __html: i18n("overview.text.3") }} />
+					<p dangerouslySetInnerHTML={{ __html: i18n("overview.text.2") }} />
 				</div>
 			</div>
-			<ul className="flex flex-col gap-2">
+			<ul className="flex flex-col gap-3">
 				{documents.map(([key, value]) => (
 					<DocumentCheckbox key={key} id={key} value={value} />
 				))}
@@ -60,7 +67,25 @@ export function Overview() {
 					type="button"
 				/>
 			</div>
-			Hinweis Platzhalter
+			<div className="">
+				<h3
+					className="font-bold py-1"
+					dangerouslySetInnerHTML={{ __html: i18n("overview.hint.title") }}
+				/>
+				<p dangerouslySetInnerHTML={{ __html: i18n("overview.hint.text") }} />
+				<p
+					className="pt-6"
+					dangerouslySetInnerHTML={{ __html: i18n("context") }}
+				/>
+				<a
+					className="font-bold underline text-berlin-blue-500"
+					href={i18n("feedback.link")}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					{i18n("overview.feedback")}
+				</a>
+			</div>
 		</div>
 	);
 }
