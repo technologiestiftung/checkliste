@@ -1,10 +1,9 @@
 import { useOtherResidenceStore } from "./store/index.ts";
 import { useProgressStore } from "../../steps/store";
 import { RadioInput } from "../../radio-input";
-import { PrimaryButton } from "../../buttons/primary-button";
 import { SecondaryButton } from "../../buttons/secondary-button";
-import { useTimeout } from "../../../hooks/useTimeout.tsx";
 import { i18n } from "~/i18n/i18n-utils";
+import { FormButtonNext } from "~/components/buttons/form-button-next";
 
 export function IsRegisteringForMoreThanThreeMonths() {
 	const {
@@ -19,10 +18,6 @@ export function IsRegisteringForMoreThanThreeMonths() {
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const options = ["yes", "no"] as const;
-
-	const { isOver } = useTimeout();
-
-	const arePointerEventsDisabled = !isOver;
 
 	return (
 		<form
@@ -73,26 +68,7 @@ export function IsRegisteringForMoreThanThreeMonths() {
 			</p>
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<div
-					className={`${
-						!isValid
-							? `tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right before:w-[9rem] ${arePointerEventsDisabled ? "pointer-events-none" : ""}`
-							: undefined
-					}`}
-					data-tip={
-						!isValid || !needsRegistration
-							? i18n(
-									showHint ? "other-residence.q3.hint" : "button.next.tooltip",
-								)
-							: undefined
-					}
-				>
-					<PrimaryButton
-						label={i18n("button.next")}
-						type="submit"
-						disabled={!isValid || !needsRegistration}
-					/>
-				</div>
+				<FormButtonNext isValid={isValid} />
 
 				<SecondaryButton
 					label={i18n("button.back")}

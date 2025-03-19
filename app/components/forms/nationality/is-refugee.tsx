@@ -1,10 +1,9 @@
 import { RadioInput } from "../../radio-input";
 import { useNationalityStore } from "./store";
 import { useProgressStore } from "../../steps/store";
-import { PrimaryButton } from "../../buttons/primary-button";
 import { SecondaryButton } from "../../buttons/secondary-button";
-import { useTimeout } from "../../../hooks/useTimeout";
 import { i18n } from "~/i18n/i18n-utils";
+import { FormButtonNext } from "~/components/buttons/form-button-next";
 
 export function IsRefugee() {
 	const { isRefugee, setIsRefugee } = useNationalityStore();
@@ -13,10 +12,6 @@ export function IsRefugee() {
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const options = ["yes", "no"] as const;
-
-	const { isOver } = useTimeout();
-
-	const arePointerEventsDisabled = !isOver;
 
 	return (
 		<form
@@ -53,20 +48,7 @@ export function IsRefugee() {
 			</div>
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<div
-					className={`${
-						!isValid
-							? `tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right before:w-[9rem] ${arePointerEventsDisabled ? "pointer-events-none" : ""}`
-							: undefined
-					}`}
-					data-tip={!isValid ? i18n("button.next.tooltip") : undefined}
-				>
-					<PrimaryButton
-						label={i18n("button.next")}
-						type="submit"
-						disabled={!isValid}
-					/>
-				</div>
+				<FormButtonNext isValid={isValid} />
 
 				<SecondaryButton
 					label={i18n("button.back")}

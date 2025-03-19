@@ -1,18 +1,14 @@
 import { RadioInput } from "../../radio-input";
 import { useFirstRegistrationStore } from "./store";
 import { useProgressStore } from "../../steps/store";
-import { PrimaryButton } from "../../buttons/primary-button";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
-import { Tooltip } from "~/components/tooltip";
-import { useState } from "react";
+import { FormButtonNext } from "~/components/buttons/form-button-next";
 
 export function HasChild() {
 	const { hasChild, setHasChild } = useFirstRegistrationStore();
 
 	const isValid = hasChild !== null;
-
-	const [showTooltip, setShowTooltip] = useState(false);
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
@@ -54,23 +50,7 @@ export function HasChild() {
 			</div>
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<div
-					className={`relative`}
-					onMouseMove={() => setShowTooltip(true)}
-					onMouseOut={() => setShowTooltip(false)}
-				>
-					<PrimaryButton
-						label={i18n("button.next")}
-						type="submit"
-						disabled={!isValid}
-					/>
-					{showTooltip && !isValid && (
-						<Tooltip
-							content={i18n("button.next.tooltip")}
-							className="min-w-[120px] lg:min-w-[130px] top-14"
-						/>
-					)}
-				</div>
+				<FormButtonNext isValid={isValid} />
 
 				<SecondaryButton
 					label={i18n("button.back")}
