@@ -48,7 +48,7 @@ test("should have 3 documents in their checklist: registrationForm, movingInConf
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
 	const movingInConfirmation = page.locator("div").filter({
-		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
 	const germanIdOrPassport = page
 		.locator("div")
@@ -105,7 +105,7 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
 	const movingInConfirmation = page.locator("div").filter({
-		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
 	const birthCertificate = page
 		.locator("div")
@@ -170,7 +170,7 @@ test("should have 5 documents in their checklist: registrationForm, movingInConf
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
 	const movingInConfirmation = page.locator("div").filter({
-		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
 	const germanIdOrPassport = page
 		.locator("div")
@@ -236,7 +236,7 @@ test("should have 6 documents in their checklist: registrationForm, movingInConf
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
 	const movingInConfirmation = page.locator("div").filter({
-		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
 	const germanIdOrPassport = page
 		.locator("div")
@@ -311,7 +311,7 @@ test("should have 8 documents in their checklist: registrationForm, movingInConf
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
 	const movingInConfirmation = page.locator("div").filter({
-		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
 	const germanIdOrPassport = page
 		.locator("div")
@@ -391,7 +391,7 @@ test("should have 11 documents in their checklist: registrationForm, movingInCon
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
 	const movingInConfirmation = page.locator("div").filter({
-		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
 	const germanIdOrPassport = page
 		.locator("div")
