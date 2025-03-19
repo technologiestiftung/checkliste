@@ -14,10 +14,11 @@ export function DocumentCheckbox({
 	value: boolean | null;
 }) {
 	const { setDocs } = useOverviewStore();
+	const language = getLanguage();
 
 	const onChange = (event: ChangeEvent<HTMLInputElement>) => {
 		const currentValue = event.currentTarget.checked;
-		const language = getLanguage();
+
 		const translation =
 			translations["de"][id as keyof (typeof translations)["de"]];
 
@@ -51,12 +52,15 @@ export function DocumentCheckbox({
 		<li className="flex w-full flex-col items-center font-bold rounded-xs">
 			<label
 				htmlFor={id}
-				className="flex w-full cursor-pointer items-center justify-between gap-4 lg:gap-8"
+				className="flex w-full items-center justify-between gap-4 lg:gap-8 "
 			>
 				<div className="flex size-6.5">
 					<input
 						type="checkbox"
-						className="size-6.5 bg-red-300"
+						className={`peer relative size-6.5 appearance-none border-2 border-black rounded-xs
+							checked:after:content-[''] checked:after:w-full checked:after:h-full
+							checked:after:absolute checked:after:inset-0 checked:after:bg-no-repeat checked:after:bg-center
+							checked:after:bg-[url('/images/check-marker.svg')]`}
 						id={id}
 						checked={value === true}
 						onChange={onChange}
