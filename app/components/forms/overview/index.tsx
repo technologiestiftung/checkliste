@@ -46,26 +46,28 @@ export function Overview() {
 					<DocumentCheckbox key={key} id={key} value={value} />
 				))}
 			</ul>
-			<div className="flex h-full w-full flex-row-reverse items-end justify-between print:hidden">
+			<div className="flex h-full w-full flex-row items-end justify-end lg:justify-between print:hidden">
 				<SecondaryButton
 					label={i18n("button.back")}
 					onClick={goToPreviousStep}
 					className="hidden lg:flex"
 				/>
-				<PrimaryButton
-					label={i18n("button.print")}
-					onClick={() => {
-						const originalTitle = document.title;
-						document.title = "Dokumenten-Checkliste-Bürgeramt";
-						trackInteraction({
-							eventAction: "button click",
-							eventName: "print document checklist",
-						});
-						window.print();
-						document.title = originalTitle;
-					}}
-					type="button"
-				/>
+				<div className="relative">
+					<PrimaryButton
+						label={i18n("button.print")}
+						onClick={() => {
+							const originalTitle = document.title;
+							document.title = "Dokumenten-Checkliste-Bürgeramt";
+							trackInteraction({
+								eventAction: "button click",
+								eventName: "print document checklist",
+							});
+							window.print();
+							document.title = originalTitle;
+						}}
+						type="button"
+					/>
+				</div>
 			</div>
 			<div>
 				<p

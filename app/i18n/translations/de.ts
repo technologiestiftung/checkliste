@@ -84,18 +84,18 @@ const de = {
 	"nationality.q4": "Sind Sie unter 16 Jahre alt?",
 	"nationality.q5": "Sind Sie ein:e Geflüchtete:r? ",
 	"nationality.q5.hint":
-		"Hinweis: Eventuell muss Ihre Anmeldung über das Flüchtlingsbürgeramt erfolgen. Hier finden Sie mehr Informationen:",
+		"Eventuell muss Ihre Anmeldung über das Flüchtlingsbürgeramt erfolgen. Hier finden Sie mehr Informationen:",
 	"other-residence.q1": "Bleiben Sie in einer anderen Wohnung gemeldet?",
 	"other-residence.q2": "Wohnen Sie im Ausland?",
 	"other-residence.q3":
 		"Möchten Sie für mehr als drei Monate in Berlin bleiben?",
 	"other-residence.q3.hint":
-		"Hinweis: Wenn Sie nicht länger als drei Monate in Berlin bleiben, müssen Sie sich nicht anmelden.",
+		"Wenn Sie nicht länger als drei Monate in Berlin bleiben, müssen Sie sich nicht anmelden.",
 	"other-residence.q3.hint.link.label": "Termin stornieren",
 	"other-residence.q4":
 		"Möchten Sie für mehr als sechs Monate in Berlin bleiben?",
 	"other-residence.q4.hint":
-		"Hinweis: Wenn Sie nicht länger als sechs Monate in Berlin bleiben, müssen Sie sich nicht anmelden.",
+		"Wenn Sie nicht länger als sechs Monate in Berlin bleiben, müssen Sie sich nicht anmelden.",
 	"other-residence.q4.hint.link.label": "Termin stornieren",
 
 	/*

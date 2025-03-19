@@ -11,6 +11,7 @@ export default {
 				"berlin-blue-500": "#2A0E8C",
 				"berlin-blue-400": "#BDCDE7",
 				"berlin-blue-300": "#D6DCED",
+				"berlin-blue-200": "#E4EFFF",
 
 				"berlin-gray-200": "#CCC",
 				"berlin-gray-100": "#F5F5F5",

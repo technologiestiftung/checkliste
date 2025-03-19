@@ -3,21 +3,20 @@ import { useFirstRegistrationStore } from "./store";
 import { useProgressStore } from "../../steps/store";
 import { PrimaryButton } from "../../buttons/primary-button";
 import { SecondaryButton } from "../../buttons/secondary-button";
-import { useTimeout } from "../../../hooks/useTimeout";
 import { i18n } from "~/i18n/i18n-utils";
+import { Tooltip } from "~/components/tooltip";
+import { useState } from "react";
 
 export function HasChild() {
 	const { hasChild, setHasChild } = useFirstRegistrationStore();
 
 	const isValid = hasChild !== null;
 
+	const [showTooltip, setShowTooltip] = useState(false);
+
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const options = ["yes", "no"] as const;
-
-	const { isOver } = useTimeout();
-
-	const arePointerEventsDisabled = !isOver;
 
 	return (
 		<form
@@ -56,18 +55,21 @@ export function HasChild() {
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<div
-					className={`${
-						!isValid
-							? `tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right before:w-[9rem] ${arePointerEventsDisabled ? "pointer-events-none" : ""}`
-							: undefined
-					}`}
-					data-tip={!isValid ? i18n("button.next.tooltip") : undefined}
+					className={`relative`}
+					onMouseMove={() => setShowTooltip(true)}
+					onMouseOut={() => setShowTooltip(false)}
 				>
 					<PrimaryButton
 						label={i18n("button.next")}
 						type="submit"
 						disabled={!isValid}
 					/>
+					{showTooltip && !isValid && (
+						<Tooltip
+							content={i18n("button.next.tooltip")}
+							className="min-w-[120px] lg:min-w-[130px] top-14"
+						/>
+					)}
 				</div>
 
 				<SecondaryButton
