@@ -28,7 +28,7 @@ export function LanguageSelect() {
 				ref={languageSelectRef}
 			>
 				<button
-					className="w-[106px] flex gap-1 bg-white items-center rounded-xs border-1 border-berlin-blue-900 hover:bg-berlin-blue-400 cursor-pointer hover:text-berlin-blue-900"
+					className="w-[106px] lg:w-[128px] flex gap-1 bg-white items-center rounded-xs border-1 border-berlin-blue-900 hover:bg-berlin-blue-400 cursor-pointer hover:text-berlin-blue-900"
 					onClick={() => setIsOpen(!isOpen)}
 					aria-label={i18n("language-select")}
 					aria-expanded={isOpen}
@@ -48,7 +48,7 @@ export function LanguageSelect() {
 				</button>
 
 				<div
-					className={`${isOpen ? "block" : "hidden"} absolute top-[44px] w-[106px]
+					className={`${isOpen ? "block" : "hidden"} absolute top-[44px] w-[106px] lg:w-[128px]
 					rounded-b-xs right-0 bg-white border-b-1 border-x-1 border-berlin-blue-900
 					`}
 				>
