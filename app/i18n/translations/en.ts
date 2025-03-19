@@ -1,4 +1,7 @@
 const en = {
+	/*
+	Language
+	*/
 	dir: "ltr",
 	ar: "العربية",
 	de: "Deutsch",
@@ -7,148 +10,126 @@ const en = {
 	fr: "Français",
 	tr: "Türkçe",
 	ru: "Русский",
-	"start.mobile": "Home",
-	"start.desktop": "Home",
-	title: "Welcome to the checklist",
-	selectLanguage: "Select language",
+
+	/*
+	Start Page and general elements
+	*/
+	title: "Welcome to the Checklist",
+	selectLanguage: "Select your language:",
 	intro:
-		"This application helps you prepare for your appointment at the Berlin Citizen Office. Answer a few questions and we will create a list of documents you need to bring.",
-	"context.p1": "This application is a prototype of",
-	"context.p2": "Berlin and is currently being used for a test.",
+		"This application helps you prepare optimally for your appointment at the Citizens' Office. Answer a few questions, and we will create an overview of the required documents.",
+	context: `This application is a prototype from <a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://citylab-berlin.org/en/start/"
+							target="_blank"
+							rel="noopener noreferrer"
+						> CityLAB</a> Berlin and is currently being used for testing.`,
+
 	"navigation.title": "Select a service",
 	"navigation.description": "Find out which documents you need",
 	"navigation.button": "Start",
-	"navigation.id-card": "Apply for an ID card",
+	"navigation.id-card": "Apply for an identity card",
 	"navigation.certificate-of-conduct": "Apply for a certificate of conduct",
-	"navigation.residence-registration":
-		"Residence registration – Single apartment or main residence",
+	"navigation.residence-registration": "Register a sole or main residence",
+	"navigation.startpage": "Homepage",
+	"footer.toTheTop": "To the top of the page",
+	"footer.button.name.expand": "Show more",
+	"footer.button.name.collapse": "Show less",
+	"upperFooter.checklist.title": "Checklist",
+	"upperFooter.checklist.about": "About the project",
+	"upperFooter.checklist.impressum": "Legal notice",
+	"upperFooter.checklist.dataprivacy": "Data privacy",
+	"upperFooter.checklist.accessibility": "Accessibility statement",
+
+	"language-select": "Select language",
+	"logo.t2": "A project of",
+	"logo.t3": "In cooperation with",
+	"logo.t4": "Sponsored by",
+
 	yes: "Yes",
 	no: "No",
-	download: "Download",
-	"language-select": "Select language",
-	"your-appointment": "Your appointment",
-	address: "Address",
-	"plan-route": "plan route",
-	print: "Print page",
+	"download.tooltip": "Download",
 	"button.back": "Back",
 	"button.next": "Next",
+	"button.cancel": "Cancel",
 	"button.next.tooltip": "Please answer the question first.",
-	"feedback.question": "Do you like this application?",
-	"feedback.intro":
-		"This application is a prototype of CityLAB Berlin and is currently being used for a test.",
+	"button.print": "Download list",
+	"button.finish": "Finish",
+	"title.residence-registration": "Registering a residence",
+	"title.id-card": "Applying for an identity card",
+	"title.certificate-of-conduct": "Applying for a certificate of conduct",
+	"title.hint": "Note:",
+
+	/*
+	Feedback
+	*/
+	"feedback.question": "Do you have feedback on the application?",
 	"feedback.link":
-		"https://citylabberlin.typeform.com/to/wkhvLJyN?product_id=checklist",
-	"feedback.link.label": "Please answer a few questions.",
+		"https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist",
+	"feedback.button.fillout": "Fill out survey",
+	"feedback.button.no": "No, thanks",
+
+	/*
+	Flow Residence
+	*/
 	"first-registration.q1": "Are you registering in Berlin for the first time?",
-	"first-registration.q1.tooltip":
-		"If yes, documents such as a birth or marriage certificate may need to be presented.",
 	"first-registration.q2": "Are you married?",
-	"first-registration.q2.tooltip":
-		"If yes, the marriage certificate must be presented.",
-	"first-registration.q3": "Do you want to register your spouse as well?",
-	"first-registration.q3.tooltip":
-		"If yes, you will need an ID card or passport from your spouse.",
-	"first-registration.q4": "Do you have children under the age of 18?",
-	"first-registration.q4.tooltip":
-		"If yes, the birth certificate and custody declaration must be presented for each child.",
+	"first-registration.q3": "Do you also want to register your spouse?",
+	"first-registration.q4": "Do you have children under 18?",
 	"first-registration.q5": "Is a child moving with you?",
-	"first-registration.q5.tooltip":
-		"If yes, a declaration of consent from the legal guardian and an identity card or passport must be presented for each child.",
 	"first-registration.q6": "Are more than two people moving in total?",
-	"first-registration.q6.tooltip":
-		"If yes, an additional registration form must be completed.",
-	"nationality.q1": "Are you a German citizen?",
-	"nationality.q1.tooltip":
-		"If yes, your identity card or passport must be presented.",
+	"nationality.q1": "Do you have German citizenship?",
 	"nationality.q2": "Are you over 16 years old?",
-	"nationality.q2.tooltip":
-		"If yes, please bring the consent form from your legal guardian to the appointment.",
 	"nationality.q3": "Are you from an EU country?",
-	"nationality.q3.tooltip":
-		"If yes, please bring your ID card, passport, or alternative travel document to the appointment.",
-	"nationality.q4": "Are you over 16 years old?",
-	"nationality.q4.tooltip":
-		"If yes, the declaration of consent of the legal guardian must be presented.",
+	"nationality.q4": "Are you under 16 years old?",
 	"nationality.q5": "Are you a refugee?",
-	"nationality.q5.tooltip":
-		"If yes, the Flüchtlingsbürgeramt may be responsible for registering a new address.",
 	"nationality.q5.hint":
-		"Note: You may have to register via the Flüchtlingsbürgeramt (Refugee Citizens Office). You can find more information here:",
-	"other-residence.q1": "Will you remain registered at another address?",
-	"other-residence.q1.tooltip":
-		"If yes, you may need a additional registration form or declaration of main residence.",
-	"other-residence.q2": "Do you live outside of Germany?",
-	"other-residence.q2.tooltip":
-		"Depending on how long you are staying, you may not need to register.",
+		"Note: Your registration may need to be processed at the Refugee Citizens' Office. You can find more information here:",
+	"other-residence.q1": "Are you remaining registered at another residence?",
+	"other-residence.q2": "Do you live abroad?",
 	"other-residence.q3":
-		"Are you planning on staying in Berlin for more than three months?",
-	"other-residence.q3.tooltip": "If no, registration is not necessary.",
+		"Do you plan to stay in Berlin for more than three months?",
 	"other-residence.q3.hint":
-		"Note: If you stay in Berlin for less than three months, you don't have to register.",
+		"Note: If you are staying in Berlin for less than three months, you do not need to register.",
 	"other-residence.q3.hint.link.label": "Cancel appointment",
 	"other-residence.q4":
-		"Are you planning on staying in Berlin for more than six months?",
-	"other-residence.q4.tooltip": "If no, registration is not necessary.",
+		"Do you plan to stay in Berlin for more than six months?",
 	"other-residence.q4.hint":
-		"Note: If you stay in Berlin for less than six months, you don't have to register.",
+		"Note: If you are staying in Berlin for less than six months, you do not need to register.",
 	"other-residence.q4.hint.link.label": "Cancel appointment",
-	"overview.title": "Your document checklist",
-	"overview.text":
-		"Here is a list of documents you will need to register your new address. You can use this list to prepare for your appointment. Tick the boxes for documents you already have prepared. If some documents are still missing, come back later - your progress will be saved! Please bring all documents <b>filled out</b>, <b>signed</b> and <b>printed</b> to your appointment.",
-	registrationForm: "Registration Form",
-	"registrationForm.tooltip": "This document is always required.",
-	movingInConfirmation: "Moving-In Confirmation from Landlord",
-	"movingInConfirmation.tooltip": "This document is always required.",
-	birthCertificate: "Birth Certificate",
-	"birthCertificate.tooltip":
-		"This document is necessary because you are registering in Berlin for the first time.",
-	marriageCertificate: "Marriage Certificate",
-	"marriageCertificate.tooltip":
-		"This document is necessary because you are married.",
-	idDocumentForSpouse: "ID Card or Passport of your spouse",
-	"idDocumentForSpouse.tooltip":
-		"This document is necessary because you are also registering your spouse.",
-	childBirthCertificate: "Birth Certificate of your child/children",
-	"childBirthCertificate.tooltip":
-		"This document is necessary because you have a child/children.",
-	custodyDeclaration: "Custody Declaration for your child/children",
-	"custodyDeclaration.tooltip":
-		"This document is necessary because you have a child/children.",
-	idDocumentForChild: "ID Card, Passport of your child/children",
-	"idDocumentForChild.tooltip":
-		"This document is necessary because you are also registering your child/children.",
-	guardianConsent: "Consent of the Legal Guardians for your child/children",
-	"guardianConsent.tooltip":
-		"This document is necessary because you are also registering your child/children.",
-	additionalRegistrationForm: "Additional Registration Form",
-	"additionalRegistrationForm.tooltip":
-		"This document is necessary because you are registering more than two people.",
-	germanIdOrPassportOrChildPassport: "Your own ID Card or Passport",
-	"germanIdOrPassportOrChildPassport.tooltip":
-		"This document is necessary to identify yourself.",
-	germanIdOrPassport: "Your own ID Card or Passport",
-	"germanIdOrPassport.tooltip":
-		"This document is necessary to identify yourself.",
-	confirmationOfCustodian: "Consent of Your Legal Guardians",
-	"confirmationOfCustodian.tooltip":
-		"This document is necessary because you are under the age of 16.",
+
+	/*
+	Checklist Overview
+	*/
+	"overview.title": "Your personal checklist has been created",
+	"overview.text.1":
+		"We have created a checklist of all the necessary documents for your appointment. Please bring them filled out, signed, and printed.",
+	"overview.title.2": "You need these documents:",
+	"overview.text.2":
+		"Use this list to prepare for your appointment. Check off the documents you already have.",
+	"overview.feedback": "Feel free to answer a few questions for us.",
+	"overview.id-card.hint.title": "Note:",
+	"overview.id-card.hint.text":
+		"From May 1, 2025, biometric passport photos will only be created and transmitted digitally in certified photo studios or Citizens' Offices. A fee of €6 per document applies, payable by card only.",
+
+	registrationForm: "Registration form",
+	movingInConfirmation: "Confirmation of move-in from the landlord",
+	birthCertificate: "Birth certificate",
+	marriageCertificate: "Marriage certificate",
+	idDocumentForSpouse: "Identity card or passport of your spouse",
+	childBirthCertificate: "Birth certificate of your child(ren)",
+	custodyDeclaration: "Custody declaration",
+	idDocumentForChild:
+		"Identity card, passport, or child’s passport of the child(ren)",
+	guardianConsent: "Consent from the legal guardians of the child(ren)",
+	additionalRegistrationForm: "Additional registration form",
+	germanIdOrPassportOrChildPassport:
+		"Your own identity card, passport, or child's passport",
+	germanIdOrPassport: "Your own identity card or passport",
+	confirmationOfCustodian: "Consent from your legal guardians",
 	euIdOrPassportOrReplacement:
-		"European ID Card, Passport, or Passport Replacement Documents",
-	"euIdOrPassportOrReplacement.tooltip":
-		"This document is necessary to identify yourself.",
-	nonEuIdOrPassportOrReplacement: "Passport or Passport Replacement Documents",
-	"nonEuIdOrPassportOrReplacement.tooltip":
-		"This document is necessary to identify yourself.",
-	supplement: "Additional Registration/Main Residence Declaration",
-	"supplement.tooltip":
-		"This document is necessary because you want to remain registered at another apartment.",
-	"logo.t1": "Executed by",
-	"logo.t2": "A project by",
-	"logo.t3": "In cooperation with Bürgeramt der Zukunft",
-	"logo.t4": "Supported by",
-	dataPrivacy: "Data Privacy",
-	imprint: "Imprint",
-	"imprint.link": "https://www.technologiestiftung-berlin.de/en/imprint",
+		"European ID card, passport, or replacement travel document",
+	nonEuIdOrPassportOrReplacement: "Passport or replacement travel document",
+	supplement: "Supplement to registration/main residence declaration",
 };
 
 export default en;

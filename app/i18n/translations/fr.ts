@@ -1,4 +1,7 @@
 const fr = {
+	/*
+	Language
+	*/
 	dir: "ltr",
 	ar: "العربية",
 	de: "Deutsch",
@@ -7,152 +10,130 @@ const fr = {
 	fr: "Français",
 	tr: "Türkçe",
 	ru: "Русский",
-	"start.mobile": "Accueil",
-	"start.desktop": "Accueil",
-	title: "Bienvenue sur la liste de contrôle",
-	selectLanguage: "Sélectionner la langue",
+
+	/*
+	Start Page and general elements
+	*/
+	title: "Bienvenue sur la checklist",
+	selectLanguage: "Choisissez votre langue :",
 	intro:
-		"Cette application vous aide à préparer votre rendez-vous à l'Office des Citoyens de Berlin. Répondez à quelques questions et nous créerons une liste de documents que vous devez apporter.",
-	"context.p1": "Cette application est un prototype de",
-	"context.p2": "Berlin et est actuellement utilisée pour un test.",
-	"navigation.title": "Sélectionnez un service",
-	"navigation.description": "Découvrez quels documents vous avez besoin",
+		"Cette application vous aide à préparer au mieux votre rendez-vous à la mairie. Répondez à quelques questions et nous créerons une liste des documents nécessaires.",
+	context: `Cette application est un prototype du <a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://citylab-berlin.org/fr/start/"
+							target="_blank"
+							rel="noopener noreferrer"
+						> CityLAB</a> Berlin et est actuellement utilisée pour un test.`,
+
+	"navigation.title": "Choisissez un service",
+	"navigation.description": "Découvrez quels documents sont nécessaires",
 	"navigation.button": "Commencer",
-	"navigation.id-card": "Demander un passeport",
-	"navigation.certificate-of-conduct": "Demander un certificat de conduite",
+	"navigation.id-card": "Demander une carte d'identité",
+	"navigation.certificate-of-conduct": "Demander un casier judiciaire",
 	"navigation.residence-registration":
-		"Inscription – Appartement unique ou résidence principale",
+		"Enregistrer une résidence principale ou unique",
+	"navigation.startpage": "Page d'accueil",
+	"footer.toTheTop": "Retour en haut de la page",
+	"footer.button.name.expand": "Afficher plus",
+	"footer.button.name.collapse": "Afficher moins",
+	"upperFooter.checklist.title": "Checklist",
+	"upperFooter.checklist.about": "À propos du projet",
+	"upperFooter.checklist.impressum": "Mentions légales",
+	"upperFooter.checklist.dataprivacy": "Politique de confidentialité",
+	"upperFooter.checklist.accessibility": "Déclaration d'accessibilité",
+
+	"language-select": "Sélectionner la langue",
+	"logo.t2": "Un projet de",
+	"logo.t3": "En coopération avec",
+	"logo.t4": "Soutenu par",
+
 	yes: "Oui",
 	no: "Non",
-	download: "Télécharger",
-	"language-select": "Sélectionner la langue",
-	"your-appointment": "Votre Rendez-vous",
-	address: "Adresse",
-	"plan-route": "Planifier l'itinéraire",
-	print: "Imprimer la page",
-	"button.back": "Précédent",
+	"download.tooltip": "Télécharger",
+	"button.back": "Retour",
 	"button.next": "Suivant",
-	"button.next.tooltip": "Veuillez répondre à la question d'abord.",
-	"feedback.intro":
-		"Cette application est un prototype du CityLAB Berlin et est actuellement utilisée pour un test.",
-	"feedback.question": "Comment trouvez-vous l'application ?",
+	"button.cancel": "Annuler",
+	"button.next.tooltip": "Veuillez d'abord répondre à la question.",
+	"button.print": "Télécharger la liste",
+	"button.finish": "Terminer",
+	"title.residence-registration": "Enregistrement d'une résidence",
+	"title.id-card": "Demande d'une carte d'identité",
+	"title.certificate-of-conduct": "Demande d'un casier judiciaire",
+	"title.hint": "Remarque :",
+
+	/*
+	Feedback
+	*/
+	"feedback.question": "Avez-vous des commentaires sur l'application ?",
 	"feedback.link":
-		"https://citylabberlin.typeform.com/to/wkhvLJyN?product_id=checklist",
-	"feedback.link.label": "Veuillez répondre à quelques questions.",
-	"first-registration.q1":
-		"Vous inscrivez-vous pour la première fois à Berlin ?",
-	"first-registration.q1.tooltip":
-		"Si oui, des documents tels que l'acte de naissance ou le certificat de mariage doivent être présentés.",
+		"https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist",
+	"feedback.button.fillout": "Remplir le sondage",
+	"feedback.button.no": "Non, merci",
+
+	/*
+	Flow Residence
+	*/
+	"first-registration.q1": "Est-ce votre première inscription à Berlin ?",
 	"first-registration.q2": "Êtes-vous marié(e) ?",
-	"first-registration.q2.tooltip":
-		"Si oui, le certificat de mariage doit être présenté.",
 	"first-registration.q3":
 		"Souhaitez-vous également inscrire votre conjoint(e) ?",
-	"first-registration.q3.tooltip":
-		"Si oui, vous aurez besoin d'une pièce d'identité ou d'un passeport de votre conjoint(e).",
 	"first-registration.q4": "Avez-vous des enfants de moins de 18 ans ?",
-	"first-registration.q4.tooltip":
-		"Si oui, l'acte de naissance et la déclaration de garde pour chaque enfant doivent être présentés.",
-	"first-registration.q5": "Un enfant déménage-t-il avec vous ?",
-	"first-registration.q5.tooltip":
-		"Si oui, une autorisation des tuteurs légaux et une pièce d'identité, un passeport ou un passeport pour enfant pour chaque enfant doivent être présentés.",
-	"first-registration.q6": "Plus de deux personnes déménagent-elles au total ?",
-	"first-registration.q6.tooltip":
-		"Si oui, un formulaire d'inscription supplémentaire doit être rempli.",
+	"first-registration.q5": "Un enfant emménage-t-il avec vous ?",
+	"first-registration.q6":
+		"Y a-t-il plus de deux personnes qui emménagent ensemble ?",
 	"nationality.q1": "Avez-vous la nationalité allemande ?",
-	"nationality.q1.tooltip":
-		"Si oui, une pièce d'identité ou un passeport doit être présenté.",
 	"nationality.q2": "Avez-vous plus de 16 ans ?",
-	"nationality.q2.tooltip":
-		"Si oui, l'autorisation des tuteurs légaux doit être présentée.",
 	"nationality.q3": "Venez-vous d'un pays de l'UE ?",
-	"nationality.q3.tooltip":
-		"Si oui, votre carte d'identité, passeport ou documents de voyage de substitution doivent être présentés.",
-	"nationality.q4": "Avez-vous plus de 16 ans ?",
-	"nationality.q4.tooltip":
-		"Si oui, l'autorisation du tuteur légal doit être présentée.",
-	"nationality.q5": "Êtes-vous un(e) réfugié(e) ?",
-	"nationality.q5.tooltip":
-		"Si vous êtes réfugié(e), le bureau des citoyens réfugiés peut être responsable de votre inscription.",
+	"nationality.q4": "Avez-vous moins de 16 ans ?",
+	"nationality.q5": "Êtes-vous réfugié(e) ?",
 	"nationality.q5.hint":
-		"Note : Votre inscription peut devoir se faire via le bureau des citoyens réfugiés. Voici plus d'informations :",
-	"other-residence.q1":
-		"Resterez-vous enregistré(e) dans un autre appartement ?",
-	"other-residence.q1.tooltip":
-		"Si oui, vous aurez besoin d'un supplément d'inscription/déclaration de résidence principale.",
-	"other-residence.q2": "Vivez-vous à l'étranger ?",
-	"other-residence.q2.tooltip":
-		"Selon la durée de votre séjour, vous pourriez ne pas avoir besoin de vous inscrire.",
-	"other-residence.q3": "Souhaitez-vous rester à Berlin plus de trois mois ?",
-	"other-residence.q3.tooltip": "Si non, l'inscription n'est pas nécessaire.",
+		"Remarque : Votre inscription pourrait devoir être effectuée au Bureau des réfugiés. Vous trouverez plus d'informations ici :",
+	"other-residence.q1": "Restez-vous inscrit(e) dans une autre résidence ?",
+	"other-residence.q2": "Habitez-vous à l'étranger ?",
+	"other-residence.q3":
+		"Prévoyez-vous de rester à Berlin pendant plus de trois mois ?",
 	"other-residence.q3.hint":
-		"Note : Si vous restez à Berlin moins de trois mois, vous n'avez pas à vous inscrire.",
+		"Remarque : Si vous restez à Berlin pendant moins de trois mois, vous n'avez pas besoin de vous inscrire.",
 	"other-residence.q3.hint.link.label": "Annuler le rendez-vous",
-	"other-residence.q4": "Souhaitez-vous rester à Berlin plus de six mois ?",
-	"other-residence.q4.tooltip": "Si non, l'inscription n'est pas nécessaire.",
+	"other-residence.q4":
+		"Prévoyez-vous de rester à Berlin pendant plus de six mois ?",
 	"other-residence.q4.hint":
-		"Note : Si vous restez à Berlin moins de six mois, vous n'avez pas à vous inscrire.",
+		"Remarque : Si vous restez à Berlin pendant moins de six mois, vous n'avez pas besoin de vous inscrire.",
 	"other-residence.q4.hint.link.label": "Annuler le rendez-vous",
-	"overview.title": "Votre Liste de Documents",
-	"overview.text":
-		"Voici une liste de documents dont vous avez besoin pour enregistrer votre nouvelle adresse. Vous pouvez utiliser cette liste pour vous préparer à votre rendez-vous. Cochez les documents que vous avez déjà. Si des documents vous manquent, revenez plus tard - votre progression sera sauvegardée ! Veuillez apporter tous les documents <b>remplis</b>, <b>signés</b> et <b>imprimés</b> à votre rendez-vous.",
-	registrationForm: "Formulaire d'Inscription",
-	"registrationForm.tooltip": "Ce document est toujours nécessaire.",
-	movingInConfirmation: "Confirmation d'Emménagement du Bailleur",
-	"movingInConfirmation.tooltip": "Ce document est toujours nécessaire.",
-	birthCertificate: "Acte de Naissance",
-	"birthCertificate.tooltip":
-		"Ce document est nécessaire car vous vous inscrivez pour la première fois à Berlin.",
-	marriageCertificate: "Certificat de Mariage",
-	"marriageCertificate.tooltip":
-		"Ce document est nécessaire car vous êtes marié(e).",
-	idDocumentForSpouse: "Pièce d'Identité ou Passeport de votre Conjoint(e)",
-	"idDocumentForSpouse.tooltip":
-		"Ce document est nécessaire car vous inscrivez également votre conjoint(e).",
-	childBirthCertificate: "Acte de Naissance de votre/vos Enfant(s)",
-	"childBirthCertificate.tooltip":
-		"Ce document est nécessaire car vous avez un/des enfant(s).",
-	custodyDeclaration: "Déclaration de Garde",
-	"custodyDeclaration.tooltip":
-		"Ce document est nécessaire car vous avez un/des enfant(s).",
+
+	/*
+	Checklist Overview
+	*/
+	"overview.title": "Votre checklist personnelle a été créée",
+	"overview.text.1":
+		"Nous avons créé une checklist de tous les documents nécessaires pour votre rendez-vous. Veuillez les apporter remplis, signés et imprimés.",
+	"overview.title.2": "Vous avez besoin de ces documents :",
+	"overview.text.2":
+		"Utilisez cette liste pour préparer votre rendez-vous. Cochez les documents que vous possédez déjà.",
+	"overview.feedback":
+		"N’hésitez pas à répondre à quelques questions pour nous.",
+	"overview.id-card.hint.title": "Remarque :",
+	"overview.id-card.hint.text":
+		"À partir du 1er mai 2025, les photos biométriques de passeport ne pourront être prises et transmises que dans des studios photo certifiés ou des bureaux municipaux. Des frais de 6 € par document s'appliquent, payables uniquement par carte.",
+
+	registrationForm: "Formulaire d'inscription",
+	movingInConfirmation: "Confirmation d'emménagement du propriétaire",
+	birthCertificate: "Certificat de naissance",
+	marriageCertificate: "Certificat de mariage",
+	idDocumentForSpouse: "Carte d'identité ou passeport de votre conjoint(e)",
+	childBirthCertificate: "Certificat de naissance de votre (vos) enfant(s)",
+	custodyDeclaration: "Déclaration de garde",
 	idDocumentForChild:
-		"Pièce d'Identité, Passeport ou Passeport pour Enfant de votre/vos enfant(s)",
-	"idDocumentForChild.tooltip":
-		"Ce document est nécessaire car vous inscrivez également votre/vos enfant(s).",
-	guardianConsent: "Consentement des Tuteurs Légaux de l'enfant/les enfants",
-	"guardianConsent.tooltip":
-		"Ce document est nécessaire car vous inscrivez également votre/vos enfant(s).",
-	additionalRegistrationForm: "Formulaire d'Inscription Supplémentaire",
-	"additionalRegistrationForm.tooltip":
-		"Ce document est nécessaire car vous inscrivez plus de deux personnes.",
+		"Carte d'identité, passeport ou passeport enfant de votre (vos) enfant(s)",
+	guardianConsent: "Consentement des tuteurs légaux de votre (vos) enfant(s)",
+	additionalRegistrationForm: "Formulaire d'inscription supplémentaire",
 	germanIdOrPassportOrChildPassport:
-		"Votre propre Pièce d'Identité, Passeport ou Passeport pour Enfant",
-	"germanIdOrPassportOrChildPassport.tooltip":
-		"Ce document est nécessaire pour vous identifier.",
-	germanIdOrPassport: "Votre propre Pièce d'Identité ou Passeport",
-	"germanIdOrPassport.tooltip":
-		"Ce document est nécessaire pour vous identifier.",
-	confirmationOfCustodian: "Consentement de vos Tuteurs Légaux",
-	"confirmationOfCustodian.tooltip":
-		"Ce document est nécessaire car vous avez moins de 16 ans.",
+		"Votre propre carte d'identité, passeport ou passeport enfant",
+	germanIdOrPassport: "Votre propre carte d'identité ou passeport",
+	confirmationOfCustodian: "Consentement de votre tuteur légal",
 	euIdOrPassportOrReplacement:
-		"Carte d'Identité Européenne, Passeport ou Documents de Remplacement de Passeport",
-	"euIdOrPassportOrReplacement.tooltip":
-		"Ce document est nécessaire pour vous identifier.",
-	nonEuIdOrPassportOrReplacement:
-		"Passeport ou Documents de Remplacement de Passeport",
-	"nonEuIdOrPassportOrReplacement.tooltip":
-		"Ce document est nécessaire pour vous identifier.",
-	supplement: "Supplément d'Inscription/Déclaration de Résidence Principale",
-	"supplement.tooltip":
-		"Ce document est nécessaire car vous souhaitez rester enregistré(e) dans un autre appartement.",
-	"logo.t1": "Réalisé par",
-	"logo.t2": "Un projet de",
-	"logo.t3": "En collaboration avec Bürgeramt der Zukunft",
-	"logo.t4": "Avec le soutien de",
-	dataPrivacy: "Protection des Données",
-	imprint: "Mentions Légales",
-	"imprint.link": "https://www.technologiestiftung-berlin.de/impressum",
+		"Carte d'identité européenne, passeport ou document de remplacement",
+	nonEuIdOrPassportOrReplacement: "Passeport ou document de remplacement",
+	supplement: "Annexe à la déclaration d'inscription/résidence principale",
 };
 
 export default fr;
