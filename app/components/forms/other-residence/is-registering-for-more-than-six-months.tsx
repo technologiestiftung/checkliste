@@ -65,7 +65,7 @@ export function IsRegisteringForMoreThanSixMonths() {
 				<a
 					href="https://service.berlin.de/terminvereinbarung/termin/manage/"
 					target="_blank"
-					className="text-blue-700 underline visited:text-purple-500"
+					className="text-blue-700 hover:underline visited:text-purple-500"
 				>
 					{i18n("other-residence.q4.hint.link.label")}{" "}
 				</a>

@@ -18,11 +18,12 @@ const de = {
 	selectLanguage: "Suchen Sie Ihre Sprache aus:",
 	intro:
 		"Diese Anwendung hilft, Ihren Termin beim Bürgeramt optimal vorzubereiten. Beantworten Sie ein paar Fragen und wir erstellen eine Übersicht der benötigten Dokumente.",
-	context: `Diese Anwendung ist ein Prototyp vom <a class="font-bold underline text-berlin-blue-500"
+	context: `Diese Anwendung ist ein Prototyp vom <a class="font-bold hover:underline text-berlin-blue-500"
 							href="https://citylab-berlin.org/de/start/"
 							target="_blank"
 							rel="noopener noreferrer"
 						> CityLAB</a> Berlin und wird aktuell für einen Test verwendet.`,
+
 	"navigation.title": "Wählen Sie eine Dienstleistung",
 	"navigation.description": "Finden Sie heraus, welche Dokumente Sie benötigen",
 	"navigation.button": "Starten",
@@ -44,17 +45,15 @@ const de = {
 	"logo.t2": "Ein Projekt der",
 	"logo.t3": "In Kooperation mit",
 	"logo.t4": "Gefördert durch",
-	dataPrivacy: "Datenschutz",
-	imprint: "Impressum",
 
 	yes: "Ja",
 	no: "Nein",
-	download: "Herunterladen",
+	"download.tooltip": "Herunterladen",
 	"button.back": "Zurück",
 	"button.next": "Weiter",
 	"button.cancel": "Abbrechen",
 	"button.next.tooltip": "Bitte beantworte die Frage zuerst.",
-	print: "Liste herunterladen",
+	"button.print": "Liste herunterladen",
 	"button.finish": "Fertig",
 	"title.residence-registration": "Anmeldung einer Wohnung",
 	"title.id-card": "Beantragung eines Personalausweises",
@@ -108,62 +107,32 @@ const de = {
 	"overview.title.2": "Sie benötigen diese Dokumente:",
 	"overview.text.2":
 		"Bereiten Sie sich mit dieser Liste auf Ihren Termin vor. Haken Sie die Dokumente ab, die Sie schon haben.",
-	"overview.hint.title": "Hinweis:",
-	"overview.hint.text":
-		"Ab 1. Mai 2025 werden biometrische Passbilder nur in zertifizierten Fotostudios oder Bürgerämtern digital erstellt und übermittelt. Pro Dokument fällt eine Gebühr von 6 € an, zahlbar ausschließlich per Karte.",
 	"overview.feedback": "Beantworten Sie uns gerne ein paar Fragen.",
+	"overview.id-card.hint.title": "Hinweis:",
+	"overview.id-card.hint.text":
+		"Ab 1. Mai 2025 werden biometrische Passbilder nur in zertifizierten Fotostudios oder Bürgerämtern digital erstellt und übermittelt. Pro Dokument fällt eine Gebühr von 6 € an, zahlbar ausschließlich per Karte.",
 
 	registrationForm: "Anmeldeformular",
-	"registrationForm.tooltip": "Dieses Dokument ist immer notwendig.",
 	movingInConfirmation: "Einzugsbestätigung des Wohnungsgebers/ Vermieters",
-	"movingInConfirmation.tooltip": "Dieses Dokument ist immer notwendig.",
 	birthCertificate: "Geburtsurkunde",
-	"birthCertificate.tooltip":
-		"Dieses Dokument ist notwendig, weil Du Dich zum ersten Mal in Berlin anmeldest.",
 	marriageCertificate: "Heiratsurkunde",
-	"marriageCertificate.tooltip":
-		"Dieses Dokument ist notwendig, weil Du verheiratet bist.",
 	idDocumentForSpouse:
 		"Personalausweis oder Reisepass Deiner Ehepartnerin/Deines Ehepartners",
-	"idDocumentForSpouse.tooltip":
-		"Dieses Dokument ist notwendig, weil Du Deine Ehepartnerin/Deinen Ehepartner mitanmeldest.",
 	childBirthCertificate: "Geburtsurkunde Deines Kindes/Deiner Kinder",
-	"childBirthCertificate.tooltip":
-		"Dieses Dokument ist notwendig, weil Du ein Kind/Kinder hast.",
 	custodyDeclaration: "Sorgerechtserklärung",
-	"custodyDeclaration.tooltip":
-		"Dieses Dokument ist notwendig, weil Du ein Kind/Kinder hast.",
 	idDocumentForChild:
 		"Personalausweis, Reisepass oder Kinderpass des Kindes/der Kinder",
-	"idDocumentForChild.tooltip":
-		"Dieses Dokument ist notwendig, weil Du Dein Kind/Deine Kinder mitanmeldest.",
 	guardianConsent:
 		"Einverständniserklärung der Sorgeberechtigten des Kinder/der Kinder",
-	"guardianConsent.tooltip":
-		"Dieses Dokument ist notwendig, weil Du Dein Kind/Deine Kinder mitanmeldest.",
 	additionalRegistrationForm: "Weiteres Anmeldeformular",
-	"additionalRegistrationForm.tooltip":
-		"Dieses Dokument ist notwendig, weil Du mehr als zwei Personen anmeldest.",
 	germanIdOrPassportOrChildPassport:
 		"Dein eigener Personalausweis, Reisepass oder Kinderpass",
-	"germanIdOrPassportOrChildPassport.tooltip":
-		"Dieses Dokument ist notwendig, um Dich auszuweisen.",
 	germanIdOrPassport: "Dein eigener Personalausweis oder Reisepass",
-	"germanIdOrPassport.tooltip":
-		"Dieses Dokument ist notwendig, um Dich auszuweisen.",
 	confirmationOfCustodian: "Einverständniserklärung Deiner Sorgeberechtigten",
-	"confirmationOfCustodian.tooltip":
-		"Dieses Dokument ist notwendig, weil Du unter 16 Jahre alt bist.",
 	euIdOrPassportOrReplacement:
 		"Europäische ID-Card, Reisepass oder Passersatzpapiere",
-	"euIdOrPassportOrReplacement.tooltip":
-		"Dieses Dokument ist notwendig, um Dich auszuweisen.",
 	nonEuIdOrPassportOrReplacement: "Reisepass oder Passersatzpapiere",
-	"nonEuIdOrPassportOrReplacement.tooltip":
-		"Dieses Dokument ist notwendig, um Dich auszuweisen.",
 	supplement: "Beiblatt zur Anmeldung/ Hauptwohnungserklärung",
-	"supplement.tooltip":
-		"Dieses Dokument ist notwendig, weil Du weiterhin in einer weiteren Wohnung gemeldet bleiben möchtest.",
 };
 
 export default de;

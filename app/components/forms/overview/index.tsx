@@ -20,8 +20,8 @@ export function Overview() {
 	useTrackGoalChecklistConversion();
 
 	return (
-		<div className="flex h-full flex-col gap-4 text-base lg:text-2xl">
-			<div className="flex flex-col gap-7">
+		<div className="flex h-full flex-col gap-8 text-base lg:text-2xl">
+			<div className="flex flex-col gap-8">
 				<div className="flex flex-row items-center gap-4">
 					<img
 						src="/images/check.svg"
@@ -53,7 +53,7 @@ export function Overview() {
 					className="hidden lg:flex"
 				/>
 				<PrimaryButton
-					label={i18n("print")}
+					label={i18n("button.print")}
 					onClick={() => {
 						const originalTitle = document.title;
 						document.title = "Dokumenten-Checkliste-Bürgeramt";
@@ -67,18 +67,13 @@ export function Overview() {
 					type="button"
 				/>
 			</div>
-			<div className="">
-				<h3
-					className="font-bold py-1"
-					dangerouslySetInnerHTML={{ __html: i18n("overview.hint.title") }}
-				/>
-				<p dangerouslySetInnerHTML={{ __html: i18n("overview.hint.text") }} />
+			<div>
 				<p
 					className="pt-6"
 					dangerouslySetInnerHTML={{ __html: i18n("context") }}
 				/>
 				<a
-					className="font-bold underline text-berlin-blue-500"
+					className="font-bold hover:underline text-berlin-blue-500 print:hidden"
 					href={i18n("feedback.link")}
 					target="_blank"
 					rel="noopener noreferrer"

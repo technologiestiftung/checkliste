@@ -84,7 +84,7 @@ export function IsRefugee() {
 					<a
 						href="https://service.berlin.de/standort/327539/"
 						target="_blank"
-						className="text-berlin-blue-900 font-bold underline visited:text-purple-500"
+						className="text-berlin-blue-900 font-bold hover:underline visited:text-purple-500"
 					>
 						https://service.berlin.de/standort/327539/
 					</a>

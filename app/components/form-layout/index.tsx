@@ -16,7 +16,7 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 
 			<div className="h-[calc(100dvh-70px)] bg-white flex w-full flex-col items-center justify-between animate-slide-up lg:animate-none rounded-t-[20px] lg:rounded-t-none">
 				<main className="flex h-full w-full flex-col">
-					<div className="hidden lg:flex w-full">
+					<div className="hidden lg:flex w-full print:hidden">
 						<Link
 							className="text-2xl text-berlin-blue-900 font-bold px-4 py-5"
 							to="/"
@@ -24,10 +24,12 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 							{i18n("navigation.startpage")}
 						</Link>
 					</div>
-					<div className="flex lg:hidden items-center justify-between px-4.5">
+					<div className="flex lg:hidden items-center justify-between px-4.5 print:hidden">
 						<button
 							className={`text-base lg:text-2xl font-bold p-2.5 pt-5 ${
-								currentStep === 0 ? "opacity-0" : "text-berlin-blue-900"
+								currentStep === 0
+									? "opacity-0"
+									: "text-berlin-blue-900 hover:underline"
 							}`}
 							onClick={goToPreviousStep}
 							type="button"
@@ -37,7 +39,7 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 							{i18n("button.back")}
 						</button>
 						<Link
-							className="text-base lg:text-2xl text-berlin-blue-900 font-bold p-2.5 pt-5"
+							className="text-base lg:text-2xl text-berlin-blue-900 hover:underline font-bold p-2.5 pt-5"
 							to="/"
 						>
 							{isLastStep ? i18n("button.finish") : i18n("button.cancel")}
