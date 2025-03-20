@@ -32,6 +32,7 @@ const tr = {
 	"navigation.residence-registration":
 		"Tek veya ana ikamet adresinizi kaydedin",
 	"navigation.startpage": "Ana Sayfa",
+	"navigation.startpage.mobile": "Ana sayfaya git",
 	"footer.toTheTop": "Sayfanın başına git",
 	"footer.button.name.expand": "Daha fazla göster",
 	"footer.button.name.collapse": "Daha az göster",
@@ -129,6 +130,43 @@ const tr = {
 	euIdOrPassportOrReplacement: "Avrupa kimlik kartı, pasaport veya yedek belge",
 	nonEuIdOrPassportOrReplacement: "Pasaport veya yedek belge",
 	supplement: "Kayıt ek belgesi veya ana ikamet bildirimi",
+
+	/*
+	About
+	*/
+	"about.title": "Kontrol Listesi Projesi Hakkında",
+	"about.text.p1":
+		"Berlin vatandaşlık ofisleri, randevuların en sık iptal edilme sebebinin gerekli belgelerin eksik veya unutulmuş olması olduğunu bildirmektedir. Kısa sorularla kişisel durumunuzu analiz eden uygulama, size hangi belgelerin gerektiğini açık bir şekilde gösteren kişiselleştirilmiş bir kontrol listesi oluşturur. Bu sayede, resmi daire ziyaretiniz daha verimli ve stresiz hale gelir.",
+	"about.text.p2": `Kontrol listesi ile 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120686/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">birincil ikametgah kaydı</a>, 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120703/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">kimlik kartı başvurusu</a> ve 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120926/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">sabıka kaydı belgesi</a> için Schlesische Strasse Vatandaşlık Ofisi'nde hazırlık yapabilirsiniz. 
+
+    Uygulama, gerekli bilgileri açık ve hedef odaklı bir şekilde sunmak amacıyla 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">Geleceğin Vatandaşlık Ofisi</a> ile yakın iş birliği içinde geliştirilmiştir. Yedi dilde kullanılabilir olması sayesinde kontrol listesi, Berlin vatandaşları için kolay erişilebilir ve kullanışlıdır.`,
+	"about.text.p3": `Perde arkasına bir göz atmak isterseniz, açık kaynak kodunu 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://github.com/technologiestiftung/checkliste"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">GitHub</a>'da bulabilirsiniz.`,
+	"about.text.p4": "Resmi daire ziyareti hazırlığınızda başarılar dileriz!",
 };
 
 export default tr;

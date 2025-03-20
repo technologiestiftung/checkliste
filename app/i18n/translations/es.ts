@@ -33,6 +33,7 @@ const es = {
 	"navigation.residence-registration":
 		"Registrar una residencia única o principal",
 	"navigation.startpage": "Página de inicio",
+	"navigation.startpage.mobile": "A la página de inicio",
 	"footer.toTheTop": "Volver al principio de la página",
 	"footer.button.name.expand": "Mostrar más",
 	"footer.button.name.collapse": "Mostrar menos",
@@ -132,6 +133,44 @@ const es = {
 		"Tarjeta de identidad europea, pasaporte o documento de reemplazo",
 	nonEuIdOrPassportOrReplacement: "Pasaporte o documento de reemplazo",
 	supplement: "Anexo a la declaración de registro/residencia principal",
+
+	/*
+	About
+	*/
+	"about.title": "Sobre el Proyecto de Lista de Verificación",
+	"about.text.p1":
+		"Las oficinas de atención al ciudadano en Berlín informan que la razón más común para el fracaso de las citas es la ausencia o el olvido de los documentos requeridos. Mediante preguntas breves sobre tu situación personal, la aplicación crea una lista de verificación individual que te muestra con precisión qué documentos necesitas. Esto hace que tu visita a las autoridades sea más eficiente y menos estresante.",
+	"about.text.p2": `Con la lista de verificación, puedes prepararte para la 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120686/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">inscripción de una residencia principal</a>, 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120703/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">solicitud de un documento de identidad</a> y un 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120926/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">certificado de antecedentes penales</a> en la oficina de atención al ciudadano de Schlesische Strasse. 
+
+    La aplicación fue desarrollada en estrecha colaboración con la 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">Oficina de Atención al Ciudadano del Futuro</a> para presentar la información necesaria de manera clara y específica. Gracias a su disponibilidad en siete idiomas, la lista de verificación es fácilmente accesible y utilizable para los ciudadanos de Berlín.`,
+	"about.text.p3": `Si deseas echar un vistazo detrás de escena, puedes encontrar el código abierto en 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://github.com/technologiestiftung/checkliste"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">GitHub</a>.`,
+	"about.text.p4":
+		"¡Buena suerte con la preparación para tu visita a las autoridades!",
 };
 
 export default es;

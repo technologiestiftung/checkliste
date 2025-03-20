@@ -31,6 +31,7 @@ const en = {
 	"navigation.certificate-of-conduct": "Apply for a certificate of conduct",
 	"navigation.residence-registration": "Register a sole or main residence",
 	"navigation.startpage": "Homepage",
+	"navigation.startpage.mobile": "Return to homepage",
 	"footer.toTheTop": "To the top of the page",
 	"footer.button.name.expand": "Show more",
 	"footer.button.name.collapse": "Show less",
@@ -130,6 +131,44 @@ const en = {
 		"European ID card, passport, or replacement travel document",
 	nonEuIdOrPassportOrReplacement: "Passport or replacement travel document",
 	supplement: "Supplement to registration/main residence declaration",
+
+	/*
+	About
+	*/
+	"about.title": "About the Checklist Project",
+	"about.text.p1":
+		"Berlin citizen offices report that the most common reason for appointment failures is the absence or forgetting of required documents. Using short questions about your personal situation, the application creates an individual checklist that precisely shows you which documents are needed. This makes your visit to the authorities more efficient and stress-free.",
+	"about.text.p2": `With the checklist, you can prepare for the 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120686/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">registration of a primary residence</a>, 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120703/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">application for an ID card</a>, and a 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120926/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">certificate of conduct</a> at the Bürgeramt (citizen office) Schlesische Strasse. 
+
+    The application was developed in close collaboration with the 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">Citizen Office of the Future</a> to prepare the necessary information in a clear and targeted manner. Thanks to its availability in seven languages, the checklist is easily accessible and usable for Berlin citizens.`,
+	"about.text.p3": `If you would like to take a look behind the scenes, you can find the open-source code on 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://github.com/technologiestiftung/checkliste"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">GitHub</a>.`,
+	"about.text.p4":
+		"Good luck with preparing for your visit to the authorities!",
 };
 
 export default en;
