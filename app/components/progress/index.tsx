@@ -13,7 +13,6 @@ export function Progress() {
 				Abschnitt {currentSection}/{maxSections}
 			</label>
 
-			{/* custom progress bar for each maxSection add a div with the same width depending on the currentSection color the div in blue if currentSection is reached */}
 			<div
 				className="w-full flex flex-row gap-3 h-2 lg:h-3.5"
 				id={"progress-bar"}
