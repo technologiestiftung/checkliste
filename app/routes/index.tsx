@@ -35,18 +35,10 @@ export default function Index() {
 				<span className="w-full border-b-1 border-b-berlin-gray-200" />
 				<Navigation />
 				<div className="w-full flex flex-col gap-10 pt-6 pb-9 lg:py-12 px-7.5 lg:px-0 text-base lg:text-2xl">
-					<div>
-						{i18n("context.p1")}{" "}
-						<a
-							className="font-bold underline text-berlin-blue-500"
-							href="https://citylab-berlin.org/de/start/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							CityLAB
-						</a>{" "}
-						{i18n("context.p2")}
-					</div>
+					<div
+						className="text-base lg:text-2xl"
+						dangerouslySetInnerHTML={{ __html: i18n("context") }}
+					/>
 					<LogoBanner />
 				</div>
 			</div>

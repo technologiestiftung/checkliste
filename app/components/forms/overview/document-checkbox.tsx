@@ -1,6 +1,5 @@
 import { DocumentLink } from "./document-link.tsx";
 import { useOverviewStore } from "./store";
-import { InfoButton } from "../../buttons/info-button";
 import { i18n } from "~/i18n/i18n-utils";
 import { trackInteraction } from "../../feedback/matomo.ts";
 import type { ChangeEvent } from "react";
@@ -15,10 +14,11 @@ export function DocumentCheckbox({
 	value: boolean | null;
 }) {
 	const { setDocs } = useOverviewStore();
+	const language = getLanguage();
 
 	const onChange = (event: ChangeEvent<HTMLInputElement>) => {
 		const currentValue = event.currentTarget.checked;
-		const language = getLanguage();
+
 		const translation =
 			translations["de"][id as keyof (typeof translations)["de"]];
 
@@ -49,31 +49,28 @@ export function DocumentCheckbox({
 	};
 
 	return (
-		<li className="flex w-full flex-col items-center gap-2 border border-berlin-gray bg-berlin-lighter-gray">
+		<li className="flex w-full flex-col items-center font-bold rounded-xs">
 			<label
 				htmlFor={id}
-				className="flex w-full cursor-pointer items-center justify-between gap-2 px-4 py-2"
+				className="flex w-full items-center justify-between gap-4 lg:gap-8 "
 			>
-				<div className="flex items-center gap-2">
-					<div className="flex h-5 w-5">
-						<input
-							type="checkbox"
-							className="h-5 w-5"
-							id={id}
-							checked={value === true}
-							onChange={onChange}
-						/>
-					</div>
-					<span
-						className={
-							value === true ? "text-gray-400 line-through" : undefined
-						}
-					>
-						{i18n(id as keyof typeof translations)}
-					</span>
+				<div className="flex size-6.5">
+					<input
+						type="checkbox"
+						className={`peer relative size-6.5 appearance-none border-2 border-black rounded-xs
+							checked:after:content-[''] checked:after:w-full checked:after:h-full
+							checked:after:absolute checked:after:inset-0 checked:after:bg-no-repeat checked:after:bg-center
+							checked:after:bg-[url('/images/check-marker.svg')]`}
+						id={id}
+						checked={value === true}
+						onChange={onChange}
+					/>
+				</div>
+				<div className="bg-berlin-blue-400 rounded-xs px-5 py-2 w-full leading-snug flex flex-row items-center justify-between gap-2">
+					{i18n(id as keyof typeof translations)}
+					<DocumentLink id={id} />
 				</div>
 			</label>
-			<DocumentLink id={id} />
 		</li>
 	);
 }

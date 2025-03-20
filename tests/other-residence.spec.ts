@@ -53,13 +53,13 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
 	const movingInConfirmation = page.locator("div").filter({
-		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
 	const germanIdOrPassport = page
 		.locator("div")
 		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
 	const supplement = page.locator("div").filter({
-		hasText: /^Beiblatt zur Anmeldung\/Hauptwohnungserklärung$/,
+		hasText: /^Beiblatt zur Anmeldung\/ Hauptwohnungserklärung$/,
 	});
 
 	await expect(registrationForm).toBeVisible();
@@ -124,13 +124,13 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 		.locator("div")
 		.filter({ hasText: /^Anmeldeformular$/ });
 	const movingInConfirmation = page.locator("div").filter({
-		hasText: /^Einzugsbestätigung des Wohnungsgebers\/Vermieters$/,
+		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
 	const germanIdOrPassport = page
 		.locator("div")
 		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
 	const supplement = page.locator("div").filter({
-		hasText: /^Beiblatt zur Anmeldung\/Hauptwohnungserklärung$/,
+		hasText: /^Beiblatt zur Anmeldung\/ Hauptwohnungserklärung$/,
 	});
 
 	await expect(registrationForm).toBeVisible();

@@ -18,8 +18,12 @@ const de = {
 	selectLanguage: "Suchen Sie Ihre Sprache aus:",
 	intro:
 		"Diese Anwendung hilft, Ihren Termin beim Bürgeramt optimal vorzubereiten. Beantworten Sie ein paar Fragen und wir erstellen eine Übersicht der benötigten Dokumente.",
-	"context.p1": "Diese Anwendung ist ein Prototyp vom",
-	"context.p2": "Berlin und wird aktuell für einen Test verwendet.",
+	context: `Diese Anwendung ist ein Prototyp vom <a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://citylab-berlin.org/de/start/"
+							target="_blank"
+							rel="noopener noreferrer"
+						> CityLAB</a> Berlin und wird aktuell für einen Test verwendet.`,
+
 	"navigation.title": "Wählen Sie eine Dienstleistung",
 	"navigation.description": "Finden Sie heraus, welche Dokumente Sie benötigen",
 	"navigation.button": "Starten",
@@ -27,6 +31,8 @@ const de = {
 	"navigation.certificate-of-conduct": "Führungszeugnis beantragen",
 	"navigation.residence-registration":
 		"Wohnsitz – Alleinige Wohnung oder Hauptwohnung anmelden",
+	"navigation.startpage": "Startseite",
+	"navigation.startpage.mobile": "Zur Startseite",
 	"footer.toTheTop": "Zum Seitenanfang",
 	"footer.button.name.expand": "Mehr anzeigen",
 	"footer.button.name.collapse": "Weniger anzeigen",
@@ -40,16 +46,20 @@ const de = {
 	"logo.t2": "Ein Projekt der",
 	"logo.t3": "In Kooperation mit",
 	"logo.t4": "Gefördert durch",
-	dataPrivacy: "Datenschutz",
-	imprint: "Impressum",
 
 	yes: "Ja",
 	no: "Nein",
-	download: "Herunterladen",
+	"download.tooltip": "Herunterladen",
 	"button.back": "Zurück",
 	"button.next": "Weiter",
+	"button.cancel": "Abbrechen",
 	"button.next.tooltip": "Bitte beantworte die Frage zuerst.",
-	print: "Seite Drucken",
+	"button.print": "Liste herunterladen",
+	"button.finish": "Fertig",
+	"title.residence-registration": "Anmeldung einer Wohnung",
+	"title.id-card": "Beantragung eines Personalausweises",
+	"title.certificate-of-conduct": "Beantragung eines Führungszeugnisses",
+	"title.hint": "Hinweis:",
 
 	/*
 	Feedback
@@ -59,13 +69,6 @@ const de = {
 		"https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist",
 	"feedback.button.fillout": "Umfrage ausfüllen",
 	"feedback.button.no": "Nein, danke",
-
-	/*
-	Cancel Flow
-	*/
-	"cancle-flow.question": "Fragenprozess wirklich beenden?",
-	"cancle-flow.button.continue": "Weiter bearbeiten",
-	"cancle-flow.button.cancel": "Beenden",
 
 	/*
 	Flow Wohnistz
@@ -82,18 +85,18 @@ const de = {
 	"nationality.q4": "Sind Sie unter 16 Jahre alt?",
 	"nationality.q5": "Sind Sie ein:e Geflüchtete:r? ",
 	"nationality.q5.hint":
-		"Hinweis: Eventuell muss Ihre Anmeldung über das Flüchtlingsbürgeramt erfolgen. Hier finden Sie mehr Informationen:",
+		"Eventuell muss Ihre Anmeldung über das Flüchtlingsbürgeramt erfolgen. Hier finden Sie mehr Informationen:",
 	"other-residence.q1": "Bleiben Sie in einer anderen Wohnung gemeldet?",
 	"other-residence.q2": "Wohnen Sie im Ausland?",
 	"other-residence.q3":
 		"Möchten Sie für mehr als drei Monate in Berlin bleiben?",
 	"other-residence.q3.hint":
-		"Hinweis: Wenn Sie nicht länger als drei Monate in Berlin bleiben, müssen Sie sich nicht anmelden.",
+		"Wenn Sie nicht länger als drei Monate in Berlin bleiben, müssen Sie sich nicht anmelden.",
 	"other-residence.q3.hint.link.label": "Termin stornieren",
 	"other-residence.q4":
 		"Möchten Sie für mehr als sechs Monate in Berlin bleiben?",
 	"other-residence.q4.hint":
-		"Hinweis: Wenn Sie nicht länger als sechs Monate in Berlin bleiben, müssen Sie sich nicht anmelden.",
+		"Wenn Sie nicht länger als sechs Monate in Berlin bleiben, müssen Sie sich nicht anmelden.",
 	"other-residence.q4.hint.link.label": "Termin stornieren",
 
 	/*
@@ -102,60 +105,72 @@ const de = {
 	"overview.title": "Ihre persönliche Checkliste wurde erstellt",
 	"overview.text.1":
 		"Wir haben eine Checkliste aller erforderlichen Dokumente für Ihren Termin erstellt. Bitte bringen Sie diese ausgefüllt, unterschrieben und ausgedruckt mit.",
-	"overview.text.2": "Sie benötigen diese Dokumente:",
-	"overview.text.3":
+	"overview.title.2": "Sie benötigen diese Dokumente:",
+	"overview.text.2":
 		"Bereiten Sie sich mit dieser Liste auf Ihren Termin vor. Haken Sie die Dokumente ab, die Sie schon haben.",
+	"overview.feedback": "Beantworten Sie uns gerne ein paar Fragen.",
+	"overview.id-card.hint.title": "Hinweis:",
+	"overview.id-card.hint.text":
+		"Ab 1. Mai 2025 werden biometrische Passbilder nur in zertifizierten Fotostudios oder Bürgerämtern digital erstellt und übermittelt. Pro Dokument fällt eine Gebühr von 6 € an, zahlbar ausschließlich per Karte.",
+
 	registrationForm: "Anmeldeformular",
-	"registrationForm.tooltip": "Dieses Dokument ist immer notwendig.",
-	movingInConfirmation: "Einzugsbestätigung des Wohnungsgebers/Vermieters",
-	"movingInConfirmation.tooltip": "Dieses Dokument ist immer notwendig.",
+	movingInConfirmation: "Einzugsbestätigung des Wohnungsgebers/ Vermieters",
 	birthCertificate: "Geburtsurkunde",
-	"birthCertificate.tooltip":
-		"Dieses Dokument ist notwendig, weil Du Dich zum ersten Mal in Berlin anmeldest.",
 	marriageCertificate: "Heiratsurkunde",
-	"marriageCertificate.tooltip":
-		"Dieses Dokument ist notwendig, weil Du verheiratet bist.",
 	idDocumentForSpouse:
 		"Personalausweis oder Reisepass Deiner Ehepartnerin/Deines Ehepartners",
-	"idDocumentForSpouse.tooltip":
-		"Dieses Dokument ist notwendig, weil Du Deine Ehepartnerin/Deinen Ehepartner mitanmeldest.",
 	childBirthCertificate: "Geburtsurkunde Deines Kindes/Deiner Kinder",
-	"childBirthCertificate.tooltip":
-		"Dieses Dokument ist notwendig, weil Du ein Kind/Kinder hast.",
 	custodyDeclaration: "Sorgerechtserklärung",
-	"custodyDeclaration.tooltip":
-		"Dieses Dokument ist notwendig, weil Du ein Kind/Kinder hast.",
 	idDocumentForChild:
 		"Personalausweis, Reisepass oder Kinderpass des Kindes/der Kinder",
-	"idDocumentForChild.tooltip":
-		"Dieses Dokument ist notwendig, weil Du Dein Kind/Deine Kinder mitanmeldest.",
 	guardianConsent:
 		"Einverständniserklärung der Sorgeberechtigten des Kinder/der Kinder",
-	"guardianConsent.tooltip":
-		"Dieses Dokument ist notwendig, weil Du Dein Kind/Deine Kinder mitanmeldest.",
 	additionalRegistrationForm: "Weiteres Anmeldeformular",
-	"additionalRegistrationForm.tooltip":
-		"Dieses Dokument ist notwendig, weil Du mehr als zwei Personen anmeldest.",
 	germanIdOrPassportOrChildPassport:
 		"Dein eigener Personalausweis, Reisepass oder Kinderpass",
-	"germanIdOrPassportOrChildPassport.tooltip":
-		"Dieses Dokument ist notwendig, um Dich auszuweisen.",
 	germanIdOrPassport: "Dein eigener Personalausweis oder Reisepass",
-	"germanIdOrPassport.tooltip":
-		"Dieses Dokument ist notwendig, um Dich auszuweisen.",
 	confirmationOfCustodian: "Einverständniserklärung Deiner Sorgeberechtigten",
-	"confirmationOfCustodian.tooltip":
-		"Dieses Dokument ist notwendig, weil Du unter 16 Jahre alt bist.",
 	euIdOrPassportOrReplacement:
 		"Europäische ID-Card, Reisepass oder Passersatzpapiere",
-	"euIdOrPassportOrReplacement.tooltip":
-		"Dieses Dokument ist notwendig, um Dich auszuweisen.",
 	nonEuIdOrPassportOrReplacement: "Reisepass oder Passersatzpapiere",
-	"nonEuIdOrPassportOrReplacement.tooltip":
-		"Dieses Dokument ist notwendig, um Dich auszuweisen.",
-	supplement: "Beiblatt zur Anmeldung/Hauptwohnungserklärung",
-	"supplement.tooltip":
-		"Dieses Dokument ist notwendig, weil Du weiterhin in einer weiteren Wohnung gemeldet bleiben möchtest.",
+	supplement: "Beiblatt zur Anmeldung/ Hauptwohnungserklärung",
+
+	/*
+	About
+	*/
+	"about.title": "Über das Projekt Checkliste",
+	"about.text.p1":
+		"Berliner Bürgerämter verzeichnen als häufigsten Grund für Terminabbrüche das Fehlen oder Vergessen der erforderlichen Unterlagen. Mithilfe kurzer Fragen zu Ihrer persönlichen Situation erstellt die Anwendung eine individuelle Checkliste, die Ihnen präzise anzeigt, welche Dokumente benötigt werden. Dadurch wird Ihr Behördengang effizienter und stressfreier gestaltet.",
+	"about.text.p2": `Mit der Checkliste können Sie die 
+	<a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://service.berlin.de/dienstleistung/120686/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Anmeldung eines Hauptwohnsitzes</a>, 
+	<a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://service.berlin.de/dienstleistung/120703/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Beantragung eines Personalausweises</a> und eines 
+	<a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://service.berlin.de/dienstleistung/120926/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Führungszeugnisses</a> im Ausbildungsbürgeramt Schlesische Strasse vorbereiten. 
+						
+	Die Anwendung wurde in enger Zusammenarbeit mit dem 
+	<a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Bürgeramt der Zukunft</a> entwickelt, um die notwendigen Informationen verständlich und zielgerichtet aufzubereiten. Dank der Verfügbarkeit in sieben Sprachen ist die Checkliste leicht zugänglich und für Berliner Bürger:innen nutzbar.`,
+	"about.text.p3": `Wenn Sie einen Blick hinter die Kulissen werfen möchtest, finden Sie den offenen Quellcode auf 
+	<a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://github.com/technologiestiftung/checkliste"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Github</a>.`,
+	"about.text.p4": "Viel Erfolg bei der Vorbereitung Ihres Behördengangs!",
 };
 
 export default de;

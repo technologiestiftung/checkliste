@@ -27,11 +27,13 @@ export function LanguageAnchor({ language }: LanguageAnchorProps) {
 
 	return (
 		<Link
-			className="flex w-full text-left p-2 items-center"
+			className="flex w-full text-left pt-3 pb-1 items-center"
 			to={href}
 			onClick={handleClick}
 		>
-			<span className="text-base hover:underline">{language.label}</span>
+			<span className="text-base lg:text-2xl hover:underline">
+				{language.label}
+			</span>
 		</Link>
 	);
 }

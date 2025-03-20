@@ -1,11 +1,9 @@
 import { RadioInput } from "../../radio-input";
 import { useNationalityStore } from "./store";
 import { useProgressStore } from "../../steps/store";
-import { InfoButton } from "../../buttons/info-button";
-import { PrimaryButton } from "../../buttons/primary-button";
 import { SecondaryButton } from "../../buttons/secondary-button";
-import { useTimeout } from "../../../hooks/useTimeout";
 import { i18n } from "~/i18n/i18n-utils";
+import { FormButtonNext } from "~/components/buttons/form-button-next";
 
 export function IsRefugee() {
 	const { isRefugee, setIsRefugee } = useNationalityStore();
@@ -14,10 +12,6 @@ export function IsRefugee() {
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const options = ["yes", "no"] as const;
-
-	const { isOver } = useTimeout();
-
-	const arePointerEventsDisabled = !isOver;
 
 	return (
 		<form
@@ -28,15 +22,9 @@ export function IsRefugee() {
 			}}
 		>
 			<div className="flex flex-col gap-4">
-				<div className="flex w-full items-baseline justify-between gap-3">
-					<p>{i18n("nationality.q5")}</p>
-					<div
-						className="tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right"
-						data-tip={i18n("nationality.q5.tooltip")}
-					>
-						<InfoButton />
-					</div>
-				</div>
+				<h2 className="text-xl font-bold lg:text-4xl">
+					{i18n("nationality.q5")}
+				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
 						const name = "nationality.q5.radio";
@@ -59,37 +47,30 @@ export function IsRefugee() {
 				</div>
 			</div>
 
-			<p className={`${isRefugee ? "block" : "hidden"}`}>
-				{i18n("nationality.q5.hint")}{" "}
-				<a
-					href="https://service.berlin.de/standort/327539/"
-					target="_blank"
-					className="text-blue-700 underline visited:text-purple-500"
-				>
-					https://service.berlin.de/standort/327539/
-				</a>
-			</p>
-
 			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<div
-					className={`${
-						!isValid
-							? `tooltip text-start sm:tooltip-top ltr:tooltip-left rtl:tooltip-right before:w-[9rem] ${arePointerEventsDisabled ? "pointer-events-none" : ""}`
-							: undefined
-					}`}
-					data-tip={!isValid ? i18n("button.next.tooltip") : undefined}
-				>
-					<PrimaryButton
-						label={i18n("button.next")}
-						type="submit"
-						disabled={!isValid}
-					/>
-				</div>
+				<FormButtonNext isValid={isValid} />
 
 				<SecondaryButton
 					label={i18n("button.back")}
 					onClick={goToPreviousStep}
+					className="hidden lg:flex"
 				/>
+			</div>
+
+			<div
+				className={`${isRefugee ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
+			>
+				<div className="font-bold">{i18n("title.hint")}</div>
+				<p>
+					{i18n("nationality.q5.hint")}{" "}
+					<a
+						href="https://service.berlin.de/standort/327539/"
+						target="_blank"
+						className="text-berlin-blue-900 font-bold hover:underline visited:text-purple-500"
+					>
+						https://service.berlin.de/standort/327539/
+					</a>
+				</p>
 			</div>
 		</form>
 	);

@@ -1,19 +1,29 @@
 import { useProgressStore } from "../steps/store";
 
-export function Progress({ id }: { id: string }) {
-	const { currentStep, maxSteps } = useProgressStore();
+export function Progress() {
+	const { currentSection, maxSections } = useProgressStore();
 
+	if (currentSection === 0) return null;
 	return (
-		<>
-			<label htmlFor={id} className="sr-only">
-				Current progress: {currentStep} of {maxSteps} steps
+		<div className="w-full flex flex-col lg:flex-row gap-2.5 lg:items-center">
+			<label
+				htmlFor={"progress-bar"}
+				className="shrink-0 text-base lg:text-2xl"
+			>
+				Abschnitt {currentSection}/{maxSections}
 			</label>
-			<progress
-				className="h-1 w-full bg-transparent"
-				id={id}
-				value={currentStep}
-				max={maxSteps}
-			/>
-		</>
+
+			<div
+				className="w-full flex flex-row gap-3 h-2 lg:h-3.5"
+				id={"progress-bar"}
+			>
+				{Array.from({ length: maxSections }).map((_, index) => (
+					<div
+						key={index}
+						className={`h-full w-full rounded-xs ${index < currentSection ? "bg-berlin-blue-900" : "bg-gray-200"}`}
+					/>
+				))}
+			</div>
+		</div>
 	);
 }

@@ -9,9 +9,7 @@ test("should translate page to english", async ({ page }) => {
 	const languageAnchorEN = page.getByText("English");
 	await languageAnchorEN.click();
 
-	const englishHeading = page.getByRole("heading", {
-		name: "Welcome to the checklist",
-	});
+	const englishHeading = page.getByText("Welcome to the Checklist");
 
 	await expect(englishHeading).toBeVisible();
 });
@@ -25,9 +23,7 @@ test("should translate page to german", async ({ page }) => {
 	const languageAnchorDE = page.getByRole("link", { name: "Deutsch" });
 	await languageAnchorDE.click();
 
-	const germanHeading = page.getByRole("heading", {
-		name: "Willkommen bei der Checkliste",
-	});
+	const germanHeading = page.getByText("Willkommen bei der Checkliste");
 
 	await expect(germanHeading).toBeVisible();
 });
@@ -41,9 +37,7 @@ test("should translate page to arabic", async ({ page }) => {
 	const languageAnchorAR = page.getByText("العربية");
 	await languageAnchorAR.click();
 
-	const arabicHeading = page.getByRole("heading", {
-		name: "مرحباً بك في قائمة المراجعة",
-	});
+	const arabicHeading = page.getByText("مرحبًا بك في قائمة التحقق");
 
 	await expect(arabicHeading).toBeVisible();
 });
@@ -57,9 +51,9 @@ test("should translate page to spanish", async ({ page }) => {
 	const languageAnchorES = page.getByText("Español");
 	await languageAnchorES.click();
 
-	const spanishHeading = page.getByRole("heading", {
-		name: "Bienvenido a la lista de control",
-	});
+	const spanishHeading = page.getByText(
+		"Bienvenido a la lista de verificación",
+	);
 
 	await expect(spanishHeading).toBeVisible();
 });
@@ -73,9 +67,7 @@ test("should translate page to french", async ({ page }) => {
 	const languageAnchorFR = page.getByText("Français");
 	await languageAnchorFR.click();
 
-	const frenchHeading = page.getByRole("heading", {
-		name: "Bienvenue sur la liste de contrôle",
-	});
+	const frenchHeading = page.getByText("Bienvenue sur la checklist");
 
 	await expect(frenchHeading).toBeVisible();
 });
@@ -89,9 +81,7 @@ test("should translate page to turkish", async ({ page }) => {
 	const languageAnchorTR = page.getByText("Türkçe");
 	await languageAnchorTR.click();
 
-	const turkishHeading = page.getByRole("heading", {
-		name: "Kontrol listesine hoş geldiniz",
-	});
+	const turkishHeading = page.getByText("Kontrol Listesine Hoş Geldiniz");
 
 	await expect(turkishHeading).toBeVisible();
 });
@@ -105,9 +95,9 @@ test("should translate page to russian", async ({ page }) => {
 	const languageAnchorRU = page.getByText("Русский");
 	await languageAnchorRU.click();
 
-	const russianHeading = page.getByRole("heading", {
-		name: "Добро пожаловать в контрольный список",
-	});
+	const russianHeading = page.getByText(
+		"Добро пожаловать в контрольный список",
+	);
 
 	await expect(russianHeading).toBeVisible();
 });
@@ -121,17 +111,15 @@ test("should keep the same language after refresh", async ({ page }) => {
 	const languageAnchorEN = page.getByText("English");
 	await languageAnchorEN.click();
 
-	const englishHeadingBeforeRefresh = page.getByRole("heading", {
-		name: "Welcome to the checklist",
-	});
+	const englishHeadingBeforeRefresh = page.getByText(
+		"Welcome to the Checklist",
+	);
 
 	await expect(englishHeadingBeforeRefresh).toBeVisible();
 
 	await page.reload();
 
-	const englishHeadingAfterRefresh = page.getByRole("heading", {
-		name: "Welcome to the checklist",
-	});
+	const englishHeadingAfterRefresh = page.getByText("Welcome to the checklist");
 
 	await expect(englishHeadingAfterRefresh).toBeVisible();
 });
@@ -152,6 +140,8 @@ test("should correctly change document lang and dir when switching language from
 
 	const languageAnchorAR = page.getByRole("link", { name: "العربية" });
 	await languageAnchorAR.click();
+
+	await page.waitForTimeout(2000);
 
 	const arabicLang = await page.evaluate(() => document.documentElement.lang);
 	const arabicDir = await page.evaluate(() => document.documentElement.dir);

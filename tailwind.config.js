@@ -7,19 +7,17 @@ export default {
 				sans: ["Berlin", "sans-serif"],
 			},
 			colors: {
-				"berlin-medium-blue": "#4f90cd",
-				"berlin-black-10": "#e6e6e6",
-				"berlin-black-40": "#999999",
-				"berlin-red": "#E4001F",
-				"berlin-gray": "#DDDDDDFF",
-				"berlin-light-gray": "#EDEDEDFF",
-				"berlin-lighter-gray": "#F5F5F5FF",
-
 				"berlin-blue-900": "#132458",
 				"berlin-blue-500": "#2A0E8C",
+				"berlin-blue-400": "#BDCDE7",
+				"berlin-blue-300": "#D6DCED",
+				"berlin-blue-200": "#E4EFFF",
+
 				"berlin-gray-200": "#CCC",
+				"berlin-gray-100": "#F5F5F5",
 
 				"berlin-green": "#67B18D",
+				"berlin-orange": "#F5A00C",
 			},
 			keyframes: {
 				slideUp: {
