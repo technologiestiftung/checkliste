@@ -16,13 +16,13 @@ export default function Index() {
 			</div>
 			<div className="w-full flex flex-col">
 				<Link
-					className="hidden w-fit lg:flex text-2xl text-berlin-blue-900 font-bold px-4 py-5"
+					className="hidden w-fit lg:flex text-2xl text-berlin-blue-900 hover:underline font-bold px-4 py-5"
 					to={buildLocalizedLink("/")}
 				>
 					{i18n("navigation.startpage")}
 				</Link>
 				<Link
-					className="flex w-fit lg:hidden text-berlin-blue-900 font-bold px-7.5 py-5"
+					className="flex w-fit lg:hidden text-berlin-blue-900 hover:underline font-bold px-7.5 py-5"
 					to={buildLocalizedLink("/")}
 				>
 					{i18n("navigation.startpage.mobile")}
