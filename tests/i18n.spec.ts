@@ -141,6 +141,8 @@ test("should correctly change document lang and dir when switching language from
 	const languageAnchorAR = page.getByRole("link", { name: "العربية" });
 	await languageAnchorAR.click();
 
+	await page.waitForTimeout(2000);
+
 	const arabicLang = await page.evaluate(() => document.documentElement.lang);
 	const arabicDir = await page.evaluate(() => document.documentElement.dir);
 

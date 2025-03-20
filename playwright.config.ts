@@ -73,7 +73,5 @@ export default defineConfig({
 		command: "npm run dev",
 		url: "http://localhost:5173",
 		reuseExistingServer: !process.env.CI,
-		timeout: 120000,
-		cwd: process.cwd(),
 	},
 });
