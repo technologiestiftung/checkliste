@@ -67,7 +67,9 @@ export function IsRegisteringForMoreThanSixMonths() {
 			</p>
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<FormButtonNext isValid={isValid} />
+				<FormButtonNext
+					isValid={isValid && isRegisteringForMoreThanSixMonths}
+				/>
 
 				<SecondaryButton
 					label={i18n("button.back")}

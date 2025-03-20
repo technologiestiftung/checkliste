@@ -33,6 +33,7 @@ const ru = {
 	"navigation.residence-registration":
 		"Регистрация единственного или основного места жительства",
 	"navigation.startpage": "Главная страница",
+	"navigation.startpage.mobile": "На главную страницу",
 	"footer.toTheTop": "Вернуться к началу страницы",
 	"footer.button.name.expand": "Показать больше",
 	"footer.button.name.collapse": "Показать меньше",
@@ -136,6 +137,44 @@ const ru = {
 	nonEuIdOrPassportOrReplacement: "Паспорт или заменяющий документ",
 	supplement:
 		"Приложение к заявлению о регистрации/декларации о месте жительства",
+
+	/*
+	About
+	*/
+	"about.title": "О проекте контрольного списка",
+	"about.text.p1":
+		"Берлинские центры обслуживания граждан сообщают, что самой частой причиной отмены записей является отсутствие или забытые необходимые документы. С помощью коротких вопросов о вашей личной ситуации приложение создаёт индивидуальный контрольный список, который точно показывает, какие документы необходимы. Это делает ваш визит в государственные учреждения более эффективным и менее стрессовым.",
+	"about.text.p2": `С помощью контрольного списка вы можете подготовиться к 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120686/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">регистрации основного места жительства</a>, 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120703/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">оформлению удостоверения личности</a> и 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120926/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">справке о несудимости</a> в Центре обслуживания граждан на улице Шлезише. 
+
+    Приложение было разработано в тесном сотрудничестве с 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">Центром обслуживания граждан будущего</a> для того, чтобы предоставить необходимую информацию в понятной и целенаправленной форме. Благодаря доступности на семи языках, контрольный список легко доступен и удобен для использования жителями Берлина.`,
+	"about.text.p3": `Если вы хотите заглянуть за кулисы, вы можете найти открытый исходный код на 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://github.com/technologiestiftung/checkliste"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">GitHub</a>.`,
+	"about.text.p4":
+		"Желаем удачи в подготовке к визиту в государственные учреждения!",
 };
 
 export default ru;

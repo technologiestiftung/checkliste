@@ -31,6 +31,7 @@ const ar = {
 	"navigation.certificate-of-conduct": "طلب شهادة حسن السيرة والسلوك",
 	"navigation.residence-registration": "تسجيل السكن الرئيسي أو الوحيد",
 	"navigation.startpage": "الصفحة الرئيسية",
+	"navigation.startpage.mobile": "إلى الصفحة الرئيسية",
 	"footer.toTheTop": "العودة إلى أعلى الصفحة",
 	"footer.button.name.expand": "عرض المزيد",
 	"footer.button.name.collapse": "عرض أقل",
@@ -126,6 +127,43 @@ const ar = {
 	euIdOrPassportOrReplacement: "بطاقة هوية أوروبية أو جواز سفر أو وثيقة بديلة",
 	nonEuIdOrPassportOrReplacement: "جواز السفر أو وثيقة بديلة",
 	supplement: "ملحق تسجيل السكن أو البيان الرسمي للسكن الرئيسي",
+
+	/*
+	About
+	*/
+	"about.title": "حول مشروع قائمة التحقق",
+	"about.text.p1":
+		"تُفيد مكاتب خدمة المواطنين في برلين أن السبب الأكثر شيوعًا لإلغاء المواعيد هو غياب أو نسيان الوثائق المطلوبة. من خلال الإجابة على أسئلة قصيرة حول وضعك الشخصي، تُنشئ التطبيق قائمة تحقق مخصصة تعرض لك بدقة الوثائق المطلوبة. هذا يجعل زيارتك إلى الجهات الرسمية أكثر كفاءة وأقل إجهادًا.",
+	"about.text.p2": `باستخدام قائمة التحقق، يمكنك الاستعداد لـ 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120686/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">تسجيل محل الإقامة الرئيسي</a>, 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120703/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">التقدم بطلب للحصول على بطاقة هوية</a> و 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://service.berlin.de/dienstleistung/120926/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">شهادة السجل الجنائي</a> في مكتب خدمة المواطنين بشارع شليسيشي. 
+
+    تم تطوير التطبيق بالتعاون الوثيق مع 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">مكتب خدمة المواطنين في المستقبل</a> لتقديم المعلومات اللازمة بطريقة واضحة ومباشرة. وبفضل توفره بسبع لغات، فإن قائمة التحقق متاحة وسهلة الاستخدام للمواطنين في برلين.`,
+	"about.text.p3": `إذا كنت ترغب في الاطلاع على تفاصيل المشروع، يمكنك العثور على الكود المفتوح المصدر على 
+    <a class="font-bold hover:underline text-berlin-blue-500"
+                            href="https://github.com/technologiestiftung/checkliste"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ">GitHub</a>.`,
+	"about.text.p4": "نتمنى لك التوفيق في الاستعداد لزيارتك للجهات الرسمية!",
 };
 
 export default ar;

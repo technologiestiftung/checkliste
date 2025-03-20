@@ -18,7 +18,7 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 				<main className="flex h-full w-full flex-col">
 					<div className="hidden lg:flex w-full print:hidden">
 						<Link
-							className="text-2xl text-berlin-blue-900 font-bold px-4 py-5"
+							className="text-2xl text-berlin-blue-900 hover:underline font-bold px-4 py-5"
 							to={buildLocalizedLink("/")}
 						>
 							{i18n("navigation.startpage")}

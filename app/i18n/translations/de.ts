@@ -32,6 +32,7 @@ const de = {
 	"navigation.residence-registration":
 		"Wohnsitz – Alleinige Wohnung oder Hauptwohnung anmelden",
 	"navigation.startpage": "Startseite",
+	"navigation.startpage.mobile": "Zur Startseite",
 	"footer.toTheTop": "Zum Seitenanfang",
 	"footer.button.name.expand": "Mehr anzeigen",
 	"footer.button.name.collapse": "Weniger anzeigen",
@@ -133,6 +134,43 @@ const de = {
 		"Europäische ID-Card, Reisepass oder Passersatzpapiere",
 	nonEuIdOrPassportOrReplacement: "Reisepass oder Passersatzpapiere",
 	supplement: "Beiblatt zur Anmeldung/ Hauptwohnungserklärung",
+
+	/*
+	About
+	*/
+	"about.title": "Über das Projekt Checkliste",
+	"about.text.p1":
+		"Berliner Bürgerämter verzeichnen als häufigsten Grund für Terminabbrüche das Fehlen oder Vergessen der erforderlichen Unterlagen. Mithilfe kurzer Fragen zu Ihrer persönlichen Situation erstellt die Anwendung eine individuelle Checkliste, die Ihnen präzise anzeigt, welche Dokumente benötigt werden. Dadurch wird Ihr Behördengang effizienter und stressfreier gestaltet.",
+	"about.text.p2": `Mit der Checkliste können Sie die 
+	<a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://service.berlin.de/dienstleistung/120686/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Anmeldung eines Hauptwohnsitzes</a>, 
+	<a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://service.berlin.de/dienstleistung/120703/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Beantragung eines Personalausweises</a> und eines 
+	<a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://service.berlin.de/dienstleistung/120926/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Führungszeugnisses</a> im Ausbildungsbürgeramt Schlesische Strasse vorbereiten. 
+						
+	Die Anwendung wurde in enger Zusammenarbeit mit dem 
+	<a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Bürgeramt der Zukunft</a> entwickelt, um die notwendigen Informationen verständlich und zielgerichtet aufzubereiten. Dank der Verfügbarkeit in sieben Sprachen ist die Checkliste leicht zugänglich und für Berliner Bürger:innen nutzbar.`,
+	"about.text.p3": `Wenn Sie einen Blick hinter die Kulissen werfen möchtest, finden Sie den offenen Quellcode auf 
+	<a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://github.com/technologiestiftung/checkliste"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Github</a>.`,
+	"about.text.p4": "Viel Erfolg bei der Vorbereitung Ihres Behördengangs!",
 };
 
 export default de;
