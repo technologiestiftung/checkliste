@@ -71,7 +71,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			<body>
 				<BerlinHeader />
 				<main>{children}</main>
-				{(pathname === "/" || pathname === "/about/") && (
+				{(pathname === "/" ||
+					pathname === "/about/" ||
+					pathname === "/data-privacy/") && (
 					<Footer berlinFooter={berlinFooter} />
 				)}
 				<ScrollRestoration />

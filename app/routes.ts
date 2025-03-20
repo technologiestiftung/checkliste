@@ -12,4 +12,5 @@ export default [
 		":lang?/residence-registration/",
 		"./routes/residence-registration/index.tsx",
 	),
+	route(":lang?/data-privacy/", "./routes/data-privacy/index.tsx"),
 ] satisfies RouteConfig;
