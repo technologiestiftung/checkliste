@@ -39,6 +39,13 @@ export default {
 			"/ru/about/",
 			"/tr/about/",
 			"/ar/about/",
+			"/data-privacy/",
+			"/en/data-privacy/",
+			"/es/data-privacy/",
+			"/fr/data-privacy/",
+			"/ru/data-privacy/",
+			"/tr/data-privacy/",
+			"/ar/data-privacy/",
 		];
 	},
 } satisfies Config;
