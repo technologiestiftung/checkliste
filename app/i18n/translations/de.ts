@@ -53,7 +53,7 @@ const de = {
 	"button.back": "Zurück",
 	"button.next": "Weiter",
 	"button.cancel": "Abbrechen",
-	"button.next.tooltip": "Bitte beantworte die Frage zuerst.",
+	"button.next.tooltip": "Bitte beantworten Sie die Frage zuerst.",
 	"button.print": "Liste herunterladen",
 	"button.finish": "Fertig",
 	"title.residence-registration": "Anmeldung einer Wohnung",
