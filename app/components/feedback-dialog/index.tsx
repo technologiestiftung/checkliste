@@ -31,7 +31,7 @@ export const FeedbackDialog: React.FC = () => {
 	return (
 		<dialog
 			id="feedback-dialog"
-			className="w-9/12 lg:w-[598px] rounded-sm backdrop:backdrop-blur-xs  items-center justify-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+			className="w-9/12 md:w-[450px] rounded-sm backdrop:backdrop-blur-xs items-center justify-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
 			onClick={onDialogClick}
 		>
 			<div className="p-10 flex flex-col text-center gap-8 font-bold text-xl lg:text-2xl items-center justify-center">
