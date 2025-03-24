@@ -61,6 +61,8 @@ const de = {
 	"title.certificate-of-conduct": "Beantragung eines Führungszeugnisses",
 	"title.hint": "Hinweis:",
 
+	"progress.section": "Abschnitt",
+
 	/*
 	Feedback
 	*/

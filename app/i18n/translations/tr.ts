@@ -61,6 +61,8 @@ const tr = {
 	"title.certificate-of-conduct": "Sabıka kaydı başvurusu",
 	"title.hint": "Not:",
 
+	"progress.section": "Bölüm",
+
 	/*
 	Feedback
 	*/
