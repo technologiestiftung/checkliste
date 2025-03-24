@@ -175,9 +175,108 @@ const de = {
 	/*
 	Data Privacy
 	*/
-	"dataPrivacy.title": "Datenschutz",
-	"dataPrivacy.text.p1":
-		"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+	"dataPrivacy.title": "Datenschutzerklärung für Prototyp “Checkliste”",
+	"dataPrivacy.subtitle":
+		"Diese Datenschutzerklärung gilt ausschließlich für den Prototyp “Checkliste”.",
+	"dataPrivacy.title.p1": "1. Allgemeine Informationen",
+	"dataPrivacy.subtitle.p1.1": "1.1 Zweck der Datenschutzerklärung",
+	"dataPrivacy.text.p1.1": `Die Datenschutzerklärung soll Sie über Art, Umfang und Zweck der von der Technologiestiftung Berlin erhobenen, genutzten und verarbeitenden Daten sowie Ihre Rechte in Bezug auf Datenschutz informieren. Die Technologiestiftung Berlin ist sich der Verantwortung für den Schutz von personenbezogenen Daten bewusst und setzt sich besonders dafür ein, dass Ihre Privatsphäre geschützt wird.   
+<br/><br/>
+Personenbezogene Daten im Sinne der Datenschutz-Grundverordnung  (DSGVO - Verordnung (EU) 2016/679) sind alle Informationen, anhand derer eine Person eindeutig identifizierbar ist. Im Zuge der Anwendung der DSGVO ab dem 25. Mai 2018 hat die Technologiestiftung Berlin zahlreiche Maßnahmen umgesetzt, um den Schutz Ihrer Daten zu gewährleisten und eine Nutzung nach einer Abwägung der Eigeninteressen zu minimieren.`,
+
+	"dataPrivacy.subtitle.p1.2": "1.2 Verantwortliche",
+	"dataPrivacy.text.p1.2": `Die Verantwortliche im Sinne der DSGVO, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die Technologiestiftung Berlin.  
+<br/><br/>
+Technologiestiftung Berlin <br/>
+Grunewaldstraße 61-62 <br/> 
+10825 Berlin <br/>  
+Deutschland <br/><br/>
+
+Tel.: 030 20 96 99 90  <br/>
+E-Mail: info(at)ts.berlin  <br/>
+Website: www.technologiestiftung-berlin.de <br/><br/>
+
+Für Anfragen und Auskünfte zum Datenschutz erreichen Sie unseren Datenschutzbeauftragten unter:  <br/><br/>
+
+Michael Scherer  <br/>
+Technologiestiftung Berlin  <br/>
+Grunewaldstraße 61-62  <br/>
+10825 Berlin  <br/>
+Deutschland  <br/><br/>
+
+Tel.: 030 20 96 99 951  <br/>
+E-Mail: datenschutz[at]ts.berlin`,
+
+	"dataPrivacy.subtitle.p1.3":
+		"1.3 Allgemeine Zweckbestimmung der Datenerhebung, -verarbeitung und -nutzung",
+	"dataPrivacy.text.p1.3": `Die Technologiestiftung Berlin ist eine rechtsfähige gemeinnützige Stiftung bürgerlichen Rechts. Im Rahmen der Tätigkeiten der Stiftung ist es notwendig, personenbezogene Daten zu handhaben.  
+<br/><br/>
+Personenbezogene Daten werden für die folgenden Zwecke erhoben, verarbeitet und genutzt: 
+<br/><br/>
+<ul class="list-disc pl-12 w-9/10">
+	<li>Informationen über die Technologiestiftung und Einladungen zu Aktivitäten der Technologiestiftung</li>
+	<li>Geschäftspartner:innen- und Interessent:innenbetreuung</li>
+	<li>Personalmanagement</li>
+	<li>internes und externes Rechnungswesen </li>
+	<li>Beantragung und Bewirtschaftung von öffentlichen und privaten Mitteln </li>
+	<li>Bewirtschaftung eigener Projektförderungen </li> 
+</ul>
+<br/>
+Dabei kann es dazu kommen, dass die Daten im Rahmen der gesetzlichen Vorgaben an Dritte zur Verarbeitung weitergegeben werden, da ein berechtigtes Interesse oder eine Verpflichtung besteht. Dies können folgende Dritte sein: 
+<br/><br/>
+<ul class="list-disc pl-12 w-9/10">
+	<li>Dienstleister:innen zur Auftragsverarbeitung nach Art. 29 und Art. 6 Abs1 a und f DSGVO</li>
+	<li>interne Stellen, soweit diese Daten im Rahmen ordnungsgemäßer Aufgabenerfüllung benötigt werden nach Art. 6 Abs1 a und f DSGVO</li>
+	<li>öffentliche Stellen, sofern vorrangige Rechtsvorschriften dies erfordern nach Art. 6 Abs.1 c DSGVO</li>
+	<li>externe Stellen zur ordnungsgemäßen Erfüllung von Verträgen Art.6 Abs.1 b DSGVO</li>
+</ul>
+	`,
+	"dataPrivacy.subtitle.p1.4": "1.4 Auskunft, Berichtigung und Widerruf",
+	"dataPrivacy.text.p1.4": `Als betroffene Person, deren personenbezogene Daten die Technologiestiftung Berlin erhoben haben könnte, haben Sie das Anrecht, auf Antrag eine vollständige Auskunft über die bei uns gespeicherten Daten zu erhalten. Das schließt sämtliche personenbezogenen Datensätze und deren Erhebung, Zwecke und Speicherfristen mit ein.   
+<br/><br/>
+Außerdem haben Sie das Recht, betroffene Daten zu korrigieren bzw. korrigieren zu lassen. Sollten Sie eine Einwilligung für die Verwendung Ihrer Daten erteilt haben, können Sie diese jederzeit widerrufen.  
+<br/><br/>
+Kontaktieren Sie in solchen Fällen den unter 1.2 genannten Datenschutzbeauftragten der Technologiestiftung Berlin.`,
+
+	"dataPrivacy.subtitle.p1.5":
+		"1.5 Löschung und Sperrung von personenbezogenen Daten",
+	"dataPrivacy.text.p1.5": `Die erhobenen personenbezogenen Daten werden generell nur für den Zeitraum ihres Zweckes gespeichert und verarbeitet. Sollte dieser Zweck nicht mehr gegeben sein, werden die Daten in regelmäßigen Abständen gelöscht.  
+<br/><br/>
+Sie können uns jederzeit kontaktieren und verlangen, dass Ihre personenbezogenen Daten gelöscht oder gesperrt werden. Kontaktieren Sie dafür den unter 1.2 genannten Datenschutzbeauftragten der Technologiestiftung Berlin.  
+<br/><br/>
+Eine Sperrungsmitteilung bedeutet, dass die Technologiestiftung Berlin Ihren Datensatz nur noch für von Ihnen bestimmte Zwecke einsetzen darf. Es erfolgt dabei keine Löschung des Datensatzes.  
+<br/><br/>
+Bitte beachten Sie, dass die Technologiestiftung an Speicherfristen Europäischer Richtlinien- und Verordnungsgeber*innen und andere gesetzliche Vorschriften gebunden ist. In diesem konkreten Fall werden wir Sie informieren und eine Löschung nach Ablauf der Frist vornehmen.`,
+	"dataPrivacy.title.p2": "2. Relevante Dienste",
+	"dataPrivacy.subtitle.p2.1": "2.1 Cookies",
+	"dataPrivacy.text.p2.1": `Cookies sind Daten, die auf Ihrem Datenträger beim Besuch von Websites gespeichert werden und im Austausch mit unserer Website bestimmte Daten und Einstellungen speichern.   
+<br/><br/>
+Sie haben die Möglichkeit, dem Setzen von Cookies über die jeweiligen Browser-Einstellungen oder mit Hilfe anderer Erweiterungen wie Ghostery oder uBlock generell zu widersprechen bzw. diese einzuschränken. Welche Erweiterungen Sie mit Ihrem Internetbrowser nutzen können, finden Sie auf den jeweiligen Hersteller:innenseiten.  
+<br/><br/>
+Neben den technisch erforderlichen Cookies, setzen wir keine weiteren Tracking- oder Analyse Cookies ein. Es können aber Marketing Cookies von YouTube Anwendung finden, siehe Punkt 2.7 unten.  
+<br/><br/>
+Sie können bei der erstmaligen Nutzung unserer Online-Dienste eine Entscheidung treffen, ob Sie der Technologiestiftung Berlin erlauben, Cookies zur Verbesserung des Online-Angebots zu setzen oder nicht.`,
+	"dataPrivacy.subtitle.p2.2": "2.2 Webanalysetool Matomo",
+	"dataPrivacy.text.p2.2": `Für eine genauere Analyse der Besucher:innenstatistiken setzen wir das Webanalysetool Matamo, ehem. Piwik, ein. Dies ist eine Anwendung der Firma Innocraft (InnoCraft Ltd, 150 Willis St, 6011 Wellington, New Zealand).  
+Die Software ist auf einem eigenen Server innerhalb Deutschlands installiert und übermittelt keine Daten außerhalb der EU.  
+<br/><br/>
+Matamo verarbeitet Daten pseudonymisiert und verzichtet dabei auf den Einsatz von Cookies. Die Daten werden anonymisiert, bevor eine Anzeige für uns erfolgt. Wir können demnach keine Rückschlüsse auf die Identität der jeweiligen Nutzer:innen  vornehmen.  
+<br/><br/>
+Folgende Informationen sind dadurch für uns auswertbar: 
+<br/><br/>
+<ul class="list-disc pl-12 w-9/10">
+	<li>Seitenbesuche, Linkklicks, Downloads, Eingangs- und Ausgang
+		seite sowie der jeweilige Zeitpunkt der Aktion</li>
+	<li>Informationen über Benutzergeräte und Einstellungen: Hersteller/Marke, Modell/Geräteversion, Gerätetyp, Bildschirmauflösung, Spracheinstellung des Browsers</li>
+	<li>Informationen über den Standort: Land des Zugriffs</li>
+</ul>
+<br/>
+
+Zweck der Erhebung ist es, innerhalb der Webpräsenz mögliche Fehler zu erkennen und zu lösen sowie den Inhalt den Bedürfnissen unserer Besucher:innen anzupassen und zu optimieren. Diese Interessen sind nach Art. 6. Abs 1 S.1. lit f DSGVO berechtigt. Nur die Technologiestiftung Berlin hat Zugriff auf diese Daten. Eine Weitergabe an Dritte erfolgt nicht.  
+<br/><br/>
+Matamo ist eine freie Open-Source-Software und setzt hohe Standards, um Datenmissbrauch zu vermeiden. Mehr Informationen finden Sie hier.   
+<br/><br/>
+Kontaktieren Sie bei Nachfragen den unter 1.2 genannten Datenschutzbeauftragten der Technologiestiftung Berlin.`,
 };
 
 export default de;

@@ -30,13 +30,69 @@ export default function Index() {
 			</div>
 
 			<div className="flex flex-col lg:max-w-[974px] mx-auto">
-				<div className="w-full flex flex-col gap-6 lg:gap-10 pt-6 pb-9 lg:py-12 px-7.5 lg:px-0 text-base lg:text-2xl">
+				<div className="w-full flex flex-col gap-4 lg:gap-6 pt-6 pb-9 lg:py-12 px-7.5 lg:px-0 text-base lg:text-2xl">
 					<h1 className="text-3xl lg:text-7xl font-bold text-berlin-blue-900 lg:mt-4">
 						{i18n("dataPrivacy.title")}
 					</h1>
-					<div className="text-base lg:text-2xl">
-						{i18n("dataPrivacy.text.p1")}
-					</div>
+					<h3 className="lg:mt-8 text-xl lg:text-2xl  font-bold text-berlin-blue-900">
+						{i18n("dataPrivacy.subtitle")}
+					</h3>
+					<h2 className="mt-8 lg:mt-10 text-2xl lg:text-4xl font-bold text-berlin-blue-900">
+						{i18n("dataPrivacy.title.p1")}
+					</h2>
+					<h3 className="mt-4 lg:mt-8 text-xl lg:text-2xl font-bold text-berlin-blue-900">
+						{i18n("dataPrivacy.subtitle.p1.1")}
+					</h3>
+					<div
+						className="text-base lg:text-2xl"
+						dangerouslySetInnerHTML={{ __html: i18n("dataPrivacy.text.p1.1") }}
+					/>
+					<h3 className="mt-4 lg:mt-8 text-xl lg:text-2xl font-bold text-berlin-blue-900">
+						{i18n("dataPrivacy.subtitle.p1.2")}
+					</h3>
+					<div
+						className="text-base lg:text-2xl"
+						dangerouslySetInnerHTML={{ __html: i18n("dataPrivacy.text.p1.2") }}
+					/>
+					<h3 className="mt-4 lg:mt-8 text-xl lg:text-2xl font-bold text-berlin-blue-900">
+						{i18n("dataPrivacy.subtitle.p1.3")}
+					</h3>
+					<div
+						className="text-base lg:text-2xl"
+						dangerouslySetInnerHTML={{ __html: i18n("dataPrivacy.text.p1.3") }}
+						style={{ listStyleType: "disc" }}
+					/>
+					<h3 className="mt-4 lg:mt-8 text-xl lg:text-2xl font-bold text-berlin-blue-900">
+						{i18n("dataPrivacy.subtitle.p1.4")}
+					</h3>
+					<div
+						className="text-base lg:text-2xl"
+						dangerouslySetInnerHTML={{ __html: i18n("dataPrivacy.text.p1.4") }}
+					/>
+					<h3 className="mt-4 lg:mt-8 text-xl lg:text-2xl font-bold text-berlin-blue-900">
+						{i18n("dataPrivacy.subtitle.p1.5")}
+					</h3>
+					<div
+						className="text-base lg:text-2xl"
+						dangerouslySetInnerHTML={{ __html: i18n("dataPrivacy.text.p1.5") }}
+					/>
+					<h2 className="mt-8 lg:mt-10 text-2xl lg:text-4xl font-bold text-berlin-blue-900">
+						{i18n("dataPrivacy.title.p2")}
+					</h2>
+					<h3 className="mt-4 lg:mt-8 text-xl lg:text-2xl font-bold text-berlin-blue-900">
+						{i18n("dataPrivacy.subtitle.p2.1")}
+					</h3>
+					<div
+						className="text-base lg:text-2xl"
+						dangerouslySetInnerHTML={{ __html: i18n("dataPrivacy.text.p2.1") }}
+					/>
+					<h3 className="mt-4 lg:mt-8 text-xl lg:text-2xl font-bold text-berlin-blue-900">
+						{i18n("dataPrivacy.subtitle.p2.2")}
+					</h3>
+					<div
+						className="text-base lg:text-2xl"
+						dangerouslySetInnerHTML={{ __html: i18n("dataPrivacy.text.p2.2") }}
+					/>
 				</div>
 			</div>
 		</>
