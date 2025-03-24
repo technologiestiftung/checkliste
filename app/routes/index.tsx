@@ -2,6 +2,9 @@ import { LanguageSelect } from "~/components/language-select";
 import { Navigation } from "~/components/navigation";
 import { LogoBanner } from "~/components/logo-banner";
 import { i18n } from "~/i18n/i18n-utils";
+import { FeedbackDialog } from "~/components/feedback-dialog";
+import { useDialogStore } from "~/components/feedback-dialog/store/dialog";
+import { useEffect } from "react";
 
 export const meta = () => {
 	return [
@@ -15,6 +18,20 @@ export const meta = () => {
 };
 
 export default function Index() {
+	const { isOpen } = useDialogStore();
+
+	useEffect(() => {
+		const dialog = document.getElementById(
+			"feedback-dialog",
+		) as HTMLDialogElement;
+
+		if (!dialog || !isOpen) {
+			return;
+		}
+
+		dialog.showModal();
+	}, [isOpen]);
+
 	return (
 		<>
 			<div className="w-full bg-berlin-blue-900">
@@ -42,6 +59,8 @@ export default function Index() {
 					<LogoBanner />
 				</div>
 			</div>
+
+			<FeedbackDialog />
 		</>
 	);
 }
