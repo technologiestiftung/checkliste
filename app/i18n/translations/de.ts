@@ -22,7 +22,7 @@ const de = {
 							href="https://citylab-berlin.org/de/start/"
 							target="_blank"
 							rel="noopener noreferrer"
-						> CityLAB</a> Berlin und wird aktuell für einen Test verwendet.`,
+						> CityLAB Berlin</a> und wird aktuell für einen Test verwendet.`,
 
 	"navigation.title": "Wählen Sie eine Dienstleistung",
 	"navigation.description": "Finden Sie heraus, welche Dokumente Sie benötigen",
@@ -194,7 +194,11 @@ Deutschland <br/><br/>
 
 Tel.: 030 20 96 99 90  <br/>
 E-Mail: info(at)ts.berlin  <br/>
-Website: www.technologiestiftung-berlin.de <br/><br/>
+Website: <a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://www.technologiestiftung-berlin.de/de/stiftung/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Technologiestiftung Berlin</a> <br/><br/>
 
 Für Anfragen und Auskünfte zum Datenschutz erreichen Sie unseren Datenschutzbeauftragten unter:  <br/><br/>
 
@@ -205,11 +209,19 @@ Grunewaldstraße 61-62  <br/>
 Deutschland  <br/><br/>
 
 Tel.: 030 20 96 99 951  <br/>
-E-Mail: datenschutz[at]ts.berlin`,
+E-Mail: <a class="font-bold hover:underline text-berlin-blue-500"
+							href="mailto:datenschutz@ts.berlin"
+							target="_blank"
+							rel="noopener noreferrer"
+						>datenschutz[at]ts.berlin</a>`,
 
 	"dataPrivacy.subtitle.p1.3":
 		"1.3 Allgemeine Zweckbestimmung der Datenerhebung, -verarbeitung und -nutzung",
-	"dataPrivacy.text.p1.3": `Die Technologiestiftung Berlin ist eine rechtsfähige gemeinnützige Stiftung bürgerlichen Rechts. Im Rahmen der Tätigkeiten der Stiftung ist es notwendig, personenbezogene Daten zu handhaben.  
+	"dataPrivacy.text.p1.3": `Die <a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://www.technologiestiftung-berlin.de/de/stiftung/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Technologiestiftung Berlin</a> ist eine rechtsfähige gemeinnützige Stiftung bürgerlichen Rechts. Im Rahmen der Tätigkeiten der Stiftung ist es notwendig, personenbezogene Daten zu handhaben.  
 <br/><br/>
 Personenbezogene Daten werden für die folgenden Zwecke erhoben, verarbeitet und genutzt: 
 <br/><br/>
