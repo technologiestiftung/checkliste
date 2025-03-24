@@ -30,7 +30,6 @@ export function FooterLightColumn({
 							<li key={link.href}>
 								<Link
 									to={buildLocalizedLink(link.href)}
-									target="_blank"
 									rel="noopener noreferrer"
 									className={`flex hover:underline pl-7 gap-x-1.5 py-4 flex-row`}
 								>
@@ -52,7 +51,6 @@ export function FooterLightColumn({
 						<li key={link.href}>
 							<Link
 								to={buildLocalizedLink(link.href)}
-								target="_blank"
 								rel="noopener noreferrer"
 								className={`flex hover:underline gap-1.5 flex-row`}
 							>

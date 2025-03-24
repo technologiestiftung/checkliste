@@ -15,7 +15,7 @@ const upperFooterColumns = [
 			},
 			{
 				label: "upperFooter.checklist.dataprivacy",
-				href: "https://www.technologiestiftung-berlin.de/datenschutz",
+				href: "/data-privacy/",
 			},
 			{
 				label: "upperFooter.checklist.accessibility",
