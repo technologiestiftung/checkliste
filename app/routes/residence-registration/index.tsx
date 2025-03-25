@@ -1,8 +1,8 @@
-import { Steps } from "../../components/steps";
+import { Steps } from "../../components/steps-residence-registration";
 import { Progress } from "../../components/progress";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormLayout } from "~/components/form-layout";
-import { useProgressStore } from "~/components/steps/store";
+import { useProgressStore } from "~/components/steps-residence-registration/store";
 
 export default function Index() {
 	const { currentStep } = useProgressStore();

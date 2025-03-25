@@ -1,14 +1,14 @@
-import { RadioInput } from "../../radio-input";
 import { useNationalityStore } from "./store";
-import { useProgressStore } from "../../steps/store";
+import { useProgressStore } from "../../steps-residence-registration/store";
+import { RadioInput } from "../../radio-input";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 
-export function IsNonGermanOver16() {
-	const { isNonGermanOver16, setIsNonGermanOver16 } = useNationalityStore();
+export function IsGerman() {
+	const { isGerman, setIsGerman } = useNationalityStore();
 
-	const isValid = isNonGermanOver16 !== null;
+	const isValid = isGerman !== null;
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
@@ -24,15 +24,15 @@ export function IsNonGermanOver16() {
 		>
 			<div className="flex flex-col gap-4">
 				<h2 className="text-xl font-bold lg:text-4xl">
-					{i18n("nationality.q4")}
+					{i18n("nationality.q1")}
 				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
-						const name = "nationality.q4.radio";
+						const name = "nationality.q1.radio";
 						const isChecked =
-							(option === "yes" && isNonGermanOver16 === true) ||
-							(option === "no" && isNonGermanOver16 === false);
-						const onChange = () => setIsNonGermanOver16(option === "yes");
+							(option === "yes" && isGerman === true) ||
+							(option === "no" && isGerman === false);
+						const onChange = () => setIsGerman(option === "yes");
 						const label = i18n(option);
 
 						return (

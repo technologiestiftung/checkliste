@@ -1,7 +1,7 @@
 import { useOtherResidenceStore } from "./store/index.ts";
-import { useProgressStore } from "../../steps/store";
-import { RadioInput } from "../../radio-input";
-import { SecondaryButton } from "../../buttons/secondary-button";
+import { useProgressStore } from "../../steps-residence-registration/store/index.ts";
+import { RadioInput } from "../../radio-input/index.tsx";
+import { SecondaryButton } from "../../buttons/secondary-button/index.tsx";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 

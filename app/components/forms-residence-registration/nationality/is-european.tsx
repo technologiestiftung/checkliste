@@ -1,19 +1,18 @@
-import { useFirstRegistrationStore } from "./store";
 import { RadioInput } from "../../radio-input";
-import { useProgressStore } from "../../steps/store";
+import { useNationalityStore } from "./store";
+import { useProgressStore } from "../../steps-residence-registration/store";
+import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
-import { useSaveIntroPageViewInSessionStorage } from "./hooks/use-save-intro-page-view-in-session-storage";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
-export function IsFirstRegistration() {
-	const { isFirstRegistration, setIsFirstRegistration } =
-		useFirstRegistrationStore();
-	const isValid = isFirstRegistration !== null;
 
-	const { goToNextStep } = useProgressStore();
+export function IsEuropean() {
+	const { isEuropean, setIsEuropean } = useNationalityStore();
+
+	const isValid = isEuropean !== null;
+
+	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const options = ["yes", "no"] as const;
-
-	useSaveIntroPageViewInSessionStorage();
 
 	return (
 		<form
@@ -25,15 +24,15 @@ export function IsFirstRegistration() {
 		>
 			<div className="flex flex-col gap-4">
 				<h2 className="text-xl font-bold lg:text-4xl">
-					{i18n("first-registration.q1")}
+					{i18n("nationality.q3")}
 				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
-						const name = "first-registration.q1.radio";
+						const name = "nationality.q3.radio";
 						const isChecked =
-							(option === "yes" && isFirstRegistration === true) ||
-							(option === "no" && isFirstRegistration === false);
-						const onChange = () => setIsFirstRegistration(option === "yes");
+							(option === "yes" && isEuropean === true) ||
+							(option === "no" && isEuropean === false);
+						const onChange = () => setIsEuropean(option === "yes");
 						const label = i18n(option);
 
 						return (
@@ -51,6 +50,12 @@ export function IsFirstRegistration() {
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext isValid={isValid} />
+
+				<SecondaryButton
+					label={i18n("button.back")}
+					onClick={goToPreviousStep}
+					className="hidden lg:flex"
+				/>
 			</div>
 		</form>
 	);

@@ -1,14 +1,13 @@
 import { RadioInput } from "../../radio-input";
 import { useNationalityStore } from "./store";
-import { useProgressStore } from "../../steps/store";
+import { useProgressStore } from "../../steps-residence-registration/store";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 
-export function IsGermanOver16() {
-	const { isGermanOver16, setIsGermanOver16 } = useNationalityStore();
-
-	const isValid = isGermanOver16 !== null;
+export function IsRefugee() {
+	const { isRefugee, setIsRefugee } = useNationalityStore();
+	const isValid = isRefugee !== null;
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
@@ -24,15 +23,15 @@ export function IsGermanOver16() {
 		>
 			<div className="flex flex-col gap-4">
 				<h2 className="text-xl font-bold lg:text-4xl">
-					{i18n("nationality.q2")}
+					{i18n("nationality.q5")}
 				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
-						const name = "nationality.q2.radio";
+						const name = "nationality.q5.radio";
 						const isChecked =
-							(option === "yes" && isGermanOver16 === true) ||
-							(option === "no" && isGermanOver16 === false);
-						const onChange = () => setIsGermanOver16(option === "yes");
+							(option === "yes" && isRefugee === true) ||
+							(option === "no" && isRefugee === false);
+						const onChange = () => setIsRefugee(option === "yes");
 						const label = i18n(option);
 
 						return (
@@ -56,6 +55,22 @@ export function IsGermanOver16() {
 					onClick={goToPreviousStep}
 					className="hidden lg:flex"
 				/>
+			</div>
+
+			<div
+				className={`${isRefugee ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
+			>
+				<div className="font-bold">{i18n("title.hint")}</div>
+				<p>
+					{i18n("nationality.q5.hint")}{" "}
+					<a
+						href="https://service.berlin.de/standort/327539/"
+						target="_blank"
+						className="text-berlin-blue-900 font-bold hover:underline visited:text-purple-500"
+					>
+						https://service.berlin.de/standort/327539/
+					</a>
+				</p>
 			</div>
 		</form>
 	);

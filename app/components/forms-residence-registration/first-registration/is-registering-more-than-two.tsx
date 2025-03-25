@@ -1,19 +1,19 @@
 import { useFirstRegistrationStore } from "./store";
-import { useProgressStore } from "../../steps/store";
+import { useProgressStore } from "../../steps-residence-registration/store";
 import { RadioInput } from "../../radio-input";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 
-export function IsRegisteringSpouse() {
-	const { isRegisteringSpouse, setIsRegisteringSpouse } =
+export function IsRegisteringMoreThanTwo() {
+	const { isRegisteringMoreThanTwo, setIsRegisteringMoreThanTwo } =
 		useFirstRegistrationStore();
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const options = ["yes", "no"] as const;
 
-	const isValid = isRegisteringSpouse !== null;
+	const isValid = isRegisteringMoreThanTwo !== null;
 
 	return (
 		<form
@@ -25,16 +25,17 @@ export function IsRegisteringSpouse() {
 		>
 			<div className="flex flex-col gap-4">
 				<h2 className="text-xl font-bold lg:text-4xl">
-					{i18n("first-registration.q3")}
+					{i18n("first-registration.q6")}
 				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
-						const name = "first-registration.q3.radio";
+						const name = "first-registration.q6.radio";
 						const label = i18n(option);
 						const isChecked =
-							(option === "yes" && isRegisteringSpouse === true) ||
-							(option === "no" && isRegisteringSpouse === false);
-						const onChange = () => setIsRegisteringSpouse(option === "yes");
+							(option === "yes" && isRegisteringMoreThanTwo === true) ||
+							(option === "no" && isRegisteringMoreThanTwo === false);
+						const onChange = () =>
+							setIsRegisteringMoreThanTwo(option === "yes");
 
 						return (
 							<RadioInput

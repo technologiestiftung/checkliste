@@ -1,5 +1,5 @@
 import { DocumentLink } from "./document-link.tsx";
-import { useOverviewStore } from "./store";
+import { useOverviewStore } from "./store/index.ts";
 import { i18n } from "~/i18n/i18n-utils";
 import { trackInteraction } from "../../feedback/matomo.ts";
 import type { ChangeEvent } from "react";

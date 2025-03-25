@@ -1,4 +1,4 @@
-import { Overview } from "../forms/overview";
+import { Overview } from "../forms-residence-registration/overview";
 import { useProgressStore } from "./store";
 import {
 	IsFirstRegistration,
@@ -7,20 +7,20 @@ import {
 	IsRegisteringSpouse,
 	IsRegisteringChild,
 	IsRegisteringMoreThanTwo,
-} from "../forms/first-registration";
+} from "../forms-residence-registration/first-registration";
 import {
 	IsGerman,
 	IsGermanOver16,
 	IsEuropean,
 	IsNonGermanOver16,
 	IsRefugee,
-} from "../forms/nationality";
+} from "../forms-residence-registration/nationality";
 import {
 	HasOtherResidence,
 	IsOtherResidenceAbroad,
 	IsRegisteringForMoreThanThreeMonths,
 	IsRegisteringForMoreThanSixMonths,
-} from "../forms/other-residence";
+} from "../forms-residence-registration/other-residence";
 
 export function Steps() {
 	const { currentStep } = useProgressStore();

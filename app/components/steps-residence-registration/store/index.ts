@@ -20,7 +20,7 @@ import {
 } from "./previous-steps.ts";
 import { trackInteraction } from "../../feedback/matomo.ts";
 import { persist } from "zustand/middleware";
-import { useOverviewStore } from "~/components/forms/overview/store/index.ts";
+import { useOverviewStore } from "~/components/forms-residence-registration/overview/store/index.ts";
 import { getLanguage } from "~/i18n/i18n-utils.ts";
 
 function trackStepChange(previousStep: number, currentStep: number) {

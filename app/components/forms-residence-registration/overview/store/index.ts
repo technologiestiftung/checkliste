@@ -99,7 +99,7 @@ export const useOverviewStore = create<OverviewStore>()(
 		}),
 
 		{
-			name: "overview",
+			name: "overview-residence-registration",
 		},
 	),
 );

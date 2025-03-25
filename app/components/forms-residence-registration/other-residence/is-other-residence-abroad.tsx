@@ -1,14 +1,15 @@
-import { RadioInput } from "../../radio-input";
-import { useFirstRegistrationStore } from "./store";
-import { useProgressStore } from "../../steps/store";
-import { SecondaryButton } from "../../buttons/secondary-button";
+import { useOtherResidenceStore } from "./store/index.ts";
+import { useProgressStore } from "../../steps-residence-registration/store/index.ts";
+import { RadioInput } from "../../radio-input/index.tsx";
+import { SecondaryButton } from "../../buttons/secondary-button/index.tsx";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 
-export function HasChild() {
-	const { hasChild, setHasChild } = useFirstRegistrationStore();
+export function IsOtherResidenceAbroad() {
+	const { isOtherResidenceAbroad, setIsOtherResidenceAbroad } =
+		useOtherResidenceStore();
 
-	const isValid = hasChild !== null;
+	const isValid = isOtherResidenceAbroad !== null;
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
@@ -24,17 +25,16 @@ export function HasChild() {
 		>
 			<div className="flex flex-col gap-4">
 				<h2 className="text-xl font-bold lg:text-4xl">
-					{i18n("first-registration.q4")}
+					{i18n("other-residence.q2")}
 				</h2>
-
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
-						const name = "first-registration.q4.radio";
-						const label = i18n(option);
+						const name = "other-residence.q2.radio";
 						const isChecked =
-							(option === "yes" && hasChild === true) ||
-							(option === "no" && hasChild === false);
-						const onChange = () => setHasChild(option === "yes");
+							(option === "yes" && isOtherResidenceAbroad === true) ||
+							(option === "no" && isOtherResidenceAbroad === false);
+						const onChange = () => setIsOtherResidenceAbroad(option === "yes");
+						const label = i18n(option);
 
 						return (
 							<RadioInput

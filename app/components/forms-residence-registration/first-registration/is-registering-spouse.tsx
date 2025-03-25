@@ -1,17 +1,19 @@
+import { useFirstRegistrationStore } from "./store";
+import { useProgressStore } from "../../steps-residence-registration/store";
 import { RadioInput } from "../../radio-input";
-import { useNationalityStore } from "./store";
-import { useProgressStore } from "../../steps/store";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 
-export function IsRefugee() {
-	const { isRefugee, setIsRefugee } = useNationalityStore();
-	const isValid = isRefugee !== null;
+export function IsRegisteringSpouse() {
+	const { isRegisteringSpouse, setIsRegisteringSpouse } =
+		useFirstRegistrationStore();
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const options = ["yes", "no"] as const;
+
+	const isValid = isRegisteringSpouse !== null;
 
 	return (
 		<form
@@ -23,16 +25,16 @@ export function IsRefugee() {
 		>
 			<div className="flex flex-col gap-4">
 				<h2 className="text-xl font-bold lg:text-4xl">
-					{i18n("nationality.q5")}
+					{i18n("first-registration.q3")}
 				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
-						const name = "nationality.q5.radio";
-						const isChecked =
-							(option === "yes" && isRefugee === true) ||
-							(option === "no" && isRefugee === false);
-						const onChange = () => setIsRefugee(option === "yes");
+						const name = "first-registration.q3.radio";
 						const label = i18n(option);
+						const isChecked =
+							(option === "yes" && isRegisteringSpouse === true) ||
+							(option === "no" && isRegisteringSpouse === false);
+						const onChange = () => setIsRegisteringSpouse(option === "yes");
 
 						return (
 							<RadioInput
@@ -55,22 +57,6 @@ export function IsRefugee() {
 					onClick={goToPreviousStep}
 					className="hidden lg:flex"
 				/>
-			</div>
-
-			<div
-				className={`${isRefugee ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
-			>
-				<div className="font-bold">{i18n("title.hint")}</div>
-				<p>
-					{i18n("nationality.q5.hint")}{" "}
-					<a
-						href="https://service.berlin.de/standort/327539/"
-						target="_blank"
-						className="text-berlin-blue-900 font-bold hover:underline visited:text-purple-500"
-					>
-						https://service.berlin.de/standort/327539/
-					</a>
-				</p>
 			</div>
 		</form>
 	);

@@ -1,4 +1,4 @@
-import { useProgressStore } from "../steps/store";
+import { useProgressStore } from "../steps-residence-registration/store";
 import { i18n } from "~/i18n/i18n-utils";
 
 export function Progress() {

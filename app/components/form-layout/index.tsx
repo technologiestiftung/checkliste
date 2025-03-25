@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { buildLocalizedLink, i18n } from "~/i18n/i18n-utils";
-import { useProgressStore } from "../steps/store";
+import { useProgressStore } from "../steps-residence-registration/store";
 import { useDialogStore } from "~/components/feedback-dialog/store/dialog";
 
 export function FormLayout({ children }: { children: React.ReactNode }) {
