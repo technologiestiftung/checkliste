@@ -142,7 +142,7 @@ const de = {
 	idDocumentForChild:
 		"Personalausweis, Reisepass oder Kinderpass des Kindes/der Kinder",
 	guardianConsent:
-		"Einverständniserklärung der Sorgeberechtigten des Kinder/der Kinder",
+		"Einverständniserklärung der Sorgeberechtigten des Kindes/der Kinder",
 	additionalRegistrationForm: "Weiteres Anmeldeformular",
 	germanIdOrPassportOrChildPassport:
 		"Ihr eigener Personalausweis, Reisepass oder Kinderpass",

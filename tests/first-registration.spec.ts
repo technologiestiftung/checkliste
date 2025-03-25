@@ -52,7 +52,7 @@ test("should have 3 documents in their checklist: registrationForm, movingInConf
 	});
 	const germanIdOrPassport = page
 		.locator("div")
-		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
+		.filter({ hasText: /^Ihr eigener Personalausweis oder Reisepass$/ });
 
 	await expect(registrationForm).toBeVisible();
 	await expect(movingInConfirmation).toBeVisible();
@@ -112,7 +112,7 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 		.filter({ hasText: /^Geburtsurkunde$/ });
 	const germanIdOrPassport = page
 		.locator("div")
-		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
+		.filter({ hasText: /^Ihr eigener Personalausweis oder Reisepass$/ });
 
 	await expect(registrationForm).toBeVisible();
 	await expect(movingInConfirmation).toBeVisible();
@@ -174,7 +174,7 @@ test("should have 5 documents in their checklist: registrationForm, movingInConf
 	});
 	const germanIdOrPassport = page
 		.locator("div")
-		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
+		.filter({ hasText: /^Ihr eigener Personalausweis oder Reisepass$/ });
 	const birthCertificate = page
 		.locator("div")
 		.filter({ hasText: /^Geburtsurkunde$/ });
@@ -240,7 +240,7 @@ test("should have 6 documents in their checklist: registrationForm, movingInConf
 	});
 	const germanIdOrPassport = page
 		.locator("div")
-		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
+		.filter({ hasText: /^Ihr eigener Personalausweis oder Reisepass$/ });
 	const birthCertificate = page
 		.locator("div")
 		.filter({ hasText: /^Geburtsurkunde$/ });
@@ -249,7 +249,7 @@ test("should have 6 documents in their checklist: registrationForm, movingInConf
 		.filter({ hasText: /^Heiratsurkunde$/ });
 	const idDocumentForSpouse = page.locator("div").filter({
 		hasText:
-			/^Personalausweis oder Reisepass Deiner Ehepartnerin\/Deines Ehepartners$/,
+			/^Personalausweis oder Reisepass der Ehepartnerin\/des Ehepartners$/,
 	});
 
 	await expect(registrationForm).toBeVisible();
@@ -315,7 +315,7 @@ test("should have 8 documents in their checklist: registrationForm, movingInConf
 	});
 	const germanIdOrPassport = page
 		.locator("div")
-		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
+		.filter({ hasText: /^Ihr eigener Personalausweis oder Reisepass$/ });
 	const birthCertificate = page
 		.locator("div")
 		.filter({ hasText: /^Geburtsurkunde$/ });
@@ -324,11 +324,11 @@ test("should have 8 documents in their checklist: registrationForm, movingInConf
 		.filter({ hasText: /^Heiratsurkunde$/ });
 	const idDocumentForSpouse = page.locator("div").filter({
 		hasText:
-			/^Personalausweis oder Reisepass Deiner Ehepartnerin\/Deines Ehepartners$/,
+			/^Personalausweis oder Reisepass der Ehepartnerin\/des Ehepartners$/,
 	});
 	const childBirthCertificate = page
 		.locator("div")
-		.filter({ hasText: /^Geburtsurkunde Deines Kindes\/Deiner Kinder$/ });
+		.filter({ hasText: /^Geburtsurkunde des Kindes\/der Kinder$/ });
 	const custodyDeclaration = page
 		.locator("div")
 		.filter({ hasText: /^Sorgerechtserklärung$/ });
@@ -395,7 +395,7 @@ test("should have 11 documents in their checklist: registrationForm, movingInCon
 	});
 	const germanIdOrPassport = page
 		.locator("div")
-		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
+		.filter({ hasText: /^Ihr eigener Personalausweis oder Reisepass$/ });
 	const birthCertificate = page
 		.locator("div")
 		.filter({ hasText: /^Geburtsurkunde$/ });
@@ -404,11 +404,11 @@ test("should have 11 documents in their checklist: registrationForm, movingInCon
 		.filter({ hasText: /^Heiratsurkunde$/ });
 	const idDocumentForSpouse = page.locator("div").filter({
 		hasText:
-			/^Personalausweis oder Reisepass Deiner Ehepartnerin\/Deines Ehepartners$/,
+			/^Personalausweis oder Reisepass der Ehepartnerin\/des Ehepartners$/,
 	});
 	const childBirthCertificate = page
 		.locator("div")
-		.filter({ hasText: /^Geburtsurkunde Deines Kindes\/Deiner Kinder$/ });
+		.filter({ hasText: /^Geburtsurkunde des Kindes\/der Kinder$/ });
 	const custodyDeclaration = page
 		.locator("div")
 		.filter({ hasText: /^Sorgerechtserklärung$/ });
@@ -418,7 +418,7 @@ test("should have 11 documents in their checklist: registrationForm, movingInCon
 	});
 	const guardianConsent = page.locator("div").filter({
 		hasText:
-			/^Einverständniserklärung der Sorgeberechtigten des Kinder\/der Kinder$/,
+			/^Einverständniserklärung der Sorgeberechtigten des Kindes\/der Kinder$/,
 	});
 	const additionalRegistrationForm = page
 		.locator("div")
