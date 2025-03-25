@@ -1,11 +1,11 @@
 import { create } from "zustand";
 
 interface DialogState {
-	isOpen: boolean;
-	setIsOpen: (isOpen: boolean) => void;
+	hasCompletedAFlow: boolean;
+	setHasCompletedAFlow: (hasCompleted: boolean) => void;
 }
 
 export const useDialogStore = create<DialogState>((set) => ({
-	isOpen: false,
-	setIsOpen: (isOpen) => set({ isOpen }),
+	hasCompletedAFlow: false,
+	setHasCompletedAFlow: (hasCompletedAFlow) => set({ hasCompletedAFlow }),
 }));

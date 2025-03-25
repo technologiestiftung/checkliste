@@ -5,7 +5,7 @@ import { useDialogStore } from "~/components/feedback-dialog/store/dialog";
 
 export function FormLayout({ children }: { children: React.ReactNode }) {
 	const { currentStep, goToPreviousStep } = useProgressStore();
-	const { setIsOpen } = useDialogStore();
+	const { setHasCompletedAFlow } = useDialogStore();
 
 	const isLastStep = currentStep === 15;
 
@@ -14,7 +14,7 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 			<Link
 				className="absolute lg:hidden top-0 w-full h-7 cursor-default"
 				to={buildLocalizedLink("/") as string}
-				onClick={() => setIsOpen(true)}
+				onClick={() => setHasCompletedAFlow(true)}
 				tabIndex={-1}
 			/>
 
@@ -24,7 +24,7 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 						<Link
 							className="text-2xl text-berlin-blue-900 hover:underline font-bold px-4 py-5"
 							to={buildLocalizedLink("/") as string}
-							onClick={() => setIsOpen(true)}
+							onClick={() => setHasCompletedAFlow(true)}
 						>
 							{i18n("navigation.startpage")}
 						</Link>
@@ -46,7 +46,7 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 						<Link
 							className="text-base lg:text-2xl text-berlin-blue-900 hover:underline font-bold p-2.5 pt-5"
 							to={buildLocalizedLink("/")}
-							onClick={() => setIsOpen(true)}
+							onClick={() => setHasCompletedAFlow(true)}
 						>
 							{isLastStep ? i18n("button.finish") : i18n("button.cancel")}
 						</Link>
