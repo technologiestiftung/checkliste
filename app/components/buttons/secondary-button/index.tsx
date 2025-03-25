@@ -11,7 +11,7 @@ export function SecondaryButton({
 }) {
 	return (
 		<button
-			className={`flex items-center rounded-xs border-1 border-berlin-blue-900 hover:border-berlin-blue-400 hover:bg-berlin-blue-400 cursor-pointer hover:text-berlin-blue-900 ${className}`}
+			className={`flex items-center justify-center rounded-xs border-1 border-berlin-blue-900 hover:border-berlin-blue-400 hover:bg-berlin-blue-400 cursor-pointer hover:text-berlin-blue-900 ${className}`}
 			type={type}
 			onClick={onClick}
 		>
