@@ -18,7 +18,7 @@ export const FeedbackDialog: React.FC = () => {
 	const onDialogClick = useCallback(
 		(event: React.MouseEvent<HTMLDialogElement, MouseEvent>) => {
 			const isClickOnBackground =
-				event.target === document.getElementById("feedback-dialog");
+				event.target !== document.getElementById("feedback-dialog");
 
 			if (isClickOnBackground) {
 				return;
