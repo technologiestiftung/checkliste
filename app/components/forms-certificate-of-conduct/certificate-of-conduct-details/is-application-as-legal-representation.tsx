@@ -59,6 +59,7 @@ export function IsApplicationAsLegalRepresentation() {
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext
 					isValid={isValid && isApplicationAsLegalRepresentation}
+					isEndofProcess={showHint}
 				/>
 
 				<SecondaryButton

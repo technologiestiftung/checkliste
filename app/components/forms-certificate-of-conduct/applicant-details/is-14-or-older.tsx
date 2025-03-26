@@ -52,7 +52,10 @@ export function Is14OrOlder() {
 			</div>
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<FormButtonNext isValid={isValid && is14OrOlder} />
+				<FormButtonNext
+					isValid={isValid && is14OrOlder}
+					isEndofProcess={showHint}
+				/>
 
 				<SecondaryButton
 					label={i18n("button.back")}

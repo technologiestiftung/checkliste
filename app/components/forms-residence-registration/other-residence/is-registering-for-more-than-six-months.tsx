@@ -19,6 +19,10 @@ export function IsRegisteringForMoreThanSixMonths() {
 
 	const options = ["yes", "no"] as const;
 
+	const hintTitle = i18n("title.hint");
+	const hint = i18n("other-residence.q4.hint");
+	const hintLinkLabel = i18n("other-residence.q4.hint.link.label");
+
 	return (
 		<form
 			className="flex h-80 w-full flex-col gap-12 lg:h-96"
@@ -55,20 +59,10 @@ export function IsRegisteringForMoreThanSixMonths() {
 				</div>
 			</div>
 
-			<p className={`${showHint ? "block" : "hidden"}`}>
-				{i18n("other-residence.q4.hint")}{" "}
-				<a
-					href="https://service.berlin.de/terminvereinbarung/termin/manage/"
-					target="_blank"
-					className="text-blue-700 hover:underline visited:text-purple-500"
-				>
-					{i18n("other-residence.q4.hint.link.label")}{" "}
-				</a>
-			</p>
-
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext
 					isValid={isValid && isRegisteringForMoreThanSixMonths}
+					isEndofProcess={showHint}
 				/>
 
 				<SecondaryButton
@@ -76,6 +70,21 @@ export function IsRegisteringForMoreThanSixMonths() {
 					onClick={goToPreviousStep}
 					className="hidden lg:flex"
 				/>
+			</div>
+
+			<div
+				className={`${showHint ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3`}
+			>
+				<div className="font-bold">{hintTitle}</div>
+				{hint}{" "}
+				<a
+					href="https://service.berlin.de/terminvereinbarung/termin/manage/"
+					target="_blank"
+					className="text-blue-700 hover:underline visited:text-purple-500"
+				>
+					{hintLinkLabel}
+				</a>
+				.
 			</div>
 		</form>
 	);

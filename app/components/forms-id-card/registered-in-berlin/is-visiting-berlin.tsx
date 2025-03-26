@@ -53,7 +53,10 @@ export function IsVisitingBerlin() {
 			</div>
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<FormButtonNext isValid={isValid && isVisitingBerlin} />
+				<FormButtonNext
+					isValid={isValid && isVisitingBerlin}
+					isEndofProcess={isValid && !isVisitingBerlin}
+				/>
 
 				<SecondaryButton
 					label={i18n("button.back")}
@@ -62,7 +65,7 @@ export function IsVisitingBerlin() {
 				/>
 			</div>
 
-			{isVisitingBerlin !== null && (
+			{isValid && (
 				<div
 					className={`${isVisitingBerlin ? "" : "border-3 border-berlin-orange rounded-xs p-3"}  text-base lg:text-2xl`}
 				>

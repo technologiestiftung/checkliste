@@ -48,7 +48,7 @@ const de = {
 	"footer.toTheTop": "Zum Seitenanfang",
 	"footer.button.name.expand": "Mehr anzeigen",
 	"footer.button.name.collapse": "Weniger anzeigen",
-	"upperFooter.checklist.title": "Checkliste",
+	"upperFooter.checklist.title": "Dokumenten-Check",
 	"upperFooter.checklist.about": "Über das Projekt",
 	"upperFooter.checklist.impressum": "Impressum",
 	"upperFooter.checklist.dataprivacy": "Datenschutzerklärung",
@@ -235,10 +235,10 @@ const de = {
 	/*
 	About
 	*/
-	"about.title": "Über das Projekt Checkliste",
+	"about.title": "Über das Projekt Dokumenten-Check",
 	"about.text.p1":
 		"Berliner Bürgerämter verzeichnen als häufigsten Grund für Terminabbrüche das Fehlen oder Vergessen der erforderlichen Unterlagen. Mithilfe kurzer Fragen zu Ihrer persönlichen Situation erstellt die Anwendung eine individuelle Checkliste, die Ihnen präzise anzeigt, welche Dokumente benötigt werden. Dadurch wird Ihr Behördengang effizienter und stressfreier gestaltet.",
-	"about.text.p2": `Mit der Checkliste können Sie die 
+	"about.text.p2": `Mit dem Dokumenten-Check können Sie die 
 	<a class="font-bold hover:underline text-berlin-blue-500"
 							href="https://service.berlin.de/dienstleistung/120686/"
 							target="_blank"
@@ -272,9 +272,9 @@ const de = {
 	/*
 	Data Privacy
 	*/
-	"dataPrivacy.title": "Datenschutzerklärung für Prototyp “Checkliste”",
+	"dataPrivacy.title": "Datenschutzerklärung für Prototyp “Dokumenten-Check”",
 	"dataPrivacy.subtitle":
-		"Diese Datenschutzerklärung gilt ausschließlich für den Prototyp “Checkliste”.",
+		"Diese Datenschutzerklärung gilt ausschließlich für den Prototyp “Dokumenten-Check”.",
 	"dataPrivacy.title.p1": "1. Allgemeine Informationen",
 	"dataPrivacy.subtitle.p1.1": "1.1 Zweck der Datenschutzerklärung",
 	"dataPrivacy.text.p1.1": `Die Datenschutzerklärung soll Sie über Art, Umfang und Zweck der von der Technologiestiftung Berlin erhobenen, genutzten und verarbeitenden Daten sowie Ihre Rechte in Bezug auf Datenschutz informieren. Die Technologiestiftung Berlin ist sich der Verantwortung für den Schutz von personenbezogenen Daten bewusst und setzt sich besonders dafür ein, dass Ihre Privatsphäre geschützt wird.   

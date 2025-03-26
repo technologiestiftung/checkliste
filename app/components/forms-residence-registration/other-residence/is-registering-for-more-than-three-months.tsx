@@ -19,6 +19,10 @@ export function IsRegisteringForMoreThanThreeMonths() {
 
 	const options = ["yes", "no"] as const;
 
+	const hintTitle = i18n("title.hint");
+	const hint = i18n("other-residence.q3.hint");
+	const hintLinkLabel = i18n("other-residence.q3.hint.link.label");
+
 	return (
 		<form
 			className="flex h-80 w-full flex-col gap-12 lg:h-96"
@@ -57,7 +61,10 @@ export function IsRegisteringForMoreThanThreeMonths() {
 			</div>
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<FormButtonNext isValid={isValid && needsRegistration} />
+				<FormButtonNext
+					isValid={isValid && needsRegistration}
+					isEndofProcess={showHint}
+				/>
 
 				<SecondaryButton
 					label={i18n("button.back")}
@@ -66,16 +73,20 @@ export function IsRegisteringForMoreThanThreeMonths() {
 				/>
 			</div>
 
-			<p className={`${showHint ? "block" : "hidden"}`}>
-				{i18n("other-residence.q3.hint")}{" "}
+			<div
+				className={`${showHint ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3`}
+			>
+				<div className="font-bold">{hintTitle}</div>
+				{hint}{" "}
 				<a
 					href="https://service.berlin.de/terminvereinbarung/termin/manage/"
 					target="_blank"
 					className="text-blue-700 hover:underline visited:text-purple-500"
 				>
-					{i18n("other-residence.q3.hint.link.label")}{" "}
+					{hintLinkLabel}
 				</a>
-			</p>
+				.
+			</div>
 		</form>
 	);
 }

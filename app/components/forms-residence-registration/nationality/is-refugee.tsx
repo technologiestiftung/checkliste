@@ -13,6 +13,8 @@ export function IsRefugee() {
 
 	const options = ["yes", "no"] as const;
 
+	const showHint = isRefugee === true;
+
 	return (
 		<form
 			className="flex h-80 w-full flex-col gap-12 lg:h-96"
@@ -48,7 +50,7 @@ export function IsRefugee() {
 			</div>
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<FormButtonNext isValid={isValid} />
+				<FormButtonNext isValid={isValid} isEndofProcess={showHint} />
 
 				<SecondaryButton
 					label={i18n("button.back")}
@@ -57,9 +59,7 @@ export function IsRefugee() {
 				/>
 			</div>
 
-			<div
-				className={`${isRefugee ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
-			>
+			<div className={`${showHint ? "block" : "hidden"} text-base lg:text-2xl`}>
 				<div className="font-bold">{i18n("title.hint")}</div>
 				<p>
 					{i18n("nationality.q5.hint")}{" "}
