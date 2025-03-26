@@ -11,9 +11,9 @@ export default function Index() {
 	return (
 		<FormLayout currentStep={currentStep} goToPreviousStep={goToPreviousStep}>
 			<div className="w-full bg-berlin-blue-400">
-				{currentStep !== 15 && (
+				{currentStep !== 9 && (
 					<h2 className="text-xl lg:text-4xl font-bold px-7.5 py-2.5 lg:max-w-[974px] mx-auto lg:px-0">
-						{i18n("title.residence-registration")}
+						{i18n("title.id-card")}
 					</h2>
 				)}
 			</div>

@@ -1,20 +1,24 @@
-import { useRegisteredInBerlinStore } from "./store";
-import { useProgressStore } from "../../steps-id-card/store";
+import { useCertificateOfConductDetailsStore } from "./store";
+import { useProgressStore } from "../../steps-certificate-of-conduct/store";
 import { RadioInput } from "../../radio-input";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 
-export function IsNoIDRequired() {
-	const { isNoIDRequired, setIsNoIDRequired } = useRegisteredInBerlinStore();
-
+export function IsApplicationAsLegalRepresentation() {
+	const options = ["yes", "no"] as const;
+	const {
+		isApplicationAsLegalRepresentation,
+		setIsApplicationAsLegalRepresentation,
+	} = useCertificateOfConductDetailsStore();
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
-	const options = ["yes", "no"] as const;
+	const isValid = isApplicationAsLegalRepresentation !== null;
 
-	const isValid = isNoIDRequired !== null;
+	const hintTitle = i18n("title.hint");
+	const hint = i18n("applicantDetails.q3.hint");
 
-	const showHint = isValid && isNoIDRequired;
+	const showHint = isValid && !isApplicationAsLegalRepresentation;
 
 	return (
 		<form
@@ -26,16 +30,18 @@ export function IsNoIDRequired() {
 		>
 			<div className="flex flex-col gap-4">
 				<h2 className="text-xl font-bold lg:text-4xl">
-					{i18n("registered-in-berlin.q2")}
+					{i18n("certificate-of-conduct-details.q2")}
 				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
-						const name = "registered-in-berlin.q2.radio";
+						const name = "certificate-of-conduct-details.q2.radio";
 						const label = i18n(option);
 						const isChecked =
-							(option === "yes" && isNoIDRequired === true) ||
-							(option === "no" && isNoIDRequired === false);
-						const onChange = () => setIsNoIDRequired(option === "yes");
+							(option === "yes" &&
+								isApplicationAsLegalRepresentation === true) ||
+							(option === "no" && isApplicationAsLegalRepresentation === false);
+						const onChange = () =>
+							setIsApplicationAsLegalRepresentation(option === "yes");
 
 						return (
 							<RadioInput
@@ -51,7 +57,9 @@ export function IsNoIDRequired() {
 			</div>
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<FormButtonNext isValid={isValid && !isNoIDRequired} />
+				<FormButtonNext
+					isValid={isValid && isApplicationAsLegalRepresentation}
+				/>
 
 				<SecondaryButton
 					label={i18n("button.back")}
@@ -63,8 +71,13 @@ export function IsNoIDRequired() {
 			<div
 				className={`${showHint ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
 			>
-				<div className="font-bold">{i18n("title.hint")}</div>
-				<p>{i18n("registered-in-berlin.q2.hint.yes")}</p>
+				<div className="font-bold">{hintTitle}</div>
+
+				<p
+					dangerouslySetInnerHTML={{
+						__html: hint,
+					}}
+				/>
 			</div>
 		</form>
 	);

@@ -10,14 +10,14 @@ export function useSaveIntroPageViewInSessionStorage() {
 
 		trackInteraction({
 			eventAction: "page-view",
-			eventName: `intro-page-view-residence-registration (language: ${language})`,
+			eventName: `intro-page-view-certificate-of-conduct (language: ${language})`,
 		});
 	}, []);
 }
 
 function saveIntroPageViewInSessionStorage() {
 	sessionStorage.setItem(
-		"has-seen-intro-page-view-residence-registration",
+		"has-seen-intro-page-view-certificate-of-conduct",
 		"true",
 	);
 }

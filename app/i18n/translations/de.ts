@@ -142,6 +142,27 @@ const de = {
 		"Wurden Sie eingebürgert und beantragen Sie erstmals einen deutschen Personalausweis?",
 
 	/*
+	Flow Certificate of Conduct
+	*/
+	"applicantDetails.q1": "Sind Sie mindestens 14 Jahre alt?",
+	"applicantDetails.q1.hint":
+		"Sie können ein Führungszeugnis erst ab 14 Jahre beantragen. ",
+	"applicantDetails.q2": "Sind Sie in Berlin gemeldet?",
+	"applicantDetails.q3": "Leben Sie vorrübergehend in Berlin?",
+	"applicantDetails.q3.hint":
+		"Bitte beantragen Sie ihr Führungszeugnis online. Link zum Online Antrag.",
+	"certificate-of-conduct-details.q1":
+		"Beantragen Sie das Führungszeugnis für sich selbst?",
+	"certificate-of-conduct-details.q1.hint":
+		"Sie können kein Führungszeugnis beantragen, wenn Sie nicht die gesetzliche Vertretung sind.",
+	"certificate-of-conduct-details.q2":
+		"Beantragen Sie das Führungszeugnis in gesetzlicher Vertretung?",
+	"certificate-of-conduct-details.q3":
+		"Beantragen Sie ein erweitertes Führungszeugnis?",
+	"certificate-of-conduct-details.q4":
+		"Beantragen Sie ein behördliches Führungszeugnis?",
+
+	/*
 	Checklist Overview
 	*/
 	"overview.title": "Ihre persönliche Checkliste wurde erstellt",
@@ -189,12 +210,24 @@ const de = {
 		"Einverständniserklärung des nicht anwesenden Sorgebereichtigten",
 	copyOfID:
 		"Kopie von Ausweis (bzw. Reisepass oder Nationalpass) des nicht anwesenden Elternteils für den Unterschriftenabgleich",
-	idDocument: "gültiger oder alter Personalausweis oder Reisepass",
+	newOrOldID: "gültiger oder alter Personalausweis oder Reisepass",
 	birthCertificateOrPartnershipCertificate:
 		"Geburtsurkunde, Eheurkunde oder Lebenspartnerschaftsurkunde",
 	passportOrforeignID:
 		"Reisepass oder ID-Card des Staates der bisherigen Nationalität oder eine Identitätsbescheinigung vom Landesamt für Einwanderung (LEA).",
 	naturalizationCertificate: "Einbürgerungsurkunde",
+
+	birthCertificateOfRepresantative: "Geburtsurkunde der vertretenen Person",
+	carerId: "Betreuerausweis (wenn nicht sorgeberechtigt)",
+	idOfLegalRepresantative: "Ausweisdokument von gesetzlicher Vertretung",
+	idDocument: "Ausweisdokument",
+	writtenRequestAuthorized:
+		"Schriftliche Aufforderung einer berechtigten Stelle",
+	nameAndAddressOfAuthority: "Name und Anschrift der Behörde",
+	fileNumber: "Aktenzeichen",
+	purposeOfApplication:
+		"Verwendungszweck z.B. Einstellung in den öffentlichen Dienst",
+	letterOrEmailFromAuthority: "chreiben oder E-Mail der Behörde",
 
 	/*
 	About

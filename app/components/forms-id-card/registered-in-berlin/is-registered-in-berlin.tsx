@@ -29,7 +29,7 @@ export function IsRegisteredInBerlin() {
 				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
-						const name = "first-registration.q3.radio";
+						const name = "registered-in-berlin.q1.radio";
 						const label = i18n(option);
 						const isChecked =
 							(option === "yes" && isRegisteredInBerlin === true) ||

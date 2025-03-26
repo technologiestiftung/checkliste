@@ -6,13 +6,17 @@ export function useTrackGoalChecklistConversion() {
 	const language = getLanguage();
 
 	useEffect(() => {
-		if (sessionStorage.getItem("has-seen-intro-page-view") !== "true") {
+		if (
+			sessionStorage.getItem(
+				"has-seen-intro-page-view-residence-registration",
+			) !== "true"
+		) {
 			return;
 		}
 
 		trackInteraction({
 			eventAction: "page-view",
-			eventName: `conversion-intro-checklist (language: ${language})`,
+			eventName: `conversion-intro-checklist-residence-registration (language: ${language})`,
 		});
 	}, []);
 }

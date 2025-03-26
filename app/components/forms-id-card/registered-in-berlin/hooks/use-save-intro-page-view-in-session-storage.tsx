@@ -10,11 +10,11 @@ export function useSaveIntroPageViewInSessionStorage() {
 
 		trackInteraction({
 			eventAction: "page-view",
-			eventName: `intro-page-view (language: ${language})`,
+			eventName: `intro-page-view-id-card (language: ${language})`,
 		});
 	}, []);
 }
 
 function saveIntroPageViewInSessionStorage() {
-	sessionStorage.setItem("has-seen-intro-page-view", "true");
+	sessionStorage.setItem("has-seen-intro-page-view-id-card", "true");
 }

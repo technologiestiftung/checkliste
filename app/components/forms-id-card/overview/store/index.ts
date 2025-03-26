@@ -10,7 +10,7 @@ export interface OverviewDocs {
 	proofOfCustody: boolean | null;
 	consentOfCustodian: boolean | null;
 	copyOfID: boolean | null;
-	idDocument: boolean | null;
+	newOrOldID: boolean | null;
 	birthCertificateOrPartnershipCertificate: boolean | null;
 	passportOrforeignID: boolean | null;
 	naturalizationCertificate: boolean | null;
@@ -31,7 +31,7 @@ export const useOverviewStore = create<OverviewStore>()(
 				proofOfCustody: null,
 				consentOfCustodian: null,
 				copyOfID: null,
-				idDocument: null,
+				newOrOldID: null,
 				birthCertificateOrPartnershipCertificate: null,
 				passportOrforeignID: null,
 				naturalizationCertificate: null,
@@ -51,7 +51,7 @@ export const useOverviewStore = create<OverviewStore>()(
 					consentOfCustodian:
 						!useIDForChildStore.getState().areCustodiansMarried,
 					copyOfID: !useIDForChildStore.getState().areCustodiansMarried,
-					idDocument: usePreviousIDStore.getState().isPreviousIDExisting,
+					newOrOldID: usePreviousIDStore.getState().isPreviousIDExisting,
 					birthCertificateOrPartnershipCertificate:
 						!usePreviousIDStore.getState().isPreviousIDExisting ||
 						usePreviousIDStore.getState().hasNameChanged ||
