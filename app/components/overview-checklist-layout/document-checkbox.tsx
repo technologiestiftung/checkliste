@@ -6,12 +6,7 @@ import { trackInteraction } from "../feedback/matomo.ts";
 import type { ChangeEvent } from "react";
 import { translations } from "~/i18n/translations.ts";
 
-export function DocumentCheckbox({
-	id,
-	value,
-	filteredDocs,
-	setDocs,
-}: {
+interface DocumentCheckboxProps {
 	id: string;
 	value: boolean | null;
 	filteredDocs: [string, boolean][];
@@ -19,7 +14,14 @@ export function DocumentCheckbox({
 		docs: Partial<OverviewDocsIDCard> &
 			Partial<OverviewDocsResidenceRegistration>,
 	) => void;
-}) {
+}
+
+export function DocumentCheckbox({
+	id,
+	value,
+	filteredDocs,
+	setDocs,
+}: DocumentCheckboxProps) {
 	const language = getLanguage();
 
 	const onChange = (event: ChangeEvent<HTMLInputElement>) => {
