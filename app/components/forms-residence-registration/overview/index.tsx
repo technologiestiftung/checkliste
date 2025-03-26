@@ -1,6 +1,6 @@
 import { useOverviewStore } from "./store/index.ts";
 import { useProgressStore } from "../../steps-residence-registration/store/index.ts";
-import { DocumentCheckbox } from "./document-checkbox.tsx";
+import { DocumentCheckbox } from "../../overview-checklist/document-checkbox.tsx";
 import { SecondaryButton } from "../../buttons/secondary-button/index.tsx";
 import { i18n } from "~/i18n/i18n-utils.ts";
 import { trackInteraction } from "../../feedback/matomo.ts";
@@ -8,7 +8,7 @@ import { useTrackGoalChecklistConversion } from "./hooks/use-track-goal-checklis
 import { PrimaryButton } from "../../buttons/primary-button/index.tsx";
 
 export function Overview() {
-	const { docs: requiredDocs } = useOverviewStore();
+	const { docs: requiredDocs, setDocs } = useOverviewStore();
 	const { goToPreviousStep } = useProgressStore();
 
 	const documents = [
@@ -43,7 +43,13 @@ export function Overview() {
 			</div>
 			<ul className="flex flex-col gap-3">
 				{documents.map(([key, value]) => (
-					<DocumentCheckbox key={key} id={key} value={value} />
+					<DocumentCheckbox
+						key={key}
+						id={key}
+						value={value}
+						filteredDocs={documents}
+						setDocs={setDocs}
+					/>
 				))}
 			</ul>
 			<div className="flex h-full w-full flex-row items-end justify-end lg:justify-between print:hidden">

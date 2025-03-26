@@ -4,9 +4,10 @@ import { useState } from "react";
 import { Tooltip } from "~/components/tooltip";
 
 export function DocumentLink({ id }: { id: string }) {
-	let url = "";
 	const [showTooltip, setShowTooltip] = useState(false);
+	const tooltipText = i18n("download.tooltip");
 
+	let url = "";
 	switch (id) {
 		case "registrationForm":
 			url =
@@ -37,6 +38,10 @@ export function DocumentLink({ id }: { id: string }) {
 			url =
 				"https://www.berlin.de/formularverzeichnis/?formular=/labo/zentrale-einwohnerangelegenheiten/_assets/mdb-f402610-beiblatt_zur_anmeldung_blanko.pdf";
 			break;
+		case "consentOfCustodian":
+			url =
+				"https://www.berlin.de/formularverzeichnis/?formular=/buergeramt/pass-und-ausweisangelegenheiten/_assets/zustimmungserklaerung_npa_nicht_anwesender_elternteil.pdf";
+			break;
 		default:
 			return null;
 	}
@@ -56,9 +61,7 @@ export function DocumentLink({ id }: { id: string }) {
 					<DownloadIcon />
 				</a>
 			</div>
-			{showTooltip && (
-				<Tooltip content={i18n("download.tooltip")} className="top-9" />
-			)}
+			{showTooltip && <Tooltip content={tooltipText} className="top-9" />}
 		</div>
 	);
 }

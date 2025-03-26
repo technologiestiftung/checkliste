@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export function FormButtonNext({ isValid }: { isValid: boolean }) {
 	const [showTooltip, setShowTooltip] = useState(false);
+	const tooltipText = i18n("button.next.tooltip");
 
 	return (
 		<div
@@ -19,7 +20,7 @@ export function FormButtonNext({ isValid }: { isValid: boolean }) {
 			/>
 			{showTooltip && !isValid && (
 				<Tooltip
-					content={i18n("button.next.tooltip")}
+					content={tooltipText}
 					className="min-w-[120px] lg:min-w-[130px] top-14"
 				/>
 			)}

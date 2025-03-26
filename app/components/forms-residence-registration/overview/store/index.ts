@@ -4,7 +4,7 @@ import { useFirstRegistrationStore } from "../../first-registration/store";
 import { useNationalityStore } from "../../nationality/store";
 import { useOtherResidenceStore } from "../../other-residence/store";
 
-interface OverviewDocs {
+export interface OverviewDocs {
 	registrationForm: boolean | null;
 	movingInConfirmation: boolean | null;
 	birthCertificate: boolean | null;

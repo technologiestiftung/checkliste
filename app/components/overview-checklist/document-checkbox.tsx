@@ -1,19 +1,25 @@
 import { DocumentLink } from "./document-link.tsx";
-import { useOverviewStore } from "./store/index.ts";
-import { i18n } from "~/i18n/i18n-utils";
-import { trackInteraction } from "../../feedback/matomo.ts";
+import { type OverviewDocs as OverviewDocsIDCard } from "../forms-id-card/overview/store/index.ts";
+import { type OverviewDocs as OverviewDocsResidenceRegistration } from "../forms-residence-registration/overview/store/index.ts";
+import { i18n, getLanguage } from "~/i18n/i18n-utils";
+import { trackInteraction } from "../feedback/matomo.ts";
 import type { ChangeEvent } from "react";
-import { getLanguage } from "~/i18n/i18n-utils.ts";
 import { translations } from "~/i18n/translations.ts";
 
 export function DocumentCheckbox({
 	id,
 	value,
+	filteredDocs,
+	setDocs,
 }: {
 	id: string;
 	value: boolean | null;
+	filteredDocs: [string, boolean][];
+	setDocs: (
+		docs: Partial<OverviewDocsIDCard> &
+			Partial<OverviewDocsResidenceRegistration>,
+	) => void;
 }) {
-	const { setDocs } = useOverviewStore();
 	const language = getLanguage();
 
 	const onChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -35,15 +41,7 @@ export function DocumentCheckbox({
 			return;
 		}
 
-		const docs = [
-			...Array.from(
-				Object.entries(useOverviewStore.getState().docs).filter(
-					([, entry]) => entry !== null,
-				),
-			),
-		];
-
-		if (docs.some(([, entry]) => entry === false)) {
+		if (filteredDocs.some(([, entry]) => entry === false)) {
 			return;
 		}
 	};

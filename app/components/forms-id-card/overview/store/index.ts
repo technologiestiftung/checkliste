@@ -4,7 +4,7 @@ import { persist } from "zustand/middleware";
 import { useIDForChildStore } from "../../id-for-child/store";
 import { usePreviousIDStore } from "../../previous-id/store";
 
-interface OverviewDocs {
+export interface OverviewDocs {
 	idOfParents: boolean | null;
 	bringChild: boolean | null;
 	proofOfCustody: boolean | null;

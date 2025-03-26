@@ -6,14 +6,17 @@ import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 
 export function IsVisitingBerlin() {
+	const options = ["yes", "no"] as const;
 	const { isVisitingBerlin, setIsVisitingBerlin } =
 		useRegisteredInBerlinStore();
-
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
-	const options = ["yes", "no"] as const;
-
 	const isValid = isVisitingBerlin !== null;
+
+	const hintTitle = i18n("title.hint");
+	const hint = isVisitingBerlin
+		? i18n("registered-in-berlin.q3.hint.yes")
+		: i18n("registered-in-berlin.q3.hint.no");
 
 	return (
 		<form
@@ -63,13 +66,11 @@ export function IsVisitingBerlin() {
 				<div
 					className={`${isVisitingBerlin ? "" : "border-3 border-berlin-orange rounded-xs p-3"}  text-base lg:text-2xl`}
 				>
-					<div className="font-bold">{i18n("title.hint")}</div>
+					<div className="font-bold">{hintTitle}</div>
 
 					<p
 						dangerouslySetInnerHTML={{
-							__html: isVisitingBerlin
-								? i18n("registered-in-berlin.q3.hint.yes")
-								: i18n("registered-in-berlin.q3.hint.no"),
+							__html: hint,
 						}}
 					/>
 				</div>
