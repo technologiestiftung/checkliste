@@ -72,16 +72,18 @@ export const useProgressStore = create<ProgressStore>()(
 		(set, get) => ({
 			currentStep: 0,
 			maxSteps: 15,
-			maxSections: 3,
+			maxSections: 5,
 			currentSection: 1,
 
 			setCurrentStep(currentStep: number) {
 				trackStepChange(get().currentStep, currentStep);
 
 				let currentSection = 1;
-				if (currentStep <= 5) currentSection = 1;
-				else if (currentStep <= 10) currentSection = 2;
-				else if (currentStep <= 14) currentSection = 3;
+				if (currentStep <= 0) currentSection = 1;
+				else if (currentStep <= 2) currentSection = 2;
+				else if (currentStep <= 5) currentSection = 3;
+				else if (currentStep <= 10) currentSection = 4;
+				else if (currentStep <= 14) currentSection = 5;
 				else currentSection = 0;
 
 				set({ currentStep, currentSection });

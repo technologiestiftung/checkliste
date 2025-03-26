@@ -149,8 +149,11 @@ const de = {
 		"Sie können ein Führungszeugnis erst ab 14 Jahre beantragen. ",
 	"applicantDetails.q2": "Sind Sie in Berlin gemeldet?",
 	"applicantDetails.q3": "Leben Sie vorrübergehend in Berlin?",
-	"applicantDetails.q3.hint":
-		"Bitte beantragen Sie ihr Führungszeugnis online. Link zum Online Antrag.",
+	"applicantDetails.q3.hint": `Bitte beantragen Sie ihr Führungszeugnis online. <a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://www.fuehrungszeugnis.bund.de/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Link zum Online Antrag</a>.`,
 	"certificate-of-conduct-details.q1":
 		"Beantragen Sie das Führungszeugnis für sich selbst?",
 	"certificate-of-conduct-details.q1.hint":
