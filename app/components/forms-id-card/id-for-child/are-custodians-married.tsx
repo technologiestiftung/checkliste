@@ -23,11 +23,11 @@ export function AreCustodiansMarried() {
 				goToNextStep();
 			}}
 		>
-			<div className="flex flex-col gap-4">
+			<div className="flex flex-col gap-4 lg:gap-12">
 				<h2 className="text-xl font-bold lg:text-4xl">
 					{i18n("id-for-child.q3")}
 				</h2>
-				<div className="flex flex-col gap-1">
+				<div className="flex flex-col gap-3 lg:gap-4">
 					{options.map((option) => {
 						const name = "id-for-child.q3.radio";
 						const label = i18n(option);

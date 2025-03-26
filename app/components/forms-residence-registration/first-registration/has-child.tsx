@@ -22,12 +22,12 @@ export function HasChild() {
 				goToNextStep();
 			}}
 		>
-			<div className="flex flex-col gap-4">
+			<div className="flex flex-col gap-4 lg:gap-12">
 				<h2 className="text-xl font-bold lg:text-4xl">
 					{i18n("first-registration.q4")}
 				</h2>
 
-				<div className="flex flex-col gap-1">
+				<div className="flex flex-col gap-3 lg:gap-4">
 					{options.map((option) => {
 						const name = "first-registration.q4.radio";
 						const label = i18n(option);
