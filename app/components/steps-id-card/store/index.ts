@@ -2,11 +2,19 @@ import { create } from "zustand";
 import { reverseSteps, steps } from "./steps.ts";
 import {
 	handleAreCustodiansPresentNextStep,
+	handleHasNameChangedNextStep,
 	handleIsIDforChildNextStep,
 	handleIsNoIDRequiredNextStep,
 	handleIsPreviousIDExistingNextStep,
 	handleIsRegisteredInBerlinNextStep,
 } from "./next-steps.ts";
+import {
+	handleIsVisitingBerlinPreviousStep,
+	handleIsFirstGermanIDPreviousStep,
+	handleIsIDforChildPreviousStep,
+	handleIsPreviousIDExistingPreviousStep,
+	handleOverviewPreviousStep,
+} from "./previous-steps.ts";
 import { trackInteraction } from "../../feedback/matomo.ts";
 import { persist } from "zustand/middleware";
 import { useOverviewStore } from "~/components/forms-id-card/overview/store/index.ts";
@@ -102,6 +110,9 @@ export const useProgressStore = create<ProgressStore>()(
 					case 6:
 						handleIsPreviousIDExistingNextStep();
 						return;
+					case 7:
+						handleHasNameChangedNextStep();
+						return;
 					default:
 						get().setCurrentStep(get().currentStep + 1);
 						return;
@@ -115,6 +126,22 @@ export const useProgressStore = create<ProgressStore>()(
 				}
 
 				switch (get().currentStep) {
+					case 2:
+						handleIsVisitingBerlinPreviousStep();
+						return;
+					case 3:
+						handleIsIDforChildPreviousStep();
+						return;
+					case 6:
+						handleIsPreviousIDExistingPreviousStep();
+						return;
+					case 8:
+						handleIsFirstGermanIDPreviousStep();
+						return;
+					case 9:
+						handleOverviewPreviousStep();
+						return;
+
 					default:
 						get().setCurrentStep(get().currentStep - 1);
 						return;

@@ -1,10 +1,18 @@
 import { Link } from "react-router";
 import { buildLocalizedLink, i18n } from "~/i18n/i18n-utils";
-import { useProgressStore } from "../steps-residence-registration/store";
 import { useDialogStore } from "~/components/feedback-dialog/store/dialog";
 
-export function FormLayout({ children }: { children: React.ReactNode }) {
-	const { currentStep, goToPreviousStep } = useProgressStore();
+interface FormLayoutProps {
+	children: React.ReactNode;
+	currentStep: number;
+	goToPreviousStep: () => void;
+}
+
+export function FormLayout({
+	children,
+	currentStep,
+	goToPreviousStep,
+}: FormLayoutProps) {
 	const { setHasCompletedAFlow } = useDialogStore();
 
 	const isLastStep = currentStep === 15;
@@ -31,15 +39,10 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 					</div>
 					<div className="flex lg:hidden items-center justify-between px-4.5 print:hidden">
 						<button
-							className={`text-base lg:text-2xl font-bold p-2.5 pt-5 ${
-								currentStep === 0
-									? "opacity-0"
-									: "text-berlin-blue-900 hover:underline"
-							}`}
+							className={`text-base lg:text-2xl font-bold p-2.5 pt-5 text-berlin-blue-900 hover:underline`}
 							onClick={goToPreviousStep}
 							type="button"
 							aria-label={i18n("button.back")}
-							disabled={currentStep === 0}
 						>
 							{i18n("button.back")}
 						</button>

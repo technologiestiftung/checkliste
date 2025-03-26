@@ -1,62 +1,49 @@
-import { useFirstRegistrationStore } from "../../forms-residence-registration/first-registration/store/index.ts";
-import { useNationalityStore } from "../../forms-residence-registration/nationality/store/index.ts";
-import { useOtherResidenceStore } from "../../forms-residence-registration/other-residence/store/index.ts";
+import { useRegisteredInBerlinStore } from "~/components/forms-id-card/registered-in-berlin/store/index.ts";
+import { useIDForChildStore } from "~/components/forms-id-card/id-for-child/store/index.ts";
 import { useProgressStore } from "./index.ts";
+import { usePreviousIDStore } from "~/components/forms-id-card/previous-id/store/index.ts";
 
-export function handleHasChildPreviousStep() {
-	if (useFirstRegistrationStore.getState().isMarried === false) {
-		useProgressStore.getState().goTo("isMarried");
+export function handleIsVisitingBerlinPreviousStep() {
+	useProgressStore.getState().goTo("isRegisteredInBerlin");
+}
+
+export function handleIsIDforChildPreviousStep() {
+	if (useRegisteredInBerlinStore.getState().isRegisteredInBerlin === true) {
+		useProgressStore.getState().goTo("isNoIDRequired");
 		return;
 	}
 
-	useProgressStore.getState().goTo("isRegisteringSpouse");
+	useProgressStore.getState().goTo("isVisitingBerlin");
 }
 
-export function handleIsGermanPreviousStep() {
+export function handleIsPreviousIDExistingPreviousStep() {
 	if (
-		useFirstRegistrationStore.getState().isRegisteringSpouse === false &&
-		useFirstRegistrationStore.getState().isRegisteringChild === true
+		useIDForChildStore.getState().isIDforChild === true &&
+		useIDForChildStore.getState().areCustodiansPresent === true
 	) {
-		useProgressStore.getState().goTo("isRegisteringMoreThanTwo");
+		useProgressStore.getState().goTo("areCustodiansPresent");
 		return;
 	}
 
-	if (useFirstRegistrationStore.getState().hasChild === false) {
-		useProgressStore.getState().goTo("hasChild");
+	if (
+		useIDForChildStore.getState().isIDforChild === true &&
+		useIDForChildStore.getState().areCustodiansPresent === false
+	) {
+		useProgressStore.getState().goTo("areCustodiansMarried");
 		return;
 	}
 
-	useProgressStore.getState().goTo("isRegisteringChild");
-}
-export function handleIsEuropeanPreviousStep() {
-	useProgressStore.getState().goTo("isGerman");
-}
-export function handleHasOtherResidencePreviousStep() {
-	if (useNationalityStore.getState().isGerman === true) {
-		useProgressStore.getState().goTo("isGermanUnder16");
-		return;
-	}
-
-	useProgressStore.getState().goTo("isRefugee");
+	useProgressStore.getState().goTo("isIDforChild");
 }
 
-export function handleIsRegisteringForMoreThanSixMonthsPreviousStep() {
-	useProgressStore.getState().goTo("isOtherResidenceAbroad");
+export function handleIsFirstGermanIDPreviousStep() {
+	useProgressStore.getState().goTo("isPreviousIDExisting");
 }
 
 export function handleOverviewPreviousStep() {
-	if (useOtherResidenceStore.getState().hasOtherResidence === false) {
-		useProgressStore.getState().goTo("hasOtherResidence");
+	if (usePreviousIDStore.getState().isPreviousIDExisting === true) {
+		useProgressStore.getState().goTo("hasNameChanged");
 		return;
 	}
-
-	if (
-		useOtherResidenceStore.getState().hasOtherResidence === true &&
-		useOtherResidenceStore.getState().isOtherResidenceAbroad === true
-	) {
-		useProgressStore.getState().goTo("isRegisteringForMoreThanThreeMonths");
-		return;
-	}
-
-	useProgressStore.getState().goTo("isRegisteringForMoreThanSixMonths");
+	useProgressStore.getState().goTo("isFirstGermanID");
 }

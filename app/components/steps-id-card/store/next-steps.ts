@@ -39,3 +39,7 @@ export function handleIsPreviousIDExistingNextStep() {
 	}
 	useProgressStore.getState().goTo("isFirstGermanID");
 }
+
+export function handleHasNameChangedNextStep() {
+	useProgressStore.getState().goTo("overview");
+}

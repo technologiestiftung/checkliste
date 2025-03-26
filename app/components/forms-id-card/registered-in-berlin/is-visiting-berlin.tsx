@@ -50,7 +50,7 @@ export function IsVisitingBerlin() {
 			</div>
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<FormButtonNext isValid={isValid} />
+				<FormButtonNext isValid={isValid && isVisitingBerlin} />
 
 				<SecondaryButton
 					label={i18n("button.back")}
@@ -58,6 +58,22 @@ export function IsVisitingBerlin() {
 					className="hidden lg:flex"
 				/>
 			</div>
+
+			{isVisitingBerlin !== null && (
+				<div
+					className={`${isVisitingBerlin ? "" : "border-3 border-berlin-orange rounded-xs p-3"}  text-base lg:text-2xl`}
+				>
+					<div className="font-bold">{i18n("title.hint")}</div>
+
+					<p
+						dangerouslySetInnerHTML={{
+							__html: isVisitingBerlin
+								? i18n("registered-in-berlin.q3.hint.yes")
+								: i18n("registered-in-berlin.q3.hint.no"),
+						}}
+					/>
+				</div>
+			)}
 		</form>
 	);
 }

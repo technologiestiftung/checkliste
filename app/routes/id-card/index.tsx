@@ -5,10 +5,11 @@ import { useProgressStore } from "~/components/steps-id-card/store";
 import { Progress } from "~/components/progress";
 
 export default function Index() {
-	const { currentStep, currentSection, maxSections } = useProgressStore();
+	const { currentStep, currentSection, maxSections, goToPreviousStep } =
+		useProgressStore();
 
 	return (
-		<FormLayout>
+		<FormLayout currentStep={currentStep} goToPreviousStep={goToPreviousStep}>
 			<div className="w-full bg-berlin-blue-400">
 				{currentStep !== 15 && (
 					<h2 className="text-xl lg:text-4xl font-bold px-7.5 py-2.5 lg:max-w-[974px] mx-auto lg:px-0">

@@ -56,6 +56,16 @@ export function IsRegisteringForMoreThanThreeMonths() {
 				</div>
 			</div>
 
+			<div className="flex w-full flex-row-reverse items-end justify-between">
+				<FormButtonNext isValid={isValid && needsRegistration} />
+
+				<SecondaryButton
+					label={i18n("button.back")}
+					onClick={goToPreviousStep}
+					className="hidden lg:flex"
+				/>
+			</div>
+
 			<p className={`${showHint ? "block" : "hidden"}`}>
 				{i18n("other-residence.q3.hint")}{" "}
 				<a
@@ -66,16 +76,6 @@ export function IsRegisteringForMoreThanThreeMonths() {
 					{i18n("other-residence.q3.hint.link.label")}{" "}
 				</a>
 			</p>
-
-			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<FormButtonNext isValid={isValid && needsRegistration} />
-
-				<SecondaryButton
-					label={i18n("button.back")}
-					onClick={goToPreviousStep}
-					className="hidden lg:flex"
-				/>
-			</div>
 		</form>
 	);
 }
