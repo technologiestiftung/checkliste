@@ -9,7 +9,7 @@ import {
 } from "./next-steps.ts";
 import { trackInteraction } from "../../feedback/matomo.ts";
 import { persist } from "zustand/middleware";
-import { useOverviewStore } from "~/components/forms-residence-registration/overview/store/index.ts";
+import { useOverviewStore } from "~/components/forms-id-card/overview/store/index.ts";
 import { getLanguage } from "~/i18n/i18n-utils.ts";
 
 function trackStepChange(previousStep: number, currentStep: number) {
@@ -66,10 +66,10 @@ export const useProgressStore = create<ProgressStore>()(
 				trackStepChange(get().currentStep, currentStep);
 
 				let currentSection = 1;
-				if (currentStep <= 3) currentSection = 1;
-				else if (currentStep <= 6) currentSection = 2;
-				else if (currentStep <= 8) currentSection = 3;
-				else if (currentStep <= 9) currentSection = 4;
+				if (currentStep <= 2) currentSection = 1;
+				else if (currentStep <= 5) currentSection = 2;
+				else if (currentStep <= 7) currentSection = 3;
+				else if (currentStep <= 8) currentSection = 4;
 				else currentSection = 0;
 
 				set({ currentStep, currentSection });

@@ -1,5 +1,5 @@
 import { useOverviewStore } from "./store/index.ts";
-import { useProgressStore } from "../../steps-residence-registration/store/index.ts";
+import { useProgressStore } from "../../steps-id-card/store/index.ts";
 import { DocumentCheckbox } from "./document-checkbox.tsx";
 import { SecondaryButton } from "../../buttons/secondary-button/index.tsx";
 import { i18n } from "~/i18n/i18n-utils.ts";
@@ -68,6 +68,20 @@ export function Overview() {
 						type="button"
 					/>
 				</div>
+			</div>
+
+			<div className="flex flex-col gap-1">
+				<h3
+					className="font-bold"
+					dangerouslySetInnerHTML={{
+						__html: i18n("overview.id-card.hint.title"),
+					}}
+				/>
+				<p
+					dangerouslySetInnerHTML={{
+						__html: i18n("overview.id-card.hint.text"),
+					}}
+				/>
 			</div>
 			<div>
 				<p

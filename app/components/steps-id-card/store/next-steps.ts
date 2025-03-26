@@ -4,7 +4,7 @@ import { useIDForChildStore } from "../../forms-id-card/id-for-child/store/index
 import { usePreviousIDStore } from "../../forms-id-card/previous-id/store/index.ts";
 
 export function handleIsRegisteredInBerlinNextStep() {
-	if (useRegisteredInBerlinStore.getState().isRegisteredInBerlin === false) {
+	if (useRegisteredInBerlinStore.getState().isRegisteredInBerlin === true) {
 		useProgressStore.getState().goTo("isNoIDRequired");
 		return;
 	}

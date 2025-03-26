@@ -1,19 +1,18 @@
-import { useOtherResidenceStore } from "./store/index.ts";
-import { useProgressStore } from "../../steps-residence-registration/store/index.ts";
-import { RadioInput } from "../../radio-input/index.tsx";
-import { SecondaryButton } from "../../buttons/secondary-button/index.tsx";
+import { usePreviousIDStore } from "./store";
+import { useProgressStore } from "../../steps-id-card/store";
+import { RadioInput } from "../../radio-input";
+import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 
-export function IsOtherResidenceAbroad() {
-	const { isOtherResidenceAbroad, setIsOtherResidenceAbroad } =
-		useOtherResidenceStore();
-
-	const isValid = isOtherResidenceAbroad !== null;
+export function HasNameChanged() {
+	const { hasNameChanged, setHasNameChanged } = usePreviousIDStore();
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const options = ["yes", "no"] as const;
+
+	const isValid = hasNameChanged !== null;
 
 	return (
 		<form
@@ -25,16 +24,16 @@ export function IsOtherResidenceAbroad() {
 		>
 			<div className="flex flex-col gap-4">
 				<h2 className="text-xl font-bold lg:text-4xl">
-					{i18n("other-residence.q2")}
+					{i18n("previous-id.q2")}
 				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
-						const name = "other-residence.q2.radio";
-						const isChecked =
-							(option === "yes" && isOtherResidenceAbroad === true) ||
-							(option === "no" && isOtherResidenceAbroad === false);
-						const onChange = () => setIsOtherResidenceAbroad(option === "yes");
+						const name = "first-registration.q3.radio";
 						const label = i18n(option);
+						const isChecked =
+							(option === "yes" && hasNameChanged === true) ||
+							(option === "no" && hasNameChanged === false);
+						const onChange = () => setHasNameChanged(option === "yes");
 
 						return (
 							<RadioInput

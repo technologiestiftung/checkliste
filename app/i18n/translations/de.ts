@@ -113,6 +113,24 @@ const de = {
 		"Wenn Sie nicht länger als sechs Monate in Berlin bleiben, müssen Sie sich nicht anmelden.",
 	"other-residence.q4.hint.link.label": "Termin stornieren",
 
+	/* 
+	Flow ID Card
+	*/
+	"registered-in-berlin.q1": "Sind Sie in Berlin gemeldet?",
+	"registered-in-berlin.q2": "Sind Sie von der Ausweispflicht befreit?",
+	"registered-in-berlin.q3":
+		"Sind Sie aktuell in Berlin, z.B. weil sie vorübergehend hier leben, hier Urlaub machen oder wohnungslos sind?",
+	"id-for-child.q1":
+		"Beantragen Sie den Personalausweis für eine minderjährige Person?",
+	"id-for-child.q2":
+		"Sind alle gesetzlichen Vertreter:innen (in den meisten Fällen sorgeberechtige Elternteile) bei dem Termin im Bürgeramt anwesend?",
+	"id-for-child.q3": "Sind die gesetzlichen Vertreter verheiratet?",
+	"previous-id.q1":
+		"Haben Sie bereits ein offizielles Ausweisdokument (z. B. Personalausweis oder Reisepass) besessen?",
+	"previous-id.q2": "Hat sich Ihr Name seit der letzten Ausstellung geändert?",
+	"previous-id.q3":
+		"Wurden Sie eingebürgert und beantragen Sie erstmals einen deutschen Personalausweis?",
+
 	/*
 	Checklist Overview
 	*/
@@ -152,6 +170,21 @@ const de = {
 		"Europäische ID-Card, Reisepass oder Passersatzpapiere",
 	nonEuIdOrPassportOrReplacement: "Reisepass oder Passersatzpapiere",
 	supplement: "Beiblatt zur Anmeldung/ Hauptwohnungserklärung",
+
+	idOfParents: "Ausweisdokumente der Eltern",
+	bringChild: "Kind mitbringen",
+	proofOfCustody:
+		"Nachweis zur Sorgeberechtigung z.B. beglaubigte Abschrift aus dem Sorgeregister vom Jugendamt",
+	consentOfCustodian:
+		"Einverständniserklärung des nicht anwesenden Sorgebereichtigten",
+	copyOfID:
+		"Kopie von Ausweis (bzw. Reisepass oder Nationalpass) des nicht anwesenden Elternteils für den Unterschriftenabgleich",
+	idDocument: "gültiger oder alter Personalausweis oder Reisepass",
+	birthCertificateOrPartnershipCertificate:
+		"Geburtsurkunde, Eheurkunde oder Lebenspartnerschaftsurkunde",
+	passportOrforeignID:
+		"Reisepass oder ID-Card des Staates der bisherigen Nationalität oder eine Identitätsbescheinigung vom Landesamt für Einwanderung (LEA).",
+	naturalizationCertificate: "Einbürgerungsurkunde",
 
 	/*
 	About

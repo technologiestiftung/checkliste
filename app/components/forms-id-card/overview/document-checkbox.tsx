@@ -1,9 +1,8 @@
 import { DocumentLink } from "./document-link.tsx";
 import { useOverviewStore } from "./store/index.ts";
-import { i18n } from "~/i18n/i18n-utils";
+import { i18n, getLanguage } from "~/i18n/i18n-utils";
 import { trackInteraction } from "../../feedback/matomo.ts";
 import type { ChangeEvent } from "react";
-import { getLanguage } from "~/i18n/i18n-utils.ts";
 import { translations } from "~/i18n/translations.ts";
 
 export function DocumentCheckbox({

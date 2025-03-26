@@ -1,19 +1,19 @@
-import { useFirstRegistrationStore } from "./store";
-import { useProgressStore } from "../../steps-residence-registration/store";
+import { useRegisteredInBerlinStore } from "./store";
+import { useProgressStore } from "../../steps-id-card/store";
 import { RadioInput } from "../../radio-input";
 import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 
-export function IsRegisteringChild() {
-	const { isRegisteringChild, setIsRegisteringChild } =
-		useFirstRegistrationStore();
+export function IsRegisteredInBerlin() {
+	const { isRegisteredInBerlin, setIsRegisteredInBerlin } =
+		useRegisteredInBerlinStore();
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const options = ["yes", "no"] as const;
 
-	const isValid = isRegisteringChild !== null;
+	const isValid = isRegisteredInBerlin !== null;
 
 	return (
 		<form
@@ -25,16 +25,16 @@ export function IsRegisteringChild() {
 		>
 			<div className="flex flex-col gap-4">
 				<h2 className="text-xl font-bold lg:text-4xl">
-					{i18n("first-registration.q5")}
+					{i18n("registered-in-berlin.q1")}
 				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
-						const name = "first-registration.q5.radio";
+						const name = "first-registration.q3.radio";
 						const label = i18n(option);
 						const isChecked =
-							(option === "yes" && isRegisteringChild === true) ||
-							(option === "no" && isRegisteringChild === false);
-						const onChange = () => setIsRegisteringChild(option === "yes");
+							(option === "yes" && isRegisteredInBerlin === true) ||
+							(option === "no" && isRegisteredInBerlin === false);
+						const onChange = () => setIsRegisteredInBerlin(option === "yes");
 
 						return (
 							<RadioInput

@@ -1,19 +1,19 @@
-import { useFirstRegistrationStore } from "./store";
+import { useIDForChildStore } from "./store";
+import { useProgressStore } from "../../steps-id-card/store";
 import { RadioInput } from "../../radio-input";
-import { useProgressStore } from "../../steps-residence-registration/store";
+import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
-import { useSaveIntroPageViewInSessionStorage } from "./hooks/use-save-intro-page-view-in-session-storage";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
-export function IsFirstRegistration() {
-	const { isFirstRegistration, setIsFirstRegistration } =
-		useFirstRegistrationStore();
-	const isValid = isFirstRegistration !== null;
 
-	const { goToNextStep } = useProgressStore();
+export function AreCustodiansPresent() {
+	const { areCustodiansPresent, setAreCustodiansPresent } =
+		useIDForChildStore();
+
+	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const options = ["yes", "no"] as const;
 
-	useSaveIntroPageViewInSessionStorage();
+	const isValid = areCustodiansPresent !== null;
 
 	return (
 		<form
@@ -25,16 +25,16 @@ export function IsFirstRegistration() {
 		>
 			<div className="flex flex-col gap-4">
 				<h2 className="text-xl font-bold lg:text-4xl">
-					{i18n("first-registration.q1")}
+					{i18n("id-for-child.q2")}
 				</h2>
 				<div className="flex flex-col gap-1">
 					{options.map((option) => {
-						const name = "first-registration.q1.radio";
-						const isChecked =
-							(option === "yes" && isFirstRegistration === true) ||
-							(option === "no" && isFirstRegistration === false);
-						const onChange = () => setIsFirstRegistration(option === "yes");
+						const name = "first-registration.q3.radio";
 						const label = i18n(option);
+						const isChecked =
+							(option === "yes" && areCustodiansPresent === true) ||
+							(option === "no" && areCustodiansPresent === false);
+						const onChange = () => setAreCustodiansPresent(option === "yes");
 
 						return (
 							<RadioInput
@@ -51,6 +51,12 @@ export function IsFirstRegistration() {
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext isValid={isValid} />
+
+				<SecondaryButton
+					label={i18n("button.back")}
+					onClick={goToPreviousStep}
+					className="hidden lg:flex"
+				/>
 			</div>
 		</form>
 	);

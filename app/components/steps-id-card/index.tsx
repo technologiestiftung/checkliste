@@ -1,53 +1,41 @@
-import { Overview } from "../forms-residence-registration/overview";
+import { Overview } from "../forms-id-card/overview";
 import { useProgressStore } from "./store";
 import {
-	IsFirstRegistration,
-	HasChild,
-	IsMarried,
-	IsRegisteringSpouse,
-	IsRegisteringChild,
-	IsRegisteringMoreThanTwo,
-} from "../forms-residence-registration/first-registration";
+	IsNoIDRequired,
+	IsRegisteredInBerlin,
+	IsVisitingBerlin,
+} from "../forms-id-card/registered-in-berlin";
 import {
-	IsGerman,
-	IsGermanOver16,
-	IsEuropean,
-	IsNonGermanOver16,
-	IsRefugee,
-} from "../forms-residence-registration/nationality";
+	IsIDforChild,
+	AreCustodiansPresent,
+	AreCustodiansMarried,
+} from "../forms-id-card/id-for-child";
 import {
-	HasOtherResidence,
-	IsOtherResidenceAbroad,
-	IsRegisteringForMoreThanThreeMonths,
-	IsRegisteringForMoreThanSixMonths,
-} from "../forms-residence-registration/other-residence";
+	IsPreviousIDExisting,
+	HasNameChanged,
+	IsFirstGermanID,
+} from "../forms-id-card/previous-id";
 
 export function Steps() {
 	const { currentStep } = useProgressStore();
 
 	const steps = [
-		<IsFirstRegistration />,
-		<IsMarried />,
-		<IsRegisteringSpouse />,
-		<HasChild />,
-		<IsRegisteringChild />,
-		<IsRegisteringMoreThanTwo />,
-		<IsGerman />,
-		<IsGermanOver16 />,
-		<IsEuropean />,
-		<IsNonGermanOver16 />,
-		<IsRefugee />,
-		<HasOtherResidence />,
-		<IsOtherResidenceAbroad />,
-		<IsRegisteringForMoreThanThreeMonths />,
-		<IsRegisteringForMoreThanSixMonths />,
+		<IsRegisteredInBerlin />,
+		<IsNoIDRequired />,
+		<IsVisitingBerlin />,
+		<IsIDforChild />,
+		<AreCustodiansPresent />,
+		<AreCustodiansMarried />,
+		<IsPreviousIDExisting />,
+		<HasNameChanged />,
+		<IsFirstGermanID />,
 		<Overview />,
 	];
 
 	return (
 		<div
 			className={`flex h-full flex-col gap-4 lg:text-lg w-full ${
-				currentStep < 15 && "pt-4 lg:pt-12"
+				currentStep < 9 && "pt-4 lg:pt-12"
 			}`}
 		>
 			{steps[currentStep]}

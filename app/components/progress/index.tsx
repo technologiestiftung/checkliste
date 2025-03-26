@@ -1,9 +1,11 @@
-import { useProgressStore } from "../steps-residence-registration/store";
 import { i18n } from "~/i18n/i18n-utils";
 
-export function Progress() {
-	const { currentSection, maxSections } = useProgressStore();
+interface ProgressProps {
+	currentSection: number;
+	maxSections: number;
+}
 
+export function Progress({ currentSection, maxSections }: ProgressProps) {
 	if (currentSection === 0) return null;
 	return (
 		<div className="w-full flex flex-col lg:flex-row gap-2.5 lg:items-center">

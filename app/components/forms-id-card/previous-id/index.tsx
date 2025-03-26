@@ -1,4 +1,3 @@
-export * from "./has-other-residence";
-export * from "./is-other-residence-abroad";
-export * from "./is-registering-for-more-than-six-months";
-export * from "./is-registering-for-more-than-three-months";
+export * from "./is-previous-id-existing";
+export * from "./has-name-changed";
+export * from "./is-first-german-id";
