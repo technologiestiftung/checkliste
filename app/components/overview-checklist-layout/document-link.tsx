@@ -1,12 +1,7 @@
-import { i18n } from "~/i18n/i18n-utils";
 import { DownloadIcon } from "~/components/icons/download-icon";
-import { useState } from "react";
-import { Tooltip } from "~/components/tooltip";
+import { i18n } from "~/i18n/i18n-utils";
 
 export function DocumentLink({ id }: { id: string }) {
-	const [showTooltip, setShowTooltip] = useState(false);
-	const tooltipText = i18n("download.tooltip");
-
 	let url = "";
 	switch (id) {
 		case "registrationForm":
@@ -51,17 +46,16 @@ export function DocumentLink({ id }: { id: string }) {
 	}
 
 	return (
-		<div className="relative print:hidden">
-			<div
-				onMouseMove={() => setShowTooltip(true)}
-				onMouseOut={() => setShowTooltip(false)}
-				className="relative"
+		<div className="print:hidden">
+			<a
+				href={url}
+				className="w-fit text-berlin-blue-900  hover:text-berlin-blue-400 flex flex-col items-center justify-center"
 			>
-				<a href={url} className="w-fit">
-					<DownloadIcon />
-				</a>
-			</div>
-			{showTooltip && <Tooltip content={tooltipText} className="top-9" />}
+				<DownloadIcon />
+				<span className="text origin-center p-0.5 lg:p-2.5 text-base font-normal underline">
+					{i18n("button.download")}
+				</span>
+			</a>
 		</div>
 	);
 }

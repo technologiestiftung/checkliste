@@ -58,7 +58,7 @@ export const useCertificateOfConductDetailsStore =
 				},
 			}),
 			{
-				name: "certificate-of-conduct-details-storage",
+				name: "certificate-of-conduct-details",
 			},
 		),
 	);

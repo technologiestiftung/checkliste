@@ -31,7 +31,7 @@ export default function Index() {
 			</div>
 			<div className="flex flex-col lg:max-w-[974px] mx-auto">
 				<div className="w-full flex flex-col gap-4 pt-6 pb-9 lg:py-12 px-7.5 lg:px-0">
-					<h1 className="font-bold text-[28px] lg:text-7xl leading-snug">
+					<h1 className="font-bold text-[28px] lg:text-6xl leading-snug">
 						{i18n("title")}
 					</h1>
 					<p className="text-base lg:text-2xl">{i18n("intro")}</p>

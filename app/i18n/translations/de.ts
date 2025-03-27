@@ -61,10 +61,11 @@ const de = {
 
 	yes: "Ja",
 	no: "Nein",
-	"download.tooltip": "Dokument herunterladen",
+	"button.download": "Herunterladen",
 	"button.back": "Zurück",
 	"button.next": "Weiter",
 	"button.cancel": "Abbrechen",
+	"button.fillOutAgain": "Erneut ausfüllen",
 	"button.next.tooltip": "Bitte beantworten Sie die Frage zuerst.",
 	"button.print": "Liste drucken",
 	"button.finish": "Fertig",
