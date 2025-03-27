@@ -74,14 +74,6 @@ export function Overview() {
 					className="pt-6"
 					dangerouslySetInnerHTML={{ __html: i18n("context") }}
 				/>
-				<a
-					className="font-bold hover:underline text-berlin-blue-500 print:hidden"
-					href={i18n("feedback.link")}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					{i18n("overview.feedback")}
-				</a>
 			</div>
 		</div>
 	);

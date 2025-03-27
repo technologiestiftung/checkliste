@@ -1,4 +1,5 @@
 import { useProgressStore } from "../steps/store";
+import { i18n } from "~/i18n/i18n-utils";
 
 export function Progress() {
 	const { currentSection, maxSections } = useProgressStore();
@@ -10,7 +11,7 @@ export function Progress() {
 				htmlFor={"progress-bar"}
 				className="shrink-0 text-base lg:text-2xl"
 			>
-				Abschnitt {currentSection}/{maxSections}
+				{i18n("progress.section")} {currentSection}/{maxSections}
 			</label>
 
 			<div

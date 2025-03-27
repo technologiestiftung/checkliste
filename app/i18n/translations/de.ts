@@ -14,15 +14,27 @@ const de = {
 	/*
 	Start Page and general elements
 	*/
-	title: "Willkommen bei der Checkliste",
+	title: "Willkommen beim Dokumenten-Check",
 	selectLanguage: "Suchen Sie Ihre Sprache aus:",
 	intro:
-		"Diese Anwendung hilft, Ihren Termin beim Bürgeramt optimal vorzubereiten. Beantworten Sie ein paar Fragen und wir erstellen eine Übersicht der benötigten Dokumente.",
+		"Diese Anwendung hilft Ihnen, Ihren Termin im Bürgeramt optimal vorzubereiten. Beantworten Sie ein paar kurze Fragen und wir erstellen eine individuelle Checkliste mit allen Dokumenten, die Sie für Ihr Anliegen benötigen. So vermeiden Sie unnötige Wartezeiten und stellen sicher, dass Sie alles Wichtige dabeihaben. Ihre Angaben bleiben dabei anonym und werden ausschließlich lokal in Ihrem Browser gespeichert – es werden keine Daten an das Bürgeramt oder Dritte weitergegeben.",
 	context: `Diese Anwendung ist ein Prototyp vom <a class="font-bold hover:underline text-berlin-blue-500"
 							href="https://citylab-berlin.org/de/start/"
 							target="_blank"
 							rel="noopener noreferrer"
-						> CityLAB Berlin</a> und wird aktuell für einen Test verwendet.`,
+						> CityLAB Berlin</a> und dem 
+						<a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Bürgeramt der Zukunft</a>.
+						Ziel ist es, Terminabbrüche zu vermeiden, weil Unterlagen fehlen oder unvollständig sind.
+						Ihre Antworten werden nicht gespeichert oder ausgewertet. 
+						<a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Beantworten Sie uns gerne ein paar Fragen zu dem Prototypen</a>. `,
 
 	"navigation.title": "Wählen Sie eine Dienstleistung",
 	"navigation.description": "Finden Sie heraus, welche Dokumente Sie benötigen",
@@ -49,17 +61,19 @@ const de = {
 
 	yes: "Ja",
 	no: "Nein",
-	"download.tooltip": "Herunterladen",
+	"download.tooltip": "Dokument herunterladen",
 	"button.back": "Zurück",
 	"button.next": "Weiter",
 	"button.cancel": "Abbrechen",
-	"button.next.tooltip": "Bitte beantworte die Frage zuerst.",
-	"button.print": "Liste herunterladen",
+	"button.next.tooltip": "Bitte beantworten Sie die Frage zuerst.",
+	"button.print": "Liste drucken",
 	"button.finish": "Fertig",
 	"title.residence-registration": "Anmeldung einer Wohnung",
 	"title.id-card": "Beantragung eines Personalausweises",
 	"title.certificate-of-conduct": "Beantragung eines Führungszeugnisses",
 	"title.hint": "Hinweis:",
+
+	"progress.section": "Abschnitt",
 
 	/*
 	Feedback
@@ -104,10 +118,14 @@ const de = {
 	*/
 	"overview.title": "Ihre persönliche Checkliste wurde erstellt",
 	"overview.text.1":
-		"Wir haben eine Checkliste aller erforderlichen Dokumente für Ihren Termin erstellt. Bitte bringen Sie diese ausgefüllt, unterschrieben und ausgedruckt mit.",
-	"overview.title.2": "Sie benötigen diese Dokumente:",
-	"overview.text.2":
-		"Bereiten Sie sich mit dieser Liste auf Ihren Termin vor. Haken Sie die Dokumente ab, die Sie schon haben.",
+		"Wir haben für Sie eine individuelle Checkliste aller benötigten Dokumente für Ihren Termin im Bürgeramt zusammengestellt.",
+	"overview.title.2": "So nutzen Sie den Dokumenten-Check:",
+	"overview.text.2": `
+	<ul class="list-decimal pl-5 lg:pl-7 w-9/10">
+		<li>Haken Sie bequem die Dokumente ab, die Sie bereits haben.</li>
+		<li>Ihre Angaben bleiben lokal im Browser gespeichert. Sie können Ihre Liste jederzeit erneut aufrufen, auch später über ein Lesezeichen.</li>
+		<li>Laden Sie benötige Formulare herunter. Bitte bringen Sie diese ausgefüllt, unterschrieben und ausgedruckt mit.</li>
+	</ul>`,
 	"overview.feedback": "Beantworten Sie uns gerne ein paar Fragen.",
 	"overview.id-card.hint.title": "Hinweis:",
 	"overview.id-card.hint.text":
@@ -118,8 +136,8 @@ const de = {
 	birthCertificate: "Geburtsurkunde",
 	marriageCertificate: "Heiratsurkunde",
 	idDocumentForSpouse:
-		"Personalausweis oder Reisepass Deiner Ehepartnerin/Deines Ehepartners",
-	childBirthCertificate: "Geburtsurkunde Deines Kindes/Deiner Kinder",
+		"Personalausweis oder Reisepass der Ehepartnerin/des Ehepartners",
+	childBirthCertificate: "Geburtsurkunde des Kindes/der Kinder",
 	custodyDeclaration: "Sorgerechtserklärung",
 	idDocumentForChild:
 		"Personalausweis, Reisepass oder Kinderpass des Kindes/der Kinder",
@@ -127,9 +145,9 @@ const de = {
 		"Einverständniserklärung der Sorgeberechtigten des Kinder/der Kinder",
 	additionalRegistrationForm: "Weiteres Anmeldeformular",
 	germanIdOrPassportOrChildPassport:
-		"Dein eigener Personalausweis, Reisepass oder Kinderpass",
-	germanIdOrPassport: "Dein eigener Personalausweis oder Reisepass",
-	confirmationOfCustodian: "Einverständniserklärung Deiner Sorgeberechtigten",
+		"Ihr eigener Personalausweis, Reisepass oder Kinderpass",
+	germanIdOrPassport: "Ihr eigener Personalausweis oder Reisepass",
+	confirmationOfCustodian: "Einverständniserklärung der Sorgeberechtigten",
 	euIdOrPassportOrReplacement:
 		"Europäische ID-Card, Reisepass oder Passersatzpapiere",
 	nonEuIdOrPassportOrReplacement: "Reisepass oder Passersatzpapiere",

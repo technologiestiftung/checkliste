@@ -61,6 +61,8 @@ const fr = {
 	"title.certificate-of-conduct": "Demande d'un casier judiciaire",
 	"title.hint": "Remarque :",
 
+	"progress.section": "Section",
+
 	/*
 	Feedback
 	*/

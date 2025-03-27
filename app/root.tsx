@@ -14,6 +14,7 @@ import { getLanguage } from "./i18n/i18n-utils";
 import { BerlinHeader } from "./components/berlin-header";
 import { Footer } from "~/components/footer";
 import { getBerlinFooter } from "~/external-templates/berlin-footer";
+import { isPathWithFooter } from "~/utils/is-path-with-footer";
 
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
@@ -24,7 +25,7 @@ export async function loader() {
 export function Layout({ children }: { children: React.ReactNode }) {
 	const language = getLanguage();
 	const berlinFooter = useRouteLoaderData("root");
-	const pathname = useLocation().pathname;
+	const { pathname } = useLocation();
 
 	return (
 		<html lang={language} dir={language === "ar" ? "rtl" : "ltr"}>
@@ -71,11 +72,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			<body>
 				<BerlinHeader />
 				<main>{children}</main>
-				{(pathname === "/" ||
-					pathname === "/about/" ||
-					pathname === "/data-privacy/") && (
-					<Footer berlinFooter={berlinFooter} />
-				)}
+
+				{isPathWithFooter(pathname) && <Footer berlinFooter={berlinFooter} />}
+
 				<ScrollRestoration />
 				<Scripts />
 			</body>
