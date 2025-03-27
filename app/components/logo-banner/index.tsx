@@ -8,28 +8,28 @@ export function LogoBanner() {
 			link: "https://citylab-berlin.org/de/start/",
 			alt: "Logo von CityLab Berlin",
 			description: "",
-			className: "w-full sm:w-[240px] max-w-[320px] shrink",
+			className: "w-full sm:max-w-[226px] max-w-[151px] shrink",
 		},
 		{
 			logo: "/images/logo-technologiestiftung-berlin-de.svg",
 			link: "https://www.technologiestiftung-berlin.de/",
 			alt: "Logo von Technologiestiftung Berlin",
 			description: i18n("logo.t2"),
-			className: "w-full sm:w-[160px] max-w-[220px]",
+			className: "w-full sm:max-w-[159px] max-w-[143px]",
 		},
 		{
 			logo: "/images/logo-buergeramt-der-zukunft.png",
 			link: "https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php",
 			alt: "Logo von Bürgeramt der Zukunft",
 			description: i18n("logo.t3"),
-			className: "w-full sm:w-[80px] max-w-[100px]",
+			className: "w-full sm:max-w-[90px] max-w-[102px]",
 		},
 		{
 			logo: "/images/logo-senatskanzlei-buergermeister-horizontal.svg",
 			link: "https://www.berlin.de/senatskanzlei/",
 			alt: "Logo von Berlins Regierender Bürgermeister",
 			description: i18n("logo.t4"),
-			className: "w-9/10 sm:w-[225px] max-w-[320px]",
+			className: "w-9/10 sm:max-w-[226px] max-w-[152px]",
 		},
 	];
 
