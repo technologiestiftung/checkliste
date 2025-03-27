@@ -31,7 +31,7 @@ export default function Index() {
 
 			<div className="flex flex-col lg:max-w-[974px] mx-auto">
 				<div className="w-full flex flex-col gap-4 lg:gap-6 pt-6 pb-9 lg:py-12 px-7.5 lg:px-0 text-base lg:text-2xl">
-					<h1 className="text-3xl lg:text-7xl font-bold text-berlin-blue-900 lg:mt-4">
+					<h1 className="text-3xl lg:text-6xl font-bold text-berlin-blue-900 lg:mt-4">
 						{i18n("dataPrivacy.title")}
 					</h1>
 					<h3 className="lg:mt-8 text-xl lg:text-2xl  font-bold text-berlin-blue-900">

@@ -32,7 +32,7 @@ export default function Index() {
 
 			<div className="flex flex-col lg:max-w-[974px] mx-auto">
 				<div className="w-full flex flex-col gap-6 lg:gap-10 pt-6 pb-9 lg:py-12 px-7.5 lg:px-0 text-base lg:text-2xl">
-					<h1 className="text-3xl lg:text-7xl font-bold text-berlin-blue-900 lg:mt-4">
+					<h1 className="text-3xl lg:text-6xl font-bold text-berlin-blue-900 lg:mt-4">
 						{i18n("about.title")}
 					</h1>
 					<div className="text-base lg:text-2xl">{i18n("about.text.p1")}</div>
