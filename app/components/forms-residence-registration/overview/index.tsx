@@ -4,9 +4,17 @@ import { DocumentCheckbox } from "../../overview-checklist-layout/document-check
 import { useTrackGoalChecklistConversion } from "./hooks/use-track-goal-checklist-conversion.tsx";
 import { OverviewChecklistLayout } from "../../overview-checklist-layout/index.tsx";
 
+const storeKeys = [
+	"overview-residence-registration",
+	"first-registration",
+	"nationality",
+	"other-residences",
+	"progress-residence-registration",
+];
+
 export function Overview() {
 	const { docs: requiredDocs, setDocs } = useOverviewStore();
-	const { goToPreviousStep } = useProgressStore();
+	const { goToPreviousStep, goToStart } = useProgressStore();
 
 	const documents = [
 		...Array.from(
@@ -17,7 +25,11 @@ export function Overview() {
 	useTrackGoalChecklistConversion();
 
 	return (
-		<OverviewChecklistLayout goToPreviousStep={goToPreviousStep}>
+		<OverviewChecklistLayout
+			goToPreviousStep={goToPreviousStep}
+			goToStart={goToStart}
+			storeKeys={storeKeys}
+		>
 			{documents.map(([key, value]) => (
 				<DocumentCheckbox
 					key={key}

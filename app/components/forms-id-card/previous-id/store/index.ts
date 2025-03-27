@@ -32,7 +32,7 @@ export const usePreviousIDStore = create<PreviousIDStore>()(
 			},
 		}),
 		{
-			name: "other-residences",
+			name: "previous-id",
 		},
 	),
 );

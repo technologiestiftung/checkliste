@@ -1,6 +1,7 @@
 import { DocumentLink } from "./document-link.tsx";
 import { type OverviewDocs as OverviewDocsIDCard } from "../forms-id-card/overview/store/index.ts";
 import { type OverviewDocs as OverviewDocsResidenceRegistration } from "../forms-residence-registration/overview/store/index.ts";
+import { type OverviewDocs as OverviewDocsCertificateOfConduct } from "../forms-certificate-of-conduct/overview/store/index.ts";
 import { i18n, getLanguage } from "~/i18n/i18n-utils";
 import { trackInteraction } from "../feedback/matomo.ts";
 import type { ChangeEvent } from "react";
@@ -12,7 +13,8 @@ interface DocumentCheckboxProps {
 	filteredDocs: [string, boolean][];
 	setDocs: (
 		docs: Partial<OverviewDocsIDCard> &
-			Partial<OverviewDocsResidenceRegistration>,
+			Partial<OverviewDocsResidenceRegistration> &
+			Partial<OverviewDocsCertificateOfConduct>,
 	) => void;
 }
 

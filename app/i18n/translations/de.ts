@@ -65,6 +65,7 @@ const de = {
 	"button.back": "Zurück",
 	"button.next": "Weiter",
 	"button.cancel": "Abbrechen",
+	"button.fillOutAgain": "Erneut ausfüllen",
 	"button.next.tooltip": "Bitte beantworten Sie die Frage zuerst.",
 	"button.print": "Liste drucken",
 	"button.finish": "Fertig",
