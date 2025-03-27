@@ -57,7 +57,7 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 	});
 	const germanIdOrPassport = page
 		.locator("div")
-		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
+		.filter({ hasText: /^Ihr eigener Personalausweis oder Reisepass$/ });
 	const supplement = page.locator("div").filter({
 		hasText: /^Beiblatt zur Anmeldung\/ Hauptwohnungserklärung$/,
 	});
@@ -128,7 +128,7 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 	});
 	const germanIdOrPassport = page
 		.locator("div")
-		.filter({ hasText: /^Dein eigener Personalausweis oder Reisepass$/ });
+		.filter({ hasText: /^Ihr eigener Personalausweis oder Reisepass$/ });
 	const supplement = page.locator("div").filter({
 		hasText: /^Beiblatt zur Anmeldung\/ Hauptwohnungserklärung$/,
 	});

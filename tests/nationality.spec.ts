@@ -51,10 +51,10 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
 	const germanIdOrPassportOrChildPassport = page.locator("div").filter({
-		hasText: /^Dein eigener Personalausweis, Reisepass oder Kinderpass$/,
+		hasText: /^Ihr eigener Personalausweis, Reisepass oder Kinderpass$/,
 	});
 	const confirmationOfCustodian = page.locator("div").filter({
-		hasText: /^Einverständniserklärung Deiner Sorgeberechtigten$/,
+		hasText: /^Einverständniserklärung der Sorgeberechtigten$/,
 	});
 
 	await expect(registrationForm).toBeVisible();
@@ -204,7 +204,7 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 		hasText: /^Europäische ID-Card, Reisepass oder Passersatzpapiere$/,
 	});
 	const confirmationOfCustodian = page.locator("div").filter({
-		hasText: /^Einverständniserklärung Deiner Sorgeberechtigten$/,
+		hasText: /^Einverständniserklärung der Sorgeberechtigten$/,
 	});
 
 	await expect(registrationForm).toBeVisible();
@@ -281,7 +281,7 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
 	const confirmationOfCustodian = page.locator("div").filter({
-		hasText: /^Einverständniserklärung Deiner Sorgeberechtigten$/,
+		hasText: /^Einverständniserklärung der Sorgeberechtigten$/,
 	});
 	const nonEuIdOrPassportOrReplacement = page.locator("div").filter({
 		hasText: /^Reisepass oder Passersatzpapiere$/,

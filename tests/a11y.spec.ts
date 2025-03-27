@@ -108,7 +108,7 @@ test("App should be usable with keyboard", async ({ page, browserName }) => {
 	});
 	const confirmationOfCustodian = customPage
 		.locator("div")
-		.filter({ hasText: /^Einverständniserklärung Deiner Sorgeberechtigten$/ });
+		.filter({ hasText: /^Einverständniserklärung der Sorgeberechtigten$/ });
 
 	const germanIdOrPassport = customPage
 		.locator("div")

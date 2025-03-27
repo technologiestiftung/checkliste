@@ -48,7 +48,7 @@ export function LanguageSelect() {
 				</button>
 
 				<div
-					className={`${isOpen ? "block" : "hidden"} absolute top-[44px] w-[106px] lg:w-[128px]
+					className={`${isOpen ? "block" : "hidden"} absolute top-[52px] w-[106px] lg:w-[128px]
 					rounded-b-xs right-0 bg-white border-b-1 border-x-1 border-berlin-blue-900
 					`}
 				>

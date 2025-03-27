@@ -1,19 +1,39 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { buildLocalizedLink, i18n } from "~/i18n/i18n-utils";
-import { useProgressStore } from "../steps/store";
 import { useDialogStore } from "~/components/feedback-dialog/store/dialog";
 
-export function FormLayout({ children }: { children: React.ReactNode }) {
-	const { currentStep, goToPreviousStep } = useProgressStore();
+interface FormLayoutProps {
+	children: React.ReactNode;
+	currentStep: number;
+	goToPreviousStep: () => void;
+}
+
+export function FormLayout({
+	children,
+	currentStep,
+	goToPreviousStep,
+}: FormLayoutProps) {
+	const navigate = useNavigate();
 	const { setHasCompletedAFlow } = useDialogStore();
 
 	const isLastStep = currentStep === 15;
+
+	const handleGoToPreviousStep = () => {
+		if (currentStep === 0) {
+			navigate(startPageLink);
+			setHasCompletedAFlow(true);
+			return;
+		}
+		goToPreviousStep();
+	};
+
+	const startPageLink = buildLocalizedLink("/") as string;
 
 	return (
 		<div className="flex items-end w-full h-[calc(100dvh-44px)] lg:h-full bg-gray-200 relative">
 			<Link
 				className="absolute lg:hidden top-0 w-full h-7 cursor-default"
-				to={buildLocalizedLink("/") as string}
+				to={startPageLink}
 				onClick={() => setHasCompletedAFlow(true)}
 				tabIndex={-1}
 			/>
@@ -23,7 +43,7 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 					<div className="hidden lg:flex w-full print:hidden">
 						<Link
 							className="text-2xl text-berlin-blue-900 hover:underline font-bold px-4 py-5"
-							to={buildLocalizedLink("/") as string}
+							to={startPageLink}
 							onClick={() => setHasCompletedAFlow(true)}
 						>
 							{i18n("navigation.startpage")}
@@ -31,15 +51,12 @@ export function FormLayout({ children }: { children: React.ReactNode }) {
 					</div>
 					<div className="flex lg:hidden items-center justify-between px-4.5 print:hidden">
 						<button
-							className={`text-base lg:text-2xl font-bold p-2.5 pt-5 ${
-								currentStep === 0
-									? "opacity-0"
-									: "text-berlin-blue-900 hover:underline"
-							}`}
-							onClick={goToPreviousStep}
+							className={`text-base lg:text-2xl font-bold p-2.5 pt-5 text-berlin-blue-900 hover:underline`}
+							onClick={() => {
+								handleGoToPreviousStep();
+							}}
 							type="button"
 							aria-label={i18n("button.back")}
-							disabled={currentStep === 0}
 						>
 							{i18n("button.back")}
 						</button>
