@@ -61,7 +61,7 @@ const de = {
 
 	yes: "Ja",
 	no: "Nein",
-	"download.tooltip": "Dokument herunterladen",
+	"button.download": "Herunterladen",
 	"button.back": "Zurück",
 	"button.next": "Weiter",
 	"button.cancel": "Abbrechen",

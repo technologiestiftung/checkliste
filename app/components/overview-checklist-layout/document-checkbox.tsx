@@ -52,22 +52,24 @@ export function DocumentCheckbox({
 		<li className="flex w-full flex-col items-center font-bold rounded-xs">
 			<label
 				htmlFor={id}
-				className="flex w-full items-center justify-between gap-4 lg:gap-8 "
+				className="flex w-full items-center justify-between gap-2 lg:gap-16"
 			>
-				<div className="flex size-6.5">
-					<input
-						type="checkbox"
-						className={`peer relative size-6.5 appearance-none border-2 border-black rounded-xs
+				<div className="rounded-sm px-2 lg:px-8.5 py-5 w-full leading-snug flex flex-row items-center justify-start gap-6 border-black border-1 shrink">
+					<div className="flex size-6.5">
+						<input
+							type="checkbox"
+							className={`peer relative size-6.5 appearance-none border-2 border-black rounded-xs
 							checked:after:content-[''] checked:after:w-full checked:after:h-full
 							checked:after:absolute checked:after:inset-0 checked:after:bg-no-repeat checked:after:bg-center
 							checked:after:bg-[url('/images/check-marker.svg')]`}
-						id={id}
-						checked={value === true}
-						onChange={onChange}
-					/>
+							id={id}
+							checked={value === true}
+							onChange={onChange}
+						/>
+					</div>
+					<div>{i18n(id as keyof typeof translations)}</div>
 				</div>
-				<div className="bg-berlin-blue-400 rounded-xs px-5 py-2 w-full leading-snug flex flex-row items-center justify-between gap-2">
-					{i18n(id as keyof typeof translations)}
+				<div className="print:hidden lg:w-[117px] flex shrink-0">
 					<DocumentLink id={id} />
 				</div>
 			</label>
