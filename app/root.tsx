@@ -14,7 +14,7 @@ import { getLanguage } from "./i18n/i18n-utils";
 import { BerlinHeader } from "./components/berlin-header";
 import { Footer } from "~/components/footer";
 import { getBerlinFooter } from "~/external-templates/berlin-footer";
-import { isRouteWithFooter } from "~/utils/shouldShowFooter";
+import { isPathWithFooter } from "~/utils/is-path-with-footer";
 
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
@@ -73,7 +73,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<BerlinHeader />
 				<main>{children}</main>
 
-				{isRouteWithFooter(pathname) && <Footer berlinFooter={berlinFooter} />}
+				{isPathWithFooter(pathname) && <Footer berlinFooter={berlinFooter} />}
 
 				<ScrollRestoration />
 				<Scripts />
