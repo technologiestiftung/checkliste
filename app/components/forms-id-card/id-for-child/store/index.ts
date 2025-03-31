@@ -2,11 +2,11 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
 interface IDForChildStore {
-	isIDforChild: boolean | null;
+	isIdforChild: boolean | null;
 	areCustodiansPresent: boolean | null;
 	areCustodiansMarried: boolean | null;
 
-	setIsIDforChild: (isIDforChild: boolean) => void;
+	setisIdforChild: (isIdforChild: boolean) => void;
 	setAreCustodiansPresent: (areCustodiansPresent: boolean) => void;
 	setAreCustodiansMarried: (areCustodiansMarried: boolean) => void;
 }
@@ -14,10 +14,10 @@ interface IDForChildStore {
 export const useIDForChildStore = create<IDForChildStore>()(
 	persist(
 		(set) => ({
-			isIDforChild: null,
-			setIsIDforChild(isIDforChild) {
+			isIdforChild: null,
+			setisIdforChild(isIdforChild) {
 				set({
-					isIDforChild,
+					isIdforChild,
 					areCustodiansPresent: null,
 					areCustodiansMarried: null,
 				});

@@ -3,7 +3,7 @@ import { reverseSteps, steps } from "./steps.ts";
 import {
 	handleAreCustodiansPresentNextStep,
 	handleHasNameChangedNextStep,
-	handleIsIDforChildNextStep,
+	handleisIdforChildNextStep,
 	handleIsNoIDRequiredNextStep,
 	handleIsPreviousIDExistingNextStep,
 	handleIsRegisteredInBerlinNextStep,
@@ -11,7 +11,7 @@ import {
 import {
 	handleIsVisitingBerlinPreviousStep,
 	handleIsFirstGermanIDPreviousStep,
-	handleIsIDforChildPreviousStep,
+	handleisIdforChildPreviousStep,
 	handleIsPreviousIDExistingPreviousStep,
 	handleOverviewPreviousStep,
 } from "./previous-steps.ts";
@@ -44,7 +44,7 @@ interface Steps {
 	isNoIDRequired: number;
 	isVisitingBerlin: number;
 
-	isIDforChild: number;
+	isIdforChild: number;
 	areCustodiansPresent: number;
 	areCustodiansMarried: number;
 
@@ -105,7 +105,7 @@ export const useProgressStore = create<ProgressStore>()(
 						handleIsNoIDRequiredNextStep();
 						return;
 					case 3:
-						handleIsIDforChildNextStep();
+						handleisIdforChildNextStep();
 						return;
 					case 4:
 						handleAreCustodiansPresentNextStep();
@@ -133,7 +133,7 @@ export const useProgressStore = create<ProgressStore>()(
 						handleIsVisitingBerlinPreviousStep();
 						return;
 					case 3:
-						handleIsIDforChildPreviousStep();
+						handleisIdforChildPreviousStep();
 						return;
 					case 6:
 						handleIsPreviousIDExistingPreviousStep();

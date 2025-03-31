@@ -2,7 +2,7 @@ interface Steps {
 	isRegisteredInBerlin: number;
 	isNoIDRequired: number;
 	isVisitingBerlin: number;
-	isIDforChild: number;
+	isIdforChild: number;
 	areCustodiansPresent: number;
 	areCustodiansMarried: number;
 	isPreviousIDExisting: number;
@@ -18,7 +18,7 @@ export const steps: Steps = {
 	isNoIDRequired: 1,
 	isVisitingBerlin: 2,
 
-	isIDforChild: 3,
+	isIdforChild: 3,
 	areCustodiansPresent: 4,
 	areCustodiansMarried: 5,
 
@@ -33,7 +33,7 @@ export const reverseSteps: StepsKeys[] = [
 	"isRegisteredInBerlin",
 	"isNoIDRequired",
 	"isVisitingBerlin",
-	"isIDforChild",
+	"isIdforChild",
 	"areCustodiansPresent",
 	"areCustodiansMarried",
 	"isPreviousIDExisting",

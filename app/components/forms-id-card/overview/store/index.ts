@@ -46,7 +46,7 @@ export const useOverviewStore = create<OverviewStore>()(
 					idOfParents:
 						useIDForChildStore.getState().areCustodiansPresent ||
 						useIDForChildStore.getState().areCustodiansMarried,
-					bringChild: useIDForChildStore.getState().isIDforChild,
+					bringChild: useIDForChildStore.getState().isIdforChild,
 					proofOfCustody: !useIDForChildStore.getState().areCustodiansMarried,
 					consentOfCustodian:
 						!useIDForChildStore.getState().areCustodiansMarried,
