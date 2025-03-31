@@ -27,7 +27,7 @@ export function FormLayout({
 		goToPreviousStep();
 	};
 
-	const startPageLink = buildLocalizedLink("/") as string;
+	const startPageLink = buildLocalizedLink("/");
 
 	return (
 		<div className="flex items-end w-full h-[calc(100dvh-44px)] lg:h-full bg-gray-200 relative">
