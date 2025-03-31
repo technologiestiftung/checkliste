@@ -54,7 +54,7 @@ export function IsTemporaryStay() {
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext
 					isValid={isValid && isTemporaryStay}
-					isEndofProcess={showHint}
+					isEndOfProcess={showHint}
 				/>
 
 				<SecondaryButton

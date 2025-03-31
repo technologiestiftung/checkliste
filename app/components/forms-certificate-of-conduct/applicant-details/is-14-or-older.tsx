@@ -54,7 +54,7 @@ export function Is14OrOlder() {
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext
 					isValid={isValid && is14OrOlder}
-					isEndofProcess={showHint}
+					isEndOfProcess={showHint}
 				/>
 
 				<SecondaryButton

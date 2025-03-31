@@ -50,7 +50,7 @@ export function IsRefugee() {
 			</div>
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
-				<FormButtonNext isValid={isValid} isEndofProcess={showHint} />
+				<FormButtonNext isValid={isValid} isEndOfProcess={showHint} />
 
 				<SecondaryButton
 					label={i18n("button.back")}

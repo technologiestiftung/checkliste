@@ -53,7 +53,7 @@ export function IsNoIDRequired() {
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext
 					isValid={isValid && !isNoIDRequired}
-					isEndofProcess={showHint}
+					isEndOfProcess={showHint}
 				/>
 
 				<SecondaryButton
