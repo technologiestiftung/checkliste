@@ -14,7 +14,7 @@ export function IsNoIDRequired() {
 
 	const isValid = isNoIDRequired !== null;
 
-	const showHint = isValid && isNoIDRequired;
+	const isHintVisible = isValid && isNoIDRequired;
 
 	return (
 		<form
@@ -53,7 +53,7 @@ export function IsNoIDRequired() {
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext
 					isValid={isValid && !isNoIDRequired}
-					isEndOfProcess={showHint}
+					isEndOfProcess={isHintVisible}
 				/>
 
 				<SecondaryButton
@@ -64,7 +64,7 @@ export function IsNoIDRequired() {
 			</div>
 
 			<div
-				className={`${showHint ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
+				className={`${isHintVisible ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
 			>
 				<div className="font-bold">{i18n("title.hint")}</div>
 				<p>{i18n("registered-in-berlin.q2.hint.yes")}</p>

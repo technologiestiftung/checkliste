@@ -15,7 +15,7 @@ export function Is14OrOlder() {
 	const hintTitle = i18n("title.hint");
 	const hint = i18n("applicantDetails.q1.hint");
 
-	const showHint = isValid && !is14OrOlder;
+	const isHintVisible = isValid && !is14OrOlder;
 
 	return (
 		<form
@@ -54,7 +54,7 @@ export function Is14OrOlder() {
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext
 					isValid={isValid && is14OrOlder}
-					isEndOfProcess={showHint}
+					isEndOfProcess={isHintVisible}
 				/>
 
 				<SecondaryButton
@@ -65,7 +65,7 @@ export function Is14OrOlder() {
 			</div>
 
 			<div
-				className={`${showHint ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
+				className={`${isHintVisible ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
 			>
 				<div className="font-bold">{hintTitle}</div>
 

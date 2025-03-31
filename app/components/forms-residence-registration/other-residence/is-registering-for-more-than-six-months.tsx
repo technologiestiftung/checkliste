@@ -13,7 +13,7 @@ export function IsRegisteringForMoreThanSixMonths() {
 
 	const isValid = isRegisteringForMoreThanSixMonths !== null;
 	const needsRegistration = isRegisteringForMoreThanSixMonths === true;
-	const showHint = isValid && !needsRegistration;
+	const isHintVisible = isValid && !needsRegistration;
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
@@ -62,7 +62,7 @@ export function IsRegisteringForMoreThanSixMonths() {
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext
 					isValid={isValid && isRegisteringForMoreThanSixMonths}
-					isEndOfProcess={showHint}
+					isEndOfProcess={isHintVisible}
 				/>
 
 				<SecondaryButton
@@ -73,7 +73,7 @@ export function IsRegisteringForMoreThanSixMonths() {
 			</div>
 
 			<div
-				className={`${showHint ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3`}
+				className={`${isHintVisible ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3`}
 			>
 				<div className="font-bold">{hintTitle}</div>
 				{hint}{" "}

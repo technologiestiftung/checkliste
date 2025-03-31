@@ -18,7 +18,7 @@ export function IsApplicationAsLegalRepresentation() {
 	const hintTitle = i18n("title.hint");
 	const hint = i18n("applicantDetails.q3.hint");
 
-	const showHint = isValid && !isApplicationAsLegalRepresentation;
+	const isHintVisible = isValid && !isApplicationAsLegalRepresentation;
 
 	return (
 		<form
@@ -59,7 +59,7 @@ export function IsApplicationAsLegalRepresentation() {
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext
 					isValid={isValid && isApplicationAsLegalRepresentation}
-					isEndOfProcess={showHint}
+					isEndOfProcess={isHintVisible}
 				/>
 
 				<SecondaryButton
@@ -70,7 +70,7 @@ export function IsApplicationAsLegalRepresentation() {
 			</div>
 
 			<div
-				className={`${showHint ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
+				className={`${isHintVisible ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
 			>
 				<div className="font-bold">{hintTitle}</div>
 

@@ -6,13 +6,13 @@ import { SecondaryButton } from "~/components/buttons/secondary-button/index.tsx
 interface OverviewChecklistLayoutProps {
 	goToPreviousStep: () => void;
 	children: React.ReactNode;
-	showHint?: boolean;
+	isHintVisible?: boolean;
 }
 
 export function OverviewChecklistLayout({
 	goToPreviousStep,
 	children,
-	showHint,
+	isHintVisible,
 }: OverviewChecklistLayoutProps) {
 	return (
 		<div className="flex h-full flex-col gap-8 text-base lg:text-2xl">
@@ -61,7 +61,7 @@ export function OverviewChecklistLayout({
 				</div>
 			</div>
 
-			<div className={`${showHint ? "" : "hidden"} flex flex-col gap-1`}>
+			<div className={`${isHintVisible ? "" : "hidden"} flex flex-col gap-1`}>
 				<h3
 					className="font-bold"
 					dangerouslySetInnerHTML={{

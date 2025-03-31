@@ -19,7 +19,7 @@ export function Overview() {
 	return (
 		<OverviewChecklistLayout
 			goToPreviousStep={goToPreviousStep}
-			showHint={true}
+			isHintVisible={true}
 		>
 			{documents.map(([key, value]) => (
 				<DocumentCheckbox
