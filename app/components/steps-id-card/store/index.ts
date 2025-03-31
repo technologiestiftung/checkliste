@@ -31,6 +31,14 @@ function trackStepChange(previousStep: number, currentStep: number) {
 	});
 }
 
+function getCurrentSection(step: number): number {
+	if (step <= 2) return 1;
+	if (step <= 5) return 2;
+	if (step <= 7) return 3;
+	if (step <= 8) return 4;
+	return 0;
+}
+
 interface Steps {
 	isRegisteredInBerlin: number;
 	isNoIDRequired: number;
@@ -73,12 +81,7 @@ export const useProgressStore = create<ProgressStore>()(
 			setCurrentStep(currentStep: number) {
 				trackStepChange(get().currentStep, currentStep);
 
-				let currentSection = 1;
-				if (currentStep <= 2) currentSection = 1;
-				else if (currentStep <= 5) currentSection = 2;
-				else if (currentStep <= 7) currentSection = 3;
-				else if (currentStep <= 8) currentSection = 4;
-				else currentSection = 0;
+				const currentSection = getCurrentSection(currentStep);
 
 				set({ currentStep, currentSection });
 			},
