@@ -31,7 +31,7 @@ function trackStepChange(previousStep: number, currentStep: number) {
 	});
 }
 
-function getCurrentSection(step: number): number {
+function getCurrentProgressSection(step: number): number {
 	if (step <= 2) return 1;
 	if (step <= 5) return 2;
 	if (step <= 7) return 3;
@@ -81,7 +81,7 @@ export const useProgressStore = create<ProgressStore>()(
 			setCurrentStep(currentStep: number) {
 				trackStepChange(get().currentStep, currentStep);
 
-				const currentSection = getCurrentSection(currentStep);
+				const currentSection = getCurrentProgressSection(currentStep);
 
 				set({ currentStep, currentSection });
 			},
