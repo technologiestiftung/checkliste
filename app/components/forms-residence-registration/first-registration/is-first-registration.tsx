@@ -1,9 +1,13 @@
 import { useFirstRegistrationStore } from "./store";
 import { RadioInput } from "../../radio-input";
 import { useProgressStore } from "../../steps-residence-registration/store";
-import { i18n } from "~/i18n/i18n-utils";
+import { i18n, buildLocalizedLink } from "~/i18n/i18n-utils";
 import { useSaveIntroPageViewInSessionStorage } from "./hooks/use-save-intro-page-view-in-session-storage";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
+import { useNavigate } from "react-router";
+import { useDialogStore } from "~/components/feedback-dialog/store/dialog";
+import { SecondaryButton } from "~/components/buttons/secondary-button";
+
 export function IsFirstRegistration() {
 	const { isFirstRegistration, setIsFirstRegistration } =
 		useFirstRegistrationStore();
@@ -14,6 +18,15 @@ export function IsFirstRegistration() {
 	const options = ["yes", "no"] as const;
 
 	useSaveIntroPageViewInSessionStorage();
+
+	const navigate = useNavigate();
+	const startPageLink = buildLocalizedLink("/");
+	const { setHasCompletedAFlow } = useDialogStore();
+
+	const returnToStartpage = () => {
+		navigate(startPageLink);
+		setHasCompletedAFlow(true);
+	};
 
 	return (
 		<form
@@ -51,6 +64,12 @@ export function IsFirstRegistration() {
 
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext isValid={isValid} />
+
+				<SecondaryButton
+					label={i18n("button.back")}
+					onClick={returnToStartpage}
+					className="hidden lg:flex"
+				/>
 			</div>
 		</form>
 	);
