@@ -39,7 +39,8 @@ const de = {
 						>Dann beantworten Sie uns gerne einige Fragen</a>. `,
 
 	"navigation.title": "Wählen Sie eine Dienstleistung",
-	"navigation.description": "Finden Sie heraus, welche Dokumente Sie benötigen",
+	"navigation.description":
+		"Finden Sie heraus, welche Dokumente Sie benötigen.",
 	"navigation.button": "Starten",
 	"navigation.id-card": "Personalausweis beantragen",
 	"navigation.certificate-of-conduct": "Führungszeugnis beantragen",
