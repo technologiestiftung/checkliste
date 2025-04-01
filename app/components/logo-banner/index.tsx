@@ -20,7 +20,7 @@ export function LogoBanner() {
 		{
 			logo: "/images/logo-buergeramt-der-zukunft.png",
 			link: "https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php",
-			alt: "Logo von Bürgeramt der Zukunft",
+			alt: "Logo von Bezirksamt Friedrichshain-Kreuzberg von Berlin, Amt für Bürgerdienste",
 			description: i18n("logo.t3"),
 			className: "w-full sm:max-w-[90px] max-w-[102px]",
 		},

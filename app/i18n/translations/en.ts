@@ -69,7 +69,7 @@ const en = {
 	"feedback.link":
 		"https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist",
 	"feedback.button.fillout": "Fill out survey",
-	"feedback.button.no": "No, thanks",
+	"feedback.button.no": "No thanks",
 
 	/*
 	Flow Residence
