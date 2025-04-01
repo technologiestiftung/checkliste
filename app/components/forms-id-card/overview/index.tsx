@@ -27,7 +27,7 @@ export function Overview() {
 	return (
 		<OverviewChecklistLayout
 			goToPreviousStep={goToPreviousStep}
-			showHint={true}
+			isHintVisible={true}
 			storeKeys={storeKeys}
 			goToStart={goToStart}
 		>
