@@ -48,7 +48,7 @@ const de = {
 	"footer.toTheTop": "Zum Seitenanfang",
 	"footer.button.name.expand": "Mehr anzeigen",
 	"footer.button.name.collapse": "Weniger anzeigen",
-	"upperFooter.checklist.title": "Checkliste",
+	"upperFooter.checklist.title": "Dokumenten-Check",
 	"upperFooter.checklist.about": "Über das Projekt",
 	"upperFooter.checklist.impressum": "Impressum",
 	"upperFooter.checklist.dataprivacy": "Datenschutzerklärung",
@@ -113,6 +113,58 @@ const de = {
 		"Wenn Sie nicht länger als sechs Monate in Berlin bleiben, müssen Sie sich nicht anmelden.",
 	"other-residence.q4.hint.link.label": "Termin stornieren",
 
+	/* 
+	Flow ID Card
+	*/
+	"registered-in-berlin.q1": "Sind Sie in Berlin gemeldet?",
+	"registered-in-berlin.q2": "Sind Sie von der Ausweispflicht befreit?",
+	"registered-in-berlin.q2.hint.yes": "Sie benötigen keinen Personalausweis.",
+	"registered-in-berlin.q3":
+		"Sind Sie aktuell in Berlin, z.B. weil sie vorübergehend hier leben, hier Urlaub machen oder wohnungslos sind?",
+	"registered-in-berlin.q3.hint.yes": `Es besteht ebenfalls die Möglichkeit, einen Personalausweis in Berlin zu beantragen. 
+		Die Dokumente können ausschließlich beim Landesamt für Bürger- und Ordnungsangelegenheiten beantragt werden. 
+		Mehr Informationen finden Sie <a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://service.berlin.de/dienstleistung/326550/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>hier</a>.`,
+	"registered-in-berlin.q3.hint.no":
+		"Sie können aktuell keinen Personalausweis in Berlin beantragen.",
+	"id-for-child.q1":
+		"Beantragen Sie den Personalausweis für eine minderjährige Person?",
+	"id-for-child.q2":
+		"Sind alle gesetzlichen Vertreter:innen (in den meisten Fällen sorgeberechtige Elternteile) bei dem Termin im Bürgeramt anwesend?",
+	"id-for-child.q3": "Sind die gesetzlichen Vertreter verheiratet?",
+	"previous-id.q1":
+		"Haben Sie bereits ein offizielles Ausweisdokument (z. B. Personalausweis oder Reisepass) besessen?",
+	"previous-id.q2": "Hat sich Ihr Name seit der letzten Ausstellung geändert?",
+	"previous-id.q3":
+		"Wurden Sie eingebürgert und beantragen Sie erstmals einen deutschen Personalausweis?",
+
+	/*
+	Flow Certificate of Conduct
+	*/
+	"applicantDetails.q1": "Sind Sie mindestens 14 Jahre alt?",
+	"applicantDetails.q1.hint":
+		"Sie können ein Führungszeugnis erst ab 14 Jahre beantragen. ",
+	"applicantDetails.q2": "Sind Sie in Berlin gemeldet?",
+	"applicantDetails.q3": "Leben Sie vorrübergehend in Berlin?",
+	"applicantDetails.q3.hint": `Bitte beantragen Sie ihr Führungszeugnis online. <a class="font-bold hover:underline text-berlin-blue-500"
+							href="https://www.fuehrungszeugnis.bund.de/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Link zum Online Antrag</a>.`,
+	"certificate-of-conduct-details.q1":
+		"Beantragen Sie das Führungszeugnis für sich selbst?",
+	"certificate-of-conduct-details.q1.hint":
+		"Sie können kein Führungszeugnis beantragen, wenn Sie nicht die gesetzliche Vertretung sind.",
+	"certificate-of-conduct-details.q2":
+		"Beantragen Sie das Führungszeugnis in gesetzlicher Vertretung?",
+	"certificate-of-conduct-details.q3":
+		"Beantragen Sie ein erweitertes Führungszeugnis?",
+	"certificate-of-conduct-details.q4":
+		"Beantragen Sie ein behördliches Führungszeugnis?",
+
 	/*
 	Checklist Overview
 	*/
@@ -142,7 +194,7 @@ const de = {
 	idDocumentForChild:
 		"Personalausweis, Reisepass oder Kinderpass des Kindes/der Kinder",
 	guardianConsent:
-		"Einverständniserklärung der Sorgeberechtigten des Kinder/der Kinder",
+		"Einverständniserklärung der Sorgeberechtigten des Kindes/der Kinder",
 	additionalRegistrationForm: "Weiteres Anmeldeformular",
 	germanIdOrPassportOrChildPassport:
 		"Ihr eigener Personalausweis, Reisepass oder Kinderpass",
@@ -153,13 +205,40 @@ const de = {
 	nonEuIdOrPassportOrReplacement: "Reisepass oder Passersatzpapiere",
 	supplement: "Beiblatt zur Anmeldung/ Hauptwohnungserklärung",
 
+	idOfParents: "Ausweisdokumente der Eltern",
+	bringChild: "Kind mitbringen",
+	proofOfCustody:
+		"Nachweis zur Sorgeberechtigung z.B. beglaubigte Abschrift aus dem Sorgeregister vom Jugendamt",
+	consentOfCustodian:
+		"Einverständniserklärung des nicht anwesenden Sorgebereichtigten",
+	copyOfID:
+		"Kopie von Ausweis (bzw. Reisepass oder Nationalpass) des nicht anwesenden Elternteils für den Unterschriftenabgleich",
+	newOrOldID: "gültiger oder alter Personalausweis oder Reisepass",
+	birthCertificateOrPartnershipCertificate:
+		"Geburtsurkunde, Eheurkunde oder Lebenspartnerschaftsurkunde",
+	passportOrforeignID:
+		"Reisepass oder ID-Card des Staates der bisherigen Nationalität oder eine Identitätsbescheinigung vom Landesamt für Einwanderung (LEA).",
+	naturalizationCertificate: "Einbürgerungsurkunde",
+
+	birthCertificateOfRepresantative: "Geburtsurkunde der vertretenen Person",
+	carerId: "Betreuerausweis (wenn nicht sorgeberechtigt)",
+	idOfLegalRepresantative: "Ausweisdokument von gesetzlicher Vertretung",
+	idDocument: "Ausweisdokument",
+	writtenRequestAuthorized:
+		"Schriftliche Aufforderung einer berechtigten Stelle",
+	nameAndAddressOfAuthority: "Name und Anschrift der Behörde",
+	fileNumber: "Aktenzeichen",
+	purposeOfApplication:
+		"Verwendungszweck z.B. Einstellung in den öffentlichen Dienst",
+	letterOrEmailFromAuthority: "chreiben oder E-Mail der Behörde",
+
 	/*
 	About
 	*/
-	"about.title": "Über das Projekt Checkliste",
+	"about.title": "Über das Projekt Dokumenten-Check",
 	"about.text.p1":
 		"Berliner Bürgerämter verzeichnen als häufigsten Grund für Terminabbrüche das Fehlen oder Vergessen der erforderlichen Unterlagen. Mithilfe kurzer Fragen zu Ihrer persönlichen Situation erstellt die Anwendung eine individuelle Checkliste, die Ihnen präzise anzeigt, welche Dokumente benötigt werden. Dadurch wird Ihr Behördengang effizienter und stressfreier gestaltet.",
-	"about.text.p2": `Mit der Checkliste können Sie die 
+	"about.text.p2": `Mit dem Dokumenten-Check können Sie die 
 	<a class="font-bold hover:underline text-berlin-blue-500"
 							href="https://service.berlin.de/dienstleistung/120686/"
 							target="_blank"
@@ -193,9 +272,9 @@ const de = {
 	/*
 	Data Privacy
 	*/
-	"dataPrivacy.title": "Datenschutzerklärung für Prototyp “Checkliste”",
+	"dataPrivacy.title": "Datenschutzerklärung für Prototyp “Dokumenten-Check”",
 	"dataPrivacy.subtitle":
-		"Diese Datenschutzerklärung gilt ausschließlich für den Prototyp “Checkliste”.",
+		"Diese Datenschutzerklärung gilt ausschließlich für den Prototyp “Dokumenten-Check”.",
 	"dataPrivacy.title.p1": "1. Allgemeine Informationen",
 	"dataPrivacy.subtitle.p1.1": "1.1 Zweck der Datenschutzerklärung",
 	"dataPrivacy.text.p1.1": `Die Datenschutzerklärung soll Sie über Art, Umfang und Zweck der von der Technologiestiftung Berlin erhobenen, genutzten und verarbeitenden Daten sowie Ihre Rechte in Bezug auf Datenschutz informieren. Die Technologiestiftung Berlin ist sich der Verantwortung für den Schutz von personenbezogenen Daten bewusst und setzt sich besonders dafür ein, dass Ihre Privatsphäre geschützt wird.   

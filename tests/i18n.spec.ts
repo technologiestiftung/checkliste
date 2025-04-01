@@ -23,7 +23,7 @@ test("should translate page to german", async ({ page }) => {
 	const languageAnchorDE = page.getByRole("link", { name: "Deutsch" });
 	await languageAnchorDE.click();
 
-	const germanHeading = page.getByText("Willkommen bei der Checkliste");
+	const germanHeading = page.getByText("Willkommen beim Dokumenten-Check");
 
 	await expect(germanHeading).toBeVisible();
 });
