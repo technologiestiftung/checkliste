@@ -5,7 +5,7 @@ import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 
-export function isIdforChild() {
+export function IsIdforChild() {
 	const { isIdforChild, setisIdforChild } = useIDForChildStore();
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();

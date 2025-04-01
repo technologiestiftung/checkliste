@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { reverseSteps, steps } from "./steps.ts";
+import { reverseSteps, steps, stepSectionMapping } from "./steps.ts";
 import {
 	handleIsRegisteredInBerlinNextStep,
 	handleIsCertificateOfConductForSelfNextStep,
@@ -22,15 +22,6 @@ function trackStepChange(previousStep: number, currentStep: number) {
 		eventAction: "step-change",
 		eventName: `step change: ${previousStep} (${previousStepKey}) -> ${currentStep} (${currentStepKey}), language: ${language} `,
 	});
-}
-
-function getCurrentProgressSection(step: number): number {
-	if (step <= 0) return 1;
-	if (step <= 2) return 2;
-	if (step <= 4) return 3;
-	if (step <= 5) return 4;
-	if (step <= 6) return 5;
-	return 0;
 }
 
 interface Steps {
@@ -74,7 +65,7 @@ export const useProgressStore = create<ProgressStore>()(
 			setCurrentStep(currentStep: number) {
 				trackStepChange(get().currentStep, currentStep);
 
-				const currentSection = getCurrentProgressSection(currentStep);
+				const currentSection = stepSectionMapping[currentStep];
 
 				set({ currentStep, currentSection });
 			},
