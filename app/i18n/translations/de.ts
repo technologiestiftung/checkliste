@@ -61,10 +61,11 @@ const de = {
 
 	yes: "Ja",
 	no: "Nein",
-	"download.tooltip": "Dokument herunterladen",
+	"button.download": "Herunterladen",
 	"button.back": "Zurück",
 	"button.next": "Weiter",
 	"button.cancel": "Abbrechen",
+	"button.fillOutAgain": "Erneut ausfüllen",
 	"button.next.tooltip": "Bitte beantworten Sie die Frage zuerst.",
 	"button.print": "Liste drucken",
 	"button.finish": "Fertig",
@@ -230,7 +231,7 @@ const de = {
 	fileNumber: "Aktenzeichen",
 	purposeOfApplication:
 		"Verwendungszweck z.B. Einstellung in den öffentlichen Dienst",
-	letterOrEmailFromAuthority: "chreiben oder E-Mail der Behörde",
+	letterOrEmailFromAuthority: "Schreiben oder E-Mail der Behörde",
 
 	/*
 	About

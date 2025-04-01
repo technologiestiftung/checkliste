@@ -7,13 +7,24 @@ interface OverviewChecklistLayoutProps {
 	goToPreviousStep: () => void;
 	children: React.ReactNode;
 	isHintVisible?: boolean;
+	storeKeys: string[];
+	goToStart: () => void;
 }
 
 export function OverviewChecklistLayout({
 	goToPreviousStep,
 	children,
 	isHintVisible,
+	storeKeys,
+	goToStart,
 }: OverviewChecklistLayoutProps) {
+	const handleFillOutAgain = () => {
+		storeKeys.forEach((key) => {
+			localStorage.removeItem(key);
+		});
+		goToStart();
+	};
+
 	return (
 		<div className="flex h-full flex-col gap-8 text-base lg:text-2xl">
 			<div className="flex flex-col gap-8">
@@ -37,11 +48,16 @@ export function OverviewChecklistLayout({
 				</div>
 			</div>
 			<ul className="flex flex-col gap-3">{children}</ul>
-			<div className="flex h-full w-full flex-row items-end justify-end lg:justify-between print:hidden">
+			<div className="flex h-full w-full flex-row items-end justify-between print:hidden">
 				<SecondaryButton
 					label={i18n("button.back")}
 					onClick={goToPreviousStep}
 					className="hidden lg:flex"
+				/>
+				<SecondaryButton
+					label={i18n("button.fillOutAgain")}
+					onClick={handleFillOutAgain}
+					className="flex lg:hidden"
 				/>
 				<div className="relative">
 					<PrimaryButton
@@ -60,6 +76,16 @@ export function OverviewChecklistLayout({
 					/>
 				</div>
 			</div>
+
+			<button
+				className="hidden lg:flex text-2xl text-berlin-blue-900 hover:underline font-bold pb-12 "
+				onClick={() => {
+					handleFillOutAgain();
+				}}
+				type="button"
+			>
+				{i18n("button.fillOutAgain")}
+			</button>
 
 			<div className={`${isHintVisible ? "" : "hidden"} flex flex-col gap-1`}>
 				<h3
