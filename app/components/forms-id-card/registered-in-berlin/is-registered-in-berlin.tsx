@@ -19,11 +19,11 @@ export function IsRegisteredInBerlin() {
 
 	const navigate = useNavigate();
 	const startPageLink = buildLocalizedLink("/");
-	const { setHasCompletedAFlow } = useDialogStore();
+	const { setHasUserLeftFlow } = useDialogStore();
 
 	const returnToStartpage = () => {
 		navigate(startPageLink);
-		setHasCompletedAFlow(true);
+		setHasUserLeftFlow(true);
 	};
 
 	return (
