@@ -101,17 +101,17 @@ test("App should be usable with keyboard", async ({ page, browserName }) => {
 	);
 
 	const registrationForm = customPage
-		.locator("div")
+		.locator("div > div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = customPage.locator("div").filter({
+	const movingInConfirmation = customPage.locator("div > div").filter({
 		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
 	const confirmationOfCustodian = customPage
-		.locator("div")
+		.locator("div > div")
 		.filter({ hasText: /^Einverständniserklärung der Sorgeberechtigten$/ });
 
 	const germanIdOrPassport = customPage
-		.locator("div")
+		.locator("div > div")
 		.filter({ hasText: /^Reisepass oder Passersatzpapiere$/ });
 
 	await expect(overview).toBeVisible();

@@ -43,17 +43,16 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 		.getByRole("radio");
 	await noRadio.click(); // Do you stay registered in another flat?
 	await nextButton.click();
-
 	const registrationForm = page
-		.locator("div")
+		.locator("div > div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = page.locator("div").filter({
+	const movingInConfirmation = page.locator("div > div").filter({
 		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
-	const germanIdOrPassportOrChildPassport = page.locator("div").filter({
+	const germanIdOrPassportOrChildPassport = page.locator("div > div").filter({
 		hasText: /^Ihr eigener Personalausweis, Reisepass oder Kinderpass$/,
 	});
-	const confirmationOfCustodian = page.locator("div").filter({
+	const confirmationOfCustodian = page.locator("div > div").filter({
 		hasText: /^Einverständniserklärung der Sorgeberechtigten$/,
 	});
 
@@ -122,12 +121,12 @@ test("should have 3 documents in their checklist: registrationForm, movingInConf
 	await nextButton.click();
 
 	const registrationForm = page
-		.locator("div")
+		.locator("div > div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = page.locator("div").filter({
+	const movingInConfirmation = page.locator("div > div").filter({
 		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
-	const euIdOrPassportOrReplacement = page.locator("div").filter({
+	const euIdOrPassportOrReplacement = page.locator("div > div").filter({
 		hasText: /^Europäische ID-Card, Reisepass oder Passersatzpapiere$/,
 	});
 
@@ -195,15 +194,15 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 	await nextButton.click();
 
 	const registrationForm = page
-		.locator("div")
+		.locator("div > div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = page.locator("div").filter({
+	const movingInConfirmation = page.locator("div > div").filter({
 		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
-	const euIdOrPassportOrReplacement = page.locator("div").filter({
+	const euIdOrPassportOrReplacement = page.locator("div > div").filter({
 		hasText: /^Europäische ID-Card, Reisepass oder Passersatzpapiere$/,
 	});
-	const confirmationOfCustodian = page.locator("div").filter({
+	const confirmationOfCustodian = page.locator("div > div").filter({
 		hasText: /^Einverständniserklärung der Sorgeberechtigten$/,
 	});
 
@@ -275,15 +274,15 @@ test("should have 4 documents in their checklist: registrationForm, movingInConf
 	await nextButton.click();
 
 	const registrationForm = page
-		.locator("div")
+		.locator("div > div")
 		.filter({ hasText: /^Anmeldeformular$/ });
-	const movingInConfirmation = page.locator("div").filter({
+	const movingInConfirmation = page.locator("div > div").filter({
 		hasText: /^Einzugsbestätigung des Wohnungsgebers\/ Vermieters$/,
 	});
-	const confirmationOfCustodian = page.locator("div").filter({
+	const confirmationOfCustodian = page.locator("div > div").filter({
 		hasText: /^Einverständniserklärung der Sorgeberechtigten$/,
 	});
-	const nonEuIdOrPassportOrReplacement = page.locator("div").filter({
+	const nonEuIdOrPassportOrReplacement = page.locator("div > div").filter({
 		hasText: /^Reisepass oder Passersatzpapiere$/,
 	});
 
