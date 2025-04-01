@@ -27,17 +27,20 @@ const de = {
 							href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 							target="_blank"
 							rel="noopener noreferrer"
-						>Bürgeramt der Zukunft</a>.
-						Ziel ist es, Terminabbrüche zu vermeiden, weil Unterlagen fehlen oder unvollständig sind.
+						>Bezirksamt Friedrichshain-Kreuzberg von Berlin, Amt für Bürgerdienste</a>.
+						Ziel ist es, Terminabbrüche aufgrund von fehlenden Unterlagen zu vermeiden.
 						Ihre Antworten werden nicht gespeichert oder ausgewertet. 
+						<br/><br/>
+						Sie haben Fragen oder hilfreiche Tipps, wie wir diese Anwendung verbessern können? 
 						<a class="font-bold hover:underline text-berlin-blue-500"
 							href="https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist"
 							target="_blank"
 							rel="noopener noreferrer"
-						>Beantworten Sie uns gerne ein paar Fragen zu dem Prototypen</a>. `,
+						>Dann beantworten Sie uns gerne einige Fragen</a>. `,
 
 	"navigation.title": "Wählen Sie eine Dienstleistung",
-	"navigation.description": "Finden Sie heraus, welche Dokumente Sie benötigen",
+	"navigation.description":
+		"Finden Sie heraus, welche Dokumente Sie benötigen.",
 	"navigation.button": "Starten",
 	"navigation.id-card": "Personalausweis beantragen",
 	"navigation.certificate-of-conduct": "Führungszeugnis beantragen",
@@ -98,7 +101,7 @@ const de = {
 	"nationality.q2": "Sind Sie über 16 Jahre alt?",
 	"nationality.q3": "Kommen Sie aus einem EU-Land?",
 	"nationality.q4": "Sind Sie unter 16 Jahre alt?",
-	"nationality.q5": "Sind Sie ein:e Geflüchtete:r? ",
+	"nationality.q5": "Haben Sie den Status einer geflüchteten Person?",
 	"nationality.q5.hint":
 		"Eventuell muss Ihre Anmeldung über das Flüchtlingsbürgeramt erfolgen. Hier finden Sie mehr Informationen:",
 	"other-residence.q1": "Bleiben Sie in einer anderen Wohnung gemeldet?",
@@ -171,18 +174,18 @@ const de = {
 	*/
 	"overview.title": "Ihre persönliche Checkliste wurde erstellt",
 	"overview.text.1":
-		"Wir haben für Sie eine individuelle Checkliste aller benötigten Dokumente für Ihren Termin im Bürgeramt zusammengestellt.",
+		"Wir haben für Sie eine individuelle Checkliste aller benötigten Dokumente für Ihren Termin im Bürgeramt zusammengestellt. Ihre Angaben bleiben lokal im Browser gespeichert. Sie können Ihre Liste jederzeit erneut aufrufen, auch später über ein Lesezeichen.",
 	"overview.title.2": "So nutzen Sie den Dokumenten-Check:",
 	"overview.text.2": `
 	<ul class="list-decimal pl-5 lg:pl-7 w-9/10">
-		<li>Haken Sie bequem die Dokumente ab, die Sie bereits haben.</li>
-		<li>Ihre Angaben bleiben lokal im Browser gespeichert. Sie können Ihre Liste jederzeit erneut aufrufen, auch später über ein Lesezeichen.</li>
-		<li>Laden Sie benötige Formulare herunter. Bitte bringen Sie diese ausgefüllt, unterschrieben und ausgedruckt mit.</li>
+		<li>Laden Sie die benötigten Dokumente über das Pfeilsymbol herunter.</li>
+		<li>Haken Sie die Dokumente ab, die Sie bereits ausgefüllt haben.</li>
+		<li>Bringen Sie die ausgedruckten Dokumente mit zu Ihrem Termin.</li>
 	</ul>`,
 	"overview.feedback": "Beantworten Sie uns gerne ein paar Fragen.",
 	"overview.id-card.hint.title": "Hinweis:",
 	"overview.id-card.hint.text":
-		"Ab 1. Mai 2025 werden biometrische Passbilder nur in zertifizierten Fotostudios oder Bürgerämtern digital erstellt und übermittelt. Pro Dokument fällt eine Gebühr von 6 € an, zahlbar ausschließlich per Karte.",
+		"Ab 1. Mai 2025 werden biometrische Passbilder nur in zertifizierten Fotostudios oder Bürgerämtern digital erstellt und übermittelt. Pro Bild fällt eine Gebühr von 6 € an, zahlbar ausschließlich mit Karte.",
 
 	registrationForm: "Anmeldeformular",
 	movingInConfirmation: "Einzugsbestätigung des Wohnungsgebers/ Vermieters",
@@ -226,7 +229,7 @@ const de = {
 	idOfLegalRepresantative: "Ausweisdokument von gesetzlicher Vertretung",
 	idDocument: "Ausweisdokument",
 	writtenRequestAuthorized:
-		"Schriftliche Aufforderung einer berechtigten Stelle",
+		"Schriftliche Aufforderung einer berechtigten Stelle (erweitertes Führungszeugnis)",
 	nameAndAddressOfAuthority: "Name und Anschrift der Behörde",
 	fileNumber: "Aktenzeichen",
 	purposeOfApplication:
@@ -261,7 +264,7 @@ const de = {
 							href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 							target="_blank"
 							rel="noopener noreferrer"
-						>Bürgeramt der Zukunft</a> entwickelt, um die notwendigen Informationen verständlich und zielgerichtet aufzubereiten. Dank der Verfügbarkeit in sieben Sprachen ist die Checkliste leicht zugänglich und für Berliner Bürger:innen nutzbar.`,
+						>Bezirksamt Friedrichshain-Kreuzberg von Berlin, Amt für Bürgerdienste</a> entwickelt, um die notwendigen Informationen verständlich und zielgerichtet aufzubereiten. Dank der Verfügbarkeit in sieben Sprachen ist die Checkliste leicht zugänglich und für Berliner Bürger:innen nutzbar.`,
 	"about.text.p3": `Wenn Sie einen Blick hinter die Kulissen werfen möchtest, finden Sie den offenen Quellcode auf 
 	<a class="font-bold hover:underline text-berlin-blue-500"
 							href="https://github.com/technologiestiftung/checkliste"
