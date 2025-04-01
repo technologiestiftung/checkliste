@@ -25,11 +25,14 @@ export function LanguageAnchor({ language }: LanguageAnchorProps) {
 		setDocumentDirection(language.code);
 	};
 
+	const dir = language.code === "ar" ? "rtl" : "ltr";
+
 	return (
 		<Link
 			className="flex w-full text-left pt-3 pb-1 items-center"
 			to={href}
 			onClick={handleClick}
+			dir={dir}
 		>
 			<span className="text-base lg:text-2xl hover:underline">
 				{language.label}

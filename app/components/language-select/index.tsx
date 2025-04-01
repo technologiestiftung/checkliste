@@ -21,6 +21,8 @@ export function LanguageSelect() {
 
 	useCloseOnClickOutside(languageSelectRef, setIsOpen);
 
+	const dir = currentLanguage === "ar" ? "rtl" : "ltr";
+
 	return (
 		<>
 			<div
@@ -32,10 +34,10 @@ export function LanguageSelect() {
 					onClick={() => setIsOpen(!isOpen)}
 					aria-label={i18n("language-select")}
 					aria-expanded={isOpen}
-					dir="ltr"
+					dir={dir}
 					id="language-button"
 				>
-					<span className="flex justify-center py-2.5 pl-2.5 text-base lg:text-2xl items-center">
+					<span className="flex justify-center py-2.5 ps-2.5 text-base lg:text-2xl items-center">
 						{i18n(`${currentLanguage}`)}
 					</span>
 					<span className="flex size-8 pr-2.5 justify-center items-center pointer-events-none">
