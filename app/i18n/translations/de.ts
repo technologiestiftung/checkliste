@@ -231,7 +231,7 @@ const de = {
 	fileNumber: "Aktenzeichen",
 	purposeOfApplication:
 		"Verwendungszweck z.B. Einstellung in den öffentlichen Dienst",
-	letterOrEmailFromAuthority: "chreiben oder E-Mail der Behörde",
+	letterOrEmailFromAuthority: "Schreiben oder E-Mail der Behörde",
 
 	/*
 	About
