@@ -2,20 +2,31 @@ import { useApplicantDetailsStore } from "./store";
 import { useProgressStore } from "../../steps-certificate-of-conduct/store";
 import { RadioInput } from "../../radio-input";
 import { SecondaryButton } from "../../buttons/secondary-button";
-import { i18n } from "~/i18n/i18n-utils";
+import { i18n, buildLocalizedLink } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
+import { useNavigate } from "react-router";
+import { useDialogStore } from "~/components/feedback-dialog/store/dialog";
 
 export function Is14OrOlder() {
 	const options = ["yes", "no"] as const;
 	const { is14OrOlder, setIs14OrOlder } = useApplicantDetailsStore();
-	const { goToPreviousStep, goToNextStep } = useProgressStore();
+	const { goToNextStep } = useProgressStore();
 
 	const isValid = is14OrOlder !== null;
 
 	const hintTitle = i18n("title.hint");
 	const hint = i18n("applicantDetails.q1.hint");
 
-	const showHint = isValid && !is14OrOlder;
+	const isHintVisible = isValid && !is14OrOlder;
+
+	const navigate = useNavigate();
+	const startPageLink = buildLocalizedLink("/");
+	const { setHasUserLeftFlow } = useDialogStore();
+
+	const returnToStartpage = () => {
+		navigate(startPageLink);
+		setHasUserLeftFlow(true);
+	};
 
 	return (
 		<form
@@ -54,18 +65,18 @@ export function Is14OrOlder() {
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext
 					isValid={isValid && is14OrOlder}
-					isEndofProcess={showHint}
+					isEndOfProcess={isHintVisible}
 				/>
 
 				<SecondaryButton
 					label={i18n("button.back")}
-					onClick={goToPreviousStep}
+					onClick={returnToStartpage}
 					className="hidden lg:flex"
 				/>
 			</div>
 
 			<div
-				className={`${showHint ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
+				className={`${isHintVisible ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
 			>
 				<div className="font-bold">{hintTitle}</div>
 

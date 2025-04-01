@@ -7,7 +7,7 @@ export function handleIsVisitingBerlinPreviousStep() {
 	useProgressStore.getState().goTo("isRegisteredInBerlin");
 }
 
-export function handleIsIDforChildPreviousStep() {
+export function handleisIdforChildPreviousStep() {
 	if (useRegisteredInBerlinStore.getState().isRegisteredInBerlin === true) {
 		useProgressStore.getState().goTo("isNoIDRequired");
 		return;
@@ -18,7 +18,7 @@ export function handleIsIDforChildPreviousStep() {
 
 export function handleIsPreviousIDExistingPreviousStep() {
 	if (
-		useIDForChildStore.getState().isIDforChild === true &&
+		useIDForChildStore.getState().isIdforChild === true &&
 		useIDForChildStore.getState().areCustodiansPresent === true
 	) {
 		useProgressStore.getState().goTo("areCustodiansPresent");
@@ -26,14 +26,14 @@ export function handleIsPreviousIDExistingPreviousStep() {
 	}
 
 	if (
-		useIDForChildStore.getState().isIDforChild === true &&
+		useIDForChildStore.getState().isIdforChild === true &&
 		useIDForChildStore.getState().areCustodiansPresent === false
 	) {
 		useProgressStore.getState().goTo("areCustodiansMarried");
 		return;
 	}
 
-	useProgressStore.getState().goTo("isIDforChild");
+	useProgressStore.getState().goTo("isIdforChild");
 }
 
 export function handleIsFirstGermanIDPreviousStep() {

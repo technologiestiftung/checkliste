@@ -55,7 +55,7 @@ export function IsVisitingBerlin() {
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext
 					isValid={isValid && isVisitingBerlin}
-					isEndofProcess={isValid && !isVisitingBerlin}
+					isEndOfProcess={isValid && !isVisitingBerlin}
 				/>
 
 				<SecondaryButton

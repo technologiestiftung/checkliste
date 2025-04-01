@@ -5,10 +5,10 @@ import { useDialogStore } from "~/components/feedback-dialog/store/dialog";
 import { i18n } from "~/i18n/i18n-utils";
 
 export const FeedbackDialog: React.FC = () => {
-	const { setHasCompletedAFlow } = useDialogStore();
+	const { setHasUserLeftFlow } = useDialogStore();
 
 	const closeDialog = () => {
-		setHasCompletedAFlow(false);
+		setHasUserLeftFlow(false);
 		const dialog = document.getElementById(
 			"feedback-dialog",
 		) as HTMLDialogElement;

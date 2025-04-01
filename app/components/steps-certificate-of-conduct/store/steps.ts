@@ -32,3 +32,25 @@ export const reverseSteps: StepsKeys[] = [
 	"isOfficialCertificateOfConduct",
 	"overview",
 ];
+
+/**
+ * The keys represent the step number,
+ * the values represent the section number.
+ * 0 (is14OrOlder): section 1
+ * 1 (isRegisteredInBerlin): section 2
+ * 2 (isTemporaryStay): section 2
+ * 3 (isCertificateOfConductForSelf): section 3
+ * 4 (isApplicationAsLegalRepresentation): section 3
+ * 5 (isExtendedCertificateOfConduct): section 4
+ * 6 (isOfficialCertificateOfConduct): section 5
+ */
+export const stepSectionMapping: Record<number, number> = {
+	0: 1,
+	1: 2,
+	2: 2,
+	3: 3,
+	4: 3,
+	5: 4,
+	6: 5,
+	7: 0,
+};

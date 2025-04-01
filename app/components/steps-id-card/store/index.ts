@@ -1,9 +1,9 @@
 import { create } from "zustand";
-import { reverseSteps, steps } from "./steps.ts";
+import { reverseSteps, steps, stepSectionMapping } from "./steps.ts";
 import {
 	handleAreCustodiansPresentNextStep,
 	handleHasNameChangedNextStep,
-	handleIsIDforChildNextStep,
+	handleisIdforChildNextStep,
 	handleIsNoIDRequiredNextStep,
 	handleIsPreviousIDExistingNextStep,
 	handleIsRegisteredInBerlinNextStep,
@@ -11,7 +11,7 @@ import {
 import {
 	handleIsVisitingBerlinPreviousStep,
 	handleIsFirstGermanIDPreviousStep,
-	handleIsIDforChildPreviousStep,
+	handleisIdforChildPreviousStep,
 	handleIsPreviousIDExistingPreviousStep,
 	handleOverviewPreviousStep,
 } from "./previous-steps.ts";
@@ -36,7 +36,7 @@ interface Steps {
 	isNoIDRequired: number;
 	isVisitingBerlin: number;
 
-	isIDforChild: number;
+	isIdforChild: number;
 	areCustodiansPresent: number;
 	areCustodiansMarried: number;
 
@@ -73,12 +73,7 @@ export const useProgressStore = create<ProgressStore>()(
 			setCurrentStep(currentStep: number) {
 				trackStepChange(get().currentStep, currentStep);
 
-				let currentSection = 1;
-				if (currentStep <= 2) currentSection = 1;
-				else if (currentStep <= 5) currentSection = 2;
-				else if (currentStep <= 7) currentSection = 3;
-				else if (currentStep <= 8) currentSection = 4;
-				else currentSection = 0;
+				const currentSection = stepSectionMapping[currentStep];
 
 				set({ currentStep, currentSection });
 			},
@@ -102,7 +97,7 @@ export const useProgressStore = create<ProgressStore>()(
 						handleIsNoIDRequiredNextStep();
 						return;
 					case 3:
-						handleIsIDforChildNextStep();
+						handleisIdforChildNextStep();
 						return;
 					case 4:
 						handleAreCustodiansPresentNextStep();
@@ -130,7 +125,7 @@ export const useProgressStore = create<ProgressStore>()(
 						handleIsVisitingBerlinPreviousStep();
 						return;
 					case 3:
-						handleIsIDforChildPreviousStep();
+						handleisIdforChildPreviousStep();
 						return;
 					case 6:
 						handleIsPreviousIDExistingPreviousStep();

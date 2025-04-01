@@ -13,11 +13,11 @@ export function handleIsRegisteredInBerlinNextStep() {
 }
 
 export function handleIsNoIDRequiredNextStep() {
-	useProgressStore.getState().goTo("isIDforChild");
+	useProgressStore.getState().goTo("isIdforChild");
 }
 
-export function handleIsIDforChildNextStep() {
-	if (useIDForChildStore.getState().isIDforChild === true) {
+export function handleisIdforChildNextStep() {
+	if (useIDForChildStore.getState().isIdforChild === true) {
 		useProgressStore.getState().goTo("areCustodiansPresent");
 		return;
 	}

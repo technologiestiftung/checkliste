@@ -14,27 +14,27 @@ export function FormLayout({
 	goToPreviousStep,
 }: FormLayoutProps) {
 	const navigate = useNavigate();
-	const { setHasCompletedAFlow } = useDialogStore();
+	const { setHasUserLeftFlow } = useDialogStore();
 
 	const isLastStep = currentStep === 15;
 
 	const handleGoToPreviousStep = () => {
 		if (currentStep === 0) {
 			navigate(startPageLink);
-			setHasCompletedAFlow(true);
+			setHasUserLeftFlow(true);
 			return;
 		}
 		goToPreviousStep();
 	};
 
-	const startPageLink = buildLocalizedLink("/") as string;
+	const startPageLink = buildLocalizedLink("/");
 
 	return (
 		<div className="flex items-end w-full h-[calc(100dvh-44px)] lg:h-full bg-gray-200 relative">
 			<Link
 				className="absolute lg:hidden top-0 w-full h-7 cursor-default"
 				to={startPageLink}
-				onClick={() => setHasCompletedAFlow(true)}
+				onClick={() => setHasUserLeftFlow(true)}
 				tabIndex={-1}
 			/>
 
@@ -44,7 +44,7 @@ export function FormLayout({
 						<Link
 							className="text-2xl text-berlin-blue-900 hover:underline font-bold px-4 py-5"
 							to={startPageLink}
-							onClick={() => setHasCompletedAFlow(true)}
+							onClick={() => setHasUserLeftFlow(true)}
 						>
 							{i18n("navigation.startpage")}
 						</Link>
@@ -63,7 +63,7 @@ export function FormLayout({
 						<Link
 							className="text-base lg:text-2xl text-berlin-blue-900 hover:underline font-bold p-2.5 pt-5"
 							to={buildLocalizedLink("/")}
-							onClick={() => setHasCompletedAFlow(true)}
+							onClick={() => setHasUserLeftFlow(true)}
 						>
 							{isLastStep ? i18n("button.finish") : i18n("button.cancel")}
 						</Link>

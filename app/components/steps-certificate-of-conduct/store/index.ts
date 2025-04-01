@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { reverseSteps, steps } from "./steps.ts";
+import { reverseSteps, steps, stepSectionMapping } from "./steps.ts";
 import {
 	handleIsRegisteredInBerlinNextStep,
 	handleIsCertificateOfConductForSelfNextStep,
@@ -65,13 +65,7 @@ export const useProgressStore = create<ProgressStore>()(
 			setCurrentStep(currentStep: number) {
 				trackStepChange(get().currentStep, currentStep);
 
-				let currentSection = 1;
-				if (currentStep <= 0) currentSection = 1;
-				else if (currentStep <= 2) currentSection = 2;
-				else if (currentStep <= 4) currentSection = 3;
-				else if (currentStep <= 5) currentSection = 4;
-				else if (currentStep <= 6) currentSection = 5;
-				else currentSection = 0;
+				const currentSection = stepSectionMapping[currentStep];
 
 				set({ currentStep, currentSection });
 			},

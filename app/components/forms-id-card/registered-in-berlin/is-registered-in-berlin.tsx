@@ -2,18 +2,29 @@ import { useRegisteredInBerlinStore } from "./store";
 import { useProgressStore } from "../../steps-id-card/store";
 import { RadioInput } from "../../radio-input";
 import { SecondaryButton } from "../../buttons/secondary-button";
-import { i18n } from "~/i18n/i18n-utils";
+import { i18n, buildLocalizedLink } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
+import { useNavigate } from "react-router";
+import { useDialogStore } from "~/components/feedback-dialog/store/dialog";
 
 export function IsRegisteredInBerlin() {
 	const { isRegisteredInBerlin, setIsRegisteredInBerlin } =
 		useRegisteredInBerlinStore();
 
-	const { goToPreviousStep, goToNextStep } = useProgressStore();
+	const { goToNextStep } = useProgressStore();
 
 	const options = ["yes", "no"] as const;
 
 	const isValid = isRegisteredInBerlin !== null;
+
+	const navigate = useNavigate();
+	const startPageLink = buildLocalizedLink("/");
+	const { setHasUserLeftFlow } = useDialogStore();
+
+	const returnToStartpage = () => {
+		navigate(startPageLink);
+		setHasUserLeftFlow(true);
+	};
 
 	return (
 		<form
@@ -54,7 +65,7 @@ export function IsRegisteredInBerlin() {
 
 				<SecondaryButton
 					label={i18n("button.back")}
-					onClick={goToPreviousStep}
+					onClick={returnToStartpage}
 					className="hidden lg:flex"
 				/>
 			</div>

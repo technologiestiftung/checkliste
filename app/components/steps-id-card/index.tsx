@@ -6,7 +6,7 @@ import {
 	IsVisitingBerlin,
 } from "../forms-id-card/registered-in-berlin";
 import {
-	IsIDforChild,
+	IsIdforChild,
 	AreCustodiansPresent,
 	AreCustodiansMarried,
 } from "../forms-id-card/id-for-child";
@@ -23,7 +23,7 @@ export function Steps() {
 		<IsRegisteredInBerlin />,
 		<IsNoIDRequired />,
 		<IsVisitingBerlin />,
-		<IsIDforChild />,
+		<IsIdforChild />,
 		<AreCustodiansPresent />,
 		<AreCustodiansMarried />,
 		<IsPreviousIDExisting />,

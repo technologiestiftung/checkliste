@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { trackInteraction } from "../../../feedback/matomo.ts";
 import { getLanguage } from "~/i18n/i18n-utils.ts";
 
+// hook to evaluate tracking goals with matomo
 export function useSaveIntroPageViewInSessionStorage() {
 	const language = getLanguage();
 

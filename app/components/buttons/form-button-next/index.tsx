@@ -5,10 +5,10 @@ import { useState } from "react";
 
 export function FormButtonNext({
 	isValid,
-	isEndofProcess,
+	isEndOfProcess,
 }: {
 	isValid: boolean;
-	isEndofProcess?: boolean;
+	isEndOfProcess?: boolean;
 }) {
 	const [showTooltip, setShowTooltip] = useState(false);
 	const tooltipText = i18n("button.next.tooltip");
@@ -24,7 +24,7 @@ export function FormButtonNext({
 				type="submit"
 				disabled={!isValid}
 			/>
-			{showTooltip && !isValid && !isEndofProcess && (
+			{showTooltip && !isValid && !isEndOfProcess && (
 				<Tooltip
 					content={tooltipText}
 					className="min-w-[120px] lg:min-w-[130px] top-14"

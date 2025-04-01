@@ -15,7 +15,7 @@ export function IsTemporaryStay() {
 	const hintTitle = i18n("title.hint");
 	const hint = i18n("applicantDetails.q3.hint");
 
-	const showHint = isValid && !isTemporaryStay;
+	const isHintVisible = isValid && !isTemporaryStay;
 
 	return (
 		<form
@@ -54,7 +54,7 @@ export function IsTemporaryStay() {
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext
 					isValid={isValid && isTemporaryStay}
-					isEndofProcess={showHint}
+					isEndOfProcess={isHintVisible}
 				/>
 
 				<SecondaryButton
@@ -65,7 +65,7 @@ export function IsTemporaryStay() {
 			</div>
 
 			<div
-				className={`${showHint ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
+				className={`${isHintVisible ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
 			>
 				<div className="font-bold">{hintTitle}</div>
 

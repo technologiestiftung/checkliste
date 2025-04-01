@@ -5,14 +5,14 @@ import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 
-export function IsIDforChild() {
-	const { isIDforChild, setIsIDforChild } = useIDForChildStore();
+export function IsIdforChild() {
+	const { isIdforChild, setisIdforChild } = useIDForChildStore();
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
 	const options = ["yes", "no"] as const;
 
-	const isValid = isIDforChild !== null;
+	const isValid = isIdforChild !== null;
 
 	return (
 		<form
@@ -31,9 +31,9 @@ export function IsIDforChild() {
 						const name = "id-for-child.q1.radio";
 						const label = i18n(option);
 						const isChecked =
-							(option === "yes" && isIDforChild === true) ||
-							(option === "no" && isIDforChild === false);
-						const onChange = () => setIsIDforChild(option === "yes");
+							(option === "yes" && isIdforChild === true) ||
+							(option === "no" && isIdforChild === false);
+						const onChange = () => setisIdforChild(option === "yes");
 
 						return (
 							<RadioInput
