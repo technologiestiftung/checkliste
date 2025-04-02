@@ -42,23 +42,27 @@ export const useOverviewStore = create<OverviewStore>()(
 			},
 
 			setRequiredDocs() {
+				const { isIdforChild, areCustodiansPresent, areCustodiansMarried } =
+					useIDForChildStore.getState();
+
+				const { isPreviousIDExisting, hasNameChanged, isFirstGermanID } =
+					usePreviousIDStore.getState();
+
 				const requiredDocs = {
-					idOfParents:
-						useIDForChildStore.getState().areCustodiansPresent ||
-						useIDForChildStore.getState().areCustodiansMarried,
-					bringChild: useIDForChildStore.getState().isIdforChild,
-					proofOfCustody: !useIDForChildStore.getState().areCustodiansMarried,
+					idOfParents: areCustodiansPresent || areCustodiansMarried,
+					bringChild: isIdforChild,
+					proofOfCustody:
+						areCustodiansMarried === false || areCustodiansPresent === false,
 					consentOfCustodian:
-						!useIDForChildStore.getState().areCustodiansMarried,
-					copyOfID: !useIDForChildStore.getState().areCustodiansMarried,
-					newOrOldID: usePreviousIDStore.getState().isPreviousIDExisting,
+						areCustodiansMarried === false || areCustodiansPresent === false,
+					copyOfID:
+						areCustodiansMarried === false || areCustodiansPresent === false,
+
+					newOrOldID: isPreviousIDExisting,
 					birthCertificateOrPartnershipCertificate:
-						!usePreviousIDStore.getState().isPreviousIDExisting ||
-						usePreviousIDStore.getState().hasNameChanged ||
-						usePreviousIDStore.getState().isFirstGermanID,
-					passportOrforeignID: usePreviousIDStore.getState().isFirstGermanID,
-					naturalizationCertificate:
-						usePreviousIDStore.getState().isFirstGermanID,
+						isPreviousIDExisting === false || hasNameChanged || isFirstGermanID,
+					passportOrforeignID: isFirstGermanID,
+					naturalizationCertificate: isFirstGermanID,
 				};
 
 				const newDocs = { ...get().docs };
