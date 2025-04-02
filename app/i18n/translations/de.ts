@@ -160,10 +160,10 @@ const de = {
 						>Link zum Online Antrag</a>.`,
 	"certificate-of-conduct-details.q1":
 		"Beantragen Sie das Führungszeugnis für sich selbst?",
-	"certificate-of-conduct-details.q1.hint":
-		"Sie können kein Führungszeugnis beantragen, wenn Sie nicht die gesetzliche Vertretung sind.",
 	"certificate-of-conduct-details.q2":
 		"Beantragen Sie das Führungszeugnis in gesetzlicher Vertretung?",
+	"certificate-of-conduct-details.q2.hint":
+		"Sie können das Führungszeugnis nur beantragen, wenn Sie die gesetzliche Vertretung sind.",
 	"certificate-of-conduct-details.q3":
 		"Beantragen Sie ein erweitertes Führungszeugnis?",
 	"certificate-of-conduct-details.q4":

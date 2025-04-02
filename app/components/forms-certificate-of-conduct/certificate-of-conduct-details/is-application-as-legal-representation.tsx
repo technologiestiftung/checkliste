@@ -16,7 +16,7 @@ export function IsApplicationAsLegalRepresentation() {
 	const isValid = isApplicationAsLegalRepresentation !== null;
 
 	const hintTitle = i18n("title.hint");
-	const hint = i18n("applicantDetails.q3.hint");
+	const hint = i18n("certificate-of-conduct-details.q2.hint");
 
 	const isHintVisible = isValid && !isApplicationAsLegalRepresentation;
 
