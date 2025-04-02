@@ -203,7 +203,7 @@ const de = {
 	germanIdOrPassportOrChildPassport:
 		"Ihr eigener Personalausweis, Reisepass oder Kinderpass",
 	germanIdOrPassport: "Ihr eigener Personalausweis oder Reisepass",
-	confirmationOfCustodian: "Einverständniserklärung der Sorgeberechtigten",
+	confirmationOfCustodian: "Einverständniserklärung Ihrer Sorgeberechtigten",
 	euIdOrPassportOrReplacement:
 		"Europäische ID-Card, Reisepass oder Passersatzpapiere",
 	nonEuIdOrPassportOrReplacement: "Reisepass oder Passersatzpapiere",
