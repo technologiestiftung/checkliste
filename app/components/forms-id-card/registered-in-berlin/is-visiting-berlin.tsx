@@ -70,7 +70,6 @@ export function IsVisitingBerlin() {
 					className={`${isVisitingBerlin ? "" : "border-3 border-berlin-orange rounded-xs p-3"}  text-base lg:text-2xl`}
 				>
 					<div className="font-bold">{hintTitle}</div>
-
 					<p
 						dangerouslySetInnerHTML={{
 							__html: hint,
