@@ -63,8 +63,6 @@ const es = {
 		"Solicitud de un certificado de antecedentes penales",
 	"title.hint": "Nota:",
 
-	"progress.section": "Sección",
-
 	/*
 	Feedback
 	*/

@@ -5,8 +5,7 @@ import { FormLayout } from "~/components/form-layout";
 import { useProgressStore } from "~/components/steps-residence-registration/store";
 
 export default function Index() {
-	const { currentStep, currentSection, maxSections, goToPreviousStep } =
-		useProgressStore();
+	const { currentStep, maxSteps, goToPreviousStep } = useProgressStore();
 
 	return (
 		<FormLayout currentStep={currentStep} goToPreviousStep={goToPreviousStep}>
@@ -19,7 +18,7 @@ export default function Index() {
 			</div>
 			<div className="flex flex-col justify-start px-7.5 py-10 lg:max-w-[974px] mx-auto lg:px-0 w-full gap-3">
 				<div className="flex w-full print:hidden">
-					<Progress currentSection={currentSection} maxSections={maxSections} />
+					<Progress currentStep={currentStep} maxSteps={maxSteps} />
 				</div>
 				<div className="flex flex-col items-start">
 					<Steps />

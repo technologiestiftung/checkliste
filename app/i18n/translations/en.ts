@@ -60,8 +60,6 @@ const en = {
 	"title.certificate-of-conduct": "Applying for a certificate of conduct",
 	"title.hint": "Note:",
 
-	"progress.section": "Section",
-
 	/*
 	Feedback
 	*/
