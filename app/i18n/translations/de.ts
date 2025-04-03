@@ -77,8 +77,6 @@ const de = {
 	"title.certificate-of-conduct": "Beantragung eines Führungszeugnisses",
 	"title.hint": "Hinweis:",
 
-	"progress.section": "Abschnitt",
-
 	"link.cancelAppointment.label": "Termin stornieren",
 
 	/*

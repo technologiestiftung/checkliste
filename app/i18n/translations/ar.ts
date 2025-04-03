@@ -60,8 +60,6 @@ const ar = {
 	"title.certificate-of-conduct": "طلب شهادة حسن السيرة والسلوك",
 	"title.hint": "ملاحظة:",
 
-	"progress.section": "القسم",
-
 	/*
 	Feedback
 	*/

@@ -1,32 +1,44 @@
-import { i18n } from "~/i18n/i18n-utils";
-
 interface ProgressProps {
-	currentSection: number;
-	maxSections: number;
+	currentStep: number;
+	maxSteps: number;
 }
 
-export function Progress({ currentSection, maxSections }: ProgressProps) {
-	if (currentSection === 0) return null;
+export function Progress({ currentStep, maxSteps }: ProgressProps) {
+	const percentage = Math.round((currentStep / maxSteps) * 100);
+
+	const position = getLabelPosition(percentage);
+
 	return (
 		<div className="w-full flex flex-col lg:flex-row gap-2.5 lg:items-center">
-			<label
-				htmlFor={"progress-bar"}
-				className="shrink-0 text-base lg:text-2xl"
-			>
-				{i18n("progress.section")} {currentSection}/{maxSections}
-			</label>
-
 			<div
-				className="w-full flex flex-row gap-3 h-2 lg:h-3.5"
+				className="w-full flex flex-row h-2 lg:h-3.5 bg-gray-200 rounded-xs"
 				id={"progress-bar"}
+				role="progressbar"
 			>
-				{Array.from({ length: maxSections }).map((_, index) => (
-					<div
-						key={index}
-						className={`h-full w-full rounded-xs ${index < currentSection ? "bg-berlin-blue-900" : "bg-gray-200"}`}
-					/>
-				))}
+				<div
+					className="relative h-full justify-end rounded-xs bg-berlin-blue-900"
+					style={{ width: `${percentage}%` }}
+				>
+					<label
+						htmlFor={"progress-bar"}
+						className={`absolute w-16 top-2 lg:top-5 ${position} text-base lg:text-2xl`}
+					>
+						{percentage}%
+					</label>
+				</div>
 			</div>
 		</div>
 	);
+}
+
+function getLabelPosition(percentage: number) {
+	if (percentage === 0) {
+		return "start-0 text-start";
+	}
+
+	if (percentage === 100) {
+		return "end-0 text-end";
+	}
+
+	return "-end-8 text-center";
 }

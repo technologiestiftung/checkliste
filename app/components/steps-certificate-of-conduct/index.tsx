@@ -27,11 +27,7 @@ export function Steps() {
 	];
 
 	return (
-		<div
-			className={`flex h-full flex-col gap-4 lg:text-lg w-full ${
-				currentStep < 9 && "pt-4 lg:pt-12"
-			}`}
-		>
+		<div className="flex h-full flex-col gap-4 lg:text-lg w-full mt-4 lg:mt-12">
 			{steps[currentStep]}
 		</div>
 	);
