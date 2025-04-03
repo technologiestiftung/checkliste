@@ -79,6 +79,8 @@ const de = {
 
 	"progress.section": "Abschnitt",
 
+	"link.cancelAppointment.label": "Termin stornieren",
+
 	/*
 	Feedback
 	*/
@@ -122,7 +124,7 @@ const de = {
 	*/
 	"registered-in-berlin.q1": "Sind Sie in Berlin gemeldet?",
 	"registered-in-berlin.q2": "Sind Sie von der Ausweispflicht befreit?",
-	"registered-in-berlin.q2.hint.yes": "Sie benötigen keinen Personalausweis.",
+	"registered-in-berlin.q2.hint.yes": `Sie benötigen keinen Personalausweis. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Termin stornieren</a>.`,
 	"registered-in-berlin.q3":
 		"Sind Sie aktuell in Berlin, z.B. weil sie vorübergehend hier leben, hier Urlaub machen oder wohnungslos sind?",
 	"registered-in-berlin.q3.hint.yes": `Es besteht ebenfalls die Möglichkeit, einen Personalausweis in Berlin zu beantragen. 
@@ -132,8 +134,7 @@ const de = {
 							target="_blank"
 							rel="noopener noreferrer"
 						>hier</a>.`,
-	"registered-in-berlin.q3.hint.no":
-		"Sie können aktuell keinen Personalausweis in Berlin beantragen.",
+	"registered-in-berlin.q3.hint.no": `Sie können aktuell keinen Personalausweis in Berlin beantragen. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Termin stornieren</a>.`,
 	"id-for-child.q1":
 		"Beantragen Sie den Personalausweis für eine minderjährige Person?",
 	"id-for-child.q2":
@@ -149,8 +150,7 @@ const de = {
 	Flow Certificate of Conduct
 	*/
 	"applicantDetails.q1": "Sind Sie mindestens 14 Jahre alt?",
-	"applicantDetails.q1.hint":
-		"Sie können ein Führungszeugnis erst ab 14 Jahre beantragen. ",
+	"applicantDetails.q1.hint": `Sie können ein Führungszeugnis erst ab 14 Jahre beantragen. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Termin stornieren</a>.`,
 	"applicantDetails.q2": "Sind Sie in Berlin gemeldet?",
 	"applicantDetails.q3": "Leben Sie vorrübergehend in Berlin?",
 	"applicantDetails.q3.hint": `Bitte beantragen Sie ihr Führungszeugnis online. <a class="font-bold hover:underline text-berlin-blue-500"
@@ -162,8 +162,7 @@ const de = {
 		"Beantragen Sie das Führungszeugnis für sich selbst?",
 	"certificate-of-conduct-details.q2":
 		"Beantragen Sie das Führungszeugnis in gesetzlicher Vertretung?",
-	"certificate-of-conduct-details.q2.hint":
-		"Sie können das Führungszeugnis nur beantragen, wenn Sie die gesetzliche Vertretung sind.",
+	"certificate-of-conduct-details.q2.hint": `Sie können das Führungszeugnis nur beantragen, wenn Sie die gesetzliche Vertretung sind. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Termin stornieren</a>.`,
 	"certificate-of-conduct-details.q3":
 		"Beantragen Sie ein erweitertes Führungszeugnis?",
 	"certificate-of-conduct-details.q4":
