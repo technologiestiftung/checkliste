@@ -13,7 +13,9 @@ export function IsFirstRegistration() {
 		useFirstRegistrationStore();
 	const isValid = isFirstRegistration !== null;
 
-	const { goToNextStep } = useProgressStore();
+	const { currentStep, goToNextStep } = useProgressStore();
+
+	const isFirstStep = currentStep === 0;
 
 	const options = ["yes", "no"] as const;
 
@@ -65,11 +67,13 @@ export function IsFirstRegistration() {
 			<div className="flex w-full flex-row-reverse items-end justify-between">
 				<FormButtonNext isValid={isValid} />
 
-				<SecondaryButton
-					label={i18n("button.back")}
-					onClick={returnToStartpage}
-					className="hidden lg:flex"
-				/>
+				{!isFirstStep && (
+					<SecondaryButton
+						label={i18n("button.back")}
+						onClick={returnToStartpage}
+						className="hidden lg:flex"
+					/>
+				)}
 			</div>
 		</form>
 	);
