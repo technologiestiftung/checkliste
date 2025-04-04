@@ -7,6 +7,8 @@ interface OverviewChecklistLayoutProps {
 	goToPreviousStep: () => void;
 	children: React.ReactNode;
 	isHintVisible?: boolean;
+	hintTitle?: string;
+	hintText?: string;
 	storeKeys: string[];
 	goToStart: () => void;
 }
@@ -15,6 +17,8 @@ export function OverviewChecklistLayout({
 	goToPreviousStep,
 	children,
 	isHintVisible,
+	hintTitle = "",
+	hintText = "",
 	storeKeys,
 	goToStart,
 }: OverviewChecklistLayoutProps) {
@@ -91,12 +95,12 @@ export function OverviewChecklistLayout({
 				<h3
 					className="font-bold"
 					dangerouslySetInnerHTML={{
-						__html: i18n("overview.id-card.hint.title"),
+						__html: hintTitle,
 					}}
 				/>
 				<p
 					dangerouslySetInnerHTML={{
-						__html: i18n("overview.id-card.hint.text"),
+						__html: hintText,
 					}}
 				/>
 			</div>

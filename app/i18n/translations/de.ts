@@ -183,6 +183,8 @@ const de = {
 	"overview.id-card.hint.title": "Hinweis:",
 	"overview.id-card.hint.text":
 		"Ab 1. Mai 2025 werden biometrische Passbilder nur in zertifizierten Fotostudios oder Bürgerämtern digital erstellt und übermittelt. Pro Bild fällt eine Gebühr von 6 € an, zahlbar ausschließlich mit Karte.",
+	"overview.forms-certificate-of-conduct.hint.title": "Hinweis:",
+	"overview.forms-certificate-of-conduct.hint.text": `Sie können das Führungszeugnis auch bequem <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">online</a> beantragen.`,
 
 	registrationForm: "Anmeldeformular",
 	movingInConfirmation: "Einzugsbestätigung des Wohnungsgebers/ Vermieters",

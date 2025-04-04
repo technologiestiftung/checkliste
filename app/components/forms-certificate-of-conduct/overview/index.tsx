@@ -3,6 +3,7 @@ import { useProgressStore } from "../../steps-certificate-of-conduct/store/index
 import { DocumentCheckbox } from "../../overview-checklist-layout/document-checkbox.tsx";
 import { useTrackGoalChecklistConversion } from "./hooks/use-track-goal-checklist-conversion.tsx";
 import { OverviewChecklistLayout } from "~/components/overview-checklist-layout/index.tsx";
+import { i18n } from "~/i18n/i18n-utils.ts";
 
 const storeKeys = [
 	"overview-certificate-of-conduct",
@@ -27,6 +28,9 @@ export function Overview() {
 		<OverviewChecklistLayout
 			goToPreviousStep={goToPreviousStep}
 			goToStart={goToStart}
+			isHintVisible={true}
+			hintTitle={i18n("overview.forms-certificate-of-conduct.hint.title")}
+			hintText={i18n("overview.forms-certificate-of-conduct.hint.text")}
 			storeKeys={storeKeys}
 		>
 			{documents.map(([key, value]) => (
