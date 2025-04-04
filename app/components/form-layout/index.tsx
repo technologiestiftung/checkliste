@@ -17,6 +17,7 @@ export function FormLayout({
 	const { setHasUserLeftFlow } = useDialogStore();
 
 	const isLastStep = currentStep === 15;
+	const isFirstStep = currentStep === 0;
 
 	const handleGoToPreviousStep = () => {
 		if (currentStep === 0) {
@@ -56,9 +57,8 @@ export function FormLayout({
 								handleGoToPreviousStep();
 							}}
 							type="button"
-							aria-label={i18n("button.back")}
 						>
-							{i18n("button.back")}
+							{isFirstStep ? i18n("navigation.startpage") : i18n("button.back")}
 						</button>
 						<Link
 							className="text-base lg:text-2xl text-berlin-blue-900 hover:underline font-bold p-2.5 pt-5"
