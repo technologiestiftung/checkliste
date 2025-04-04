@@ -10,8 +10,9 @@ import { useDialogStore } from "~/components/feedback-dialog/store/dialog";
 export function Is14OrOlder() {
 	const options = ["yes", "no"] as const;
 	const { is14OrOlder, setIs14OrOlder } = useApplicantDetailsStore();
-	const { goToNextStep } = useProgressStore();
+	const { currentStep, goToNextStep } = useProgressStore();
 
+	const isFirstStep = currentStep === 0;
 	const isValid = is14OrOlder !== null;
 
 	const hintTitle = i18n("title.hint");
@@ -68,11 +69,13 @@ export function Is14OrOlder() {
 					isEndOfProcess={isHintVisible}
 				/>
 
-				<SecondaryButton
-					label={i18n("button.back")}
-					onClick={returnToStartpage}
-					className="hidden lg:flex"
-				/>
+				{!isFirstStep && (
+					<SecondaryButton
+						label={i18n("button.back")}
+						onClick={returnToStartpage}
+						className="hidden lg:flex"
+					/>
+				)}
 			</div>
 
 			<div
