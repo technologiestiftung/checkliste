@@ -52,11 +52,8 @@ export function DocumentCheckbox({
 
 	return (
 		<li className="flex w-full flex-col items-center font-bold rounded-xs">
-			<label
-				htmlFor={id}
-				className="flex w-full items-center justify-between gap-2 lg:gap-16"
-			>
-				<div className="rounded-sm px-2 lg:px-8.5 py-5 w-full leading-snug flex flex-row items-center justify-start gap-6 border-black border-1 shrink">
+			<label htmlFor={id} className="flex w-full items-center justify-between">
+				<div className="px-4 lg:px-8.5 py-4 md:pt-6 w-full leading-snug flex flex-row items-start justify-start gap-6 border-b-black border-b-1 shrink">
 					<div className="flex size-6.5">
 						<input
 							type="checkbox"
@@ -69,10 +66,18 @@ export function DocumentCheckbox({
 							onChange={onChange}
 						/>
 					</div>
-					<div>{i18n(id as keyof typeof translations)}</div>
-				</div>
-				<div className="print:hidden lg:w-[117px] flex shrink-0">
-					<DocumentLink id={id} />
+					<div className="flex flex-col w-full sm:max-w-[395px]">
+						<div className="text-base md:text-[20px]">
+							{i18n(id as keyof typeof translations)}
+						</div>
+						<div className="font-normal text-sm md:text-base">
+							(bzw. Reisepass oder Nationalpass) des nicht anwesenden
+							Elternteils für den Unterschriftenabgleich
+						</div>
+						<div className="print:hidden flex shrink-0 w-fit mt-4">
+							<DocumentLink id={id} />
+						</div>
+					</div>
 				</div>
 			</label>
 		</li>

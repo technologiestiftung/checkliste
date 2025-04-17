@@ -7,7 +7,7 @@ export function ScrollToTopButton() {
 			className="flex gap-x-2 p-2 w-48"
 			onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
 		>
-			{i18n("footer.toTheTop")} <ArrowUpIcon className="bg-berlin-green" />
+			{i18n("footer.toTheTop")} <ArrowUpIcon className="bg-berlin-red" />
 		</button>
 	);
 }

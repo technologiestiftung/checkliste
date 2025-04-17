@@ -51,7 +51,7 @@ export function OverviewChecklistLayout({
 					<p dangerouslySetInnerHTML={{ __html: i18n("overview.text.2") }} />
 				</div>
 			</div>
-			<ul className="flex flex-col gap-3">{children}</ul>
+			<ul className="flex flex-col">{children}</ul>
 			<div className="flex h-full w-full flex-row items-end justify-between print:hidden">
 				<SecondaryButton
 					label={i18n("button.back")}
