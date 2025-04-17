@@ -74,7 +74,11 @@ export function DocumentCheckbox({
 							(bzw. Reisepass oder Nationalpass) des nicht anwesenden
 							Elternteils für den Unterschriftenabgleich
 						</div>
-						<div className="print:hidden flex shrink-0 w-fit mt-4">
+						<div
+							className="print:hidden flex shrink-0 w-fit mt-4"
+							aria-label={`${i18n("button.download")}: ${i18n(id as keyof typeof translations)}`}
+							title={`${i18n("button.download")}: ${i18n(id as keyof typeof translations)}`}
+						>
 							<DocumentLink id={id} />
 						</div>
 					</div>
