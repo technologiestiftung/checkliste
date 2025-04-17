@@ -26,7 +26,7 @@ export function IsTemporaryStay() {
 			}}
 		>
 			<div className="flex flex-col gap-4 lg:gap-12">
-				<h2 className="text-xl font-bold lg:text-4xl">
+				<h2 className="text-xl font-bold lg:text-[25px]">
 					{i18n("applicantDetails.q3")}
 				</h2>
 				<div className="flex flex-col gap-3 lg:gap-4">
@@ -65,7 +65,7 @@ export function IsTemporaryStay() {
 			</div>
 
 			<div
-				className={`${isHintVisible ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-2xl`}
+				className={`${isHintVisible ? "block" : "hidden"} border-3 border-berlin-orange rounded-xs p-3  text-base lg:text-[20px]`}
 			>
 				<div className="font-bold">{hintTitle}</div>
 

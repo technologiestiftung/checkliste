@@ -39,11 +39,11 @@ export function FormLayout({
 				tabIndex={-1}
 			/>
 
-			<div className="h-[calc(100dvh-70px)] bg-white flex w-full flex-col items-center justify-between animate-slide-up lg:animate-none rounded-t-[20px] lg:rounded-t-none">
+			<div className="h-[calc(100dvh-70px)] bg-white flex w-full flex-col items-center justify-between animate-slide-up lg:animate-none print:animate-none rounded-t-[20px] lg:rounded-t-none">
 				<main className="flex h-full w-full flex-col">
 					<div className="hidden lg:flex w-full print:hidden">
 						<Link
-							className="text-2xl text-berlin-blue-900 hover:underline font-bold px-4 py-5"
+							className="text-[20px] text-berlin-blue-900 hover:underline font-bold px-4 py-5"
 							to={startPageLink}
 							onClick={() => setHasUserLeftFlow(true)}
 						>
@@ -52,7 +52,7 @@ export function FormLayout({
 					</div>
 					<div className="flex lg:hidden items-center justify-between px-4.5 print:hidden">
 						<button
-							className={`text-base lg:text-2xl font-bold p-2.5 pt-5 text-berlin-blue-900 hover:underline`}
+							className={`text-base lg:text-[20px] font-bold p-2.5 pt-5 text-berlin-blue-900 hover:underline`}
 							onClick={() => {
 								handleGoToPreviousStep();
 							}}
@@ -61,14 +61,14 @@ export function FormLayout({
 							{isFirstStep ? i18n("navigation.startpage") : i18n("button.back")}
 						</button>
 						<Link
-							className="text-base lg:text-2xl text-berlin-blue-900 hover:underline font-bold p-2.5 pt-5"
+							className="text-base lg:text-[20px] text-berlin-blue-900 hover:underline font-bold p-2.5 pt-5"
 							to={buildLocalizedLink("/")}
 							onClick={() => setHasUserLeftFlow(true)}
 						>
 							{isLastStep ? i18n("button.finish") : i18n("button.cancel")}
 						</Link>
 					</div>
-					<span className="w-full border-t-1 border-berlin-gray-200" />
+					<span className="w-full border-t-1 border-berlin-gray-200 print:hidden" />
 					{children}
 				</main>
 			</div>

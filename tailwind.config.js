@@ -16,7 +16,7 @@ export default {
 				"berlin-gray-200": "#CCC",
 				"berlin-gray-100": "#F5F5F5",
 
-				"berlin-green": "#67B18D",
+				"berlin-red": "#FF4F4F",
 				"berlin-orange": "#F5A00C",
 			},
 			keyframes: {

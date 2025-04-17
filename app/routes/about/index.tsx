@@ -8,7 +8,7 @@ export default function Index() {
 		<>
 			<div className="w-full bg-berlin-blue-900">
 				<div className="flex w-full items-center justify-between lg:justify-end gap-2 lg:gap-7 px-7.5 py-2.5 lg:max-w-[974px] mx-auto lg:px-0">
-					<div className="text-white font-bold text-base lg:text-2xl">
+					<div className="text-white font-bold text-base lg:text-[20px]">
 						{i18n("selectLanguage")}
 					</div>
 					<LanguageSelect />
@@ -31,24 +31,28 @@ export default function Index() {
 			</div>
 
 			<div className="flex flex-col lg:max-w-[974px] mx-auto">
-				<div className="w-full flex flex-col gap-6 lg:gap-10 pt-6 pb-9 lg:py-12 px-7.5 lg:px-0 text-base lg:text-2xl">
-					<h1 className="text-3xl lg:text-6xl font-bold text-berlin-blue-900 lg:mt-4">
+				<div className="w-full flex flex-col gap-6 lg:gap-10 pt-6 pb-9 lg:py-12 px-7.5 lg:px-0 text-base lg:text-[20px]">
+					<h1 className="text-[28px] lg:text-[50px] font-bold text-berlin-blue-900 lg:mt-4">
 						{i18n("about.title")}
 					</h1>
-					<div className="text-base lg:text-2xl">{i18n("about.text.p1")}</div>
+					<div className="text-base lg:text-[20px]">
+						{i18n("about.text.p1")}
+					</div>
 					<div
-						className="text-base lg:text-2xl"
+						className="text-base lg:text-[20px]"
 						dangerouslySetInnerHTML={{ __html: i18n("about.text.p2") }}
 					/>
 					<div
-						className="text-base lg:text-2xl"
+						className="text-base lg:text-[20px]"
 						dangerouslySetInnerHTML={{ __html: i18n("about.text.p3") }}
 					/>
-					<div className="text-base lg:text-2xl">{i18n("about.text.p4")}</div>
+					<div className="text-base lg:text-[20px]">
+						{i18n("about.text.p4")}
+					</div>
 
 					<span className="w-full border-t-1 border-berlin-gray-200 my-5" />
 					<div
-						className="text-base lg:text-2xl"
+						className="text-base lg:text-[20px]"
 						dangerouslySetInnerHTML={{ __html: i18n("context") }}
 					/>
 					<LogoBanner />

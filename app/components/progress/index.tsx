@@ -21,7 +21,7 @@ export function Progress({ currentStep, maxSteps }: ProgressProps) {
 				>
 					<label
 						htmlFor={"progress-bar"}
-						className={`absolute w-16 top-2 lg:top-5 ${position} text-base lg:text-2xl`}
+						className={`absolute w-16 top-2 lg:top-5 ${position} text-base lg:text-[20px]`}
 					>
 						{percentage}%
 					</label>

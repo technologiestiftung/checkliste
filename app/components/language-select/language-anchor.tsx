@@ -34,7 +34,7 @@ export function LanguageAnchor({ language }: LanguageAnchorProps) {
 			onClick={handleClick}
 			dir={dir}
 		>
-			<span className="text-base lg:text-2xl hover:underline">
+			<span className="text-base lg:text-[20px] hover:underline">
 				{language.label}
 			</span>
 		</Link>
