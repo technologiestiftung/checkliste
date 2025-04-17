@@ -30,15 +30,15 @@ export function OverviewChecklistLayout({
 	};
 
 	return (
-		<div className="flex h-full flex-col gap-8 text-base lg:text-2xl">
-			<div className="flex flex-col gap-8">
+		<div className="flex h-full flex-col gap-8 text-base lg:text-[20px]">
+			<div className="flex flex-col gap-8 max-w-[747px]">
 				<div className="flex flex-row items-center gap-4">
 					<img
 						src="/images/check.svg"
 						alt="check icon"
 						className="size-[55px]"
 					/>
-					<h2 className="flex w-full items-center justify-between gap-3 font-bold text-2xl lg:text-4xl">
+					<h2 className="flex w-full items-center justify-between gap-3 font-bold text-2xl lg:text-[33px]">
 						{i18n("overview.title")}
 					</h2>
 				</div>
@@ -82,7 +82,7 @@ export function OverviewChecklistLayout({
 			</div>
 
 			<button
-				className="hidden lg:flex text-2xl text-berlin-blue-900 hover:underline font-bold pb-12 "
+				className="hidden lg:flex text-[20px] text-berlin-blue-900 hover:underline font-bold pb-12 "
 				onClick={() => {
 					handleFillOutAgain();
 				}}
@@ -91,7 +91,9 @@ export function OverviewChecklistLayout({
 				{i18n("button.fillOutAgain")}
 			</button>
 
-			<div className={`${isHintVisible ? "" : "hidden"} flex flex-col gap-1`}>
+			<div
+				className={`max-w-[747px] ${isHintVisible ? "" : "hidden"} flex flex-col gap-1`}
+			>
 				<h3
 					className="font-bold"
 					dangerouslySetInnerHTML={{
@@ -104,12 +106,10 @@ export function OverviewChecklistLayout({
 					}}
 				/>
 			</div>
-			<div>
-				<p
-					className="pt-6"
-					dangerouslySetInnerHTML={{ __html: i18n("context") }}
-				/>
-			</div>
+			<p
+				className="pt-6 max-w-[747px]"
+				dangerouslySetInnerHTML={{ __html: i18n("context") }}
+			/>
 		</div>
 	);
 }

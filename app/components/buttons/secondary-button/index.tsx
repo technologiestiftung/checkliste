@@ -15,7 +15,7 @@ export function SecondaryButton({
 			type={type}
 			onClick={onClick}
 		>
-			<span className="py-2.5 px-5 text-base lg:text-2xl">{label}</span>
+			<span className="py-2.5 px-5 text-base lg:text-[20px]">{label}</span>
 		</button>
 	);
 }
