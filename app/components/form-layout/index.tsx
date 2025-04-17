@@ -39,7 +39,7 @@ export function FormLayout({
 				tabIndex={-1}
 			/>
 
-			<div className="h-[calc(100dvh-70px)] bg-white flex w-full flex-col items-center justify-between animate-slide-up lg:animate-none rounded-t-[20px] lg:rounded-t-none">
+			<div className="h-[calc(100dvh-70px)] bg-white flex w-full flex-col items-center justify-between animate-slide-up lg:animate-none print:animate-none rounded-t-[20px] lg:rounded-t-none">
 				<main className="flex h-full w-full flex-col">
 					<div className="hidden lg:flex w-full print:hidden">
 						<Link
@@ -68,7 +68,7 @@ export function FormLayout({
 							{isLastStep ? i18n("button.finish") : i18n("button.cancel")}
 						</Link>
 					</div>
-					<span className="w-full border-t-1 border-berlin-gray-200" />
+					<span className="w-full border-t-1 border-berlin-gray-200 print:hidden" />
 					{children}
 				</main>
 			</div>
