@@ -70,10 +70,6 @@ export function DocumentCheckbox({
 						<div className="text-base md:text-[20px]">
 							{i18n(id as keyof typeof translations)}
 						</div>
-						<div className="font-normal text-sm md:text-base">
-							(bzw. Reisepass oder Nationalpass) des nicht anwesenden
-							Elternteils für den Unterschriftenabgleich
-						</div>
 						<div
 							className="print:hidden flex shrink-0 w-fit mt-4"
 							aria-label={`${i18n("button.download")}: ${i18n(id as keyof typeof translations)}`}
