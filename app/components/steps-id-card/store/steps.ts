@@ -1,6 +1,5 @@
 interface Steps {
 	isRegisteredInBerlin: number;
-	isNoIDRequired: number;
 	isVisitingBerlin: number;
 	isIdforChild: number;
 	areCustodiansPresent: number;
@@ -15,23 +14,21 @@ type StepsKeys = keyof Steps;
 
 export const steps: Steps = {
 	isRegisteredInBerlin: 0,
-	isNoIDRequired: 1,
-	isVisitingBerlin: 2,
+	isVisitingBerlin: 1,
 
-	isIdforChild: 3,
-	areCustodiansPresent: 4,
-	areCustodiansMarried: 5,
+	isIdforChild: 2,
+	areCustodiansPresent: 3,
+	areCustodiansMarried: 4,
 
-	isPreviousIDExisting: 6,
-	hasNameChanged: 7,
-	isFirstGermanID: 8,
+	isPreviousIDExisting: 5,
+	hasNameChanged: 6,
+	isFirstGermanID: 7,
 
-	overview: 9,
+	overview: 8,
 };
 
 export const reverseSteps: StepsKeys[] = [
 	"isRegisteredInBerlin",
-	"isNoIDRequired",
 	"isVisitingBerlin",
 	"isIdforChild",
 	"areCustodiansPresent",
@@ -46,25 +43,23 @@ export const reverseSteps: StepsKeys[] = [
  * The keys represent the step number,
  * the values represent the section number.
  * 0 (isRegisteredInBerlin): section 1
- * 1 (isNoIDRequired): section 1
- * 2 (isVisitingBerlin): section 1
- * 3 (isIdforChild): section 2
- * 4 (areCustodiansPresent): section 2
- * 5 (areCustodiansMarried): section 2
- * 6 (isPreviousIDExisting): section 3
- * 7 (hasNameChanged): section 3
- * 8 (isFirstGermanID): section 4
- * 9 (overview): section 0
+ * 1 (isVisitingBerlin): section 1
+ * 2 (isIdforChild): section 2
+ * 3 (areCustodiansPresent): section 2
+ * 4 (areCustodiansMarried): section 2
+ * 5 (isPreviousIDExisting): section 3
+ * 6 (hasNameChanged): section 3
+ * 7 (isFirstGermanID): section 4
+ * 8 (overview): section 0
  */
 export const stepSectionMapping: Record<number, number> = {
 	0: 1,
 	1: 1,
-	2: 1,
+	2: 2,
 	3: 2,
 	4: 2,
-	5: 2,
+	5: 3,
 	6: 3,
-	7: 3,
-	8: 4,
-	9: 0,
+	7: 4,
+	8: 0,
 };

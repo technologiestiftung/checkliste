@@ -1,7 +1,6 @@
 import { Overview } from "../forms-id-card/overview";
 import { useProgressStore } from "./store";
 import {
-	IsNoIDRequired,
 	IsRegisteredInBerlin,
 	IsVisitingBerlin,
 } from "../forms-id-card/registered-in-berlin";
@@ -21,7 +20,6 @@ export function Steps() {
 
 	const steps = [
 		<IsRegisteredInBerlin />,
-		<IsNoIDRequired />,
 		<IsVisitingBerlin />,
 		<IsIdforChild />,
 		<AreCustodiansPresent />,
