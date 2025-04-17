@@ -9,7 +9,7 @@ export function handleIsVisitingBerlinPreviousStep() {
 
 export function handleisIdforChildPreviousStep() {
 	if (useRegisteredInBerlinStore.getState().isRegisteredInBerlin === true) {
-		useProgressStore.getState().goTo("isNoIDRequired");
+		useProgressStore.getState().goTo("isRegisteredInBerlin");
 		return;
 	}
 

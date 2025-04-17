@@ -121,18 +121,16 @@ const de = {
 	Flow ID Card
 	*/
 	"registered-in-berlin.q1": "Sind Sie in Berlin gemeldet?",
-	"registered-in-berlin.q2": "Sind Sie von der Ausweispflicht befreit?",
-	"registered-in-berlin.q2.hint.yes": `Sie benötigen keinen Personalausweis. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Termin stornieren</a>.`,
-	"registered-in-berlin.q3":
+	"registered-in-berlin.q2":
 		"Sind Sie aktuell in Berlin, z.B. weil sie vorübergehend hier leben, hier Urlaub machen oder wohnungslos sind?",
-	"registered-in-berlin.q3.hint.yes": `Es besteht ebenfalls die Möglichkeit, einen Personalausweis in Berlin zu beantragen. 
+	"registered-in-berlin.q2.hint.yes": `Es besteht ebenfalls die Möglichkeit, einen Personalausweis in Berlin zu beantragen. 
 		Die Dokumente können ausschließlich beim Landesamt für Bürger- und Ordnungsangelegenheiten beantragt werden. 
 		Mehr Informationen finden Sie <a class="font-bold hover:underline text-berlin-blue-500"
 							href="https://service.berlin.de/dienstleistung/326550/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>hier</a>.`,
-	"registered-in-berlin.q3.hint.no": `Sie können aktuell keinen Personalausweis in Berlin beantragen. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Termin stornieren</a>.`,
+	"registered-in-berlin.q2.hint.no": `Sie können aktuell keinen Personalausweis in Berlin beantragen. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Termin stornieren</a>.`,
 	"id-for-child.q1":
 		"Beantragen Sie den Personalausweis für eine minderjährige Person?",
 	"id-for-child.q2":

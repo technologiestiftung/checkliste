@@ -4,7 +4,6 @@ import {
 	handleAreCustodiansPresentNextStep,
 	handleHasNameChangedNextStep,
 	handleisIdforChildNextStep,
-	handleIsNoIDRequiredNextStep,
 	handleIsPreviousIDExistingNextStep,
 	handleIsRegisteredInBerlinNextStep,
 } from "./next-steps.ts";
@@ -33,7 +32,6 @@ function trackStepChange(previousStep: number, currentStep: number) {
 
 interface Steps {
 	isRegisteredInBerlin: number;
-	isNoIDRequired: number;
 	isVisitingBerlin: number;
 
 	isIdforChild: number;
@@ -66,7 +64,7 @@ export const useProgressStore = create<ProgressStore>()(
 	persist(
 		(set, get) => ({
 			currentStep: 0,
-			maxSteps: 9,
+			maxSteps: 8,
 			maxSections: 4,
 			currentSection: 1,
 
@@ -93,19 +91,16 @@ export const useProgressStore = create<ProgressStore>()(
 					case 0:
 						handleIsRegisteredInBerlinNextStep();
 						return;
-					case 1:
-						handleIsNoIDRequiredNextStep();
-						return;
-					case 3:
+					case 2:
 						handleisIdforChildNextStep();
 						return;
-					case 4:
+					case 3:
 						handleAreCustodiansPresentNextStep();
 						return;
-					case 6:
+					case 5:
 						handleIsPreviousIDExistingNextStep();
 						return;
-					case 7:
+					case 6:
 						handleHasNameChangedNextStep();
 						return;
 					default:
@@ -121,19 +116,19 @@ export const useProgressStore = create<ProgressStore>()(
 				}
 
 				switch (get().currentStep) {
-					case 2:
+					case 1:
 						handleIsVisitingBerlinPreviousStep();
 						return;
-					case 3:
+					case 2:
 						handleisIdforChildPreviousStep();
 						return;
-					case 6:
+					case 5:
 						handleIsPreviousIDExistingPreviousStep();
 						return;
-					case 8:
+					case 7:
 						handleIsFirstGermanIDPreviousStep();
 						return;
-					case 9:
+					case 8:
 						handleOverviewPreviousStep();
 						return;
 

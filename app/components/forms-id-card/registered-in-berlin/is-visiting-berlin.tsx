@@ -15,8 +15,8 @@ export function IsVisitingBerlin() {
 
 	const hintTitle = i18n("title.hint");
 	const hint = isVisitingBerlin
-		? i18n("registered-in-berlin.q3.hint.yes")
-		: i18n("registered-in-berlin.q3.hint.no");
+		? i18n("registered-in-berlin.q2.hint.yes")
+		: i18n("registered-in-berlin.q2.hint.no");
 
 	return (
 		<form
@@ -28,11 +28,11 @@ export function IsVisitingBerlin() {
 		>
 			<div className="flex flex-col gap-4 lg:gap-12">
 				<h2 className="text-xl font-bold lg:text-[25px]">
-					{i18n("registered-in-berlin.q3")}
+					{i18n("registered-in-berlin.q2")}
 				</h2>
 				<div className="flex flex-col gap-3 lg:gap-4">
 					{options.map((option) => {
-						const name = "registered-in-berlin.q3.radio";
+						const name = "registered-in-berlin.q2.radio";
 						const label = i18n(option);
 						const isChecked =
 							(option === "yes" && isVisitingBerlin === true) ||
