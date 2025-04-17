@@ -37,7 +37,7 @@ export function LanguageSelect() {
 					dir={dir}
 					id="language-button"
 				>
-					<span className="flex justify-center py-2.5 ps-2.5 text-base lg:text-2xl items-center">
+					<span className="flex justify-center py-2.5 ps-2.5 text-base lg:text-[20px] items-center">
 						{i18n(`${currentLanguage}`)}
 					</span>
 					<span className="flex size-8 pr-2.5 justify-center items-center pointer-events-none">

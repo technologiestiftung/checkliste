@@ -34,7 +34,7 @@ export function LogoBanner() {
 	];
 
 	return (
-		<div className="flex w-full justify-center gap-y-4 px-8 pb-2.5 lg:pt-28 lg:px-0">
+		<div className="flex w-full justify-center gap-y-4 px-8 pb-2.5 lg:pt-10 lg:px-0">
 			<div className="flex flex-col text-sm lg:flex-row lg:items-start gap-x-10 gap-y-7.5">
 				{logoBannerElements.map((logo) => (
 					<div
