@@ -34,9 +34,9 @@ export const FeedbackDialog: React.FC = () => {
 			className="w-9/12 md:w-[450px] rounded-sm backdrop:backdrop-blur-xs items-center justify-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
 			onClick={onDialogClick}
 		>
-			<div className="p-10 flex flex-col text-center gap-8 font-bold text-xl lg:text-2xl items-center justify-center">
+			<div className="p-10 flex flex-col text-center gap-8 font-bold text-xl lg:text-[20px] items-center justify-center">
 				{i18n("feedback.question")}
-				<div className="flex-col flex gap-2 w-40 lg:w-52 font-normal text-base lg:text-2xl">
+				<div className="flex-col flex gap-2 w-40 lg:w-52 font-normal text-base lg:text-[20px]">
 					<Link
 						to={i18n("feedback.link")}
 						rel="noopener noreferrer"

@@ -32,7 +32,7 @@ export function IsRegisteringForMoreThanThreeMonths() {
 			}}
 		>
 			<div className="flex flex-col gap-4 lg:gap-12">
-				<h2 className="text-xl font-bold lg:text-4xl">
+				<h2 className="text-xl font-bold lg:text-[25px]">
 					{i18n("other-residence.q3")}
 				</h2>
 				<div className="flex flex-col gap-3 lg:gap-4">

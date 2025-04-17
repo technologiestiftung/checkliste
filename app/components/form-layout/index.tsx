@@ -43,7 +43,7 @@ export function FormLayout({
 				<main className="flex h-full w-full flex-col">
 					<div className="hidden lg:flex w-full print:hidden">
 						<Link
-							className="text-2xl text-berlin-blue-900 hover:underline font-bold px-4 py-5"
+							className="text-[20px] text-berlin-blue-900 hover:underline font-bold px-4 py-5"
 							to={startPageLink}
 							onClick={() => setHasUserLeftFlow(true)}
 						>
@@ -52,7 +52,7 @@ export function FormLayout({
 					</div>
 					<div className="flex lg:hidden items-center justify-between px-4.5 print:hidden">
 						<button
-							className={`text-base lg:text-2xl font-bold p-2.5 pt-5 text-berlin-blue-900 hover:underline`}
+							className={`text-base lg:text-[20px] font-bold p-2.5 pt-5 text-berlin-blue-900 hover:underline`}
 							onClick={() => {
 								handleGoToPreviousStep();
 							}}
@@ -61,7 +61,7 @@ export function FormLayout({
 							{isFirstStep ? i18n("navigation.startpage") : i18n("button.back")}
 						</button>
 						<Link
-							className="text-base lg:text-2xl text-berlin-blue-900 hover:underline font-bold p-2.5 pt-5"
+							className="text-base lg:text-[20px] text-berlin-blue-900 hover:underline font-bold p-2.5 pt-5"
 							to={buildLocalizedLink("/")}
 							onClick={() => setHasUserLeftFlow(true)}
 						>

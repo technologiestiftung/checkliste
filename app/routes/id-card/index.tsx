@@ -11,7 +11,7 @@ export default function Index() {
 		<FormLayout currentStep={currentStep} goToPreviousStep={goToPreviousStep}>
 			<div className="w-full bg-berlin-blue-400">
 				{currentStep !== 9 && (
-					<h2 className="text-xl lg:text-4xl font-bold px-7.5 py-2.5 lg:max-w-[974px] mx-auto lg:px-0">
+					<h2 className="text-xl lg:text-[25px] font-bold px-7.5 py-2.5 lg:max-w-[974px] mx-auto lg:px-0">
 						{i18n("title.id-card")}
 					</h2>
 				)}
