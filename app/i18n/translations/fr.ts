@@ -18,12 +18,12 @@ const fr = {
 	selectLanguage: "Sélectionnez votre langue :",
 	intro:
 		"Cette application vous aide à préparer de manière optimale votre rendez-vous au bureau des citoyens. Répondez à quelques questions courtes et nous créerons une liste de contrôle personnalisée avec tous les documents dont vous avez besoin pour votre demande. Vous évitez ainsi des temps d'attente inutiles et vous vous assurez d'avoir tout ce qui est important avec vous. Vos informations restent anonymes et sont stockées exclusivement localement dans votre navigateur – aucune donnée n'est transmise au bureau des citoyens ni à des tiers.",
-	context: `Cette application est un prototype de <a class="font-bold hover:underline text-berlin-blue-500"
+	context: `Cette application est un prototype de <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://citylab-berlin.org/de/start/"
 				target="_blank"
 				rel="noopener noreferrer"
 			>CityLAB Berlin</a> et du
-			<a class="font-bold hover:underline text-berlin-blue-500"
+			<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 				target="_blank"
 				rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const fr = {
 			Vos réponses ne sont ni stockées ni évaluées.
 			<br/><br/>
 			Vous avez des questions ou des conseils utiles pour nous aider à améliorer cette application ?
-			<a class="font-bold hover:underline text-berlin-blue-500"
+			<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist"
 				target="_blank"
 				rel="noopener noreferrer"
@@ -122,12 +122,12 @@ const fr = {
 	"registered-in-berlin.q1": "Êtes-vous enregistré à Berlin ?",
 	"registered-in-berlin.q2":
 		"Vous trouvez-vous actuellement à Berlin, par exemple parce que vous y vivez temporairement, êtes en vacances ou êtes sans-abri ?",
-	"registered-in-berlin.q2.hint.yes": `Il est également possible de demander une carte d'identité à Berlin. Les documents ne peuvent être déposés qu'au Bureau d'État pour les affaires citoyennes et réglementaires. Plus d'informations <a class="font-bold hover:underline text-berlin-blue-500"
+	"registered-in-berlin.q2.hint.yes": `Il est également possible de demander une carte d'identité à Berlin. Les documents ne peuvent être déposés qu'au Bureau d'État pour les affaires citoyennes et réglementaires. Plus d'informations <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://service.berlin.de/dienstleistung/326550/"
 				target="_blank"
 				rel="noopener noreferrer"
 			>ici</a>.`,
-	"registered-in-berlin.q2.hint.no": `Vous ne pouvez pas actuellement demander de carte d'identité à Berlin. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Annuler le rendez-vous</a>.`,
+	"registered-in-berlin.q2.hint.no": `Vous ne pouvez pas actuellement demander de carte d'identité à Berlin. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Annuler le rendez-vous</a>.`,
 	"id-for-child.q1": "Demandez-vous la carte d'identité pour un mineur ?",
 	"id-for-child.q2":
 		"Tous les représentants légaux (dans la plupart des cas les parents titulaires de l'autorité parentale) sont-ils présents lors du rendez-vous au bureau des citoyens ?",
@@ -142,10 +142,10 @@ const fr = {
 	Flow Certificate of Conduct
 	*/
 	"applicantDetails.q1": "Avez-vous au moins 14 ans ?",
-	"applicantDetails.q1.hint": `Vous pouvez demander un casier judiciaire à partir de 14 ans. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Annuler le rendez-vous</a>.`,
+	"applicantDetails.q1.hint": `Vous pouvez demander un casier judiciaire à partir de 14 ans. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Annuler le rendez-vous</a>.`,
 	"applicantDetails.q2": "Êtes-vous enregistré à Berlin ?",
 	"applicantDetails.q3": "Vivez-vous temporairement à Berlin ?",
-	"applicantDetails.q3.hint": `Veuillez faire votre demande de casier judiciaire en ligne. <a class="font-bold hover:underline text-berlin-blue-500"
+	"applicantDetails.q3.hint": `Veuillez faire votre demande de casier judiciaire en ligne. <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 			href="https://www.fuehrungszeugnis.bund.de/"
 			target="_blank"
 			rel="noopener noreferrer"
@@ -154,7 +154,7 @@ const fr = {
 		"Demandez-vous le casier judiciaire pour vous-même ?",
 	"certificate-of-conduct-details.q2":
 		"Demandez-vous le casier judiciaire en tant que représentant légal ?",
-	"certificate-ofconduct-details.q2.hint": `Vous ne pouvez demander le casier judiciaire que si vous êtes le représentant légal. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Annuler le rendez-vous</a>.`,
+	"certificate-ofconduct-details.q2.hint": `Vous ne pouvez demander le casier judiciaire que si vous êtes le représentant légal. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Annuler le rendez-vous</a>.`,
 	"certificate-of-conduct-details.q3":
 		"Demandez-vous un casier judiciaire étendu ?",
 	"certificate-of-conduct-details.q4":
@@ -174,11 +174,12 @@ const fr = {
 		<li>Apportez les documents imprimés avec vous lors de votre rendez-vous.</li>
 	</ul>`,
 	"overview.feedback": "N'hésitez pas à nous faire part de vos retours.",
-	"overview.id-card.hint.title": "Remarque :",
 	"overview.id-card.hint.text":
-		"À partir du 1er mai 2025, les photos d'identité biométriques ne seront créées et soumises que numériquement dans les studios photo agréés ou aux bureaux des citoyens. Des frais de 6 € par image s'appliquent, payables exclusivement par carte.",
-	"overview.forms-certificate-of-conduct.hint.title": "Remarque :",
-	"overview.forms-certificate-of-conduct.hint.text": `Vous pouvez également demander le casier judiciaire facilement en ligne <a href=\"https://service.berlin.de/dienstleistung/120926/\" target=\"_blank\" class=\"text-blue-700 hover:underline visited:text-purple-500\">ici</a>.`,
+		"À partir du 1er mai 2025, les photos d’identité biométriques ne seront créées et transmises numériquement que dans des studios photo certifiés ou dans les mairies. Des frais de 6 € par photo s’appliquent, payables uniquement par carte.",
+	"overview.forms-certificate-of-conduct.hint.text":
+		'Vous pouvez également demander le certificat de bonne conduite confortablement <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en ligne</a>.',
+	"overview.forms-residence-registration.hint.text":
+		'Vous pouvez également effectuer votre inscription de domicile <a href="https://service.berlin.de/online/wohnsitz-anmelden/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en ligne</a>. Si vous choisissez l’inscription en ligne, veuillez annuler votre rendez-vous <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">ici</a>.',
 
 	registrationForm: "Formulaire d'enregistrement",
 	movingInConfirmation: "Attestation de déménagement du propriétaire",
@@ -230,30 +231,30 @@ const fr = {
 	"about.text.p1":
 		"Les bureaux des citoyens de Berlin citent les documents manquants ou oubliés comme raison la plus courante d’annulation de rendez‑vous. En répondant à quelques questions sur votre situation personnelle, l’application génère une liste de contrôle individuelle qui indique précisément les documents nécessaires. Votre visite à l’administration devient ainsi plus efficace et sans stress.",
 	"about.text.p2": `Avec le Vérificateur de Documents, vous pouvez préparer la 
-  <a class="font-bold hover:underline text-berlin-blue-500"
+  <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
      href="https://service.berlin.de/dienstleistung/120686/"
      target="_blank"
      rel="noopener noreferrer"
   >déclaration de résidence principale</a>, 
-  <a class="font-bold hover:underline text-berlin-blue-500"
+  <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
      href="https://service.berlin.de/dienstleistung/120703/"
      target="_blank"
      rel="noopener noreferrer"
   >demande de carte d’identité</a> et un 
-  <a class="font-bold hover:underline text-berlin-blue-500"
+  <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
      href="https://service.berlin.de/dienstleistung/120926/"
      target="_blank"
      rel="noopener noreferrer"
   >casier judiciaire</a> au bureau des citoyens de la Schlesische Strasse.
   L’application a été développée en étroite coopération avec le 
-  <a class="font-bold hover:underline text-berlin-blue-500"
+  <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
      href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
      target="_blank"
      rel="noopener noreferrer"
   >Bureau de district Friedrichshain‑Kreuzberg de Berlin, Département des services aux citoyens</a>, 
   afin de présenter les informations nécessaires de façon claire et ciblée. Grâce à sa disponibilité en sept langues, la liste de contrôle est facilement accessible et utilisable par les citoyen·ne·s berlinois·es.`,
 	"about.text.p3": `Si vous souhaitez jeter un œil dans les coulisses, vous pouvez retrouver le code source ouvert sur 
-  <a class="font-bold hover:underline text-berlin-blue-500"
+  <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
      href="https://github.com/technologiestiftung/checkliste"
      target="_blank"
      rel="noopener noreferrer"
@@ -280,7 +281,7 @@ Allemagne
 
 Tél. : 030 20 96 99 90  
 E‑mail : info(at)ts.berlin  
-Site : <a class="font-bold hover:underline text-berlin-blue-500"
+Site : <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
             href="https://www.technologiestiftung-berlin.de/de/stiftung/"
             target="_blank"
             rel="noopener noreferrer"
@@ -295,14 +296,14 @@ Grunewaldstraße 61–62
 Allemagne  
 
 Tél. : 030 20 96 99 951  
-E‑mail : <a class="font-bold hover:underline text-berlin-blue-500"
+E‑mail : <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
              href="mailto:datenschutz@ts.berlin"
              target="_blank"
              rel="noopener noreferrer"
           >datenschutz[at]ts.berlin</a>`,
 	"dataPrivacy.subtitle.p1.3":
 		"1.3 Finalité générale de la collecte, du traitement et de l’utilisation des données",
-	"dataPrivacy.text.p1.3": `La <a class="font-bold hover:underline text-berlin-blue-500"
+	"dataPrivacy.text.p1.3": `La <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
         href="https://www.technologiestiftung-berlin.de/de/stiftung/"
         target="_blank"
         rel="noopener noreferrer"
