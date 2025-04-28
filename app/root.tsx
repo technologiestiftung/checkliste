@@ -15,6 +15,7 @@ import { BerlinHeader } from "./components/berlin-header";
 import { Footer } from "~/components/footer";
 import { getBerlinFooter } from "~/external-templates/berlin-footer";
 import { isPathWithFooter } from "~/utils/is-path-with-footer";
+import { i18n } from "./i18n/i18n-utils";
 
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
@@ -46,7 +47,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				/>
 
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<title>Checkliste</title>
+				<title>{i18n("appTitle")}</title>
 				<Meta />
 				<Links />
 				{/* <!-- Matomo --> */}

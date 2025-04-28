@@ -15,6 +15,7 @@ const en = {
 	Start Page and general elements
 	*/
 	title: "Welcome to the Document Check",
+	appTitle: "Document-Check",
 	selectLanguage: "Select your language:",
 	intro:
 		"This application helps you optimally prepare your appointment at the citizens' office. Answer a few short questions and we'll create an individual checklist with all the documents you need for your request. This way you avoid unnecessary waiting times and ensure you have everything important with you. Your information remains anonymous and is stored exclusively locally in your browser – no data is forwarded to the citizens' office or third parties.",
@@ -50,7 +51,7 @@ const en = {
 	"footer.toTheTop": "Back to top",
 	"footer.button.name.expand": "Show more",
 	"footer.button.name.collapse": "Show less",
-	"upperFooter.checklist.title": "Document Check",
+	"upperFooter.checklist.title": "Document-Check",
 	"upperFooter.checklist.about": "About the project",
 	"upperFooter.checklist.impressum": "Imprint",
 	"upperFooter.checklist.dataprivacy": "Privacy policy",

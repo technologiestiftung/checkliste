@@ -7,7 +7,7 @@ import { useShowFeedbackDialogAfterCompletion } from "~/hooks/use-show-feedback-
 
 export const meta = () => {
 	return [
-		{ title: "Checkliste" },
+		{ title: i18n("appTitle") },
 		{
 			name: "description",
 			content:

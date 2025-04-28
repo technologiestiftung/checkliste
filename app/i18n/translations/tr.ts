@@ -15,6 +15,7 @@ const tr = {
 	Start Page and general elements
 	*/
 	title: "Belge Kontrolüne hoş geldiniz",
+	appTitle: "Belge Kontrolü",
 	selectLanguage: "Dil seçin:",
 	intro:
 		"Bu uygulama, Bürgeramt randevunuza en iyi şekilde hazırlanmanıza yardımcı olur. Birkaç kısa soruyu yanıtlayın ve talebiniz için ihtiyacınız olan tüm belgeleri içeren bireysel bir kontrol listesi oluşturacağız. Böylece gereksiz beklemelerden kaçınır ve yanınızda önemli tüm belgelerin olduğundan emin olursunuz. Bilgileriniz anonim kalır ve yalnızca tarayıcınızda yerel olarak saklanır – hiçbir veri Bürgeramt veya üçüncü taraflara iletilmez.",
