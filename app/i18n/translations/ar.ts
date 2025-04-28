@@ -175,7 +175,7 @@ const ar = {
 	"overview.forms-certificate-of-conduct.hint.text":
 		'يمكنك أيضًا التقدم بطلب شهادة حسن السيرة <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">عبر الإنترنت</a>.',
 	"overview.forms-residence-registration.hint.text":
-		'يمكنك أيضًا إتمام تسجيل محل إقامتك <a href="https://service.berlin.de/online/wohnsitz-anmelden/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">عبر الإنترنت</a>. إذا اخترت التسجيل عبر الإنترنت، فيرجى إلغاء موعدك <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">من هنا</a>.',
+		'يمكنك أيضًا إتمام تسجيل محل إقامتك <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">عبر الإنترنت</a>. إذا اخترت التسجيل عبر الإنترنت، فيرجى إلغاء موعدك <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">من هنا</a>.',
 
 	registrationForm: "نموذج التسجيل",
 	movingInConfirmation: "تأكيد الانتقال من المالك",

@@ -176,7 +176,7 @@ const tr = {
 	"overview.forms-certificate-of-conduct.hint.text":
 		'Sabıka kaydını ayrıca rahatça <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">çevrimiçi</a> olarak talep edebilirsiniz.',
 	"overview.forms-residence-registration.hint.text":
-		'Ayrıca ikametgah kaydınızı <a href="https://service.berlin.de/online/wohnsitz-anmelden/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">çevrimiçi</a> olarak yapabilirsiniz. Çevrimiçi kaydı tercih ettiyseniz, lütfen randevunuzu <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">buradan</a> iptal edin.',
+		'Ayrıca ikametgah kaydınızı <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">çevrimiçi</a> olarak yapabilirsiniz. Çevrimiçi kaydı tercih ettiyseniz, lütfen randevunuzu <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">buradan</a> iptal edin.',
 
 	registrationForm: "Kayıt formu",
 	movingInConfirmation: "Ev sahibinden taşınma onayı",

@@ -177,7 +177,7 @@ const en = {
 	"overview.forms-certificate-of-conduct.hint.text":
 		'You can also conveniently apply for the certificate of conduct <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a>.',
 	"overview.forms-residence-registration.hint.text":
-		'You can also complete your residence registration <a href="https://service.berlin.de/online/wohnsitz-anmelden/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a>. If you choose to register online, please cancel your appointment <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">here</a>.',
+		'You can also complete your residence registration <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a>. If you choose to register online, please cancel your appointment <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">here</a>.',
 	registrationForm: "Registration form",
 	movingInConfirmation: "Confirmation of move-in from the landlord",
 	birthCertificate: "Birth certificate",

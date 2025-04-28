@@ -179,7 +179,7 @@ const fr = {
 	"overview.forms-certificate-of-conduct.hint.text":
 		'Vous pouvez également demander le certificat de bonne conduite confortablement <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en ligne</a>.',
 	"overview.forms-residence-registration.hint.text":
-		'Vous pouvez également effectuer votre inscription de domicile <a href="https://service.berlin.de/online/wohnsitz-anmelden/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en ligne</a>. Si vous choisissez l’inscription en ligne, veuillez annuler votre rendez-vous <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">ici</a>.',
+		'Vous pouvez également effectuer votre inscription de domicile <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en ligne</a>. Si vous choisissez l’inscription en ligne, veuillez annuler votre rendez-vous <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">ici</a>.',
 
 	registrationForm: "Formulaire d'enregistrement",
 	movingInConfirmation: "Attestation de déménagement du propriétaire",

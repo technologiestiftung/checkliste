@@ -180,7 +180,7 @@ const ru = {
 	"overview.forms-certificate-of-conduct.hint.text":
 		'Вы также можете удобно подать заявление на справку о несудимости <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">онлайн</a>.',
 	"overview.forms-residence-registration.hint.text":
-		'Вы также можете провести регистрацию места жительства <a href="https://service.berlin.de/online/wohnsitz-anmelden/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">онлайн</a>. Если вы выбрали онлайн-регистрацию, пожалуйста, отмените вашу встречу <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">здесь</a>.',
+		'Вы также можете провести регистрацию места жительства <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">онлайн</a>. Если вы выбрали онлайн-регистрацию, пожалуйста, отмените вашу встречу <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">здесь</a>.',
 
 	registrationForm: "Форма регистрации",
 	movingInConfirmation: "Подтверждение въезда от арендодателя",

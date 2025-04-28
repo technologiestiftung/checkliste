@@ -181,7 +181,7 @@ const de = {
 	"overview.id-card.hint.text":
 		"Ab 1. Mai 2025 werden biometrische Passbilder nur in zertifizierten Fotostudios oder Bürgerämtern digital erstellt und übermittelt. Pro Bild fällt eine Gebühr von 6 € an, zahlbar ausschließlich mit Karte.",
 	"overview.forms-certificate-of-conduct.hint.text": `Sie können das Führungszeugnis auch bequem <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a> beantragen.`,
-	"overview.forms-residence-registration.hint.text": `Sie können auch Ihre Wohnsitz-Anmeldung <a href="https://service.berlin.de/online/wohnsitz-anmelden/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a> durchführen. 
+	"overview.forms-residence-registration.hint.text": `Sie können auch Ihre Wohnsitz-Anmeldung <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a> durchführen. 
 	Falls Sie sich für die Onlineanmeldung entschieden haben, <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">stornieren Sie bitte Ihren Termin</a>.`,
 
 	registrationForm: "Anmeldeformular",
