@@ -6,13 +6,11 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-# Anmelde-Check
+# Dokumenten-Check
 
-This prototype assists people to find out which documents they need for their registration at a Bürgeramt in Berlin.
+Berlin citizens' offices cite missing or forgotten required documents as the most common reason for appointment cancellations. By answering a few questions about your personal situation, this application generates an individual checklist that precisely shows which documents are needed. This makes your visit to the authority more efficient and stress-free.
 
-The prototype is available as a webapp here: https://anmelde-check.vercel.app/.
-After answering a few questions, you'll be given a check-list with all the documents you'll need bring (and fill out)
-to register at a Bürgeramt in Berlin.
+The prototype is available as a webapp [here](https://dokumenten-check.vercel.app/).
 
 ## Installation
 
@@ -71,7 +69,7 @@ Texts and content available as [CC BY](https://creativecommons.org/licenses/by/3
 <table>
   <tr>
     <td>
-      Made by <a href="https://citylab-berlin.org/de/start/">
+      <a href="https://citylab-berlin.org/de/start/">
         <br />
         <br />
         <img width="200" src="https://logos.citylab-berlin.org/logo-citylab-berlin.svg" />
