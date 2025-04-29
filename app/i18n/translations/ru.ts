@@ -18,12 +18,12 @@ const ru = {
 	selectLanguage: "Выберите язык:",
 	intro:
 		"Это приложение помогает вам оптимально подготовиться к приёму в Bürgeramt. Ответьте на несколько коротких вопросов, и мы создадим индивидуальный чек‑лист со всеми необходимыми документами для вашего запроса. Так вы избежите лишних очередей и убедитесь, что взяли с собой всё важное. Вся информация остаётся анонимной и хранится исключительно локально в вашем браузере — никаких данных не передаётся в Bürgeramt или третьим лицам.",
-	context: `Это приложение — прототип от <a class="font-bold hover:underline text-berlin-blue-500"
+	context: `Это приложение — прототип от <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://citylab-berlin.org/de/start/"
 				target="_blank"
 				rel="noopener noreferrer"
 			>CityLAB Berlin</a> и
-			<a class="font-bold hover:underline text-berlin-blue-500"
+			<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 				target="_blank"
 				rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const ru = {
 			Ваши ответы не сохраняются и не анализируются. 
 			<br/><br/>
 			Есть вопросы или советы по улучшению приложения? 
-			<a class="font-bold hover:underline text-berlin-blue-500"
+			<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist"
 				target="_blank"
 				rel="noopener noreferrer"
@@ -122,12 +122,12 @@ const ru = {
 	"registered-in-berlin.q1": "Вы зарегистрированы в Берлине?",
 	"registered-in-berlin.q2":
 		"Сейчас вы в Берлине, например, временно проживаете, в отпуске или бездомный?",
-	"registered-in-berlin.q2.hint.yes": `Также можно подать заявку на удостоверение личности в Берлине. Документы оформляются только в Государственном управлении по делам граждан и регулированию. Подробнее <a class="font-bold hover:underline text-berlin-blue-500"
+	"registered-in-berlin.q2.hint.yes": `Также можно подать заявку на удостоверение личности в Берлине. Документы оформляются только в Государственном управлении по делам граждан и регулированию. Подробнее <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 			href="https://service.berlin.de/dienstleistung/326550/"
 			target="_blank"
 			rel="noopener noreferrer"
 		>здесь</a>.`,
-	"registered-in-berlin.q2.hint.no": `В данный момент вы не можете подать заявку на удостоверение личности в Берлине. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Отменить приём</a>.`,
+	"registered-in-berlin.q2.hint.no": `В данный момент вы не можете подать заявку на удостоверение личности в Берлине. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Отменить приём</a>.`,
 	"id-for-child.q1":
 		"Вы оформляете удостоверение личности для несовершеннолетнего?",
 	"id-for-child.q2":
@@ -143,10 +143,10 @@ const ru = {
 	Flow Certificate of Conduct
 	*/
 	"applicantDetails.q1": "Вам исполнилось не менее 14 лет?",
-	"applicantDetails.q1.hint": `Запросить справку о несудимости можно только с 14 лет. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Отменить приём</a>.`,
+	"applicantDetails.q1.hint": `Запросить справку о несудимости можно только с 14 лет. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Отменить приём</a>.`,
 	"applicantDetails.q2": "Вы зарегистрированы в Берлине?",
 	"applicantDetails.q3": "Вы временно проживаете в Берлине?",
-	"applicantDetails.q3.hint": `Пожалуйста, подайте заявку на справку о несудимости онлайн. <a class="font-bold hover:underline text-berlin-blue-500"
+	"applicantDetails.q3.hint": `Пожалуйста, подайте заявку на справку о несудимости онлайн. <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 			href="https://www.fuehrungszeugnis.bund.de/"
 			target="_blank"
 			rel="noopener noreferrer"
@@ -155,7 +155,7 @@ const ru = {
 		"Вы запрашиваете справку о несудимости для себя?",
 	"certificate-of-conduct-details.q2":
 		"Вы запрашиваете справку о несудимости как законный представитель?",
-	"certificate-of-conduct-details.q2.hint": `Запрашивать справку можно только будучи законным представителем. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Отменить приём</a>.`,
+	"certificate-of-conduct-details.q2.hint": `Запрашивать справку можно только будучи законным представителем. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Отменить приём</a>.`,
 	"certificate-of-conduct-details.q3":
 		"Вы запрашиваете расширенную справку о несудимости?",
 	"certificate-of-conduct-details.q4":
@@ -175,11 +175,12 @@ const ru = {
 		<li>Возьмите распечатанные документы с собой на приём.</li>
 	</ul>`,
 	"overview.feedback": "Не стесняйтесь ответить нам на несколько вопросов.",
-	"overview.id-card.hint.title": "Примечание:",
 	"overview.id-card.hint.text":
-		"С 1 мая 2025 года биометрические фото для паспортов будут создаваться и подаваться только в цифровом виде в сертифицированных фотостудиях или Bürgeramt. Стоимость — 6 € за фото, оплата только картой.",
-	"overview.forms-certificate-of-conduct.hint.title": "Примечание:",
-	"overview.forms-certificate-of-conduct.hint.text": `Вы также можете удобно подать заявку на справку о несудимости <a href=\"https://service.berlin.de/dienstleistung/120926/\" target=\"_blank\" class=\"text-blue-700 hover:underline visited:text-purple-500\">онлайн</a>.`,
+		"С 1 мая 2025 года биометрические фотографии для паспорта будут создаваться и передаваться в цифровом виде только в сертифицированных фотостудиях или в офисах обслуживания граждан. За каждую фотографию взимается плата в размере 6 €; оплата возможна только картой.",
+	"overview.forms-certificate-of-conduct.hint.text":
+		'Вы также можете удобно подать заявление на справку о несудимости <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">онлайн</a>.',
+	"overview.forms-residence-registration.hint.text":
+		'Вы также можете провести регистрацию места жительства <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">онлайн</a>. Если вы выбрали онлайн-регистрацию, пожалуйста, отмените вашу встречу <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">здесь</a>.',
 
 	registrationForm: "Форма регистрации",
 	movingInConfirmation: "Подтверждение въезда от арендодателя",
@@ -237,29 +238,29 @@ const ru = {
 	"about.text.p1":
 		"Bürgeramt Берлина называют отсутствие или забытые необходимые документы самой частой причиной отмены приёма. Ответив на несколько вопросов о вашей ситуации, приложение создаёт индивидуальный чек‑лист, точно показывающий, какие документы нужны. Это делает ваш визит в орган более эффективным и без стресса.",
 	"about.text.p2": `С помощью Проверки документов вы можете подготовить
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://service.berlin.de/dienstleistung/120686/"
 		target="_blank"
 		rel="noopener noreferrer"
 	>регистрацию основного места жительства</a>,
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://service.berlin.de/dienstleistung/120703/"
 		target="_blank"
 		rel="noopener noreferrer"
 	>заявку на удостоверение личности</a> и
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://service.berlin.de/dienstleistung/120926/"
 		target="_blank"
 		rel="noopener noreferrer"
 	>справку о несудимости</a> в Bürgeramt на Schlesische Strasse.
 	Приложение разработано в тесном сотрудничестве с
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 		target="_blank"
 		rel="noopener noreferrer"
 	>Офисом округа Фридрихсхайн-Кройцберг Берлина, Департаментом по делам граждан</a>, чтобы представить необходимую информацию ясно и лаконично. Благодаря доступности на семи языках чек‑лист легко доступен и удобен для граждан Берлина.`,
 	"about.text.p3": `Если хотите заглянуть за кулисы, код с открытым исходным на
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://github.com/technologiestiftung/checkliste"
 		target="_blank"
 		rel="noopener noreferrer"
@@ -288,7 +289,7 @@ Grunewaldstraße 61–62<br/>
 Германия<br/><br/>
 Тел.: 030 20 96 99 90 <br/>
 E‑Mail: info(at)ts.berlin <br/>
-Сайт: <a class="font-bold hover:underline text-berlin-blue-500"
+Сайт: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
          href="https://www.technologiestiftung-berlin.de/de/stiftung/"
          target="_blank"
          rel="noopener noreferrer"
@@ -300,7 +301,7 @@ Grunewaldstraße 61–62 <br/>
 10825 Берлин <br/>
 Германия <br/><br/>
 Тел.: 030 20 96 99 951 <br/>
-E‑Mail: <a class="font-bold hover:underline text-berlin-blue-500"
+E‑Mail: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
          href="mailto:datenschutz@ts.berlin"
          target="_blank"
          rel="noopener noreferrer"

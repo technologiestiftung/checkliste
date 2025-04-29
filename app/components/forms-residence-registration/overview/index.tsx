@@ -3,6 +3,7 @@ import { useProgressStore } from "../../steps-residence-registration/store/index
 import { DocumentCheckbox } from "../../overview-checklist-layout/document-checkbox.tsx";
 import { useTrackGoalChecklistConversion } from "./hooks/use-track-goal-checklist-conversion.tsx";
 import { OverviewChecklistLayout } from "../../overview-checklist-layout/index.tsx";
+import { i18n } from "~/i18n/i18n-utils.ts";
 
 const storeKeys = [
 	"overview-residence-registration",
@@ -28,6 +29,7 @@ export function Overview() {
 		<OverviewChecklistLayout
 			goToPreviousStep={goToPreviousStep}
 			goToStart={goToStart}
+			hintText={i18n("overview.forms-residence-registration.hint.text")}
 			storeKeys={storeKeys}
 		>
 			{documents.map(([key, value]) => (
