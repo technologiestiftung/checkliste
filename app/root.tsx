@@ -20,7 +20,6 @@ export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
 export async function loader() {
 	try {
-		console.log("Berlin footer loader called");
 		return await getBerlinFooter();
 	} catch (error) {
 		console.error("Failed to load Berlin footer:", error);
