@@ -20,12 +20,17 @@ import { i18n } from "./i18n/i18n-utils";
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
 export async function loader() {
-	return await getBerlinFooter();
+	try {
+		return await getBerlinFooter();
+	} catch (error) {
+		console.error("Failed to load Berlin footer:", error);
+		return null;
+	}
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
 	const language = getLanguage();
-	const berlinFooter = useRouteLoaderData("root");
+	const berlinFooter = useRouteLoaderData("root") || null;
 	const { pathname } = useLocation();
 
 	return (
