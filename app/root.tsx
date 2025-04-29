@@ -19,12 +19,18 @@ import { isPathWithFooter } from "~/utils/is-path-with-footer";
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
 export async function loader() {
-	return await getBerlinFooter();
+	try {
+		console.log("Berlin footer loader called");
+		return await getBerlinFooter();
+	} catch (error) {
+		console.error("Failed to load Berlin footer:", error);
+		return null;
+	}
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
 	const language = getLanguage();
-	const berlinFooter = useRouteLoaderData("root");
+	const berlinFooter = useRouteLoaderData("root") || null;
 	const { pathname } = useLocation();
 
 	return (
