@@ -80,7 +80,7 @@ export function IsRegisteringForMoreThanSixMonths() {
 				<a
 					href="https://service.berlin.de/terminvereinbarung/termin/manage/"
 					target="_blank"
-					className="text-blue-700 hover:underline visited:text-purple-500"
+					className="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				>
 					{hintLinkLabel}
 				</a>

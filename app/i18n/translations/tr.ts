@@ -18,19 +18,19 @@ const tr = {
 	selectLanguage: "Dil seçin:",
 	intro:
 		"Bu uygulama, Bürgeramt randevunuza en iyi şekilde hazırlanmanıza yardımcı olur. Birkaç kısa soruyu yanıtlayın ve talebiniz için ihtiyacınız olan tüm belgeleri içeren bireysel bir kontrol listesi oluşturacağız. Böylece gereksiz beklemelerden kaçınır ve yanınızda önemli tüm belgelerin olduğundan emin olursunuz. Bilgileriniz anonim kalır ve yalnızca tarayıcınızda yerel olarak saklanır – hiçbir veri Bürgeramt veya üçüncü taraflara iletilmez.",
-	context: `Bu uygulama bir prototiptir: <a class="font-bold hover:underline text-berlin-blue-500"
+	context: `Bu uygulama bir prototiptir: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://citylab-berlin.org/de/start/"
 				target="_blank"
 				rel="noopener noreferrer"
 			>CityLAB Berlin</a> ve 
-			<a class="font-bold hover:underline text-berlin-blue-500"
+			<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 				target="_blank"
 				rel="noopener noreferrer"
 			>Berlin Friedrichshain-Kreuzberg İlçe Ofisi, Vatandaş Hizmetleri Departmanı</a> iş birliğinde geliştirilmiştir. Amaç, eksik belgeler nedeniyle randevu iptallerini önlemektir. Yanıtlarınız saklanmaz ve değerlendirilmez. 
 			<br/><br/>
 			Uygulamayı nasıl geliştirebileceğimiz konusunda sorularınız veya faydalı önerileriniz var mı? 
-			<a class="font-bold hover:underline text-berlin-blue-500"
+			<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist"
 				target="_blank"
 				rel="noopener noreferrer"
@@ -118,12 +118,12 @@ const tr = {
 	"registered-in-berlin.q1": "Berlin'de kayıtlı mısınız?",
 	"registered-in-berlin.q2":
 		"Şu anda Berlin'de misiniz; örneğin burada geçici olarak mı kalıyorsunuz, tatilde misiniz veya evsiz misiniz?",
-	"registered-in-berlin.q2.hint.yes": `Berlin'de kimlik kartı başvurusu da yapabilirsiniz. Belgeler yalnızca Vatandaş ve Düzenleyici İşler Devlet Ofisi'nde işlenir. Daha fazla bilgi için <a class="font-bold hover:underline text-berlin-blue-500"
+	"registered-in-berlin.q2.hint.yes": `Berlin'de kimlik kartı başvurusu da yapabilirsiniz. Belgeler yalnızca Vatandaş ve Düzenleyici İşler Devlet Ofisi'nde işlenir. Daha fazla bilgi için <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 			href="https://service.berlin.de/dienstleistung/326550/"
 			target="_blank"
 			rel="noopener noreferrer"
 		>buraya</a> bakın.`,
-	"registered-in-berlin.q2.hint.no": `Şu anda Berlin'de kimlik kartına başvuramazsınız. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Randevuyu iptal et</a>.`,
+	"registered-in-berlin.q2.hint.no": `Şu anda Berlin'de kimlik kartına başvuramazsınız. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Randevuyu iptal et</a>.`,
 	"id-for-child.q1":
 		"Reşit olmayan biri için kimlik kartı başvurusu yapıyor musunuz?",
 	"id-for-child.q2":
@@ -139,10 +139,10 @@ const tr = {
 	Flow Certificate of Conduct
 	*/
 	"applicantDetails.q1": "En az 14 yaşında mısınız?",
-	"applicantDetails.q1.hint": `Adli sicil kaydı başvurusunu yalnızca 14 yaşından itibaren yapabilirsiniz. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Randevuyu iptal et</a>.`,
+	"applicantDetails.q1.hint": `Adli sicil kaydı başvurusunu yalnızca 14 yaşından itibaren yapabilirsiniz. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Randevuyu iptal et</a>.`,
 	"applicantDetails.q2": "Berlin'de kayıtlı mısınız?",
 	"applicantDetails.q3": "Berlin'de geçici olarak mı yaşıyorsunuz?",
-	"applicantDetails.q3.hint": `Adli sicil kaydı başvurunuzu lütfen çevrimiçi yapın. <a class="font-bold hover:underline text-berlin-blue-500"
+	"applicantDetails.q3.hint": `Adli sicil kaydı başvurunuzu lütfen çevrimiçi yapın. <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 			href="https://www.fuehrungszeugnis.bund.de/"
 			target="_blank"
 			rel="noopener noreferrer"
@@ -151,7 +151,7 @@ const tr = {
 		"Adli sicil kaydını kendi adınıza mı talep ediyorsunuz?",
 	"certificate-of-conduct-details.q2":
 		"Adli sicil kaydını yasal temsilci olarak mı talep ediyorsunuz?",
-	"certificate-of-conduct-details.q2.hint": `Adli sicil kaydını yalnızca yasal temsilciyseniz talep edebilirsiniz. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Randevuyu iptal et</a>.`,
+	"certificate-of-conduct-details.q2.hint": `Adli sicil kaydını yalnızca yasal temsilciyseniz talep edebilirsiniz. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Randevuyu iptal et</a>.`,
 	"certificate-of-conduct-details.q3":
 		"Genişletilmiş adli sicil kaydı mı talep ediyorsunuz?",
 	"certificate-of-conduct-details.q4":
@@ -171,11 +171,12 @@ const tr = {
 		<li>Basılı belgeleri randevunuza götürün.</li>
 	</ul>`,
 	"overview.feedback": "Bize birkaç soruyu yanıtlayarak yardımcı olun.",
-	"overview.id-card.hint.title": "Not:",
 	"overview.id-card.hint.text":
-		"1 Mayıs 2025'ten itibaren biyometrik pasaport fotoğrafları yalnızca sertifikalı fotoğraf stüdyolarında veya Bürgeramt'ta dijital olarak oluşturulup iletilecektir. Her fotoğraf için 6 € ücret alınacak, ödeme sadece kartla yapılabilir.",
-	"overview.forms-certificate-of-conduct.hint.title": "Not:",
-	"overview.forms-certificate-of-conduct.hint.text": `Adli sicil kaydı başvurusunu ayrıca <a href=\"https://service.berlin.de/dienstleistung/120926/\" target=\"_blank\" class=\"text-blue-700 hover:underline visited:text-purple-500\">çevrimiçi</a> olarak da kolayca yapabilirsiniz.`,
+		"1 Mayıs 2025'ten itibaren biyometrik pasaport fotoğrafları yalnızca sertifikalı fotoğraf stüdyolarında veya vatandaşlık bürolarında dijital olarak oluşturulacak ve iletilecektir. Her fotoğraf için yalnızca kartla ödenebilen 6 € ücret alınacaktır.",
+	"overview.forms-certificate-of-conduct.hint.text":
+		'Sabıka kaydını ayrıca rahatça <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">çevrimiçi</a> olarak talep edebilirsiniz.',
+	"overview.forms-residence-registration.hint.text":
+		'Ayrıca ikametgah kaydınızı <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">çevrimiçi</a> olarak yapabilirsiniz. Çevrimiçi kaydı tercih ettiyseniz, lütfen randevunuzu <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">buradan</a> iptal edin.',
 
 	registrationForm: "Kayıt formu",
 	movingInConfirmation: "Ev sahibinden taşınma onayı",
@@ -229,23 +230,23 @@ const tr = {
 	"about.text.p1":
 		"Berlin Bürgeramt'ları, randevu iptallerinin en yaygın nedeni olarak gerekli belgelerin eksik veya unutulduğunu belirtir. Kişisel durumunuza dair birkaç soruyu yanıtlayarak uygulama, hangi belgelerin gerektiğini tam olarak gösteren bireysel bir kontrol listesi oluşturur. Bu, makama ziyaretinizi daha verimli ve stressiz kılar.",
 	"about.text.p2": `Belge Kontrolü ile
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://service.berlin.de/dienstleistung/120686/"
 		target="_blank"
 		rel="noopener noreferrer"
 	>Ana ikamet kaydını</a>, 
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://service.berlin.de/dienstleistung/120703/"
 		target="_blank"
 		rel="noopener noreferrer"
 	>kimlik kartı başvurusunu</a> ve 
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://service.berlin.de/dienstleistung/120926/"
 		target="_blank"
 		rel="noopener noreferrer"
 	>adli sicil kaydını</a> Schlesische Strasse Bürgeramt'ta hazırlayabilirsiniz.
 	Uygulama, gerekli bilgileri net ve amaçlı şekilde sunmak üzere Berlin Friedrichshain-Kreuzberg İlçe Ofisi, Vatandaş Hizmetleri Departmanı ile yakın iş birliği içinde geliştirildi. Yedi dilde sunulması sayesinde kontrol listesi Berlinliler için kolayca erişilebilir ve kullanılabilir.`,
-	"about.text.p3": `Sahne arkasına bakmak isterseniz, açık kaynak kodunu <a class="font-bold hover:underline text-berlin-blue-500"
+	"about.text.p3": `Sahne arkasına bakmak isterseniz, açık kaynak kodunu <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://github.com/technologiestiftung/checkliste"
 		target="_blank"
 		rel="noopener noreferrer"
@@ -274,7 +275,7 @@ Almanya<br/><br/>
 
 Tel.: 030 20 96 99 90  <br/>
 E‑Posta: info(at)ts.berlin  <br/>
-Web sitesi: <a class="font-bold hover:underline text-berlin-blue-500"
+Web sitesi: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
          href="https://www.technologiestiftung-berlin.de/de/stiftung/"
          target="_blank"
          rel="noopener noreferrer"
@@ -289,7 +290,7 @@ Grunewaldstraße 61–62  <br/>
 Almanya  <br/><br/>
 
 Tel.: 030 20 96 99 951  <br/>
-E‑Posta: <a class="font-bold hover:underline text-berlin-blue-500"
+E‑Posta: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
          href="mailto:datenschutz@ts.berlin"
          target="_blank"
          rel="noopener noreferrer"
@@ -297,7 +298,7 @@ E‑Posta: <a class="font-bold hover:underline text-berlin-blue-500"
 
 	"dataPrivacy.subtitle.p1.3":
 		"1.3 Verilerin Toplanma, İşlenme ve Kullanılma Genel Amaçları",
-	"dataPrivacy.text.p1.3": `<a class="font-bold hover:underline text-berlin-blue-500"
+	"dataPrivacy.text.p1.3": `<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
                              href="https://www.technologiestiftung-berlin.de/de/stiftung/"
                              target="_blank"
                              rel="noopener noreferrer"

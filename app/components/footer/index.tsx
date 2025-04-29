@@ -50,10 +50,12 @@ export function Footer({ berlinFooter }: { berlinFooter: string }) {
 				</div>
 			</div>
 
-			<div
-				suppressHydrationWarning={true}
-				dangerouslySetInnerHTML={{ __html: berlinFooter }}
-			/>
+			{berlinFooter && (
+				<div
+					suppressHydrationWarning={true}
+					dangerouslySetInnerHTML={{ __html: berlinFooter }}
+				/>
+			)}
 		</div>
 	);
 }

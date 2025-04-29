@@ -6,8 +6,6 @@ import { SecondaryButton } from "~/components/buttons/secondary-button/index.tsx
 interface OverviewChecklistLayoutProps {
 	goToPreviousStep: () => void;
 	children: React.ReactNode;
-	isHintVisible?: boolean;
-	hintTitle?: string;
 	hintText?: string;
 	storeKeys: string[];
 	goToStart: () => void;
@@ -16,8 +14,6 @@ interface OverviewChecklistLayoutProps {
 export function OverviewChecklistLayout({
 	goToPreviousStep,
 	children,
-	isHintVisible,
-	hintTitle = "",
 	hintText = "",
 	storeKeys,
 	goToStart,
@@ -91,13 +87,11 @@ export function OverviewChecklistLayout({
 				{i18n("button.fillOutAgain")}
 			</button>
 
-			<div
-				className={`max-w-[747px] ${isHintVisible ? "" : "hidden"} flex flex-col gap-1`}
-			>
+			<div className={`max-w-[747px] flex flex-col gap-1`}>
 				<h3
 					className="font-bold"
 					dangerouslySetInnerHTML={{
-						__html: hintTitle,
+						__html: i18n("title.hint"),
 					}}
 				/>
 				<p

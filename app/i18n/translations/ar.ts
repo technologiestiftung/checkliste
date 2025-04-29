@@ -18,12 +18,12 @@ const ar = {
 	selectLanguage: "اختر لغتك:",
 	intro:
 		"تساعدك هذه التطبيق على التحضير الأمثل لموعدك في مكتب شؤون المواطنين. أجب على بعض الأسئلة القصيرة وسننشئ قائمة تدقيق فردية تحتوي على جميع المستندات التي تحتاجها لطلبك. بهذه الطريقة تتجنب أوقات الانتظار غير الضرورية وتضمن أنك أحضرت كل ما هو مهم معك. تبقى معلوماتك مجهولة وتُخزن محليًا في متصفحك فقط – لا يتم إرسال أي بيانات إلى مكتب شؤون المواطنين أو أطراف ثالثة.",
-	context: `هذا التطبيق هو نموذج أولي من <a class="font-bold hover:underline text-berlin-blue-500"
+	context: `هذا التطبيق هو نموذج أولي من <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://citylab-berlin.org/de/start/"
 				target="_blank"
 				rel="noopener noreferrer"
 			>CityLAB Berlin</a> و
-			<a class="font-bold hover:underline text-berlin-blue-500"
+			<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 				target="_blank"
 				rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const ar = {
 			لا يتم حفظ إجاباتك أو تقييمها. 
 			<br/><br/>
 			هل لديك أسئلة أو نصائح حول كيفية تحسين هذا التطبيق؟ 
-			<a class="font-bold hover:underline text-berlin-blue-500"
+			<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist"
 				target="_blank"
 				rel="noopener noreferrer"
@@ -119,12 +119,12 @@ const ar = {
 	"registered-in-berlin.q1": "هل أنت مسجل في برلين؟",
 	"registered-in-berlin.q2":
 		"هل أنت حالياً في برلين، على سبيل المثال تعيش هنا مؤقتًا، في عطلة، أو بلا مأوى؟",
-	"registered-in-berlin.q2.hint.yes": `يمكنك أيضًا التقديم على بطاقة الهوية في برلين. تُقدم المستندات فقط في المكتب الحكومي لشؤون المواطنين والشؤون التنظيمية. لمزيد من المعلومات <a class="font-bold hover:underline text-berlin-blue-500"
+	"registered-in-berlin.q2.hint.yes": `يمكنك أيضًا التقديم على بطاقة الهوية في برلين. تُقدم المستندات فقط في المكتب الحكومي لشؤون المواطنين والشؤون التنظيمية. لمزيد من المعلومات <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 			href="https://service.berlin.de/dienstleistung/326550/"
 			target="_blank"
 			rel="noopener noreferrer"
 		>اضغط هنا</a>.`,
-	"registered-in-berlin.q2.hint.no": `لا يمكنك حاليًا التقديم على بطاقة الهوية في برلين. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">إلغاء الموعد</a>.`,
+	"registered-in-berlin.q2.hint.no": `لا يمكنك حاليًا التقديم على بطاقة الهوية في برلين. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">إلغاء الموعد</a>.`,
 	"id-for-child.q1": "هل تقدم على بطاقة الهوية لقاصر؟",
 	"id-for-child.q2":
 		"هل جميع الأوصياء القانونيين (في معظم الحالات الآباء ذوو حقوق الحضانة) حاضرون في الموعد بمكتب شؤون المواطنين؟",
@@ -138,10 +138,10 @@ const ar = {
 	Flow Certificate of Conduct
 	*/
 	"applicantDetails.q1": "هل عمرك لا يقل عن 14 عامًا؟",
-	"applicantDetails.q1.hint": `يمكنك التقدم على شهادة السجل العدلي فقط من سن 14. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">إلغاء الموعد</a>.`,
+	"applicantDetails.q1.hint": `يمكنك التقدم على شهادة السجل العدلي فقط من سن 14. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">إلغاء الموعد</a>.`,
 	"applicantDetails.q2": "هل أنت مسجل في برلين؟",
 	"applicantDetails.q3": "هل تقيم في برلين مؤقتًا؟",
-	"applicantDetails.q3.hint": `يرجى التقديم على شهادة السجل العدلي عبر الإنترنت. <a class="font-bold hover:underline text-berlin-blue-500"
+	"applicantDetails.q3.hint": `يرجى التقديم على شهادة السجل العدلي عبر الإنترنت. <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 			href="https://www.fuehrungszeugnis.bund.de/"
 			target="_blank"
 			rel="noopener noreferrer"
@@ -150,7 +150,7 @@ const ar = {
 		"هل أنت تتقدم على شهادة السجل العدلي لنفسك؟",
 	"certificate-of-conduct-details.q2":
 		"هل تتقدم على شهادة السجل العدلي بصفة ممثل قانوني؟",
-	"certificate-of-conduct-details.q2.hint": `يمكنك التقديم فقط إذا كنت الممثل القانوني. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">إلغاء الموعد</a>.`,
+	"certificate-of-conduct-details.q2.hint": `يمكنك التقديم فقط إذا كنت الممثل القانوني. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">إلغاء الموعد</a>.`,
 	"certificate-of-conduct-details.q3":
 		"هل تتقدم للحصول على شهادة سجل عدلي موسعة؟",
 	"certificate-of-conduct-details.q4":
@@ -170,11 +170,12 @@ const ar = {
 		<li>أحضر المستندات المطبوعة معك إلى موعدك.</li>
 	</ul>`,
 	"overview.feedback": "لا تتردد في الإجابة على بعض الأسئلة لنا.",
-	"overview.id-card.hint.title": "ملاحظة:",
 	"overview.id-card.hint.text":
-		"ابتداءً من 1 مايو 2025، سيتم إنشاء صور جواز السفر البيومترية وتقديمها رقميًا فقط في استوديوهات فوتوغرافية معتمدة أو مكاتب شؤون المواطنين. تُطبق رسوم قدرها 6 € للصورة، وتُدفع حصريًا بالبطاقة.",
-	"overview.forms-certificate-of-conduct.hint.title": "ملاحظة:",
-	"overview.forms-certificate-of-conduct.hint.text": `يمكنك أيضًا التقديم على شهادة السجل العدلي بسهولة <a href=\"https://service.berlin.de/dienstleistung/120926/\" target=\"_blank\" class=\"text-blue-700 hover:underline visited:text-purple-500\">عبر الإنترنت</a>.`,
+		"اعتبارًا من 1 مايو 2025، سيتم إنشاء ونقل صور جواز السفر البيومترية رقميًا فقط في استوديوهات تصوير معتمدة أو مكاتب المواطنين. تُطبق رسوم قدرها 6 € لكل صورة، تُدفع بالبطاقة فقط.",
+	"overview.forms-certificate-of-conduct.hint.text":
+		'يمكنك أيضًا التقدم بطلب شهادة حسن السيرة <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">عبر الإنترنت</a>.',
+	"overview.forms-residence-registration.hint.text":
+		'يمكنك أيضًا إتمام تسجيل محل إقامتك <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">عبر الإنترنت</a>. إذا اخترت التسجيل عبر الإنترنت، فيرجى إلغاء موعدك <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">من هنا</a>.',
 
 	registrationForm: "نموذج التسجيل",
 	movingInConfirmation: "تأكيد الانتقال من المالك",
@@ -226,29 +227,29 @@ const ar = {
 	"about.text.p1":
 		"تشير مكاتب شؤون المواطنين في برلين إلى أن أكثر أسباب إلغاء المواعيد شيوعًا هو فقدان أو نسيان المستندات المطلوبة. بالإجابة على بعض الأسئلة حول وضعك الشخصي، يولّد التطبيق قائمة تدقيق فردية توضح بدقة المستندات المطلوبة. هذا يجعل زيارتك للجهة أكثر كفاءة وخالية من التوتر.",
 	"about.text.p2": `مع فحص المستندات، يمكنك التحضير لـ
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://service.berlin.de/dienstleistung/120686/"
 		target="_blank"
 		rel="noopener noreferrer"
 	>تسجيل الإقامة الرئيسية</a>,
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://service.berlin.de/dienstleistung/120703/"
 		target="_blank"
 		rel="noopener noreferrer"
 	>التقديم على بطاقة الهوية</a> و
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://service.berlin.de/dienstleistung/120926/"
 		target="_blank"
 		rel="noopener noreferrer"
 	>شهادة السجل العدلي</a> في مكتب شؤون المواطنين في شارع شليزيسشيه.
 	تم تطوير التطبيق بالتعاون الوثيق مع
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 		target="_blank"
 		rel="noopener noreferrer"
 	>مكتب منطقة فريدريشسهاين-كرويتسبيرغ في برلين، إدارة خدمات المواطنين</a> لعرض المعلومات اللازمة بشكل واضح وهادف. وبفضل توفره بسبع لغات، فإن قائمة التدقيق سهلة الوصول والاستخدام لمواطني برلين.`,
 	"about.text.p3": `إذا كنت ترغب في الاطلاع على الكود المصدري، يمكنك العثور عليه على
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://github.com/technologiestiftung/checkliste"
 		target="_blank"
 		rel="noopener noreferrer"
@@ -276,7 +277,7 @@ Grunewaldstraße 61–62<br/>
 ألمانيا<br/><br/>
 هاتف: 030 20 96 99 90  <br/>
 البريد الإلكتروني: info(at)ts.berlin  <br/>
-الموقع: <a class="font-bold hover:underline text-berlin-blue-500"
+الموقع: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
          href="https://www.technologiestiftung-berlin.de/de/stiftung/"
          target="_blank"
          rel="noopener noreferrer"
@@ -288,7 +289,7 @@ Grunewaldstraße 61–62  <br/>
 10825 برلين  <br/>
 ألمانيا  <br/><br/>
 هاتف: 030 20 96 99 951  <br/>
-البريد الإلكتروني: <a class="font-bold hover:underline text-berlin-blue-500"
+البريد الإلكتروني: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
          href="mailto:datenschutz@ts.berlin"
          target="_blank"
          rel="noopener noreferrer"
@@ -296,7 +297,7 @@ Grunewaldstraße 61–62  <br/>
 
 	"dataPrivacy.subtitle.p1.3":
 		"1.3 الغرض العام من جمع البيانات ومعالجتها واستخدامها",
-	"dataPrivacy.text.p1.3": `مؤسسة <a class="font-bold hover:underline text-berlin-blue-500"
+	"dataPrivacy.text.p1.3": `مؤسسة <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
                              href="https://www.technologiestiftung-berlin.de/de/stiftung/"
                              target="_blank"
                              rel="noopener noreferrer"

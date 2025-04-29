@@ -28,8 +28,6 @@ export function Overview() {
 	return (
 		<OverviewChecklistLayout
 			goToPreviousStep={goToPreviousStep}
-			isHintVisible={true}
-			hintTitle={i18n("overview.id-card.hint.title")}
 			hintText={i18n("overview.id-card.hint.text")}
 			storeKeys={storeKeys}
 			goToStart={goToStart}
