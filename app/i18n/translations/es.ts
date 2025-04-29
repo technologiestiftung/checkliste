@@ -15,6 +15,7 @@ const es = {
 	Start Page and general elements
 	*/
 	title: "Bienvenido a la Verificación de Documentos",
+	appTitle: "Comprobación de documentos",
 	selectLanguage: "Seleccione su idioma:",
 	intro:
 		"Esta aplicación le ayuda a preparar de forma óptima su cita en la oficina de atención al ciudadano. Responda unas breves preguntas y crearemos una lista de verificación individual con todos los documentos que necesita para su solicitud. Así evitará tiempos de espera innecesarios y se asegurará de llevar todo lo importante. Su información permanece anónima y se almacena exclusivamente localmente en su navegador – no se envía ningún dato a la oficina de atención al ciudadano ni a terceros.",

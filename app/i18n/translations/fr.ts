@@ -15,6 +15,7 @@ const fr = {
 	Start Page and general elements
 	*/
 	title: "Bienvenue dans le Vérificateur de Documents",
+	appTitle: "Vérificateur de Documents",
 	selectLanguage: "Sélectionnez votre langue :",
 	intro:
 		"Cette application vous aide à préparer de manière optimale votre rendez-vous au bureau des citoyens. Répondez à quelques questions courtes et nous créerons une liste de contrôle personnalisée avec tous les documents dont vous avez besoin pour votre demande. Vous évitez ainsi des temps d'attente inutiles et vous vous assurez d'avoir tout ce qui est important avec vous. Vos informations restent anonymes et sont stockées exclusivement localement dans votre navigateur – aucune donnée n'est transmise au bureau des citoyens ni à des tiers.",

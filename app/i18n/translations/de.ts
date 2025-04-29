@@ -15,6 +15,7 @@ const de = {
 	Start Page and general elements
 	*/
 	title: "Willkommen beim Dokumenten-Check",
+	appTitle: "Dokumenten-Check",
 	selectLanguage: "Suchen Sie Ihre Sprache aus:",
 	intro:
 		"Diese Anwendung hilft Ihnen, Ihren Termin im Bürgeramt optimal vorzubereiten. Beantworten Sie ein paar kurze Fragen und wir erstellen eine individuelle Checkliste mit allen Dokumenten, die Sie für Ihr Anliegen benötigen. So vermeiden Sie unnötige Wartezeiten und stellen sicher, dass Sie alles Wichtige dabeihaben. Ihre Angaben bleiben dabei anonym und werden ausschließlich lokal in Ihrem Browser gespeichert – es werden keine Daten an das Bürgeramt oder Dritte weitergegeben.",
