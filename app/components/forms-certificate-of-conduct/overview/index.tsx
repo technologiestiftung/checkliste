@@ -28,8 +28,6 @@ export function Overview() {
 		<OverviewChecklistLayout
 			goToPreviousStep={goToPreviousStep}
 			goToStart={goToStart}
-			isHintVisible={true}
-			hintTitle={i18n("overview.forms-certificate-of-conduct.hint.title")}
 			hintText={i18n("overview.forms-certificate-of-conduct.hint.text")}
 			storeKeys={storeKeys}
 		>

@@ -18,12 +18,12 @@ const es = {
 	selectLanguage: "Seleccione su idioma:",
 	intro:
 		"Esta aplicación le ayuda a preparar de forma óptima su cita en la oficina de atención al ciudadano. Responda unas breves preguntas y crearemos una lista de verificación individual con todos los documentos que necesita para su solicitud. Así evitará tiempos de espera innecesarios y se asegurará de llevar todo lo importante. Su información permanece anónima y se almacena exclusivamente localmente en su navegador – no se envía ningún dato a la oficina de atención al ciudadano ni a terceros.",
-	context: `Esta aplicación es un prototipo de <a class="font-bold hover:underline text-berlin-blue-500"
+	context: `Esta aplicación es un prototipo de <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 					href="https://citylab-berlin.org/de/start/"
 					target="_blank"
 					rel="noopener noreferrer"
 				> CityLAB Berlin</a> y la 
-			<a class="font-bold hover:underline text-berlin-blue-500"
+			<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 				target="_blank"
 				rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const es = {
 			Sus respuestas no se almacenan ni se evalúan.
 			<br/><br/>
 			¿Tiene preguntas o sugerencias útiles sobre cómo podemos mejorar esta aplicación? 
-			<a class="font-bold hover:underline text-berlin-blue-500"
+			<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist"
 				target="_blank"
 				rel="noopener noreferrer"
@@ -120,12 +120,12 @@ const es = {
 	"registered-in-berlin.q1": "¿Está registrado en Berlín?",
 	"registered-in-berlin.q2":
 		"¿Se encuentra actualmente en Berlín, por ejemplo porque vive aquí temporalmente, está de vacaciones o está sin hogar?",
-	"registered-in-berlin.q2.hint.yes": `También es posible solicitar un documento de identidad en Berlín. Los documentos solo pueden tramitarse en la Oficina Estatal de Asuntos Ciudadanos y Reglamentarios. Más información <a class="font-bold hover:underline text-berlin-blue-500"
+	"registered-in-berlin.q2.hint.yes": `También es posible solicitar un documento de identidad en Berlín. Los documentos solo pueden tramitarse en la Oficina Estatal de Asuntos Ciudadanos y Reglamentarios. Más información <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 				href="https://service.berlin.de/dienstleistung/326550/"
 				target="_blank"
 				rel="noopener noreferrer"
 			>aqu&iacute;</a>.`,
-	"registered-in-berlin.q2.hint.no": `Actualmente no puede solicitar un documento de identidad en Berlín. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Cancelar cita</a>.`,
+	"registered-in-berlin.q2.hint.no": `Actualmente no puede solicitar un documento de identidad en Berlín. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Cancelar cita</a>.`,
 	"id-for-child.q1":
 		"¿Está solicitando el documento de identidad para un menor?",
 	"id-for-child.q2":
@@ -141,10 +141,10 @@ const es = {
 	Flow Certificate of Conduct
 	*/
 	"applicantDetails.q1": "¿Tienes al menos 14 años?",
-	"applicantDetails.q1.hint": `Solo puedes solicitar un certificado de antecedentes a partir de los 14 años. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Cancelar cita</a>.`,
+	"applicantDetails.q1.hint": `Solo puedes solicitar un certificado de antecedentes a partir de los 14 años. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Cancelar cita</a>.`,
 	"applicantDetails.q2": "¿Estás registrado en Berlín?",
 	"applicantDetails.q3": "¿Vives en Berlín de forma temporal?",
-	"applicantDetails.q3.hint": `Por favor, solicita tu certificado de antecedentes en línea. <a class="font-bold hover:underline text-berlin-blue-500"
+	"applicantDetails.q3.hint": `Por favor, solicita tu certificado de antecedentes en línea. <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 			href="https://www.fuehrungszeugnis.bund.de/"
 			target="_blank"
 			rel="noopener noreferrer"
@@ -153,7 +153,7 @@ const es = {
 		"¿Solicitas el certificado de antecedentes para ti mismo?",
 	"certificate-of-conduct-details.q2":
 		"¿Solicitas el certificado de antecedentes como representante legal?",
-	"certificate-of-conduct-details.q2.hint": `Solo puedes solicitar el certificado de antecedentes si eres el representante legal. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Cancelar cita</a>.`,
+	"certificate-of-conduct-details.q2.hint": `Solo puedes solicitar el certificado de antecedentes si eres el representante legal. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Cancelar cita</a>.`,
 	"certificate-of-conduct-details.q3":
 		"¿Solicitas un certificado de antecedentes extendido?",
 	"certificate-of-conduct-details.q4":
@@ -173,12 +173,12 @@ const es = {
 		<li>Lleva los documentos impresos contigo a tu cita.</li>
 	</ul>`,
 	"overview.feedback": "No dudes en respondernos algunas preguntas.",
-	"overview.id-card.hint.title": "Nota:",
 	"overview.id-card.hint.text":
-		"A partir del 1 de mayo de 2025, las fotos biométricas para pasaportes solo se crearán y presentarán de forma digital en estudios fotográficos certificados u oficinas de atención al ciudadano. Se aplica una tarifa de 6 € por imagen, pagadera exclusivamente con tarjeta.",
-	"overview.forms-certificate-of-conduct.hint.title": "Nota:",
-	"overview.forms-certificate-of-conduct.hint.text": `También puedes solicitar cómodamente el certificado de antecedentes <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">en línea</a>.`,
-
+		"A partir del 1 de mayo de 2025, las fotografías biométricas para pasaporte se crearán y transmitirán digitalmente únicamente en estudios fotográficos certificados o en las oficinas de atención ciudadana. Se aplicará una tasa de 6 € por foto, pagadera únicamente con tarjeta.",
+	"overview.forms-certificate-of-conduct.hint.text":
+		'También puede solicitar el certificado de conducta cómodamente <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en línea</a>.',
+	"overview.forms-residence-registration.hint.text":
+		'También puede realizar su registro de residencia <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en línea</a>. Si elige registrarse en línea, por favor cancele su cita <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">aquí</a>.',
 	registrationForm: "Formulario de registro",
 	movingInConfirmation: "Confirmación de mudanza del arrendador",
 	birthCertificate: "Certificado de nacimiento",
@@ -235,29 +235,29 @@ const es = {
 	"about.text.p1":
 		"Las oficinas de atención al ciudadano de Berlín mencionan la falta o olvido de documentos requeridos como la razón más común de cancelación de citas. Al responder unas pocas preguntas sobre tu situación personal, la aplicación genera una lista de verificación individual que muestra con precisión qué documentos se necesitan. Esto hace que tu visita a la autoridad sea más eficiente y sin estrés.",
 	"about.text.p2": `Con la Comprobación de Documentos, puedes preparar la
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://service.berlin.de/dienstleistung/120686/"
 		target="_blank"
 		rel="noopener noreferrer"
 	>inscripción de residencia principal</a>,
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://service.berlin.de/dienstleistung/120703/"
 		target="_blank"
 		rel="noopener noreferrer"
 	>solicitud de DNI</a> y un
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://service.berlin.de/dienstleistung/120926/"
 		target="_blank"
 		rel="noopener noreferrer"
 	>certificado de antecedentes</a> en la oficina de atención al ciudadano de Schlesische Strasse.
 	La aplicación se desarrolló en estrecha colaboración con la
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 		target="_blank"
 		rel="noopener noreferrer"
 	>Oficina del Distrito de Friedrichshain-Kreuzberg de Berlín, Departamento de Servicios al Ciudadano</a> para presentar la información necesaria de manera clara y concisa. Gracias a su disponibilidad en siete idiomas, la lista de verificación es fácilmente accesible y utilizable para los ciudadanos de Berlín.`,
 	"about.text.p3": `Si quieres echar un vistazo detrás de escena, puedes encontrar el código abierto en
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 		href="https://github.com/technologiestiftung/checkliste"
 		target="_blank"
 		rel="noopener noreferrer"
@@ -286,7 +286,7 @@ Grunewaldstraße 61–62<br/>
 Alemania<br/><br/>
 Tel.: 030 20 96 99 90 <br/>
 E‑Mail: info(at)ts.berlin <br/>
-Sitio web: <a class="font-bold hover:underline text-berlin-blue-500"
+Sitio web: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
          href="https://www.technologiestiftung-berlin.de/de/stiftung/"
          target="_blank"
          rel="noopener noreferrer"
@@ -298,7 +298,7 @@ Grunewaldstraße 61–62 <br/>
 10825 Berlín <br/>
 Alemania <br/><br/>
 Tel.: 030 20 96 99 951 <br/>
-E‑Mail: <a class="font-bold hover:underline text-berlin-blue-500"
+E‑Mail: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
          href="mailto:datenschutz@ts.berlin"
          target="_blank"
          rel="noopener noreferrer"
@@ -306,7 +306,7 @@ E‑Mail: <a class="font-bold hover:underline text-berlin-blue-500"
 
 	"dataPrivacy.subtitle.p1.3":
 		"1.3 Finalidad general de la recopilación, procesamiento y uso de datos",
-	"dataPrivacy.text.p1.3": `El <a class="font-bold hover:underline text-berlin-blue-500"
+	"dataPrivacy.text.p1.3": `El <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
                              href="https://www.technologiestiftung-berlin.de/de/stiftung/"
                              target="_blank"
                              rel="noopener noreferrer"

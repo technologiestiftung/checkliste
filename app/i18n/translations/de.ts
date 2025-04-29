@@ -18,12 +18,12 @@ const de = {
 	selectLanguage: "Suchen Sie Ihre Sprache aus:",
 	intro:
 		"Diese Anwendung hilft Ihnen, Ihren Termin im Bürgeramt optimal vorzubereiten. Beantworten Sie ein paar kurze Fragen und wir erstellen eine individuelle Checkliste mit allen Dokumenten, die Sie für Ihr Anliegen benötigen. So vermeiden Sie unnötige Wartezeiten und stellen sicher, dass Sie alles Wichtige dabeihaben. Ihre Angaben bleiben dabei anonym und werden ausschließlich lokal in Ihrem Browser gespeichert – es werden keine Daten an das Bürgeramt oder Dritte weitergegeben.",
-	context: `Diese Anwendung ist ein Prototyp vom <a class="font-bold hover:underline text-berlin-blue-500"
+	context: `Diese Anwendung ist ein Prototyp vom <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://citylab-berlin.org/de/start/"
 							target="_blank"
 							rel="noopener noreferrer"
 						> CityLAB Berlin</a> und dem 
-						<a class="font-bold hover:underline text-berlin-blue-500"
+						<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const de = {
 						Ihre Antworten werden nicht gespeichert oder ausgewertet. 
 						<br/><br/>
 						Sie haben Fragen oder hilfreiche Tipps, wie wir diese Anwendung verbessern können? 
-						<a class="font-bold hover:underline text-berlin-blue-500"
+						<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -125,12 +125,12 @@ const de = {
 		"Sind Sie aktuell in Berlin, z.B. weil sie vorübergehend hier leben, hier Urlaub machen oder wohnungslos sind?",
 	"registered-in-berlin.q2.hint.yes": `Es besteht ebenfalls die Möglichkeit, einen Personalausweis in Berlin zu beantragen. 
 		Die Dokumente können ausschließlich beim Landesamt für Bürger- und Ordnungsangelegenheiten beantragt werden. 
-		Mehr Informationen finden Sie <a class="font-bold hover:underline text-berlin-blue-500"
+		Mehr Informationen finden Sie <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://service.berlin.de/dienstleistung/326550/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>hier</a>.`,
-	"registered-in-berlin.q2.hint.no": `Sie können aktuell keinen Personalausweis in Berlin beantragen. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Termin stornieren</a>.`,
+	"registered-in-berlin.q2.hint.no": `Sie können aktuell keinen Personalausweis in Berlin beantragen. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Termin stornieren</a>.`,
 	"id-for-child.q1":
 		"Beantragen Sie den Personalausweis für eine minderjährige Person?",
 	"id-for-child.q2":
@@ -146,10 +146,10 @@ const de = {
 	Flow Certificate of Conduct
 	*/
 	"applicantDetails.q1": "Sind Sie mindestens 14 Jahre alt?",
-	"applicantDetails.q1.hint": `Sie können ein Führungszeugnis erst ab 14 Jahre beantragen. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Termin stornieren</a>.`,
+	"applicantDetails.q1.hint": `Sie können ein Führungszeugnis erst ab 14 Jahre beantragen. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Termin stornieren</a>.`,
 	"applicantDetails.q2": "Sind Sie in Berlin gemeldet?",
 	"applicantDetails.q3": "Leben Sie vorrübergehend in Berlin?",
-	"applicantDetails.q3.hint": `Bitte beantragen Sie ihr Führungszeugnis online. <a class="font-bold hover:underline text-berlin-blue-500"
+	"applicantDetails.q3.hint": `Bitte beantragen Sie ihr Führungszeugnis online. <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://www.fuehrungszeugnis.bund.de/"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -158,7 +158,7 @@ const de = {
 		"Beantragen Sie das Führungszeugnis für sich selbst?",
 	"certificate-of-conduct-details.q2":
 		"Beantragen Sie das Führungszeugnis in gesetzlicher Vertretung?",
-	"certificate-of-conduct-details.q2.hint": `Sie können das Führungszeugnis nur beantragen, wenn Sie die gesetzliche Vertretung sind. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">Termin stornieren</a>.`,
+	"certificate-of-conduct-details.q2.hint": `Sie können das Führungszeugnis nur beantragen, wenn Sie die gesetzliche Vertretung sind. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Termin stornieren</a>.`,
 	"certificate-of-conduct-details.q3":
 		"Beantragen Sie ein erweitertes Führungszeugnis?",
 	"certificate-of-conduct-details.q4":
@@ -178,11 +178,11 @@ const de = {
 		<li>Bringen Sie die ausgedruckten Dokumente mit zu Ihrem Termin.</li>
 	</ul>`,
 	"overview.feedback": "Beantworten Sie uns gerne ein paar Fragen.",
-	"overview.id-card.hint.title": "Hinweis:",
 	"overview.id-card.hint.text":
 		"Ab 1. Mai 2025 werden biometrische Passbilder nur in zertifizierten Fotostudios oder Bürgerämtern digital erstellt und übermittelt. Pro Bild fällt eine Gebühr von 6 € an, zahlbar ausschließlich mit Karte.",
-	"overview.forms-certificate-of-conduct.hint.title": "Hinweis:",
-	"overview.forms-certificate-of-conduct.hint.text": `Sie können das Führungszeugnis auch bequem <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="text-blue-700 hover:underline visited:text-purple-500">online</a> beantragen.`,
+	"overview.forms-certificate-of-conduct.hint.text": `Sie können das Führungszeugnis auch bequem <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a> beantragen.`,
+	"overview.forms-residence-registration.hint.text": `Sie können auch Ihre Wohnsitz-Anmeldung <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a> durchführen. 
+	Falls Sie sich für die Onlineanmeldung entschieden haben, <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">stornieren Sie bitte Ihren Termin</a>.`,
 
 	registrationForm: "Anmeldeformular",
 	movingInConfirmation: "Einzugsbestätigung des Wohnungsgebers/ Vermieters",
@@ -211,7 +211,7 @@ const de = {
 	proofOfCustody:
 		"Nachweis zur Sorgeberechtigung z.B. beglaubigte Abschrift aus dem Sorgeregister vom Jugendamt",
 	consentOfCustodian:
-		"Einverständniserklärung des nicht anwesenden Sorgebereichtigten",
+		"Einverständniserklärung des nicht anwesenden Sorgeberechtigten",
 	copyOfID:
 		"Kopie von Ausweis (bzw. Reisepass oder Nationalpass) des nicht anwesenden Elternteils für den Unterschriftenabgleich",
 	newOrOldID: "gültiger oder alter Personalausweis oder Reisepass",
@@ -240,30 +240,30 @@ const de = {
 	"about.text.p1":
 		"Berliner Bürgerämter verzeichnen als häufigsten Grund für Terminabbrüche das Fehlen oder Vergessen der erforderlichen Unterlagen. Mithilfe kurzer Fragen zu Ihrer persönlichen Situation erstellt die Anwendung eine individuelle Checkliste, die Ihnen präzise anzeigt, welche Dokumente benötigt werden. Dadurch wird Ihr Behördengang effizienter und stressfreier gestaltet.",
 	"about.text.p2": `Mit dem Dokumenten-Check können Sie die 
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://service.berlin.de/dienstleistung/120686/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>Anmeldung eines Hauptwohnsitzes</a>, 
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://service.berlin.de/dienstleistung/120703/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>Beantragung eines Personalausweises</a> und eines 
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://service.berlin.de/dienstleistung/120926/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>Führungszeugnisses</a> im Ausbildungsbürgeramt Schlesische Strasse vorbereiten. 
 						
 	Die Anwendung wurde in enger Zusammenarbeit mit dem 
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 							target="_blank"
 							rel="noopener noreferrer"
 						>Bezirksamt Friedrichshain-Kreuzberg von Berlin, Amt für Bürgerdienste</a> entwickelt, um die notwendigen Informationen verständlich und zielgerichtet aufzubereiten. Dank der Verfügbarkeit in sieben Sprachen ist die Checkliste leicht zugänglich und für Berliner Bürger:innen nutzbar.`,
 	"about.text.p3": `Wenn Sie einen Blick hinter die Kulissen werfen möchtest, finden Sie den offenen Quellcode auf 
-	<a class="font-bold hover:underline text-berlin-blue-500"
+	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://github.com/technologiestiftung/checkliste"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -292,7 +292,7 @@ Deutschland <br/><br/>
 
 Tel.: 030 20 96 99 90  <br/>
 E-Mail: info(at)ts.berlin  <br/>
-Website: <a class="font-bold hover:underline text-berlin-blue-500"
+Website: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://www.technologiestiftung-berlin.de/de/stiftung/"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -307,7 +307,7 @@ Grunewaldstraße 61-62  <br/>
 Deutschland  <br/><br/>
 
 Tel.: 030 20 96 99 951  <br/>
-E-Mail: <a class="font-bold hover:underline text-berlin-blue-500"
+E-Mail: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="mailto:datenschutz@ts.berlin"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -315,7 +315,7 @@ E-Mail: <a class="font-bold hover:underline text-berlin-blue-500"
 
 	"dataPrivacy.subtitle.p1.3":
 		"1.3 Allgemeine Zweckbestimmung der Datenerhebung, -verarbeitung und -nutzung",
-	"dataPrivacy.text.p1.3": `Die <a class="font-bold hover:underline text-berlin-blue-500"
+	"dataPrivacy.text.p1.3": `Die <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://www.technologiestiftung-berlin.de/de/stiftung/"
 							target="_blank"
 							rel="noopener noreferrer"
