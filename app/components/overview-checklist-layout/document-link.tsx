@@ -52,7 +52,7 @@ export function DocumentLink({ id }: { id: string }) {
 				className="w-fit text-berlin-blue-900 flex flex-row gap-1 md:gap-2 items-center justify-center"
 			>
 				<DownloadIcon />
-				<span className="text font-bold origin-center p-0.5 lg:p-2.5 text-base md:text-[20px] hover:underline">
+				<span className="text font-bold origin-center p-0.5 text-base md:text-[20px] hover:underline">
 					{i18n("button.download")}
 				</span>
 			</a>
