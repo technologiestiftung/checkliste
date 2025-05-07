@@ -163,7 +163,7 @@ const de = {
 	"certificate-of-conduct-details.q3":
 		"Beantragen Sie ein erweitertes Führungszeugnis?",
 	"certificate-of-conduct-details.q4":
-		"Beantragen Sie ein behördliches Führungszeugnis?",
+		"Beantragen Sie ein Führungszeugnis zur Vorlage bei einer Behörde?",
 
 	/*
 	Checklist Overview
