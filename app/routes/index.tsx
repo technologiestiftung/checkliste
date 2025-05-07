@@ -11,7 +11,7 @@ export const meta = () => {
 		{
 			name: "description",
 			content:
-				"Diese Webseite ist ein Assistent für die Anmeldung oder Ummeldung in Berlin",
+				"Die Webseite ist ein Assistent für die Hauptwohnsitzanmeldung, Beantragung des Personalausweises und Führungszeugnisses.",
 		},
 	];
 };
