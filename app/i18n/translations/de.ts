@@ -187,11 +187,11 @@ const de = {
 
 	registrationForm: "Anmeldeformular",
 	movingInConfirmation: "Einzugsbestätigung des Wohnungsgebers/ Vermieters",
-	birthCertificate: "Geburtsurkunde",
+	birthCertificate: "Geburtsurkunde im Original",
 	marriageCertificate: "Heiratsurkunde",
 	idDocumentForSpouse:
 		"Personalausweis oder Reisepass der Ehepartnerin/des Ehepartners",
-	childBirthCertificate: "Geburtsurkunde des Kindes/der Kinder",
+	childBirthCertificate: "Geburtsurkunde des Kindes/der Kinder im Original",
 	custodyDeclaration: "Sorgerechtserklärung",
 	idDocumentForChild:
 		"Personalausweis, Reisepass oder Kinderpass des Kindes/der Kinder",
@@ -217,12 +217,13 @@ const de = {
 		"Kopie des Ausweises (bzw. Reisepasses oder Nationalpasses) des nicht anwesenden Elternteils für den Unterschriftenabgleich",
 	newOrOldID: "gültiger oder alter Personalausweis oder Reisepass",
 	birthCertificateOrPartnershipCertificate:
-		"Geburtsurkunde, Eheurkunde oder Lebenspartnerschaftsurkunde",
+		"Geburtsurkunde, Eheurkunde oder Lebenspartnerschaftsurkunde im Original",
 	passportOrforeignID:
 		"Reisepass oder ID-Card des Staates der bisherigen Nationalität oder eine Identitätsbescheinigung vom Landesamt für Einwanderung (LEA).",
 	naturalizationCertificate: "Einbürgerungsurkunde",
 
-	birthCertificateOfRepresantative: "Geburtsurkunde der vertretenen Person",
+	birthCertificateOfRepresantative:
+		"Geburtsurkunde der vertretenen Person im Original",
 	carerId: "Betreuerausweis (wenn nicht sorgeberechtigt)",
 	idOfLegalRepresantative: "Ausweisdokument von gesetzlicher Vertretung",
 	idDocument: "Ausweisdokument",
