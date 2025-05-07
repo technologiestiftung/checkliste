@@ -214,7 +214,7 @@ const de = {
 	consentOfCustodian:
 		"Einverständniserklärung des nicht anwesenden Sorgeberechtigten",
 	copyOfID:
-		"Kopie von Ausweis (bzw. Reisepass oder Nationalpass) des nicht anwesenden Elternteils für den Unterschriftenabgleich",
+		"Kopie des Ausweises (bzw. Reisepasses oder Nationalpasses) des nicht anwesenden Elternteils für den Unterschriftenabgleich",
 	newOrOldID: "gültiger oder alter Personalausweis oder Reisepass",
 	birthCertificateOrPartnershipCertificate:
 		"Geburtsurkunde, Eheurkunde oder Lebenspartnerschaftsurkunde",
