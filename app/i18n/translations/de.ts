@@ -210,7 +210,7 @@ const de = {
 	idOfParents: "Ausweisdokumente der Eltern",
 	bringChild: "Kind mitbringen",
 	proofOfCustody:
-		"Nachweis zur Sorgeberechtigung z.B. beglaubigte Abschrift aus dem Sorgeregister vom Jugendamt",
+		"Nachweis zur Sorgeberechtigung z.B. beglaubigte Abschrift aus dem Sorgeregister vom Jugendamt im Original",
 	consentOfCustodian:
 		"Einverständniserklärung des nicht anwesenden Sorgeberechtigten",
 	copyOfID:
