@@ -133,7 +133,7 @@ const de = {
 						>hier</a>.`,
 	"registered-in-berlin.q2.hint.no": `Sie können aktuell keinen Personalausweis in Berlin beantragen. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Termin stornieren</a>.`,
 	"id-for-child.q1":
-		"Beantragen Sie den Personalausweis für eine minderjährige Person?",
+		"Beantragen Sie den Personalausweis für eine Person unter 16 Jahre?",
 	"id-for-child.q2":
 		"Sind alle gesetzlichen Vertreter:innen (in den meisten Fällen sorgeberechtige Elternteile) bei dem Termin im Bürgeramt anwesend?",
 	"id-for-child.q3": "Sind die gesetzlichen Vertreter verheiratet?",
