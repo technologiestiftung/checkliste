@@ -239,6 +239,7 @@ const de = {
 	purposeOfApplication:
 		"Verwendungszweck z.B. Einstellung in den öffentlichen Dienst",
 	letterOrEmailFromAuthority: "Schreiben oder E-Mail der Behörde",
+	bankOrCreditCard: "Bankkarte oder Kreditkarte",
 
 	/*
 	About
