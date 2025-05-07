@@ -28,7 +28,12 @@ const de = {
 							href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 							target="_blank"
 							rel="noopener noreferrer"
-						>Bezirksamt Friedrichshain-Kreuzberg von Berlin, Amt für Bürgerdienste</a>.
+						>Bezirksamt Friedrichshain-Kreuzberg von Berlin, Amt für Bürgerdienste</a> und der 
+						<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+							href="https://www.berlin.de/moderne-verwaltung/buergerservice/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Senatskanzlei Berlin</a>.
 						Ziel ist es, Terminabbrüche aufgrund von fehlenden Unterlagen zu vermeiden.
 						Ihre Antworten werden nicht gespeichert oder ausgewertet. 
 						<br/><br/>
