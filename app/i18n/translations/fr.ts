@@ -18,7 +18,7 @@ const fr = {
 	appTitle: "Document Check",
 	selectLanguage: "Sélectionnez votre langue :",
 	intro:
-		"Cette application vous aide à préparer votre rendez-vous au bureau des citoyens de la meilleure manière possible. Répondez à quelques courtes questions et nous créerons une liste de contrôle personnalisée avec tous les documents dont vous avez besoin pour votre dossier. De cette façon, vous pouvez éviter des temps d’attente inutiles et vous assurer d’avoir tout ce qui est important avec vous. Vos informations resteront anonymes et seront uniquement stockées localement dans votre navigateur – aucune donnée ne sera partagée avec le bureau des citoyens ni avec des tiers. Souhaitez-vous aussi une version plus formelle ou plus concise?",
+		"Cette application vous aide à préparer votre rendez-vous au bureau des citoyens de la meilleure manière possible. Répondez à quelques courtes questions et nous créerons une liste de contrôle personnalisée avec tous les documents dont vous avez besoin pour votre dossier. De cette façon, vous pouvez éviter des temps d’attente inutiles et vous assurer d’avoir tout ce qui est important avec vous. Vos informations resteront anonymes et seront uniquement stockées localement dans votre navigateur – aucune donnée ne sera partagée avec le bureau des citoyens ni avec des tiers.",
 	context: `Cette application est un prototype de <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
 							href="https://citylab-berlin.org/fr/start/"
 							target="_blank"
