@@ -14,46 +14,51 @@ const es = {
 	/*
 	Start Page and general elements
 	*/
-	title: "Bienvenido a la Verificación de Documentos",
-	appTitle: "Comprobación de documentos",
+	title: "Bienvenido al Control de Documentos",
+	appTitle: "Control de Documentos",
 	selectLanguage: "Seleccione su idioma:",
 	intro:
-		"Esta aplicación le ayuda a preparar de forma óptima su cita en la oficina de atención al ciudadano. Responda unas breves preguntas y crearemos una lista de verificación individual con todos los documentos que necesita para su solicitud. Así evitará tiempos de espera innecesarios y se asegurará de llevar todo lo importante. Su información permanece anónima y se almacena exclusivamente localmente en su navegador – no se envía ningún dato a la oficina de atención al ciudadano ni a terceros.",
+		"Esta aplicación le ayuda a preparar de forma óptima su cita en la oficina de registro de residentes. Responda unas breves preguntas y crearemos una lista de verificación individualizada con todos los documentos que necesita para su trámite. Así evitará esperas innecesarias y se asegurará de llevar todo lo importante. Sus respuestas permanecen anónimas y se almacenan únicamente en su navegador: no se envían datos a la oficina de registro ni a terceros.",
 	context: `Esta aplicación es un prototipo de <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-					href="https://citylab-berlin.org/de/start/"
-					target="_blank"
-					rel="noopener noreferrer"
-				> CityLAB Berlin</a> y la 
-			<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-				href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
-				target="_blank"
-				rel="noopener noreferrer"
-			>Oficina de Distrito Friedrichshain-Kreuzberg de Berlín, Departamento de Servicios al Ciudadano</a>.
-			El objetivo es evitar cancelaciones de citas debido a documentos faltantes.
-			Sus respuestas no se almacenan ni se evalúan.
-			<br/><br/>
-			¿Tiene preguntas o sugerencias útiles sobre cómo podemos mejorar esta aplicación? 
-			<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-				href="https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist"
-				target="_blank"
-				rel="noopener noreferrer"
-			>Entonces no dude en responder algunas preguntas para nosotros</a>. `,
+						href="https://citylab-berlin.org/de/start/"
+						target="_blank"
+						rel="noopener noreferrer"
+					  >CityLAB Berlin</a> y del 
+					  <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+						href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
+						target="_blank"
+						rel="noopener noreferrer"
+					  >Ayuntamiento de Friedrichshain-Kreuzberg de Berlín, Oficina de Servicios al Ciudadano</a> y de la 
+					  <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+						href="https://www.berlin.de/moderne-verwaltung/buergerservice/"
+						target="_blank"
+						rel="noopener noreferrer"
+					  >Cancillería del Senado de Berlín</a>.
+					  El objetivo es evitar cancelaciones de citas por falta de documentos.
+					  Sus respuestas no se guardan ni se evalúan.
+					  <br/><br/>
+					  ¿Tiene preguntas o consejos útiles sobre cómo podemos mejorar esta aplicación?
+					  <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+						href="https://citylabberlin.typeform.com/to/kCdnCgvC?product_id=checklist"
+						target="_blank"
+						rel="noopener noreferrer"
+					  >Contéstenos algunas preguntas</a>.`,
 
-	"navigation.title": "Elija un servicio",
+	"navigation.title": "Seleccione un servicio",
 	"navigation.description": "Descubra qué documentos necesita.",
-	"navigation.button": "Comenzar",
-	"navigation.id-card": "Solicitar documento de identidad",
-	"navigation.certificate-of-conduct": "Solicitar certificado de conducta",
+	"navigation.button": "Iniciar",
+	"navigation.id-card": "Solicitar DNI",
+	"navigation.certificate-of-conduct": "Solicitar certificado de antecedentes",
 	"navigation.residence-registration":
-		"Registrar residencia – vivienda única o principal",
-	"navigation.startpage": "Inicio",
-	"navigation.startpage.mobile": "Volver al inicio",
+		"Registro de residencia – Registrar vivienda única o principal",
+	"navigation.startpage": "Página de inicio",
+	"navigation.startpage.mobile": "A la página de inicio",
 	"footer.toTheTop": "Volver arriba",
 	"footer.button.name.expand": "Mostrar más",
 	"footer.button.name.collapse": "Mostrar menos",
-	"upperFooter.checklist.title": "Comprobación de documentos",
-	"upperFooter.checklist.about": "Acerca del proyecto",
-	"upperFooter.checklist.impressum": "Aviso legal",
+	"upperFooter.checklist.title": "Control de Documentos",
+	"upperFooter.checklist.about": "Sobre el proyecto",
+	"upperFooter.checklist.impressum": "Impresión",
 	"upperFooter.checklist.dataprivacy": "Política de privacidad",
 	"upperFooter.checklist.accessibility": "Declaración de accesibilidad",
 
@@ -69,12 +74,12 @@ const es = {
 	"button.next": "Siguiente",
 	"button.cancel": "Cancelar",
 	"button.fillOutAgain": "Rellenar de nuevo",
-	"button.next.tooltip": "Por favor responda primero a la pregunta.",
+	"button.next.tooltip": "Por favor responda primero la pregunta.",
 	"button.print": "Imprimir lista",
 	"button.finish": "Finalizar",
-	"title.residence-registration": "Registrar una residencia",
-	"title.id-card": "Solicitar documento de identidad",
-	"title.certificate-of-conduct": "Solicitar certificado de conducta",
+	"title.residence-registration": "Registro de una vivienda",
+	"title.id-card": "Solicitud de DNI",
+	"title.certificate-of-conduct": "Solicitud de certificado de antecedentes",
 	"title.hint": "Nota:",
 
 	"link.cancelAppointment.label": "Cancelar cita",
@@ -89,295 +94,289 @@ const es = {
 	"feedback.button.no": "No, gracias",
 
 	/*
-	Flow Residence Registration
+	Flow Wohnsitz
 	*/
-	"first-registration.q1": "¿Se está registrando por primera vez en Berlín?",
-	"first-registration.q2": "¿Está casado?",
+	"first-registration.q1": "¿Es la primera vez que se registra en Berlín?",
+	"first-registration.q2": "¿Está casado/a?",
 	"first-registration.q3": "¿Desea registrar también a su cónyuge?",
 	"first-registration.q4": "¿Tiene hijos menores de 18 años?",
-	"first-registration.q5": "¿Se mudará un niño a su domicilio?",
-	"first-registration.q6": "¿Se mudarán más de dos personas en total?",
+	"first-registration.q5": "¿Se traslada algún hijo con usted?",
+	"first-registration.q6": "¿Se mudan en total más de dos personas?",
 	"nationality.q1": "¿Tiene la nacionalidad alemana?",
 	"nationality.q2": "¿Tiene más de 16 años?",
-	"nationality.q3": "¿Es de un país de la UE?",
-	"nationality.q4": "¿Es menor de 16 años?",
-	"nationality.q5": "¿Tiene estatus de refugiado?",
+	"nationality.q3": "¿Proviene de un país de la UE?",
+	"nationality.q4": "¿Tiene menos de 16 años?",
+	"nationality.q5": "¿Tiene el estatus de persona refugiada?",
 	"nationality.q5.hint":
-		"Es posible que necesite registrarse a través de la Oficina de Ciudadanos para Refugiados. Encuentre más información aquí:",
-	"other-residence.q1": "¿Está registrado en otra residencia?",
+		"Es posible que deba registrar su residencia a través de la Oficina de Ciudadanos Refugiados. Aquí encontrará más información:",
+	"other-residence.q1": "¿Permanece registrado/a en otra vivienda?",
 	"other-residence.q2": "¿Vive en el extranjero?",
-	"other-residence.q3": "¿Se quedará en Berlín por más de tres meses?",
+	"other-residence.q3": "¿Desea quedarse en Berlín por más de tres meses?",
 	"other-residence.q3.hint":
-		"Si permanece en Berlín durante no más de tres meses, no necesita registrarse.",
+		"Si no va a permanecer más de tres meses en Berlín, no necesita registrarse.",
 	"other-residence.q3.hint.link.label": "Cancelar cita",
-	"other-residence.q4": "¿Se quedará en Berlín por más de seis meses?",
+	"other-residence.q4": "¿Desea quedarse en Berlín por más de seis meses?",
 	"other-residence.q4.hint":
-		"Si permanece en Berlín durante no más de seis meses, no necesita registrarse.",
+		"Si no va a permanecer más de seis meses en Berlín, no necesita registrarse.",
 	"other-residence.q4.hint.link.label": "Cancelar cita",
 
-	/*
+	/* 
 	Flow ID Card
 	*/
-	"registered-in-berlin.q1": "¿Está registrado en Berlín?",
+	"registered-in-berlin.q1": "¿Está registrado/a en Berlín?",
 	"registered-in-berlin.q2":
-		"¿Se encuentra actualmente en Berlín, por ejemplo porque vive aquí temporalmente, está de vacaciones o está sin hogar?",
-	"registered-in-berlin.q2.hint.yes": `También es posible solicitar un documento de identidad en Berlín. Los documentos solo pueden tramitarse en la Oficina Estatal de Asuntos Ciudadanos y Reglamentarios. Más información <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-				href="https://service.berlin.de/dienstleistung/326550/"
-				target="_blank"
-				rel="noopener noreferrer"
-			>aqu&iacute;</a>.`,
-	"registered-in-berlin.q2.hint.no": `Actualmente no puede solicitar un documento de identidad en Berlín. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Cancelar cita</a>.`,
-	"id-for-child.q1":
-		"¿Está solicitando el documento de identidad para un menor?",
+		"¿Se encuentra actualmente en Berlín, por ejemplo porque vive temporalmente, está de vacaciones o está sin techo?",
+	"registered-in-berlin.q2.hint.yes": `También puede solicitar un DNI en Berlín.
+	  Los documentos solo se pueden tramitar en la Oficina Estatal de Asuntos Ciudadanos y de Orden Público.
+	  Más información <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+						  href="https://service.berlin.de/dienstleistung/326550/"
+						  target="_blank"
+						  rel="noopener noreferrer"
+					   >aquí</a>.`,
+	"registered-in-berlin.q2.hint.no": `Actualmente no puede solicitar un DNI en Berlín. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Cancelar cita</a>.`,
+	"id-for-child.q1": "¿Solicita el DNI para una persona menor de 16 años?",
 	"id-for-child.q2":
-		"¿Están todos los tutores legales (en la mayoría de los casos los padres con derechos de custodia) presentes en la cita en la oficina de atención al ciudadano?",
-	"id-for-child.q3": "¿Están casados los tutores legales?",
+		"¿Están presentes en la cita en la oficina de registro todos los representantes legales (por lo general, los padres con custodia)?",
+	"id-for-child.q3": "¿Están casados los representantes legales?",
 	"previous-id.q1":
-		"¿Ha tenido anteriormente un documento oficial de identificación (por ejemplo, DNI o pasaporte)?",
+		"¿Ha tenido ya un documento oficial de identidad (por ejemplo, DNI o pasaporte)?",
 	"previous-id.q2": "¿Ha cambiado su nombre desde la última emisión?",
 	"previous-id.q3":
-		"¿Se ha naturalizado y esta es la primera vez que solicita un DNI alemán?",
+		"¿Ha sido nacionalizado/a y solicita por primera vez un DNI alemán?",
 
 	/*
 	Flow Certificate of Conduct
 	*/
-	"applicantDetails.q1": "¿Tienes al menos 14 años?",
-	"applicantDetails.q1.hint": `Solo puedes solicitar un certificado de antecedentes a partir de los 14 años. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Cancelar cita</a>.`,
-	"applicantDetails.q2": "¿Estás registrado en Berlín?",
-	"applicantDetails.q3": "¿Vives en Berlín de forma temporal?",
-	"applicantDetails.q3.hint": `Por favor, solicita tu certificado de antecedentes en línea. <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-			href="https://www.fuehrungszeugnis.bund.de/"
-			target="_blank"
-			rel="noopener noreferrer"
-		>Enlace a la solicitud en línea</a>.`,
+	"applicantDetails.q1": "¿Tiene al menos 14 años?",
+	"applicantDetails.q1.hint": `Solo puede solicitar un certificado de antecedentes a partir de los 14 años. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Cancelar cita</a>.`,
+	"applicantDetails.q2": "¿Está registrado/a en Berlín?",
+	"applicantDetails.q3": "¿Vive temporalmente en Berlín?",
+	"applicantDetails.q3.hint": `Solicite su certificado de antecedentes en línea. <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+						  href="https://www.fuehrungszeugnis.bund.de/"
+						  target="_blank"
+						  rel="noopener noreferrer"
+					   >Enlace al formulario en línea</a>.`,
 	"certificate-of-conduct-details.q1":
-		"¿Solicitas el certificado de antecedentes para ti mismo?",
+		"¿Solicita el certificado de antecedentes para usted mismo?",
 	"certificate-of-conduct-details.q2":
-		"¿Solicitas el certificado de antecedentes como representante legal?",
-	"certificate-of-conduct-details.q2.hint": `Solo puedes solicitar el certificado de antecedentes si eres el representante legal. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Cancelar cita</a>.`,
+		"¿Solicita el certificado de antecedentes en representación legal?",
+	"certificate-of-conduct-details.q2.hint": `Solo puede solicitar el certificado de antecedentes si es el representante legal. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Cancelar cita</a>.`,
 	"certificate-of-conduct-details.q3":
-		"¿Solicitas un certificado de antecedentes extendido?",
+		"¿Solicita un certificado de antecedentes ampliado?",
 	"certificate-of-conduct-details.q4":
-		"¿Solicitas un certificado de antecedentes oficial?",
+		"¿Solicita un certificado de antecedentes para presentar ante una autoridad?",
 
 	/*
 	Checklist Overview
 	*/
-	"overview.title": "Tu lista de verificación personalizada ha sido creada",
+	"overview.title": "Su lista de verificación personalizada ha sido creada",
 	"overview.text.1":
-		"Hemos compilado una lista de verificación individual de todos los documentos que necesitas para tu cita en la oficina de atención al ciudadano. Tu información permanece almacenada localmente en el navegador. Puedes acceder a tu lista en cualquier momento, incluso más tarde mediante un marcador.",
-	"overview.title.2": "Cómo usar la comprobación de documentos:",
+		"Hemos preparado una lista de verificación individualizada con todos los documentos necesarios para su cita en la oficina de registro. Sus datos permanecen guardados localmente en el navegador. Puede consultar su lista en cualquier momento, también más tarde mediante un marcador.",
+	"overview.title.2": "Cómo usar el Control de Documentos:",
 	"overview.text.2": `
 	<ul class="list-decimal pl-5 lg:pl-7 w-9/10">
-		<li>Descarga los documentos requeridos usando el icono de descarga.</li>
-		<li>Marca los documentos que ya hayas completado.</li>
-		<li>Lleva los documentos impresos contigo a tu cita.</li>
+	  <li>Descargue los documentos necesarios haciendo clic en el icono de la flecha.</li>
+	  <li>Marque los documentos que ya tenga preparados.</li>
+	  <li>Lleve los documentos impresos a su cita.</li>
 	</ul>`,
-	"overview.feedback": "No dudes en respondernos algunas preguntas.",
+	"overview.feedback": "Contéstenos algunas preguntas.",
 	"overview.id-card.hint.text":
-		"A partir del 1 de mayo de 2025, las fotografías biométricas para pasaporte se crearán y transmitirán digitalmente únicamente en estudios fotográficos certificados o en las oficinas de atención ciudadana. Se aplicará una tasa de 6 € por foto, pagadera únicamente con tarjeta.",
-	"overview.forms-certificate-of-conduct.hint.text":
-		'También puede solicitar el certificado de conducta cómodamente <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en línea</a>.',
-	"overview.forms-residence-registration.hint.text":
-		'También puede realizar su registro de residencia <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en línea</a>. Si elige registrarse en línea, por favor cancele su cita <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">aquí</a>.',
+		"A partir del 01.05.2025, las fotografías biométricas solo se podrán tomar digitalmente en las autoridades (oficinas de registro de residentes) o en estudios fotográficos certificados y transmitirse de forma segura electrónicamente.",
+	"overview.forms-certificate-of-conduct.hint.text": `También puede solicitar el certificado de antecedentes cómodamente <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en línea</a>.`,
+	"overview.forms-residence-registration.hint.text": `También puede registrar su residencia <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en línea</a>.
+	Si opta por el registro en línea, <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">cancele su cita</a>.`,
+
 	registrationForm: "Formulario de registro",
 	movingInConfirmation: "Confirmación de mudanza del arrendador",
-	birthCertificate: "Certificado de nacimiento",
+	birthCertificate: "Certificado de nacimiento original",
 	marriageCertificate: "Certificado de matrimonio",
-	idDocumentForSpouse: "Documento de identidad o pasaporte del cónyuge",
-	childBirthCertificate: "Certificado de nacimiento del hijo",
+	idDocumentForSpouse: "DNI o pasaporte del cónyuge",
+	childBirthCertificate:
+		"Certificado de nacimiento del/de los niño(s) original",
 	custodyDeclaration: "Declaración de custodia",
-	idDocumentForChild: "DNI, pasaporte o pasaporte infantil del hijo",
-	guardianConsent: "Formulario de consentimiento de los tutores del niño",
+	idDocumentForChild: "DNI, pasaporte o pasaporte infantil del/de los niño(s)",
+	guardianConsent: "Consentimiento de los tutores legales del/de los niño(s)",
 	additionalRegistrationForm: "Formulario de registro adicional",
 	germanIdOrPassportOrChildPassport:
-		"Tu propio DNI, pasaporte o pasaporte infantil",
-	germanIdOrPassport: "Tu propio DNI o pasaporte",
-	confirmationOfCustodian: "Formulario de consentimiento de tu tutor",
+		"Su propio DNI, pasaporte o pasaporte infantil",
+	germanIdOrPassport: "Su propio DNI o pasaporte",
+	confirmationOfCustodian: "Consentimiento de sus tutores legales",
 	euIdOrPassportOrReplacement:
-		"DNI europeo, pasaporte o documentos de reemplazo de pasaporte",
-	nonEuIdOrPassportOrReplacement:
-		"Pasaporte o documentos de reemplazo de pasaporte",
-	supplement:
-		"Suplemento para la declaración de registro / domicilio principal",
+		"DNI europeo, pasaporte o documento de sustitución",
+	nonEuIdOrPassportOrReplacement: "Pasaporte o documento de sustitución",
+	supplement: "Anexo para registro/declaración de vivienda principal",
 
-	idOfParents: "Documentos de identificación de los padres",
-	bringChild: "Llevar al niño",
+	idOfParents: "Documentos de identidad de los padres",
+	bringChild: "Traer al niño",
 	proofOfCustody:
-		"Prueba de custodia (p.ej., extracto certificado del registro de custodia de la Oficina de Bienestar Juvenil)",
-	consentOfCustodian: "Formulario de consentimiento del tutor ausente",
+		"Prueba de custodia, p. ej. copia certificada del registro de custodia del Registro de Menores (Jugendamt) en original",
+	consentOfCustodian: "Consentimiento del tutor no presente",
 	copyOfID:
-		"Copia del DNI (o pasaporte o pasaporte nacional) del progenitor ausente para verificación de firma",
-	newOrOldID: "DNI válido o antiguo o pasaporte",
+		"Copia del DNI (o pasaporte o pasaporte nacional) del tutor ausente para comprobación de firma",
+	newOrOldID: "DNI o pasaporte válido o antiguo",
 	birthCertificateOrPartnershipCertificate:
-		"Certificado de nacimiento, certificado de matrimonio o certificado de pareja de hecho",
+		"Certificado de nacimiento, matrimonio o unión de hecho original",
 	passportOrforeignID:
-		"Pasaporte o documento de identidad del país de la nacionalidad anterior o un certificado de identidad de la Oficina Estatal de Inmigración (LEA).",
+		"Pasaporte o DNI del país de nacionalidad anterior o certificado de identidad de la Oficina Regional de Inmigración (LEA)",
 	naturalizationCertificate: "Certificado de naturalización",
 
 	birthCertificateOfRepresantative:
-		"Certificado de nacimiento de la persona representada",
-	carerId: "DNI de cuidador (si no es tutor)",
-	idOfLegalRepresantative:
-		"Documento de identificación del representante legal",
-	idDocument: "Documento de identificación",
+		"Certificado de nacimiento de la persona representada original",
+	carerId: "Carné de cuidador (si no es tutor legal)",
+	idOfLegalRepresantative: "Documento de identidad del representante legal",
+	idDocument: "Documento de identidad",
 	writtenRequestAuthorized:
-		"Solicitud por escrito de una agencia autorizada (certificado de antecedentes extendido)",
+		"Solicitud escrita de una autoridad competente (certificado ampliado)",
 	nameAndAddressOfAuthority: "Nombre y dirección de la autoridad",
-	fileNumber: "Número de referencia del archivo",
+	fileNumber: "Número de expediente",
 	purposeOfApplication:
-		"Finalidad de la solicitud (p.ej., empleo en el servicio público)",
+		"Finalidad del trámite, p. ej. empleo en el servicio público",
 	letterOrEmailFromAuthority: "Carta o correo electrónico de la autoridad",
+	bankOrCreditCard: "Tarjeta bancaria o de crédito",
 
 	/*
 	About
 	*/
-	"about.title": "Acerca del proyecto Comprobación de Documentos",
+	"about.title": "Sobre el proyecto Control de Documentos",
 	"about.text.p1":
-		"Las oficinas de atención al ciudadano de Berlín mencionan la falta o olvido de documentos requeridos como la razón más común de cancelación de citas. Al responder unas pocas preguntas sobre tu situación personal, la aplicación genera una lista de verificación individual que muestra con precisión qué documentos se necesitan. Esto hace que tu visita a la autoridad sea más eficiente y sin estrés.",
-	"about.text.p2": `Con la Comprobación de Documentos, puedes preparar la
-	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-		href="https://service.berlin.de/dienstleistung/120686/"
-		target="_blank"
-		rel="noopener noreferrer"
-	>inscripción de residencia principal</a>,
-	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-		href="https://service.berlin.de/dienstleistung/120703/"
-		target="_blank"
-		rel="noopener noreferrer"
-	>solicitud de DNI</a> y un
-	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-		href="https://service.berlin.de/dienstleistung/120926/"
-		target="_blank"
-		rel="noopener noreferrer"
-	>certificado de antecedentes</a> en la oficina de atención al ciudadano de Schlesische Strasse.
-	La aplicación se desarrolló en estrecha colaboración con la
-	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-		href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
-		target="_blank"
-		rel="noopener noreferrer"
-	>Oficina del Distrito de Friedrichshain-Kreuzberg de Berlín, Departamento de Servicios al Ciudadano</a> para presentar la información necesaria de manera clara y concisa. Gracias a su disponibilidad en siete idiomas, la lista de verificación es fácilmente accesible y utilizable para los ciudadanos de Berlín.`,
-	"about.text.p3": `Si quieres echar un vistazo detrás de escena, puedes encontrar el código abierto en
-	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-		href="https://github.com/technologiestiftung/checkliste"
-		target="_blank"
-		rel="noopener noreferrer"
-	>GitHub</a>.`,
-	"about.text.p4": "¡Buena suerte preparando tu visita a las autoridades!",
+		"Las oficinas de registro de residentes de Berlín identifican como motivo principal de cancelación de citas la falta o el olvido de los documentos necesarios. Mediante breves preguntas sobre su situación personal, la aplicación genera una lista de verificación individualizada que le indica con precisión qué documentos necesita. Así su trámite administrativo será más eficiente y menos estresante.",
+	"about.text.p2": `Con el Control de Documentos puede preparar
+	  la <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+							href="https://service.berlin.de/dienstleistung/120686/"
+							target="_blank"
+							rel="noopener noreferrer"
+						  >registración de una vivienda principal</a>,
+	  <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+							href="https://service.berlin.de/dienstleistung/120703/"
+							target="_blank"
+							rel="noopener noreferrer"
+						  >solicitud de DNI</a> y
+	  <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+							href="https://service.berlin.de/dienstleistung/120926/"
+							target="_blank"
+							rel="noopener noreferrer"
+						  >certificado de antecedentes</a> en la Oficina de Registro de Formación Schlesische Straße.`,
+	"about.text.p3": `La aplicación se desarrolló en estrecha colaboración con el
+	  <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+							href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
+							target="_blank"
+							rel="noopener noreferrer"
+						  >Ayuntamiento de Friedrichshain-Kreuzberg de Berlín, Oficina de Servicios al Ciudadano</a>
+	  para presentar la información necesaria de forma clara y dirigida. Gracias a su disponibilidad en siete idiomas, la lista de verificación es fácilmente accesible para los residentes de Berlín.`,
+	"about.text.p4": "¡Le deseamos mucho éxito en la preparación de su trámite!",
 
 	/*
-	Data Privacy
+	 Data Privacy
 	*/
 	"dataPrivacy.title":
-		"Política de privacidad para el prototipo “Comprobación de Documentos”",
+		"Declaración de privacidad para el prototipo «Control de Documentos»",
 	"dataPrivacy.subtitle":
-		"Esta política de privacidad se aplica exclusivamente al prototipo “Comprobación de Documentos”.",
+		"Esta declaración de privacidad se aplica exclusivamente al prototipo «Control de Documentos».",
 	"dataPrivacy.title.p1": "1. Información general",
-	"dataPrivacy.subtitle.p1.1": "1.1 Finalidad de esta política de privacidad",
-	"dataPrivacy.text.p1.1": `Esta política de privacidad tiene como objetivo informarte sobre el tipo, alcance y finalidad de los datos recopilados, utilizados y procesados por la Technologiestiftung Berlin, así como tus derechos en materia de protección de datos. Technologiestiftung Berlin es consciente de su responsabilidad de proteger los datos personales y está especialmente comprometida con salvaguardar tu privacidad.   
-<br/><br/>
-Los datos personales, en sentido del Reglamento General de Protección de Datos (RGPD – Reglamento (UE) 2016/679), se refieren a cualquier información que permita identificar a una persona. En el proceso de aplicación del RGPD desde el 25 de mayo de 2018, Technologiestiftung Berlin ha implementado numerosas medidas para garantizar la protección de tus datos y minimizar el procesamiento basado en sus propios intereses.`,
+	"dataPrivacy.subtitle.p1.1": "1.1 Finalidad de la declaración de privacidad",
+	"dataPrivacy.text.p1.1": `La declaración de privacidad tiene por objetivo informarle sobre el tipo, alcance y finalidad de los datos que recoge, utiliza y procesa Technologiestiftung Berlin, así como sus derechos en materia de protección de datos. Technologiestiftung Berlin es consciente de su responsabilidad en la protección de los datos personales y se esfuerza especialmente en garantizar su privacidad.  
+  <br/><br/>
+  Los datos personales, según el Reglamento General de Protección de Datos (RGPD – Reglamento (UE) 2016/679), son toda información que permite identificar inequívocamente a una persona. Con la aplicación del RGPD desde el 25 de mayo de 2018, Technologiestiftung Berlin ha implementado numerosas medidas para garantizar la seguridad de sus datos y minimizar su uso tras ponderar los intereses en juego.`,
 
-	"dataPrivacy.subtitle.p1.2": "1.2 Responsable del tratamiento",
-	"dataPrivacy.text.p1.2": `El responsable del tratamiento, según el RGPD, otras leyes de protección de datos de los Estados miembros de la UE y demás normativas de protección de datos, es Technologiestiftung Berlin.  
-<br/><br/>
-Technologiestiftung Berlin<br/>
-Grunewaldstraße 61–62<br/>
-10825 Berlín<br/>
-Alemania<br/><br/>
-Tel.: 030 20 96 99 90 <br/>
-E‑Mail: info(at)ts.berlin <br/>
-Sitio web: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-         href="https://www.technologiestiftung-berlin.de/de/stiftung/"
-         target="_blank"
-         rel="noopener noreferrer"
-        >Technologiestiftung Berlin</a> <br/><br/>
-Para preguntas e información sobre protección de datos, puedes contactar a nuestro Delegado de Protección de Datos en: <br/><br/>
-Michael Scherer <br/>
-Technologiestiftung Berlin <br/>
-Grunewaldstraße 61–62 <br/>
-10825 Berlín <br/>
-Alemania <br/><br/>
-Tel.: 030 20 96 99 951 <br/>
-E‑Mail: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-         href="mailto:datenschutz@ts.berlin"
-         target="_blank"
-         rel="noopener noreferrer"
-        >datenschutz[at]ts.berlin</a>`,
+	"dataPrivacy.subtitle.p1.2": "1.2 Responsable",
+	"dataPrivacy.text.p1.2": `El responsable, en el sentido del RGPD, de otras normativas de protección de datos vigentes en los Estados miembros de la UE y de otras disposiciones de carácter proteccionista, es Technologiestiftung Berlin.  
+  <br/><br/>
+  Technologiestiftung Berlin<br/>
+  Grunewaldstraße 61-62<br/>
+  10825 Berlín<br/>
+  Alemania<br/><br/>
+  Tel.: 030 20 96 99 90<br/>
+  Correo electrónico: info(at)ts.berlin<br/>
+  Sitio web: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+				  href="https://www.technologiestiftung-berlin.de/de/stiftung/"
+				  target="_blank"
+				  rel="noopener noreferrer"
+			   >Technologiestiftung Berlin</a><br/><br/>
+  Para consultas e información sobre protección de datos, puede contactar con nuestro Delegado de Protección de Datos en:<br/><br/>
+  Michael Scherer<br/>
+  Technologiestiftung Berlin<br/>
+  Grunewaldstraße 61-62<br/>
+  10825 Berlín<br/>
+  Alemania<br/><br/>
+  Tel.: 030 20 96 99 951<br/>
+  Correo electrónico: <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+						 href="mailto:datenschutz@ts.berlin"
+						 target="_blank"
+						 rel="noopener noreferrer"
+					  >datenschutz[at]ts.berlin</a>`,
 
 	"dataPrivacy.subtitle.p1.3":
-		"1.3 Finalidad general de la recopilación, procesamiento y uso de datos",
-	"dataPrivacy.text.p1.3": `El <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-                             href="https://www.technologiestiftung-berlin.de/de/stiftung/"
-                             target="_blank"
-                             rel="noopener noreferrer"
-                           >Technologiestiftung Berlin</a> es una fundación sin ánimo de lucro con personalidad jurídica de derecho civil. En el curso de sus actividades, es necesario gestionar datos personales.  
-<br/><br/>
-Los datos personales se recopilan, procesan y utilizan para los siguientes fines:  
-<br/><br/>
-<ul class="list-disc pl-12 w-9/10">
-  <li>Información sobre Technologiestiftung e invitaciones a sus actividades</li>
-  <li>Apoyo a socios comerciales y prospectos</li>
-  <li>Gestión de personal</li>
-  <li>Contabilidad interna y externa</li>
-  <li>Solicitud y administración de fondos públicos y privados</li>
-  <li>Gestión de la propia financiación de proyectos</li>
-</ul>
-<br/>
-En ciertos casos, los datos pueden transmitirse a terceros para su procesamiento conforme a requisitos legales o interés legítimo. Estos pueden incluir:  
-<br/><br/>
-<ul class="list-disc pl-12 w-9/10">
-  <li>Proveedores de servicios para el procesamiento de pedidos conforme a los artículos 29 y 6 (1)(a) y (f) del RGPD</li>
-  <li>Departamentos internos, en la medida en que necesiten datos para cumplir con sus funciones conforme a los artículos 6 (1)(a) y (f) del RGPD</li>
-  <li>Autoridades públicas, si la normativa legal obligatoria lo exige conforme al artículo 6 (1)(c) del RGPD</li>
-  <li>Organismos externos para la correcta ejecución de contratos conforme al artículo 6 (1)(b) del RGPD</li>
-</ul>`,
+		"1.3 Finalidad general de la recogida, el procesamiento y el uso de datos",
+	"dataPrivacy.text.p1.3": `La <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+									 href="https://www.technologiestiftung-berlin.de/de/stiftung/"
+									 target="_blank"
+									 rel="noopener noreferrer"
+								  >Technologiestiftung Berlin</a> es una fundación sin ánimo de lucro de derecho civil con personalidad jurídica. En el marco de sus actividades, resulta necesario manejar datos personales.  
+  <br/><br/>
+  Los datos personales se recogen, procesan y utilizan para los siguientes fines:  
+  <br/><br/>
+  <ul class="list-disc pl-12 w-9/10">
+	<li>Información sobre la Technologiestiftung e invitaciones a sus actividades</li>
+	<li>Atención a socios comerciales e interesados</li>
+	<li>Gestión de personal</li>
+	<li>Contabilidad interna y externa</li>
+	<li>Solicitud y gestión de fondos públicos y privados</li>
+	<li>Gestión de subvenciones de proyectos propios</li>
+  </ul>
+  <br/>
+  En el marco de las disposiciones legales, los datos pueden comunicarse a terceros para su procesamiento, cuando exista un interés legítimo o una obligación. Estos terceros pueden ser:  
+  <br/><br/>
+  <ul class="list-disc pl-12 w-9/10">
+	<li>Prestadores de servicios para el tratamiento por encargo conforme al art. 29 y art. 6 1 a y f RGPD</li>
+	<li>Órganos internos que necesiten los datos para el cumplimiento de sus funciones según art. 6 1 a y f RGPD</li>
+	<li>Autoridades públicas cuando disposiciones legales primarias lo exijan según art. 6 1 c RGPD</li>
+	<li>Partes externas para el cumplimiento adecuado de contratos según art. 6 1 b RGPD</li>
+  </ul>`,
 
-	"dataPrivacy.subtitle.p1.4": "1.4 Acceso, rectificación y retirada",
-	"dataPrivacy.text.p1.4": `Como interesado cuyos datos personales hayan sido recopilados por Technologiestiftung Berlin, tienes derecho a solicitar información completa sobre los datos personales que almacenamos, incluidos todos los registros, finalidades y períodos de almacenamiento.   
-<br/><br/>
-También tienes derecho a que se corrijan los datos inexactos. Si has dado tu consentimiento para el procesamiento de datos, puedes retirarlo en cualquier momento.  
-<br/><br/>
-En tales casos, por favor contacta al Delegado de Protección de Datos mencionado en la sección 1.2.`,
+	"dataPrivacy.subtitle.p1.4": "1.4 Información, rectificación y revocación",
+	"dataPrivacy.text.p1.4": `Como persona interesada cuyos datos personales pudieran haber sido recabados por Technologiestiftung Berlin, tiene derecho a solicitar y obtener gratuitamente información completa sobre los datos que conservamos, incluidos los conjuntos de datos personales, su origen, finalidad y plazos de conservación.  
+  <br/><br/>
+  Asimismo, puede solicitar la corrección de sus datos personales. Si ha prestado su consentimiento para el uso de sus datos, puede revocarlo en cualquier momento.  
+  <br/><br/>
+  Para ello, póngase en contacto con el Delegado de Protección de Datos mencionado en el apartado 1.2 de Technologiestiftung Berlin.`,
 
 	"dataPrivacy.subtitle.p1.5": "1.5 Supresión y bloqueo de datos personales",
-	"dataPrivacy.text.p1.5": `Los datos personales se almacenan y procesan, por lo general, solo durante el tiempo necesario para el propósito previsto. Una vez que ese propósito deja de aplicarse, los datos se eliminan a intervalos regulares.  
-<br/><br/>
-Puedes contactarnos en cualquier momento para solicitar la supresión o el bloqueo de tus datos personales. Por favor, dirige dichas solicitudes al Delegado de Protección de Datos mencionado en la sección 1.2.  
-<br/><br/>
-Una orden de bloqueo significa que Technologiestiftung Berlin solo podrá usar tus datos para los fines que hayas especificado explícitamente; el registro en sí permanece en nuestros sistemas.  
-<br/><br/>
-Ten en cuenta que Technologiestiftung Berlin está sujeta a períodos de almacenamiento exigidos por directivas europeas, reglamentos y otros requisitos legales. En tales casos, te informaremos y eliminaremos los datos una vez que hayan expirado los plazos de conservación legales.`,
+	"dataPrivacy.text.p1.5": `Los datos personales recabados se conservan y procesan únicamente durante el período necesario para su finalidad. Cuando esta deja de existir, los datos se eliminan periódicamente.  
+  <br/><br/>
+  Puede solicitar en cualquier momento la supresión o el bloqueo de sus datos personales. Para ello, contacte con el Delegado de Protección de Datos indicado en el apartado 1.2 de Technologiestiftung Berlin.  
+  <br/><br/>
+  Una notificación de bloqueo significa que Technologiestiftung Berlin sólo podrá utilizar sus datos para los fines que usted haya determinado. El conjunto de datos no se eliminará.  
+  <br/><br/>
+  Tenga en cuenta que Technologiestiftung Berlin está sujeta a los plazos de conservación establecidos por la normativa europea y otras disposiciones legales. En este caso, le informaremos y procederemos a la eliminación tras el vencimiento del plazo.`,
 
 	"dataPrivacy.title.p2": "2. Servicios relevantes",
 	"dataPrivacy.subtitle.p2.1": "2.1 Cookies",
-	"dataPrivacy.text.p2.1": `Las cookies son datos almacenados en tu dispositivo cuando visitas sitios web, y guardan cierta información y configuraciones durante la interacción con nuestro sitio.   
-<br/><br/>
-Puedes desactivar o restringir las cookies a través de la configuración de tu navegador o con extensiones como Ghostery o uBlock. Consulta la documentación del fabricante de tu navegador para más detalles.  
-<br/><br/>
-Aparte de las cookies técnicamente necesarias, no utilizamos cookies de seguimiento o analíticas. Pueden aplicarse cookies de marketing de YouTube, consulta la sección 2.7 a continuación.  
-<br/><br/>
-Al usar por primera vez nuestros servicios en línea, puedes elegir si permites que Technologiestiftung Berlin configure cookies para mejorar la oferta en línea o no.`,
+	"dataPrivacy.text.p2.1": `Las cookies son datos que se almacenan en su dispositivo al visitar sitios web y que registran información y configuraciones en relación con nuestra página.  
+  <br/><br/>
+  Puede oponerse al uso de cookies mediante la configuración de su navegador o con extensiones como Ghostery o uBlock. En los sitios web de los proveedores encontrará información sobre las extensiones disponibles.  
+  <br/><br/>
+  Además de las cookies estrictamente necesarias, no utilizamos cookies de seguimiento o análisis. No obstante, es posible que se empleen cookies de marketing de YouTube, véase el punto 2.7 más abajo.  
+  <br/><br/>
+  Al usar nuestros servicios en línea por primera vez, podrá decidir si autoriza a Technologiestiftung Berlin a establecer cookies para mejorar la oferta en línea.`,
 
-	"dataPrivacy.subtitle.p2.2": "2.2 Herramienta de analítica web Matomo",
-	"dataPrivacy.text.p2.2": `Para estadísticas detalladas de visitantes, utilizamos la herramienta de analítica web Matomo (anteriormente Piwik), desarrollada por Innocraft (InnoCraft Ltd, 150 Willis St, 6011 Wellington, Nueva Zelanda).  
-El software se ejecuta en un servidor ubicado en Alemania y no transmite datos fuera de la UE.  
-<br/><br/>
-Matomo procesa los datos de forma seudónima y no utiliza cookies. Los datos se anonimizan antes de presentárnoslos, por lo que no podemos identificar a usuarios individuales.  
-<br/><br/>
-La siguiente información está disponible para nosotros:  
-<br/><br/>
-<ul class="list-disc pl-12 w-9/10">
-  <li>Vistas de página, clics en enlaces, descargas, páginas de entrada y salida, y marcas de tiempo</li>
-  <li>Información del dispositivo y configuración: fabricante/marca, modelo/versión, tipo de dispositivo, resolución de pantalla, idioma del navegador</li>
-  <li>Datos de ubicación: país de acceso</li>
-</ul>
-<br/>
-El propósito del procesamiento es detectar y corregir errores en nuestro sitio y optimizar el contenido según las necesidades de los visitantes—intereses legítimos según el art. 6 (1)(f) del RGPD. Solo Technologiestiftung Berlin tiene acceso a estos datos y no los compartimos con terceros.  
-<br/><br/>
-Matomo es de código abierto y mantiene altos estándares para prevenir el uso indebido de datos. Puedes encontrar más información en el sitio web de Matomo.  
-<br/><br/>
-Para preguntas, contacta al Delegado de Protección de Datos mencionado en la sección 1.2.`,
+	"dataPrivacy.subtitle.p2.2": "2.2 Herramienta de análisis web Matomo",
+	"dataPrivacy.text.p2.2": `Para un análisis detallado de las estadísticas de visitantes, utilizamos la herramienta Matomo (antes Piwik), de Innocraft (InnoCraft Ltd, 150 Willis St, 6011 Wellington, Nueva Zelanda).  
+  El software está instalado en un servidor propio en Alemania y no transmite datos fuera de la UE.  
+  <br/><br/>
+  Matomo procesa los datos de forma seudonimizada y prescinde de cookies. Los datos se anonimizan antes de mostrarse, por lo que no podemos obtener conclusiones sobre la identidad de los usuarios.  
+  <br/><br/>
+  Podemos analizar la siguiente información:  
+  <br/><br/>
+  <ul class="list-disc pl-12 w-9/10">
+	<li>Visitas a páginas, clics en enlaces, descargas, páginas de entrada y salida, y hora de la acción</li>
+	<li>Información sobre el dispositivo y su configuración: fabricante, modelo, tipo de dispositivo, resolución de pantalla, idioma del navegador</li>
+	<li>Información sobre la ubicación: país de acceso</li>
+  </ul>
+  <br/>
+  La finalidad es detectar y solucionar errores en nuestra web y optimizar el contenido según las necesidades de los visitantes, intereses legítimos según art. 6 1 f RGPD. Solo Technologiestiftung Berlin accede a estos datos y no los comparte.  
+  <br/><br/>
+  Matomo es software libre y aplica altos estándares para evitar el mal uso de datos. Más información aquí.  
+  <br/><br/>
+  Para consultas, contacte con el Delegado de Protección de Datos indicado en el apartado 1.2 de Technologiestiftung Berlin.`,
 };
-
 export default es;
