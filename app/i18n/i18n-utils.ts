@@ -40,6 +40,7 @@ export function setDocumentDirection(language: string) {
  * @param {string} path - The base path of the link (e.g., `/about/`).
  * @returns {string} - The localized URL. For German (`"de"`), it returns the base path.
  *                     For other languages, it prefixes the path with the language code (e.g., `"/en/about/"`).
+ *                     If the URL is external (starts with "https://"), it returns the URL as is.
  *
  * @example
  * // Example Usage
@@ -50,8 +51,15 @@ export function setDocumentDirection(language: string) {
  * //if currentLanguage = "de"
  * const localizedLinkDE = buildLocalizedLink("/about/");
  * console.log(localizedLinkDE); // Output: "/about/"
+ *
+ * //if external URL
+ * const externalLink = buildLocalizedLink("https://example.com");
+ * console.log(externalLink); // Output: "https://example.com"
  */
 export const buildLocalizedLink = (path: string) => {
+	if (path.startsWith("https://")) {
+		return path;
+	}
 	const language = getLanguage();
 	return language === "de" ? path : `/${language}${path}`;
 };
