@@ -14,6 +14,7 @@ export interface OverviewDocs {
 	birthCertificateOrPartnershipCertificate: boolean | null;
 	passportOrforeignID: boolean | null;
 	naturalizationCertificate: boolean | null;
+	bankOrCreditCard: boolean | null;
 }
 
 interface OverviewStore {
@@ -35,6 +36,7 @@ export const useOverviewStore = create<OverviewStore>()(
 				birthCertificateOrPartnershipCertificate: null,
 				passportOrforeignID: null,
 				naturalizationCertificate: null,
+				bankOrCreditCard: false,
 			},
 
 			setDocs(docs: Partial<OverviewDocs>) {
@@ -63,6 +65,7 @@ export const useOverviewStore = create<OverviewStore>()(
 						isPreviousIDExisting === false || hasNameChanged || isFirstGermanID,
 					passportOrforeignID: isFirstGermanID,
 					naturalizationCertificate: isFirstGermanID,
+					bankOrCreditCard: true,
 				};
 
 				const newDocs = { ...get().docs };

@@ -12,6 +12,7 @@ export interface OverviewDocs {
 	fileNumber: boolean | null;
 	purposeOfApplication: boolean | null;
 	letterOrEmailFromAuthority: boolean | null;
+	bankOrCreditCard: boolean | null;
 }
 
 interface OverviewStore {
@@ -33,6 +34,7 @@ export const useOverviewStore = create<OverviewStore>()(
 				fileNumber: null,
 				purposeOfApplication: null,
 				letterOrEmailFromAuthority: null,
+				bankOrCreditCard: false,
 			},
 
 			setDocs(docs: Partial<OverviewDocs>) {
@@ -66,6 +68,7 @@ export const useOverviewStore = create<OverviewStore>()(
 					letterOrEmailFromAuthority:
 						useCertificateOfConductDetailsStore.getState()
 							.isOfficialCertificateOfConduct,
+					bankOrCreditCard: true,
 				};
 
 				const newDocs = { ...get().docs };

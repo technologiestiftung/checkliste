@@ -28,7 +28,12 @@ const de = {
 							href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeramt-der-zukunft/buergeramt-der-zukunft-1461966.php"
 							target="_blank"
 							rel="noopener noreferrer"
-						>Bezirksamt Friedrichshain-Kreuzberg von Berlin, Amt für Bürgerdienste</a>.
+						>Bezirksamt Friedrichshain-Kreuzberg von Berlin, Amt für Bürgerdienste</a> und der 
+						<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
+							href="https://www.berlin.de/moderne-verwaltung/buergerservice/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>Senatskanzlei Berlin</a>.
 						Ziel ist es, Terminabbrüche aufgrund von fehlenden Unterlagen zu vermeiden.
 						Ihre Antworten werden nicht gespeichert oder ausgewertet. 
 						<br/><br/>
@@ -133,7 +138,7 @@ const de = {
 						>hier</a>.`,
 	"registered-in-berlin.q2.hint.no": `Sie können aktuell keinen Personalausweis in Berlin beantragen. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Termin stornieren</a>.`,
 	"id-for-child.q1":
-		"Beantragen Sie den Personalausweis für eine minderjährige Person?",
+		"Beantragen Sie den Personalausweis für eine Person unter 16 Jahre?",
 	"id-for-child.q2":
 		"Sind alle gesetzlichen Vertreter:innen (in den meisten Fällen sorgeberechtige Elternteile) bei dem Termin im Bürgeramt anwesend?",
 	"id-for-child.q3": "Sind die gesetzlichen Vertreter verheiratet?",
@@ -163,7 +168,7 @@ const de = {
 	"certificate-of-conduct-details.q3":
 		"Beantragen Sie ein erweitertes Führungszeugnis?",
 	"certificate-of-conduct-details.q4":
-		"Beantragen Sie ein behördliches Führungszeugnis?",
+		"Beantragen Sie ein Führungszeugnis zur Vorlage bei einer Behörde?",
 
 	/*
 	Checklist Overview
@@ -180,18 +185,18 @@ const de = {
 	</ul>`,
 	"overview.feedback": "Beantworten Sie uns gerne ein paar Fragen.",
 	"overview.id-card.hint.text":
-		"Ab 1. Mai 2025 werden biometrische Passbilder nur in zertifizierten Fotostudios oder Bürgerämtern digital erstellt und übermittelt. Pro Bild fällt eine Gebühr von 6 € an, zahlbar ausschließlich mit Karte.",
+		"Ab dem 01.05.2025 dürfen biometrische Passbilder nur noch direkt in den Behörden (Bürgerämtern) oder in zertifizierten Fotostudios digital erstellt und auf einem gesicherten elektronischen Weg übermittelt werden.",
 	"overview.forms-certificate-of-conduct.hint.text": `Sie können das Führungszeugnis auch bequem <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a> beantragen.`,
 	"overview.forms-residence-registration.hint.text": `Sie können auch Ihre Wohnsitz-Anmeldung <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a> durchführen. 
 	Falls Sie sich für die Onlineanmeldung entschieden haben, <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">stornieren Sie bitte Ihren Termin</a>.`,
 
 	registrationForm: "Anmeldeformular",
 	movingInConfirmation: "Einzugsbestätigung des Wohnungsgebers/ Vermieters",
-	birthCertificate: "Geburtsurkunde",
+	birthCertificate: "Geburtsurkunde im Original",
 	marriageCertificate: "Heiratsurkunde",
 	idDocumentForSpouse:
 		"Personalausweis oder Reisepass der Ehepartnerin/des Ehepartners",
-	childBirthCertificate: "Geburtsurkunde des Kindes/der Kinder",
+	childBirthCertificate: "Geburtsurkunde des Kindes/der Kinder im Original",
 	custodyDeclaration: "Sorgerechtserklärung",
 	idDocumentForChild:
 		"Personalausweis, Reisepass oder Kinderpass des Kindes/der Kinder",
@@ -210,19 +215,20 @@ const de = {
 	idOfParents: "Ausweisdokumente der Eltern",
 	bringChild: "Kind mitbringen",
 	proofOfCustody:
-		"Nachweis zur Sorgeberechtigung z.B. beglaubigte Abschrift aus dem Sorgeregister vom Jugendamt",
+		"Nachweis zur Sorgeberechtigung z.B. beglaubigte Abschrift aus dem Sorgeregister vom Jugendamt im Original",
 	consentOfCustodian:
 		"Einverständniserklärung des nicht anwesenden Sorgeberechtigten",
 	copyOfID:
-		"Kopie von Ausweis (bzw. Reisepass oder Nationalpass) des nicht anwesenden Elternteils für den Unterschriftenabgleich",
+		"Kopie des Ausweises (bzw. Reisepasses oder Nationalpasses) des nicht anwesenden Elternteils für den Unterschriftenabgleich",
 	newOrOldID: "gültiger oder alter Personalausweis oder Reisepass",
 	birthCertificateOrPartnershipCertificate:
-		"Geburtsurkunde, Eheurkunde oder Lebenspartnerschaftsurkunde",
+		"Geburtsurkunde, Eheurkunde oder Lebenspartnerschaftsurkunde im Original",
 	passportOrforeignID:
 		"Reisepass oder ID-Card des Staates der bisherigen Nationalität oder eine Identitätsbescheinigung vom Landesamt für Einwanderung (LEA).",
 	naturalizationCertificate: "Einbürgerungsurkunde",
 
-	birthCertificateOfRepresantative: "Geburtsurkunde der vertretenen Person",
+	birthCertificateOfRepresantative:
+		"Geburtsurkunde der vertretenen Person im Original",
 	carerId: "Betreuerausweis (wenn nicht sorgeberechtigt)",
 	idOfLegalRepresantative: "Ausweisdokument von gesetzlicher Vertretung",
 	idDocument: "Ausweisdokument",
@@ -233,6 +239,7 @@ const de = {
 	purposeOfApplication:
 		"Verwendungszweck z.B. Einstellung in den öffentlichen Dienst",
 	letterOrEmailFromAuthority: "Schreiben oder E-Mail der Behörde",
+	bankOrCreditCard: "Bankkarte oder Kreditkarte",
 
 	/*
 	About
