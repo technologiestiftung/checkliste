@@ -135,7 +135,7 @@ const en = {
 							target="_blank"
 							rel="noopener noreferrer"
 						>here</a>.`,
-	"registered-in-berlin.q2.hint.no": `You cannot currently apply for an ID card in Berlin. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Cancel appointment</a>.`,
+	"registered-in-berlin.q2.hint.no": `You cannot currently apply for an ID card in Berlin. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Cancel appointment</a>.`,
 	"id-for-child.q1": "Are you applying for an ID card for someone under 16?",
 	"id-for-child.q2":
 		"Are all legal guardians (in most cases the parents with custody) present at the appointment at the citizen office?",
@@ -184,7 +184,7 @@ const en = {
 	"overview.feedback": "Feel free to answer a few questions for us.",
 	"overview.id-card.hint.text":
 		"From 01.05.2025, biometric passport photos may only be taken directly in the authorities (citizen offices) or in certified photo studios and transmitted securely via an electronic route.",
-	"overview.forms-certificate-of-conduct.hint.text": `You can also apply for the certificate of conduct conveniently <a href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a>.`,
+	"overview.forms-certificate-of-conduct.hint.text": `You can also apply for the certificate of conduct conveniently <a href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a>.`,
 	"overview.forms-residence-registration.hint.text": `You can also register your residence <a href="https://service.berlin.de/dienstleistung/120686/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a>. 
 	If you have chosen online registration, <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">please cancel your appointment</a>.`,
 

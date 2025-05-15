@@ -136,7 +136,7 @@ const de = {
 							target="_blank"
 							rel="noopener noreferrer"
 						>hier</a>.`,
-	"registered-in-berlin.q2.hint.no": `Sie können aktuell keinen Personalausweis in Berlin beantragen. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Termin stornieren</a>.`,
+	"registered-in-berlin.q2.hint.no": `Sie können aktuell keinen Personalausweis in Berlin beantragen. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Termin stornieren</a>.`,
 	"id-for-child.q1":
 		"Beantragen Sie den Personalausweis für eine Person unter 16 Jahre?",
 	"id-for-child.q2":
@@ -186,7 +186,7 @@ const de = {
 	"overview.feedback": "Beantworten Sie uns gerne ein paar Fragen.",
 	"overview.id-card.hint.text":
 		"Ab dem 01.05.2025 dürfen biometrische Passbilder nur noch direkt in den Behörden (Bürgerämtern) oder in zertifizierten Fotostudios digital erstellt und auf einem gesicherten elektronischen Weg übermittelt werden.",
-	"overview.forms-certificate-of-conduct.hint.text": `Sie können das Führungszeugnis auch bequem <a href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a> beantragen.`,
+	"overview.forms-certificate-of-conduct.hint.text": `Sie können das Führungszeugnis auch bequem <a href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a> beantragen.`,
 	"overview.forms-residence-registration.hint.text": `Sie können auch Ihre Wohnsitz-Anmeldung <a href="https://service.berlin.de/dienstleistung/120686/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a> durchführen. 
 	Falls Sie sich für die Onlineanmeldung entschieden haben, <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">stornieren Sie bitte Ihren Termin</a>.`,
 

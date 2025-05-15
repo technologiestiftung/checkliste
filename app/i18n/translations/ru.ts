@@ -131,7 +131,7 @@ const ru = {
 	"registered-in-berlin.q2.hint.yes":
 		'У вас также есть возможность подать заявление на получение удостоверения личности в Берлине. Документы можно подавать только в Landesamt für Bürger- und Ordnungsangelegenheiten. Больше информации вы можете найти <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500" href="https://service.berlin.de/dienstleistung/326550/" target="_blank" rel="noopener noreferrer">здесь</a>.',
 	"registered-in-berlin.q2.hint.no":
-		'В данный момент вы не можете подать заявление на получение удостоверения личности в Берлине. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Отменить запись</a>.',
+		'В данный момент вы не можете подать заявление на получение удостоверения личности в Берлине. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Отменить запись</a>.',
 	"id-for-child.q1":
 		"Вы подаете заявление на удостоверение личности для ребенка младше 16 лет?",
 	"id-for-child.q2":

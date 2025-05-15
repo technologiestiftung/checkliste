@@ -135,7 +135,7 @@ const fr = {
 							target="_blank"
 							rel="noopener noreferrer"
 						>ici</a>.`,
-	"registered-in-berlin.q2.hint.no": `Vous ne pouvez pas demander de carte d'identité à Berlin. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Annuler le rendez-vous</a>.`,
+	"registered-in-berlin.q2.hint.no": `Vous ne pouvez pas demander de carte d'identité à Berlin. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Annuler le rendez-vous</a>.`,
 	"id-for-child.q1":
 		"Demandez-vous une carte d'identité pour une personne de moins de 16 ans ?",
 	"id-for-child.q2":
@@ -185,7 +185,7 @@ const fr = {
 	"overview.feedback": "Répondez à quelques questions pour nous.",
 	"overview.id-card.hint.text":
 		"À partir du 01.05.2025, les photos de passeport biométriques doivent être prises directement dans les autorités (mairies) ou dans des studios photo certifiés et envoyées par voie électronique sécurisée.",
-	"overview.forms-certificate-of-conduct.hint.text": `Vous pouvez également demander facilement l'extrait de casier judiciaire <a href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en ligne</a>.`,
+	"overview.forms-certificate-of-conduct.hint.text": `Vous pouvez également demander facilement l'extrait de casier judiciaire <a href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en ligne</a>.`,
 	"overview.forms-residence-registration.hint.text": `Vous pouvez également enregistrer votre résidence <a href="https://service.berlin.de/dienstleistung/120686/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en ligne</a>. 
 	Si vous avez choisi l'enregistrement en ligne, <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">veuillez annuler votre rendez-vous</a>.`,
 

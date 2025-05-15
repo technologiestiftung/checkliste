@@ -133,7 +133,7 @@ const ar = {
 							target="_blank"
 							rel="noopener noreferrer"
 						>هنا</a>.`,
-	"registered-in-berlin.q2.hint.no": `لا يمكنك طلب بطاقة هوية في برلين حاليًا. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">إلغاء الموعد</a>.`,
+	"registered-in-berlin.q2.hint.no": `لا يمكنك طلب بطاقة هوية في برلين حاليًا. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">إلغاء الموعد</a>.`,
 	"id-for-child.q1": "هل تطلب بطاقة هوية لشخص تحت سن 16؟",
 	"id-for-child.q2":
 		"هل جميع الوالدين أو الوصي القانوني (في معظم الحالات الآباء) موجودون في الموعد في مكتب الخدمات البلدية؟",
@@ -179,7 +179,7 @@ const ar = {
 	"overview.feedback": "يرجى الإجابة على بعض الأسئلة.",
 	"overview.id-card.hint.text":
 		"اعتبارًا من 01.05.2025، لن تُقبل الصور البيومترية إلا إذا تم إنشاؤها مباشرة في السلطات (مكاتب الخدمات البلدية) أو في استوديوهات التصوير المعتمدة ويتم إرسالها عبر وسائل إلكترونية آمنة.",
-	"overview.forms-certificate-of-conduct.hint.text": `يمكنك أيضًا طلب شهادة السجل الجنائي <a href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">عبر الإنترنت</a>.`,
+	"overview.forms-certificate-of-conduct.hint.text": `يمكنك أيضًا طلب شهادة السجل الجنائي <a href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">عبر الإنترنت</a>.`,
 	"overview.forms-residence-registration.hint.text": `يمكنك أيضًا إجراء تسجيل الإقامة <a href="https://service.berlin.de/dienstleistung/120686/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">عبر الإنترنت</a>. 
 	إذا قررت التسجيل عبر الإنترنت، <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">يرجى إلغاء موعدك</a>.`,
 
