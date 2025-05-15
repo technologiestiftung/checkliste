@@ -184,8 +184,8 @@ const en = {
 	"overview.feedback": "Feel free to answer a few questions for us.",
 	"overview.id-card.hint.text":
 		"From 01.05.2025, biometric passport photos may only be taken directly in the authorities (citizen offices) or in certified photo studios and transmitted securely via an electronic route.",
-	"overview.forms-certificate-of-conduct.hint.text": `You can also apply for the certificate of conduct conveniently <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a>.`,
-	"overview.forms-residence-registration.hint.text": `You can also register your residence <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a>. 
+	"overview.forms-certificate-of-conduct.hint.text": `You can also apply for the certificate of conduct conveniently <a href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a>.`,
+	"overview.forms-residence-registration.hint.text": `You can also register your residence <a href="https://service.berlin.de/dienstleistung/120686/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">online</a>. 
 	If you have chosen online registration, <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">please cancel your appointment</a>.`,
 
 	registrationForm: "Registration form",
@@ -243,7 +243,7 @@ const en = {
 		"Berlin citizen offices report the most frequent reason for appointment cancellations is the absence or forgetfulness of necessary documents. By asking a few questions about your personal situation, the application creates a personalized checklist that clearly shows which documents are needed. This makes your visit to the office more efficient and less stressful.",
 	"about.text.p2": `With the Document Check, you can prepare for the 
 	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-							href="https://service.berlin.de/dienstleistung/120686/"
+							href="https://service.berlin.de/dienstleistung/120686/?wt_mc=dokucheck"
 							target="_blank"
 							rel="noopener noreferrer"
 						>registration of a main residence</a>, 
@@ -253,7 +253,7 @@ const en = {
 							rel="noopener noreferrer"
 						>application for an ID card</a> and a 
 	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-							href="https://service.berlin.de/dienstleistung/120926/"
+							href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck"
 							target="_blank"
 							rel="noopener noreferrer"
 						>certificate of conduct</a> at the training citizen office Schlesische Strasse. 

@@ -185,8 +185,8 @@ const fr = {
 	"overview.feedback": "Répondez à quelques questions pour nous.",
 	"overview.id-card.hint.text":
 		"À partir du 01.05.2025, les photos de passeport biométriques doivent être prises directement dans les autorités (mairies) ou dans des studios photo certifiés et envoyées par voie électronique sécurisée.",
-	"overview.forms-certificate-of-conduct.hint.text": `Vous pouvez également demander facilement l'extrait de casier judiciaire <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en ligne</a>.`,
-	"overview.forms-residence-registration.hint.text": `Vous pouvez également enregistrer votre résidence <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en ligne</a>. 
+	"overview.forms-certificate-of-conduct.hint.text": `Vous pouvez également demander facilement l'extrait de casier judiciaire <a href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en ligne</a>.`,
+	"overview.forms-residence-registration.hint.text": `Vous pouvez également enregistrer votre résidence <a href="https://service.berlin.de/dienstleistung/120686/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en ligne</a>. 
 	Si vous avez choisi l'enregistrement en ligne, <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">veuillez annuler votre rendez-vous</a>.`,
 
 	registrationForm: "Formulaire d'inscription",
@@ -244,7 +244,7 @@ const fr = {
 		"Les bureaux des citoyens berlinois signalent que la raison la plus fréquente des annulations de rendez-vous est l'absence ou l'oubli des documents nécessaires. Grâce à quelques questions sur votre situation personnelle, l'application crée une liste de contrôle personnalisée qui vous indique précisément quels documents sont nécessaires. Cela rend votre démarche administrative plus efficace et moins stressante.",
 	"about.text.p2": `Avec le Document Check, vous pouvez préparer la 
 	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-							href="https://service.berlin.de/dienstleistung/120686/"
+							href="https://service.berlin.de/dienstleistung/120686/?wt_mc=dokucheck"
 							target="_blank"
 							rel="noopener noreferrer"
 						>Déclaration de résidence principale</a>, 
@@ -254,7 +254,7 @@ const fr = {
 							rel="noopener noreferrer"
 						>Demande de carte d'identité</a> et d'un 
 	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-							href="https://service.berlin.de/dienstleistung/120926/"
+							href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck"
 							target="_blank"
 							rel="noopener noreferrer"
 						>extrait de casier judiciaire</a> au bureau des citoyens de Schlesische Strasse. 
