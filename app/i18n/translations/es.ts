@@ -182,8 +182,8 @@ const es = {
 	"overview.feedback": "Contéstenos algunas preguntas.",
 	"overview.id-card.hint.text":
 		"A partir del 01.05.2025, las fotografías biométricas solo se podrán tomar digitalmente en las autoridades (oficinas de registro de residentes) o en estudios fotográficos certificados y transmitirse de forma segura electrónicamente.",
-	"overview.forms-certificate-of-conduct.hint.text": `También puede solicitar el certificado de antecedentes cómodamente <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en línea</a>.`,
-	"overview.forms-residence-registration.hint.text": `También puede registrar su residencia <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en línea</a>.
+	"overview.forms-certificate-of-conduct.hint.text": `También puede solicitar el certificado de antecedentes cómodamente <a href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en línea</a>.`,
+	"overview.forms-residence-registration.hint.text": `También puede registrar su residencia <a href="https://service.berlin.de/dienstleistung/120686/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">en línea</a>.
 	Si opta por el registro en línea, <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">cancele su cita</a>.`,
 
 	registrationForm: "Formulario de registro",
@@ -242,7 +242,7 @@ const es = {
 		"Las oficinas de registro de residentes de Berlín identifican como motivo principal de cancelación de citas la falta o el olvido de los documentos necesarios. Mediante breves preguntas sobre su situación personal, la aplicación genera una lista de verificación individualizada que le indica con precisión qué documentos necesita. Así su trámite administrativo será más eficiente y menos estresante.",
 	"about.text.p2": `Con el Control de Documentos puede preparar
 	  la <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-							href="https://service.berlin.de/dienstleistung/120686/"
+							href="https://service.berlin.de/dienstleistung/120686/?wt_mc=dokucheck"
 							target="_blank"
 							rel="noopener noreferrer"
 						  >registración de una vivienda principal</a>,
@@ -252,7 +252,7 @@ const es = {
 							rel="noopener noreferrer"
 						  >solicitud de DNI</a> y
 	  <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-							href="https://service.berlin.de/dienstleistung/120926/"
+							href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck"
 							target="_blank"
 							rel="noopener noreferrer"
 						  >certificado de antecedentes</a> en la Oficina de Registro de Formación Schlesische Straße.`,

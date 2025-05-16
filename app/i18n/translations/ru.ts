@@ -131,7 +131,7 @@ const ru = {
 	"registered-in-berlin.q2.hint.yes":
 		'У вас также есть возможность подать заявление на получение удостоверения личности в Берлине. Документы можно подавать только в Landesamt für Bürger- und Ordnungsangelegenheiten. Больше информации вы можете найти <a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500" href="https://service.berlin.de/dienstleistung/326550/" target="_blank" rel="noopener noreferrer">здесь</a>.',
 	"registered-in-berlin.q2.hint.no":
-		'В данный момент вы не можете подать заявление на получение удостоверения личности в Берлине. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class=font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Отменить запись</a>.',
+		'В данный момент вы не можете подать заявление на получение удостоверения личности в Берлине. <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">Отменить запись</a>.',
 	"id-for-child.q1":
 		"Вы подаете заявление на удостоверение личности для ребенка младше 16 лет?",
 	"id-for-child.q2":
@@ -181,9 +181,9 @@ const ru = {
 	"overview.id-card.hint.text":
 		"С 01.05.2025 биометрические фотографии для паспортов могут быть сделаны только в органах власти (Bürgerämtern) или в сертифицированных фотоателье и переданы через защищенный электронный канал.",
 	"overview.forms-certificate-of-conduct.hint.text":
-		'Вы также можете подать заявление на справку о несудимости удобно <a href="https://service.berlin.de/dienstleistung/120926/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">онлайн</a>.',
+		'Вы также можете подать заявление на справку о несудимости удобно <a href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">онлайн</a>.',
 	"overview.forms-residence-registration.hint.text":
-		'Вы также можете зарегистрировать свое место жительства <a href="https://service.berlin.de/dienstleistung/120686/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">онлайн</a>. Если вы выбрали онлайн-регистрацию, <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">пожалуйста отмените запись</a>.',
+		'Вы также можете зарегистрировать свое место жительства <a href="https://service.berlin.de/dienstleistung/120686/?wt_mc=dokucheck" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">онлайн</a>. Если вы выбрали онлайн-регистрацию, <a href="https://service.berlin.de/terminvereinbarung/termin/manage/" target="_blank" class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500">пожалуйста отмените запись</a>.',
 
 	registrationForm: "Форма регистрации",
 	movingInConfirmation: "Подтверждение о вселении от арендодателя",
@@ -242,7 +242,7 @@ const ru = {
 		"Берлинские Bürgerämter чаще всего сталкиваются с отменой записи из-за отсутствия или забытого документа. С помощью простых вопросов о вашей личной ситуации приложение создает индивидуальный список документов, которые вам понадобятся. Это делает ваше посещение государственных учреждений более эффективным и менее стрессовым.",
 	"about.text.p2": `С помощью проверка документов вы можете подготовиться к 
 	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-							href="https://service.berlin.de/dienstleistung/120686/"
+							href="https://service.berlin.de/dienstleistung/120686/?wt_mc=dokucheck"
 							target="_blank"
 							rel="noopener noreferrer"
 						>регистрации основного места жительства</a>, 
@@ -252,7 +252,7 @@ const ru = {
 							rel="noopener noreferrer"
 						>подаче заявления на удостоверение личности</a> и для 
 	<a class="font-bold hover:underline text-berlin-blue-500 visited:text-purple-500"
-							href="https://service.berlin.de/dienstleistung/120926/"
+							href="https://service.berlin.de/dienstleistung/120926/?wt_mc=dokucheck"
 							target="_blank"
 							rel="noopener noreferrer"
 						>получения справки о несудимости</a> в Bürgeramt Schlesische Strasse. 
