@@ -79,8 +79,8 @@ export const useOverviewStore = create<OverviewStore>()(
 						useNationalityStore.getState().isGermanOver16 &&
 						useNationalityStore.getState().isGerman,
 					confirmationOfCustodian:
-						!useNationalityStore.getState().isGermanOver16 &&
-						!useNationalityStore.getState().isNonGermanOver16,
+						useNationalityStore.getState().isGermanOver16 === false ||
+						useNationalityStore.getState().isNonGermanUnder16,
 					euIdOrPassportOrReplacement:
 						useNationalityStore.getState().isEuropean,
 					nonEuIdOrPassportOrReplacement:
@@ -92,8 +92,10 @@ export const useOverviewStore = create<OverviewStore>()(
 				const newDocs = { ...get().docs };
 				for (const key in requiredDocs) {
 					const typedKey = key as keyof OverviewDocs;
+
 					newDocs[typedKey] = requiredDocs[typedKey] === true ? false : null;
 				}
+
 				set({ docs: newDocs });
 			},
 		}),

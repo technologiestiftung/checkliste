@@ -12,7 +12,7 @@ import {
 	IsGerman,
 	IsGermanOver16,
 	IsEuropean,
-	IsNonGermanOver16,
+	IsNonGermanUnder16,
 	IsRefugee,
 } from "../forms-residence-registration/nationality";
 import {
@@ -35,7 +35,7 @@ export function Steps() {
 		<IsGerman />,
 		<IsGermanOver16 />,
 		<IsEuropean />,
-		<IsNonGermanOver16 />,
+		<IsNonGermanUnder16 />,
 		<IsRefugee />,
 		<HasOtherResidence />,
 		<IsOtherResidenceAbroad />,
