@@ -64,8 +64,10 @@ export const useOverviewStore = create<OverviewStore>()(
 					marriageCertificate: useFirstRegistrationStore.getState().isMarried,
 					idDocumentForSpouse:
 						useFirstRegistrationStore.getState().isRegisteringSpouse,
-					childBirthCertificate: useFirstRegistrationStore.getState().hasChild,
-					custodyDeclaration: useFirstRegistrationStore.getState().hasChild,
+					childBirthCertificate:
+						useFirstRegistrationStore.getState().isRegisteringChild,
+					custodyDeclaration:
+						useFirstRegistrationStore.getState().isRegisteringChild,
 					idDocumentForChild:
 						useFirstRegistrationStore.getState().isRegisteringChild,
 					guardianConsent:
