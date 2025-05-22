@@ -5,10 +5,10 @@ import { SecondaryButton } from "../../buttons/secondary-button";
 import { i18n } from "~/i18n/i18n-utils";
 import { FormButtonNext } from "~/components/buttons/form-button-next";
 
-export function IsNonGermanOver16() {
-	const { isNonGermanOver16, setIsNonGermanOver16 } = useNationalityStore();
+export function IsNonGermanUnder16() {
+	const { isNonGermanUnder16, setIsNonGermanUnder16 } = useNationalityStore();
 
-	const isValid = isNonGermanOver16 !== null;
+	const isValid = isNonGermanUnder16 !== null;
 
 	const { goToPreviousStep, goToNextStep } = useProgressStore();
 
@@ -30,9 +30,9 @@ export function IsNonGermanOver16() {
 					{options.map((option) => {
 						const name = "nationality.q4.radio";
 						const isChecked =
-							(option === "yes" && isNonGermanOver16 === true) ||
-							(option === "no" && isNonGermanOver16 === false);
-						const onChange = () => setIsNonGermanOver16(option === "yes");
+							(option === "yes" && isNonGermanUnder16 === true) ||
+							(option === "no" && isNonGermanUnder16 === false);
+						const onChange = () => setIsNonGermanUnder16(option === "yes");
 						const label = i18n(option);
 
 						return (
